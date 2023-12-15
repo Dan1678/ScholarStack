@@ -13,12 +13,27 @@ class CreateLoginForm extends JFrame implements ActionListener
     //initialize button, panel, label, and text field  
     JButton b1;
     JPanel newPanel;
+    JPanel backPanel, loginPanel;
     JLabel userLabel, passLabel;
     final JTextField  textField1, textField2;
+    JLabel loginLabel;
 
     //calling constructor  
     CreateLoginForm()
     {
+        JPanel backPanel = new JPanel(new GridLayout(3,1));
+        backPanel.setSize(1000,1000);
+
+        loginPanel = new JPanel();
+
+        loginLabel = new JLabel();
+        loginLabel.setText("Login");
+
+        loginPanel.add(loginLabel);
+        backPanel.add(loginPanel);
+
+        add(backPanel);
+
 
         //create label for username   
         userLabel = new JLabel();
@@ -38,15 +53,20 @@ class CreateLoginForm extends JFrame implements ActionListener
         b1 = new JButton("SUBMIT"); //set label to button  
 
         //create panel to put form elements  
-        newPanel = new JPanel(new GridLayout(3, 1));
-        newPanel.add(userLabel);    //set username label to panel  
+        newPanel = new JPanel(new GridLayout(2, 1));
+        newPanel.setSize(300,300);
+        newPanel.add(userLabel);    //set username label to panel
         newPanel.add(textField1);   //set text field to panel  
         newPanel.add(passLabel);    //set password label to panel  
         newPanel.add(textField2);   //set text field to panel  
-        newPanel.add(b1);           //set button to panel  
+                  //set button to panel
+
+
+        backPanel.add(newPanel);
+        backPanel.add(b1);
 
         //set border to panel   
-        add(newPanel, BorderLayout.CENTER);
+        add(backPanel, BorderLayout.CENTER);
 
         //perform action on button click   
         b1.addActionListener(this);     //add action listener to button  
