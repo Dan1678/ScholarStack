@@ -9,25 +9,29 @@ public class MainUI extends JFrame {
 
     static GraphicsConfiguration gc;	// Contains this computer’s graphics configuration
 
-    private PapersPanel papersPanel;
     private ControlPanel controlPanel;
+    private PapersPanel papersPanel;
+
     private TopMenuBar menuBar;
 
     public MainUI() {
+
+        setLayout(new BorderLayout());
+        pack();
         setSize(1500,1000);
-        setLayout(null); // using no layout managers
         setVisible(true); // making the frame visible
 
-        //add panels
-        papersPanel = new PapersPanel();
-        add(papersPanel);
 
+        //add panels
         controlPanel = new ControlPanel();
-        add(controlPanel);
+        add(controlPanel, BorderLayout.WEST);
+
+        papersPanel = new PapersPanel();
+        add(papersPanel, BorderLayout.CENTER);
 
         //add menu bar
-        menuBar = new TopMenuBar();
-        setJMenuBar(menuBar);
+        //menuBar = new TopMenuBar();
+        //setJMenuBar(menuBar);
 
         // This next line closes the program when the frame is closed
         addWindowListener(new WindowAdapter() {	// Closes the program if close window clicked
