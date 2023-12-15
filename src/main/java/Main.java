@@ -1,6 +1,3 @@
-import MainUI.MainUI;
-import MainUI.PapersPanel;
-
 import javax.swing.*;
 
 public class Main {
@@ -16,5 +13,10 @@ public class Main {
             JOptionPane.showMessageDialog(null, e.getMessage());
         }
 
+        if (DatabaseConnector.connectToDatabase()) {
+            System.out.println("Connected to the database successfully!");
+        } else {
+            System.out.println("Failed to connect to the database.");
+        }
     }
 }
