@@ -110,11 +110,11 @@ public class CreateLoginForm extends JFrame implements ActionListener
             dispose();
             MainUI page = new MainUI();
 
-            page.setVisible(true);
-            JLabel wel_label = new JLabel("Welcome: "+userName);
-            page.add(wel_label);
+            //page.setVisible(true);
+            //JLabel wel_label = new JLabel("Welcome: "+userName);
+            //page.add(wel_label);
 
-            page.getContentPane().add(wel_label);
+            //page.getContentPane().add(wel_label);
         }
         else{
             //show error message
@@ -128,11 +128,11 @@ public class CreateLoginForm extends JFrame implements ActionListener
             dispose();
             MainUI page = new MainUI();
 
-            page.setVisible(true);
-            JLabel wel_label = new JLabel("Welcome: "+userName);
-            page.add(wel_label);
-
-            page.getContentPane().add(wel_label);
+//            page.setVisible(true);
+//            JLabel wel_label = new JLabel("Welcome: "+userName);
+//            page.add(wel_label);
+//
+//            page.getContentPane().add(wel_label);
         }
     };
     public String getUserName(){

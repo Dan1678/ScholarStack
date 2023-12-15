@@ -1,28 +1,62 @@
 package MainUI;
 
 import javax.swing.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 class TopMenuBar extends JMenuBar{
 
     //top menu bar
 
      // Menu items EXAMPLE
-     private JMenu menu;
+     private JMenu fileMenu;
 
      public TopMenuBar() {
-         //EXAMPLE
-         // create menuitems
-         JMenuItem a, b, c;
-         a = new JMenuItem("MenuItem1");
-         b = new JMenuItem("MenuItem2");
-         c = new JMenuItem("MenuItem3");
 
+         fileMenu = new JMenu("File");
+
+         // create menuitems (may want to impliment as an array list as this grows)
+         JMenuItem exit = new JMenuItem("Exit");
+
+         // Add action listener to the exit item
+         exit.addActionListener(new ActionListener() {
+             @Override
+             public void actionPerformed(ActionEvent e) {
+                 System.exit(0); // Exits the application
+             }
+         });
          // add menu items to menu
-         menu.add(a);
-         menu.add(b);
-         menu.add(c);
+         fileMenu.add(exit);
 
-         add(menu);
+         add(fileMenu);
+
+         //EXAMPLE
+         JMenuItem a, b, c;
+         a = new JMenuItem("a");
+         b = new JMenuItem("b");
+         c = new JMenuItem("c");
+
+         JMenu exampleMenu = new JMenu("Example");
+         exampleMenu.add(a);
+         exampleMenu.add(b);
+         exampleMenu.add(c);
+
+         JMenu exampleSubMenu = new JMenu("submenu");
+
+         JMenuItem d, e, f;
+         a = new JMenuItem("d");
+         b = new JMenuItem("e");
+         c = new JMenuItem("f");
+
+         exampleSubMenu.add(a);
+         exampleSubMenu.add(b);
+         exampleSubMenu.add(c);
+
+         exampleMenu.add(exampleSubMenu);
+
+         add(exampleMenu);
+         //END EXAMPLE
+
      }
 
 }

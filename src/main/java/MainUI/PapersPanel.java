@@ -13,11 +13,13 @@ public class PapersPanel extends JPanel {
         private JTextArea displayArea;
 
         public PapersPanel() {
-            papersList = new Papers_list();
-            setSize(1100, 930);
-            setLocation(340, 20);
+
+            //Set up panel
             setVisible(true);
             setBorder(BorderFactory.createLineBorder(Color.black));
+
+
+            papersList = new Papers_list();
 
             displayArea = new JTextArea(30, 50);
             displayArea.setEditable(false);
@@ -50,7 +52,6 @@ public class PapersPanel extends JPanel {
             }
 
             displayArea.setText(stringBuilder.toString());
-
 
         }
 
