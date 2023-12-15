@@ -17,9 +17,9 @@ public class MainUI extends JFrame {
 
     public MainUI() {
 
-       // setLayout(new BorderLayout());
-        pack();
-        setSize(1500,1000);
+        setLayout(new BorderLayout());
+
+        setSize(1500,750);
         setVisible(true); // making the frame visible
         //add panels
         controlPanel = new ControlPanel();
@@ -28,9 +28,10 @@ public class MainUI extends JFrame {
         papersPanel = new PapersPanel();
         add(papersPanel, BorderLayout.CENTER);
 
+
         //add menu bar
-        //menuBar = new TopMenuBar();
-        //setJMenuBar(menuBar);
+        menuBar = new TopMenuBar();
+        setJMenuBar(menuBar);
 
         // This next line closes the program when the frame is closed
         addWindowListener(new WindowAdapter() {	// Closes the program if close window clicked

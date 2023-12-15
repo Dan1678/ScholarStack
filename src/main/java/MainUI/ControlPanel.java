@@ -1,22 +1,25 @@
+//Left sided panel which allows the user to:
+//Add papers
+//Browse papers
+//Browse tags
+//Add tags
+
 package MainUI;
 
 import javax.swing.*;
 import java.awt.*;
+import java.util.ArrayList;
 
 public class ControlPanel extends JPanel {
-
-
-    //Left sided panel which allows the user to:
-        //Add papers
-        //Browse papers
-        //Browse tags
-        //Add tags
-
     private JButton addPaperBtn;
 
+
+    // TEMPORARY UNTIL WE GET TAGS IMPLIMENTED
+    //public ArrayList<>
+
     public ControlPanel() {
-        setSize(300, 930);
-        setPreferredSize(new Dimension(500, 0));
+        //set up panel
+        setPreferredSize(new Dimension(500, 0)); //panel has a set width
         setVisible(true);
         setBorder(BorderFactory.createLineBorder(Color.black));
 
