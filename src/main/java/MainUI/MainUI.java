@@ -16,7 +16,7 @@ public class MainUI extends JFrame {
 
     public MainUI() {
 
-        setLayout(new BorderLayout());
+       // setLayout(new BorderLayout());
         pack();
         setSize(1500,1000);
         setVisible(true); // making the frame visible
