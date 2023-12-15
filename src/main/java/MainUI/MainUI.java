@@ -5,6 +5,7 @@ import java.awt.*;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
 
+
 public class MainUI extends JFrame {
 
     static GraphicsConfiguration gc;	// Contains this computer’s graphics configuration
@@ -20,8 +21,6 @@ public class MainUI extends JFrame {
         pack();
         setSize(1500,1000);
         setVisible(true); // making the frame visible
-
-
         //add panels
         controlPanel = new ControlPanel();
         add(controlPanel, BorderLayout.WEST);
