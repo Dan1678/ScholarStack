@@ -14,7 +14,7 @@ public class ControlPanel extends JPanel {
 
     public ControlPanel() {
         setSize(300, 930);
-        setLocation(20, 20);
+        setPreferredSize(new Dimension(500, 0));
         setVisible(true);
         setBorder(BorderFactory.createLineBorder(Color.black));
     }
