@@ -1,4 +1,6 @@
 import javax.swing.*;
+import java.net.URI;
+import java.net.URL;
 
 public class Main {
     public static void main(String arg[])
@@ -16,5 +18,15 @@ public class Main {
             //handle exception
             JOptionPane.showMessageDialog(null, e.getMessage());
         }
+
+        if (DatabaseConnector.connectToDatabase()) {
+            System.out.println("Connected to the database successfully!");
+        } else {
+            System.out.println("Failed to connect to the database.");
+        }
+
+
+
+
     }
 }
