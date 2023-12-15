@@ -9,7 +9,7 @@ public class MainUI extends JFrame {
 
 
     public MainUI() {
-        setSize(500,300);
+        setSize(1000,1000);
         setLayout(null); // using no layout managers
         setVisible(true); // making the frame visible
 
