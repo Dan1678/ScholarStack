@@ -8,7 +8,7 @@ public class Main {
         {
             //create instance of the CreateLoginForm
             CreateLoginForm form = new CreateLoginForm();
-            form.setSize(300,100);  //set size of the frame
+            form.setSize(1000,1000);  //set size of the frame
             form.setVisible(true);  //make form visible to the user
         }
         catch(Exception e)
