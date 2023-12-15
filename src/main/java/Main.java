@@ -13,10 +13,32 @@ public class Main {
             JOptionPane.showMessageDialog(null, e.getMessage());
         }
 
-        if (DatabaseConnector.connectToDatabase()) {
-            System.out.println("Connected to the database successfully!");
-        } else {
-            System.out.println("Failed to connect to the database.");
-        }
+//        String tableName = "papers";
+//
+//        // Create the specified table
+//        boolean tableCreationResult = DatabaseManager.createTable(tableName);
+//
+//        if (tableCreationResult) {
+//            System.out.println("Table '" + tableName + "' created successfully!");
+//        } else {
+//            System.out.println("Failed to create table '" + tableName + "'.");
+//        }
+
+//        // Create the specified table
+//        if (tableCreationResult) {
+//            System.out.println("Table '" + tableName + "' created successfully!");
+//
+//            // Insert a record into the "users" table
+//            boolean insertionResult = DatabaseManager.insertRecord(tableName, "username, password", "'john_doe', 'password123'");
+//
+//            if (insertionResult) {
+//                System.out.println("Record inserted successfully!");
+//            } else {
+//                System.out.println("Failed to insert record.");
+//            }
+//        } else {
+//            System.out.println("Failed to create table '" + tableName + "'.");
+//        }
+
     }
 }
