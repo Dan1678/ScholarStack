@@ -4,13 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="caf41903-31e9-4411-a647-9632c151de00" name="Changes" comment="Began working on login page and UI components.">
-      <change afterPath="$PROJECT_DIR$/src/main/java/DatabaseConnector.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
-    </list>
+    <list default="true" id="caf41903-31e9-4411-a647-9632c151de00" name="Changes" comment="Built the databaseconnector class" />
     <list id="f4862b22-822d-41c3-ba14-ffe306fc865d" name="Changes by adelinavlasie" comment="" />
     <list id="ee22f58c-8bfc-471d-9402-c1fb1980b07d" name="Changes by johnn" comment="Changes by johnn" />
     <option name="SHOW_DIALOG" value="false" />
@@ -78,7 +72,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.ScholarStack [run]">
+  <component name="RunManager" selected="Gradle.ScholarStack [build]">
     <configuration name="ScholarStack [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -125,8 +119,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.ScholarStack [run]" />
         <item itemvalue="Gradle.ScholarStack [build]" />
+        <item itemvalue="Gradle.ScholarStack [run]" />
       </list>
     </recent_temporary>
   </component>
@@ -139,7 +133,7 @@
       <option name="presentableId" value="Default" />
       <updated>1702632996779</updated>
       <workItem from="1702632997849" duration="2510000" />
-      <workItem from="1702641431901" duration="2764000" />
+      <workItem from="1702641431901" duration="2895000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <option name="closed" value="true" />
@@ -165,7 +159,15 @@
       <option name="project" value="LOCAL" />
       <updated>1702635303569</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Built the databaseconnector class">
+      <option name="closed" value="true" />
+      <created>1702648863656</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1702648863656</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -175,14 +177,15 @@
     <MESSAGE value="Initial commit" />
     <MESSAGE value="Began working on login page and UI components." />
     <MESSAGE value="Changes by johnn" />
-    <option name="LAST_COMMIT_MESSAGE" value="Changes by johnn" />
+    <MESSAGE value="Built the databaseconnector class" />
+    <option name="LAST_COMMIT_MESSAGE" value="Built the databaseconnector class" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/CreateLoginForm.java</url>
-          <line>25</line>
+          <line>41</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>
