@@ -1,3 +1,5 @@
+package GroupContent;
+
 import java.util.ArrayList;
 
 public class Tag {
@@ -21,6 +23,10 @@ public class Tag {
     public void deleteSubTag(Tag tag) {
         // will not work well for removing tags with subtags. todo
         subTags.remove(tag);
+    }
+
+    public String getName() {
+        return name;
     }
 
     public ArrayList<Tag> getSubTags() {

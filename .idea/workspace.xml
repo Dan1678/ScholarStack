@@ -4,10 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="caf41903-31e9-4411-a647-9632c151de00" name="Changes" comment="Added Database connector with JDK conflicts resolved">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Tag.java" afterDir="false" />
+    <list default="true" id="caf41903-31e9-4411-a647-9632c151de00" name="Changes" comment="Fixed resizing and menu">
+      <change afterPath="$PROJECT_DIR$/src/main/java/GroupContent/GroupContent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/GroupContent/Paper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_15_12_2023__14_44__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_15_12_2023__14_44__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_15_12_2023__14_48__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_15_12_2023__14_48__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_15_12_2023__14_59__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_15_12_2023__14_59__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_15_12_2023__15_11__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_15_12_2023__15_11__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_15_12_2023__16_44__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_15_12_2023__16_44__Changes_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/MainUI/ControlPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MainUI/ControlPanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/MainUI/MainUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MainUI/MainUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Tag.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/GroupContent/Tag.java" afterDir="false" />
     </list>
     <list id="f4862b22-822d-41c3-ba14-ffe306fc865d" name="Changes by adelinavlasie" comment="" />
     <list id="efbba4e2-aabd-433a-998f-300dbcd02e3e" name="Changes by hc1321" comment="" />
@@ -78,28 +86,31 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Gradle.ScholarStack [build].executor": "Run",
+    "Gradle.ScholarStack [run].executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "master",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.ScholarStack [build]">
+  <component name="RunManager" selected="Gradle.ScholarStack [run]">
     <configuration name="ScholarStack [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -146,8 +157,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.ScholarStack [build]" />
         <item itemvalue="Gradle.ScholarStack [run]" />
+        <item itemvalue="Gradle.ScholarStack [build]" />
       </list>
     </recent_temporary>
   </component>
@@ -186,7 +197,15 @@
       <option name="project" value="LOCAL" />
       <updated>1702652941062</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Fixed resizing and menu">
+      <option name="closed" value="true" />
+      <created>1702657841689</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1702657841689</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -195,6 +214,14 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial commit" />
     <MESSAGE value="Added Database connector with JDK conflicts resolved" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added Database connector with JDK conflicts resolved" />
+    <MESSAGE value="Fixed resizing and menu" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed resizing and menu" />
+  </component>
+  <component name="XDebuggerManager">
+    <pin-to-top-manager>
+      <pinned-members>
+        <PinnedItemInfo parentTag="GroupContent.Tag" memberName="subTags" />
+      </pinned-members>
+    </pin-to-top-manager>
   </component>
 </project>

@@ -6,14 +6,16 @@
 
 package MainUI;
 
+import GroupContent.Tag;
+
 import javax.swing.*;
-import javax.swing.text.html.HTML;
 import javax.swing.tree.DefaultMutableTreeNode;
 import java.awt.*;
-import java.util.ArrayList;
 
 public class ControlPanel extends JPanel {
     private JButton addPaperBtn;
+
+    private Tag tags;
 
 
     // TEMPORARY UNTIL WE GET TAGS IMPLIMENTED
@@ -32,34 +34,45 @@ public class ControlPanel extends JPanel {
         addPaperBtn.setSize(new Dimension(200, 75));
         add(addPaperBtn);
 
+        updateTags(new Tag("ROOT"));
         displayTags();
 
     }
 
-
     private void displayTags() {
 
-        //DUMMY TAG SYSTEM - ChatGPT
+        DefaultMutableTreeNode root = getTree(tags);
 
-        // Create the root of the tree
-        DefaultMutableTreeNode root = new DefaultMutableTreeNode("Root Tag");
-
-        // Create and add some tags and subtags
-        DefaultMutableTreeNode tag1 = new DefaultMutableTreeNode("Tag 1");
-        DefaultMutableTreeNode subTag1 = new DefaultMutableTreeNode("Sub Tag 1");
-        tag1.add(subTag1);
-        root.add(tag1);
-
-        // More tags and subtags can be added here
 
         // Create the tree and put it in a scroll pane
         JTree tree = new JTree(root);
         JScrollPane treeView = new JScrollPane(tree);
 
         // Add the scroll pane to a window
-
         add(treeView);
 
+    }
+
+    private DefaultMutableTreeNode getTree(Tag parentTag) {
+        //Gets the tree of all nodes underneath parent tag
+
+        //base case
+        if (parentTag.getSubTags() == null) {
+            return null;
+        }
+
+        DefaultMutableTreeNode parent = new DefaultMutableTreeNode(parentTag.getName());
+
+        //recursive case
+        for (Tag t : parentTag.getSubTags()) {
+            DefaultMutableTreeNode treeBelow = getTree(t);
+            parent.add(treeBelow);
+        }
+        return parent;
+    }
+
+    public void updateTags(Tag tags) {
+        this.tags = tags;
     }
 
 
