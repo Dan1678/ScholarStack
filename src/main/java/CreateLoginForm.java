@@ -99,10 +99,12 @@ class CreateLoginForm extends JFrame implements ActionListener
 
 
         if(isValidUsername(userName) && isValidPassword(passWord)){
+            dispose();
             MainUI page = new MainUI();
 
             page.setVisible(true);
             JLabel wel_label = new JLabel("Welcome: "+userName);
+
             page.getContentPane().add(wel_label);
         }
         else{
