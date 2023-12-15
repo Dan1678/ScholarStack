@@ -10,7 +10,7 @@ class Papers_list {
     Scanner scanner = new Scanner(System.in);
     public String paper;
 
-    public void addPaper() {
+    public void addPaper(String reference) {
         Papers.add(scanner.next());
         boolean validInput = false;
         String userInput;

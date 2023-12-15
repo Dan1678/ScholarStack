@@ -1,4 +1,5 @@
 import MainUI.MainUI;
+import MainUI.PapersPanel;
 
 import javax.swing.*;
 
@@ -19,5 +20,9 @@ public class Main {
             //handle exception
             JOptionPane.showMessageDialog(null, e.getMessage());
         }
-    }
+        JFrame frame = new JFrame("Papers Panel");
+        PapersPanel papersPanel = new PapersPanel();
+        frame.getContentPane().add(papersPanel);
+        frame.setSize(1200, 1000);
+        frame.setVisible(true);}
 }
