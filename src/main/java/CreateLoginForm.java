@@ -1,9 +1,9 @@
 //import required classes and packages  
-import MainUI.MainUI;
-
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
+import java.lang.Exception;
+import MainUI.*;
 
 //create CreateLoginForm class to create login form  
 //class extends JFrame to create a window where our component add  
@@ -12,16 +12,16 @@ class CreateLoginForm extends JFrame implements ActionListener
 {
     //initialize button, panel, label, and text field  
     JButton b1;
-    JPanel newPanel;
-    JPanel backPanel, loginPanel;
-    JLabel userLabel, passLabel;
+    JPanel newPanel, newPanel2, newPanel3;
+    JPanel backPanel, loginPanel, newPanel22, errorPanel;
+    JLabel userLabel, passLabel, passReq, errorLabel;
     final JTextField  textField1, textField2;
     JLabel loginLabel;
 
     //calling constructor  
     CreateLoginForm()
     {
-        JPanel backPanel = new JPanel(new GridLayout(3,1));
+        JPanel backPanel = new JPanel(new GridLayout(5,1));
         backPanel.setSize(1000,1000);
 
         loginPanel = new JPanel();
@@ -50,20 +50,30 @@ class CreateLoginForm extends JFrame implements ActionListener
         textField2 = new JPasswordField(15);    //set length for the password  
 
         //create submit button  
-        b1 = new JButton("SUBMIT"); //set label to button  
+        b1 = new JButton("SUBMIT"); //set label to button
+
+        JLabel passReq = new JLabel("Password must contain at least one number and one symbol");
 
         //create panel to put form elements  
-        newPanel = new JPanel(new GridLayout(2, 1));
-        newPanel.setSize(300,300);
+        newPanel = new JPanel(new FlowLayout(FlowLayout.CENTER));
+        newPanel2 = new JPanel(new FlowLayout(FlowLayout.CENTER));
+        newPanel22 = new JPanel();
+        newPanel.setSize(200,200);
+        newPanel3 = new JPanel();
         newPanel.add(userLabel);    //set username label to panel
-        newPanel.add(textField1);   //set text field to panel  
-        newPanel.add(passLabel);    //set password label to panel  
-        newPanel.add(textField2);   //set text field to panel  
+        newPanel.add(textField1);   //set text field to panel
+        newPanel2.add(passLabel);    //set password label to panel
+        newPanel2.add(textField2);   //set text field to panel
                   //set button to panel
-
+        newPanel22.add(passReq);
+        newPanel3.add(b1);
 
         backPanel.add(newPanel);
-        backPanel.add(b1);
+        backPanel.add(newPanel2);
+        backPanel.add(newPanel22);
+        backPanel.add(newPanel3);
+       // backPanel.add(newPanel);
+
 
         //set border to panel   
         add(backPanel, BorderLayout.CENTER);
@@ -73,14 +83,39 @@ class CreateLoginForm extends JFrame implements ActionListener
         setTitle("LOGIN FORM");         //set title to the login form  
     }
 
+    private boolean isValidUsername(String user){
+        return user.matches("^[A-Za-z ]+$");   //username contains just letters
+    }
+
+    private boolean isValidPassword(String pass){
+        return pass.matches("^(?=.*[0-9])(?=.*[!@#$%^&*]).{6,}$");   //password has to contain one number, one symbol, at least 6 characters
+    }
+
     //define abstract method actionPerformed() which will be called on button click   
     public void actionPerformed(ActionEvent ae)     //pass action listener as a parameter  
     {
-        String userValue = textField1.getText();        //get user entered username from the textField1  
-        String passValue = textField2.getText();        //get user entered pasword from the textField2  
+        String userName = textField1.getText();        //get user entered username from the textField1
+        String passWord = textField2.getText();        //get user entered pasword from the textField2
 
+
+        if(isValidUsername(userName) && isValidPassword(passWord)){
+            MainUI page = new MainUI();
+
+            page.setVisible(true);
+            JLabel wel_label = new JLabel("Welcome: "+userName);
+            page.getContentPane().add(wel_label);
+        }
+        else{
+            //show error message
+            System.out.println("Please enter valid username and password");
+        }
+
+
+        }
+
+/*
         //check whether the credentials are authentic or not  
-        if (userValue.equals("test1@gmail.com") && passValue.equals("test")) {  //if authentic, navigate user to a new page  
+        if (userName.equals("test1@gmail.com") && passWord.equals("test")) {  //if authentic, navigate user to a new page
 
             //create instance of the NewPage  
             MainUI page = new MainUI();
@@ -89,12 +124,12 @@ class CreateLoginForm extends JFrame implements ActionListener
             page.setVisible(true);
 
             //create a welcome label and set it to the new page  
-            JLabel wel_label = new JLabel("Welcome: "+userValue);
+            JLabel wel_label = new JLabel("Welcome: "+userName);
             page.getContentPane().add(wel_label);
         }
         else{
             //show error message  
             System.out.println("Please enter valid username and password");
         }
-    }
+    }*/
 }  
