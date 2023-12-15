@@ -8,15 +8,16 @@ import MainUI.*;
 //create CreateLoginForm class to create login form  
 //class extends JFrame to create a window where our component add  
 //class implements ActionListener to perform an action on button click  
-class CreateLoginForm extends JFrame implements ActionListener
+public class CreateLoginForm extends JFrame implements ActionListener
 {
     //initialize button, panel, label, and text field  
-    JButton b1;
+    JButton b1, skiplogin;
     JPanel newPanel, newPanel2, newPanel3;
     JPanel backPanel, loginPanel, newPanel22, errorPanel;
     JLabel userLabel, passLabel, passReq, errorLabel;
     final JTextField  textField1, textField2;
     JLabel loginLabel;
+    String userName;
 
     //calling constructor  
     CreateLoginForm()
@@ -31,6 +32,7 @@ class CreateLoginForm extends JFrame implements ActionListener
 
         loginPanel.add(loginLabel);
         backPanel.add(loginPanel);
+
 
         add(backPanel);
 
@@ -52,6 +54,8 @@ class CreateLoginForm extends JFrame implements ActionListener
         //create submit button  
         b1 = new JButton("SUBMIT"); //set label to button
 
+        skiplogin = new JButton("Skip login");
+
         JLabel passReq = new JLabel("Password must contain at least one number and one symbol");
 
         //create panel to put form elements  
@@ -67,7 +71,7 @@ class CreateLoginForm extends JFrame implements ActionListener
                   //set button to panel
         newPanel22.add(passReq);
         newPanel3.add(b1);
-
+        newPanel3.add(skiplogin);
         backPanel.add(newPanel);
         backPanel.add(newPanel2);
         backPanel.add(newPanel22);
@@ -78,8 +82,11 @@ class CreateLoginForm extends JFrame implements ActionListener
         //set border to panel   
         add(backPanel, BorderLayout.CENTER);
 
+
         //perform action on button click   
-        b1.addActionListener(this);     //add action listener to button  
+        b1.addActionListener(this);     //add action listener to button
+
+        skiplogin.addActionListener(skiploginAL);
         setTitle("LOGIN FORM");         //set title to the login form  
     }
 
@@ -90,6 +97,7 @@ class CreateLoginForm extends JFrame implements ActionListener
     private boolean isValidPassword(String pass){
         return pass.matches("^(?=.*[0-9])(?=.*[!@#$%^&*]).{6,}$");   //password has to contain one number, one symbol, at least 6 characters
     }
+
 
     //define abstract method actionPerformed() which will be called on button click   
     public void actionPerformed(ActionEvent ae)     //pass action listener as a parameter  
@@ -104,6 +112,7 @@ class CreateLoginForm extends JFrame implements ActionListener
 
             page.setVisible(true);
             JLabel wel_label = new JLabel("Welcome: "+userName);
+            page.add(wel_label);
 
             page.getContentPane().add(wel_label);
         }
@@ -113,7 +122,23 @@ class CreateLoginForm extends JFrame implements ActionListener
         }
 
 
+    }
+    ActionListener skiploginAL = new ActionListener(){
+        public void actionPerformed(ActionEvent e){
+            dispose();
+            MainUI page = new MainUI();
+
+            page.setVisible(true);
+            JLabel wel_label = new JLabel("Welcome: "+userName);
+            page.add(wel_label);
+
+            page.getContentPane().add(wel_label);
         }
+    };
+    public String getUserName(){
+        return this.userName;
+        }
+
 
 /*
         //check whether the credentials are authentic or not  
