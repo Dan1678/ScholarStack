@@ -5,8 +5,7 @@ import javax.swing.*;
 public class Main {
     public static void main(String arg[])
     {
-        MainUI mainUI = new MainUI();
-
+        MainUI mainUI = new MainUI()
 
         try
         {
