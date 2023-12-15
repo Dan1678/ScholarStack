@@ -1,3 +1,5 @@
+package MainUI;
+
 import javax.swing.*;
 import java.awt.*;
 

@@ -4,15 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="caf41903-31e9-4411-a647-9632c151de00" name="Changes" comment="Initial commit">
-      <change afterPath="$PROJECT_DIR$/src/main/java/ControlPanel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/PapersPanel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/TopMenuBar.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/MainUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MainUI.java" afterDir="false" />
-    </list>
+    <list default="true" id="caf41903-31e9-4411-a647-9632c151de00" name="Changes" comment="Add panels to UI" />
     <list id="f4862b22-822d-41c3-ba14-ffe306fc865d" name="Changes by adelinavlasie" comment="" />
     <list id="efbba4e2-aabd-433a-998f-300dbcd02e3e" name="Changes by hc1321" comment="" />
     <list id="ee22f58c-8bfc-471d-9402-c1fb1980b07d" name="Changes by johnn" comment="" />
@@ -72,6 +64,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="SET_USER_NAME_GLOBALLY" value="false" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 6
@@ -88,6 +81,7 @@
     "Gradle.ScholarStack [run].executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
@@ -175,7 +169,7 @@
       <option name="presentableId" value="Default" />
       <updated>1702632996779</updated>
       <workItem from="1702632997849" duration="2213000" />
-      <workItem from="1702635627909" duration="1829000" />
+      <workItem from="1702635627909" duration="2235000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <option name="closed" value="true" />
@@ -185,7 +179,15 @@
       <option name="project" value="LOCAL" />
       <updated>1702633035887</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Add panels to UI">
+      <option name="closed" value="true" />
+      <created>1702637803226</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1702637803226</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -193,6 +195,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Initial commit" />
+    <MESSAGE value="Add panels to UI" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add panels to UI" />
   </component>
 </project>

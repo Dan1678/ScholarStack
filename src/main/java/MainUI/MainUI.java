@@ -1,6 +1,7 @@
+package MainUI;
+
 import javax.swing.*;
 import java.awt.*;
-import java.awt.MenuBar;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
 

@@ -1,3 +1,5 @@
+package MainUI;
+
 import javax.swing.*;
 
 class TopMenuBar extends JMenuBar{

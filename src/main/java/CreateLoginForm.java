@@ -1,8 +1,9 @@
 //import required classes and packages  
+import MainUI.MainUI;
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
-import java.lang.Exception;
 
 //create CreateLoginForm class to create login form  
 //class extends JFrame to create a window where our component add  
