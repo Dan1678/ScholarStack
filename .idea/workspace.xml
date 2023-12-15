@@ -4,15 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="caf41903-31e9-4411-a647-9632c151de00" name="Changes" comment="Add panels to UI">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/MainUI/PapersPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MainUI/PapersPanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/MainUI/Papers_list.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MainUI/Papers_list.java" afterDir="false" />
-    </list>
+    <list default="true" id="caf41903-31e9-4411-a647-9632c151de00" name="Changes" comment="Built the databaseconnector class" />
     <list id="f4862b22-822d-41c3-ba14-ffe306fc865d" name="Changes by adelinavlasie" comment="" />
-    <list id="efbba4e2-aabd-433a-998f-300dbcd02e3e" name="Changes by hc1321" comment="" />
-    <list id="ee22f58c-8bfc-471d-9402-c1fb1980b07d" name="Changes by johnn" comment="" />
+    <list id="ee22f58c-8bfc-471d-9402-c1fb1980b07d" name="Changes by johnn" comment="Changes by johnn" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -31,29 +25,7 @@
         </task>
         <projects_view>
           <tree_state>
-            <expand>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="ScholarStack" type="f1a62948:ProjectNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="ScholarStack" type="f1a62948:ProjectNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="ScholarStack" type="f1a62948:ProjectNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-                <item name="application" type="c8890929:TasksNode$1" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="ScholarStack" type="f1a62948:ProjectNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-                <item name="build" type="c8890929:TasksNode$1" />
-              </path>
-            </expand>
+            <expand />
             <select />
           </tree_state>
         </projects_view>
@@ -69,21 +41,6 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-    <option name="SET_USER_NAME_GLOBALLY" value="false" />
-  </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "adelinavlasie"
-  }
-}]]></component>
-  <component name="GithubPullRequestsUISettings">
-    <option name="selectedUrlAndAccountId">
-      <UrlAndAccount>
-        <option name="accountId" value="7f2a6b3c-17f9-4bfd-9582-7b91a581e068" />
-        <option name="url" value="https://github.com/Dan1678/ScholarStack.git" />
-      </UrlAndAccount>
-    </option>
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 6
@@ -96,19 +53,14 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
-    &quot;Gradle.ScholarStack [build].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.ScholarStack [run].executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
@@ -120,7 +72,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.ScholarStack [run]">
+  <component name="RunManager" selected="Gradle.ScholarStack [build]">
     <configuration name="ScholarStack [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -167,17 +119,10 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.ScholarStack [run]" />
         <item itemvalue="Gradle.ScholarStack [build]" />
+        <item itemvalue="Gradle.ScholarStack [run]" />
       </list>
     </recent_temporary>
-  </component>
-  <component name="SharedIndexes">
-    <attachedChunks>
-      <set>
-        <option value="jdk-16.0.2-corretto-16.0.2-3183f394aec4-fe0432aa" />
-      </set>
-    </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -187,8 +132,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1702632996779</updated>
-      <workItem from="1702632997849" duration="2213000" />
-      <workItem from="1702635627909" duration="2235000" />
+      <workItem from="1702632997849" duration="2510000" />
+      <workItem from="1702641431901" duration="2895000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <option name="closed" value="true" />
@@ -198,29 +143,29 @@
       <option name="project" value="LOCAL" />
       <updated>1702633035887</updated>
     </task>
-    <task id="LOCAL-00002" summary="Add panels to UI">
+    <task id="LOCAL-00002" summary="Began working on login page and UI components.">
       <option name="closed" value="true" />
-      <created>1702637803226</created>
+      <created>1702635290901</created>
       <option name="number" value="00002" />
       <option name="presentableId" value="LOCAL-00002" />
       <option name="project" value="LOCAL" />
-      <updated>1702637803226</updated>
+      <updated>1702635290901</updated>
     </task>
-    <task id="LOCAL-00003" summary="Add panels to UI">
+    <task id="LOCAL-00003" summary="Changes by johnn">
       <option name="closed" value="true" />
-      <created>1702640969416</created>
+      <created>1702635303569</created>
       <option name="number" value="00003" />
       <option name="presentableId" value="LOCAL-00003" />
       <option name="project" value="LOCAL" />
-      <updated>1702640969416</updated>
+      <updated>1702635303569</updated>
     </task>
-    <task id="LOCAL-00004" summary="Add panels to UI">
+    <task id="LOCAL-00004" summary="Built the databaseconnector class">
       <option name="closed" value="true" />
-      <created>1702641009660</created>
+      <created>1702648863656</created>
       <option name="number" value="00004" />
       <option name="presentableId" value="LOCAL-00004" />
       <option name="project" value="LOCAL" />
-      <updated>1702641009660</updated>
+      <updated>1702648863656</updated>
     </task>
     <option name="localTasksCounter" value="5" />
     <servers />
@@ -230,7 +175,20 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial commit" />
-    <MESSAGE value="Add panels to UI" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add panels to UI" />
+    <MESSAGE value="Began working on login page and UI components." />
+    <MESSAGE value="Changes by johnn" />
+    <MESSAGE value="Built the databaseconnector class" />
+    <option name="LAST_COMMIT_MESSAGE" value="Built the databaseconnector class" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/CreateLoginForm.java</url>
+          <line>41</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
