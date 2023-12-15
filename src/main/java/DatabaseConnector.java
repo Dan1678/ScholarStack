@@ -4,7 +4,7 @@ import java.sql.SQLException;
 
 public class DatabaseConnector {
 
-    public static boolean connectToDatabase() {
+    public static Connection connectToDatabase() {
         try {
             // Replace these values with your actual Heroku database connection details
             String host = "ec2-54-246-1-94.eu-west-1.compute.amazonaws.com";
@@ -17,19 +17,12 @@ public class DatabaseConnector {
             String dbUrl = "jdbc:postgresql://" + host + ":" + port + "/" + databaseName + "?sslmode=require";
 
             // Connect to the database
-            try (Connection conn = DriverManager.getConnection(dbUrl, username, password)) {
-                System.out.println("Connection successful!");
-
-                // Introduce a delay of 45 seconds (45000 milliseconds)
-                Thread.sleep(45000);
-
-                return true; // Connection successful
-            }
-        } catch (SQLException | InterruptedException e) {
+            return DriverManager.getConnection(dbUrl, username, password);
+        } catch (SQLException e) {
             // Print the exception details (you might want to log it in a real application)
             e.printStackTrace();
             System.out.println("Connection failed: " + e.getMessage());
-            return false; // Connection failed
+            return null; // Return null if the connection fails
         }
     }
 }
