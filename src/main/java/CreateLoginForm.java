@@ -62,7 +62,7 @@ class CreateLoginForm extends JFrame implements ActionListener
         if (userValue.equals("test1@gmail.com") && passValue.equals("test")) {  //if authentic, navigate user to a new page  
 
             //create instance of the NewPage  
-            NewPage page = new NewPage();
+            MainUI page = new MainUI();
 
             //make page visible to the user  
             page.setVisible(true);
