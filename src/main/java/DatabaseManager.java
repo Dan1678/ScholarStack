@@ -1,6 +1,4 @@
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.SQLException;
+import java.sql.*;
 
 public class DatabaseManager {
 
@@ -49,36 +47,65 @@ public class DatabaseManager {
     }
 
     //Deleting records
-    public static boolean deleteRecord(String tableName, int id){
+    public static boolean deleteRecord(String tableName, int id) {
         try (Connection conn = DatabaseConnector.connectToDatabase()) {
             if (conn != null) {
                 System.out.println("Connection to the database successful!");
 
                 //Delete record from the table
-                String insertQuery = String.format("DELETE FROM %s WHERE id = "+id, tableName);
-                executeQuery(conn, insertQuery);
+                String delQuery = String.format("DELETE FROM %s WHERE id = " + id, tableName);
+                executeQuery(conn, delQuery);
                 return true;
             } else {
                 System.out.println("Connection to database failed");
                 return false;
             }
-        }
-        catch (SQLException e){
+        } catch (SQLException e) {
             e.printStackTrace();
             return false;
         }
     }
 
+    //Read record from a table id
+    public static String readRecord(String tableName, String selectedOutput, int id) {
+        String result = "";
+        try (Connection conn = DatabaseConnector.connectToDatabase()) {
+            if (conn != null) {
+                System.out.println("Connection to the database successful!");
 
+                //Statement s = conn.createStatement();
 
+                try {
+                    Statement s =conn.createStatement();
+                    String sql = String.format("SELECT %s FROM %s WHERE id=" + id, selectedOutput, tableName);
+                    ResultSet rset=s.executeQuery(sql);
+                    while(rset.next()){
+                        result = rset.getString(selectedOutput);
+                    }
+                    rset.close();
+                    s.close();
+                    conn.close();
+                }
+                catch (Exception e){
+                }
 
+            }
+            else{
+                System.out.println("Connection to database failed");
+            }
 
-
-    private static void executeQuery(Connection conn, String query) {
-        try (PreparedStatement statement = conn.prepareStatement(query)) {
-            statement.executeUpdate();
         } catch (SQLException e) {
             e.printStackTrace();
         }
+        return result;
     }
-}
+
+
+        private static void executeQuery (Connection conn, String query){
+            try (PreparedStatement statement = conn.prepareStatement(query)) {
+                statement.executeUpdate();
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }
+        }
+    }

@@ -17,7 +17,7 @@ public class Main {
 
 
 
-        String tableName = "papers";
+     /*   String tableName = "papers";
 
         int rowDeleted = 3;
         boolean wasDeleted = DatabaseManager.deleteRecord(tableName, rowDeleted);
@@ -29,8 +29,13 @@ public class Main {
             System.out.println("Record for ID:"+rowDeleted+"was not deleted");
         }
 
+        int idToRead = 1;
+        String selOut = "username";
+        String outputCol = DatabaseManager.readRecord(tableName, selOut, idToRead);
 
+        System.out.println("RequiredOutput: "+outputCol);
 
+*/
 
 
 
