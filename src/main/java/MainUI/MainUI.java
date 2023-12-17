@@ -12,21 +12,15 @@ public class MainUI extends JFrame {
 
     static GraphicsConfiguration gc;	// Contains this computer’s graphics configuration
 
-    private ControlPanel controlPanel;
-    private PapersPanel papersPanel;
-
+    private LeftPanel leftPanel;
+    private RightPanel rightPanel;
     private TopMenuBar menuBar;
 
-    private GroupContent groupContent;
-
     public MainUI() { //set up a new blank group
-        GroupContent gc = new GroupContent();
-        this.groupContent = gc;
         setupFrame();
     }
 
     public MainUI(GroupContent groupContent) { //set up a group based on existing group
-        this.groupContent = groupContent;
         setupFrame();
     }
 
@@ -36,11 +30,11 @@ public class MainUI extends JFrame {
         setSize(1500,750);
         setVisible(true); // making the frame visible
         //add panels
-        controlPanel = new ControlPanel();
-        add(controlPanel, BorderLayout.WEST);
+        leftPanel = new LeftPanel();
+        add(leftPanel, BorderLayout.WEST);
 
-        papersPanel = new PapersPanel();
-        add(papersPanel, BorderLayout.CENTER);
+        rightPanel = new RightPanel();
+        add(rightPanel, BorderLayout.CENTER);
 
 
         //add menu bar
