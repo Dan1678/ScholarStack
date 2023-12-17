@@ -13,6 +13,28 @@ public class Main {
             JOptionPane.showMessageDialog(null, e.getMessage());
         }
 
+
+
+
+
+        String tableName = "papers";
+
+        int rowDeleted = 3;
+        boolean wasDeleted = DatabaseManager.deleteRecord(tableName, rowDeleted);
+
+        if(wasDeleted){
+            System.out.println("Record for ID:" + rowDeleted+ "was deleted");
+        }
+        else{
+            System.out.println("Record for ID:"+rowDeleted+"was not deleted");
+        }
+
+
+
+
+
+
+
 //        String tableName = "papers";
 //
 //        // Create the specified table

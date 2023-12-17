@@ -48,6 +48,30 @@ public class DatabaseManager {
         }
     }
 
+    //Deleting records
+    public static boolean deleteRecord(String tableName, int id){
+        try (Connection conn = DatabaseConnector.connectToDatabase()) {
+            if (conn != null) {
+                System.out.println("Connection to the database successful!");
+
+                //Delete record from the table
+                String insertQuery = String.format("DELETE FROM %s WHERE id = "+id, tableName);
+                executeQuery(conn, insertQuery);
+                return true;
+            } else {
+                System.out.println("Connection to database failed");
+                return false;
+            }
+        }
+        catch (SQLException e){
+            e.printStackTrace();
+            return false;
+        }
+    }
+
+
+
+
 
 
     private static void executeQuery(Connection conn, String query) {
