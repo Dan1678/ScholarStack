@@ -1,7 +1,6 @@
-package GroupContent;//Hold all information about a group. i.e. papers, tags
+package GroupContent;
 
-
-import java.util.ArrayList;
+//Hold all information about a group. i.e. papers, tags
 
 public class GroupContent {
 

@@ -9,14 +9,14 @@ public class Paper {
     private ArrayList<Tag> tags;
 
     public Paper() {
-
+        comments = new ArrayList<>();
     }
 
     public void addComment(Comment comment) {
         comments.add(comment);
     }
 
-    public ArrayList getComments() {
+    public ArrayList<Comment> getComments() {
         return comments;
     }
 

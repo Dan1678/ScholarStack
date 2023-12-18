@@ -4,10 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="caf41903-31e9-4411-a647-9632c151de00" name="Changes" comment="Added Database connector with JDK conflicts resolved">
+    <list default="true" id="caf41903-31e9-4411-a647-9632c151de00" name="Changes" comment="New overall structure">
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_16_12_2023__14_09__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_16_12_2023__14_09__Changes_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/MainUI/PapersPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MainUI/PapersPanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/MainUI/Papers_list.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MainUI/Papers_list.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/GroupContent/GroupContent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/GroupContent/GroupContent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/GroupContent/Paper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/GroupContent/Paper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/MainUI/CommentsDisplay.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MainUI/CommentsDisplay.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/MainUI/LeftPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MainUI/LeftPanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/MainUI/PaperUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MainUI/PaperUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/MainUI/PapersDisplay.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MainUI/PapersDisplay.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/MainUI/RightPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MainUI/RightPanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/MainUI/TagsDisplay.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MainUI/TagsDisplay.java" afterDir="false" />
     </list>
     <list id="f4862b22-822d-41c3-ba14-ffe306fc865d" name="Changes by adelinavlasie" comment="" />
     <list id="efbba4e2-aabd-433a-998f-300dbcd02e3e" name="Changes by hc1321" comment="" />
@@ -67,6 +74,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectColorInfo">{
@@ -85,7 +97,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "John",
     "kotlin-language-version-configured": "true",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -153,14 +165,15 @@
       <list>
         <item itemvalue="Gradle.ScholarStack [run]" />
         <item itemvalue="Gradle.ScholarStack [build]" />
+        <item itemvalue="Gradle.ScholarStack [run]" />
+        <item itemvalue="Gradle.ScholarStack [build]" />
       </list>
     </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="jdk-16.0.2-azul-16.0.2-3183f394aec4-de25052a" />
-        <option value="jdk-16.0.2-corretto-16.0.2-3183f394aec4-d86ce77a" />
+        <option value="jdk-16.0.2-corretto-16.0.2-3183f394aec4-fe0432aa" />
       </set>
     </attachedChunks>
   </component>
@@ -175,6 +188,7 @@
       <workItem from="1702632997849" duration="2213000" />
       <workItem from="1702656517523" duration="509000" />
       <workItem from="1702742366243" duration="1827000" />
+      <workItem from="1702891315648" duration="3384000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <option name="closed" value="true" />
@@ -208,7 +222,15 @@
       <option name="project" value="LOCAL" />
       <updated>1702657841689</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="New overall structure">
+      <option name="closed" value="true" />
+      <created>1702853009762</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1702853009762</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -218,7 +240,8 @@
     <MESSAGE value="Initial commit" />
     <MESSAGE value="Added Database connector with JDK conflicts resolved" />
     <MESSAGE value="Fixed resizing and menu" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed resizing and menu" />
+    <MESSAGE value="New overall structure" />
+    <option name="LAST_COMMIT_MESSAGE" value="New overall structure" />
   </component>
   <component name="XDebuggerManager">
     <pin-to-top-manager>

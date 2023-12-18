@@ -9,17 +9,19 @@ import java.awt.*;
 
 public class RightPanel extends JPanel {
 
-    CommentsDisplay commentsDisplay;
-    PapersDisplay papersDisplay;
+    //private CommentsDisplay commentsDisplay;
+    private PapersDisplay papersDisplay;
 
     public RightPanel() {
 
+        // todo may be able to get rid of this as it only contains the papers display
+
         setLayout(new BorderLayout());
 
-        commentsDisplay = new CommentsDisplay();
+        //commentsDisplay = new CommentsDisplay();
         papersDisplay = new PapersDisplay();
 
-        add(commentsDisplay, BorderLayout.SOUTH);
+        //add(commentsDisplay, BorderLayout.SOUTH);
         add(papersDisplay, BorderLayout.NORTH);
 
         Paper paper = new Paper();

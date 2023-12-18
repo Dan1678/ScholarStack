@@ -6,16 +6,11 @@
 
 package MainUI;
 
-import GroupContent.Tag;
-import org.graalvm.compiler.asm.aarch64.AArch64Assembler;
-
 import javax.swing.*;
-import javax.swing.tree.DefaultMutableTreeNode;
 import javax.swing.tree.TreePath;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.util.ArrayList;
 
 public class LeftPanel extends JPanel {
     private JButton addTagBtn;

@@ -1,9 +1,9 @@
 package MainUI;
 
+import GroupContent.Comment;
 import GroupContent.Paper;
 
 import javax.swing.*;
-import javax.swing.tree.TreePath;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -16,6 +16,7 @@ public class PaperUI extends JPanel {
     private JButton addTagBtn;
     private JButton seeCommentsBtn;
 
+    private GridBagConstraints gbc;
 
 
     public PaperUI(Paper paper) {
@@ -27,11 +28,14 @@ public class PaperUI extends JPanel {
 
         addPanelComponents();
 
+        //Temp exmaple
+        paper.addComment(new Comment("This is a comment"));
+
     }
 
     private void addPanelComponents() {
         // set up constraints for grid-bag layout
-        GridBagConstraints gbc = new GridBagConstraints();
+        gbc = new GridBagConstraints();
         gbc.gridx = 0;
         gbc.gridy = 0;
         gbc.weightx = 0;
@@ -58,7 +62,7 @@ public class PaperUI extends JPanel {
         seeCommentsBtn.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                //display comments in the paper on the comments panel
+                showComments();
             }
         });
         add(seeCommentsBtn, gbc);
@@ -68,8 +72,29 @@ public class PaperUI extends JPanel {
         blankspace.setSize(10, 10);
         gbc.gridx = 4;
         add(blankspace, gbc);
+
     }
 
+    private void showComments() {
+
+        // Check if the new row has already been added
+        if (gbc.gridy >= 1) {
+            return; // Avoid adding multiple rows
+        }
+
+        setPreferredSize(new Dimension(0, 150));
+        gbc.gridx = 0;
+        gbc.gridy = 1;
+        gbc.gridwidth = GridBagConstraints.REMAINDER; // Span across the rest of the row
+        gbc.fill = GridBagConstraints.HORIZONTAL;
+        CommentsDisplay commentsDisplay = new CommentsDisplay(paper.getComments());
+        commentsDisplay.displayComments();
+        add(commentsDisplay, gbc);
+
+        revalidate();
+        repaint();
+
+    }
 
 
 }

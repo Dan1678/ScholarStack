@@ -16,6 +16,9 @@ public class PapersDisplay extends JPanel{
         setLayout(new BoxLayout (this, BoxLayout.Y_AXIS));
         papers = new ArrayList<>();
 
+
+        //todo - Add adelinas stuff (inc. scroll)
+
     }
 
     public void addPaper(PaperUI paper) {
