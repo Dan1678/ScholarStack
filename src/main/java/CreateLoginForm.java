@@ -92,7 +92,11 @@ public class CreateLoginForm extends JFrame implements ActionListener
     }
 
     private boolean isValidUsername(String user){
-        return user.matches("^[A-Za-z ]+$");   //username contains just letters
+        boolean isValidFormat = user.matches("^[A-Za-z ]+$");
+
+        boolean isTaken = DatabaseManager.isUserTaken(user);
+
+        return isValidFormat && !isTaken;   //username contains just letters
     }
 
     private boolean isValidPassword(String pass){
@@ -130,6 +134,7 @@ public class CreateLoginForm extends JFrame implements ActionListener
         else{
             //show error message
             System.out.println("Please enter valid username and password");
+
         }
 
 

@@ -102,6 +102,24 @@ public class DatabaseManager {
         return result;
     }
 
+    public static boolean isUserTaken(String userName) {
+        try (Connection conn = DatabaseConnector.connectToDatabase()) {
+            if (conn != null) {
+                try (Statement s = conn.createStatement()) {
+                    String query = "SELECT COUNT(*) FROM users WHERE username ='" + userName + "'";
+                    try (ResultSet rset = s.executeQuery(query)) {
+                        if (rset.next()) {
+                            return rset.getInt(1) > 0;
+                        }
+                    }
+                }
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return false;
+    }
+
 
         private static void executeQuery (Connection conn, String query){
             try (PreparedStatement statement = conn.prepareStatement(query)) {
