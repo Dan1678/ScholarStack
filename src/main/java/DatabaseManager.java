@@ -23,13 +23,15 @@ public class DatabaseManager {
         }
     }
 
-    // ... (previous methods)
+
 
     public static boolean insertRecord(String tableName, String columns, String values) {
         // Connect to the database
         try (Connection conn = DatabaseConnector.connectToDatabase()) {
             if (conn != null) {
                 System.out.println("Connection to the database successful!");
+               // String colString = String.join(", ", columns);
+               // String valString = String.join(", ", values);
 
                 // Insert a record into the specified table
                 String insertQuery = String.format("INSERT INTO %s (%s) VALUES (%s)", tableName, columns, values);
@@ -67,13 +69,13 @@ public class DatabaseManager {
     }
 
     //Read record from a table id
+    //selectedoutput is desired column
     public static String readRecord(String tableName, String selectedOutput, int id) {
         String result = "";
         try (Connection conn = DatabaseConnector.connectToDatabase()) {
             if (conn != null) {
                 System.out.println("Connection to the database successful!");
 
-                //Statement s = conn.createStatement();
 
                 try {
                     Statement s =conn.createStatement();

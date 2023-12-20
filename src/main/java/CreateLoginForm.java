@@ -18,6 +18,7 @@ public class CreateLoginForm extends JFrame implements ActionListener
     final JTextField  textField1, textField2;
     JLabel loginLabel;
     String userName;
+    String tableName;
 
     //calling constructor  
     CreateLoginForm()
@@ -108,6 +109,16 @@ public class CreateLoginForm extends JFrame implements ActionListener
 
         if(isValidUsername(userName) && isValidPassword(passWord)){
             dispose();
+
+            tableName = "users";
+
+            boolean addUser = DatabaseManager.insertRecord(tableName, "username, password", String.format("'%s', '%s'", userName,passWord));
+            if (addUser) {
+                System.out.println("Record inserted successfully!");
+            } else {
+                System.out.println("Failed to insert record.");
+            }
+
             MainUI page = new MainUI();
 
             //page.setVisible(true);

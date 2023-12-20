@@ -17,10 +17,12 @@ public class Main {
 
 
 
-     /*   String tableName = "papers";
+      /*  String tableName = "papers";
 
-        int rowDeleted = 3;
+        int rowDeleted = 6;
         boolean wasDeleted = DatabaseManager.deleteRecord(tableName, rowDeleted);
+
+
 
         if(wasDeleted){
             System.out.println("Record for ID:" + rowDeleted+ "was deleted");
