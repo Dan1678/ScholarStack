@@ -1,7 +1,5 @@
 package MainUI;
 
-import GroupContent.GroupContent;
-
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.WindowAdapter;
@@ -17,10 +15,6 @@ public class MainUI extends JFrame {
     private TopMenuBar menuBar;
 
     public MainUI() { //set up a new blank group
-        setupFrame();
-    }
-
-    public MainUI(GroupContent groupContent) { //set up a group based on existing group
         setupFrame();
     }
 

@@ -7,14 +7,6 @@ import java.util.Scanner;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-
-
-
-
-
-
-
-
 public class Papers_list {
     private ArrayList<String> Papers = new ArrayList<>();
     private Map<String, String> comments = new HashMap<>();

@@ -6,6 +6,8 @@
 
 package MainUI;
 
+import GroupContent.Tag;
+
 import javax.swing.*;
 import javax.swing.tree.TreePath;
 import java.awt.*;
@@ -16,10 +18,6 @@ public class LeftPanel extends JPanel {
     private JButton addTagBtn;
     private TagsDisplay tagsDisplay;
 
-
-
-    // TEMPORARY UNTIL WE GET TAGS IMPLIMENTED
-    //public ArrayList<>
 
     public LeftPanel() {
         //set up panel
@@ -37,13 +35,13 @@ public class LeftPanel extends JPanel {
         addTagBtn.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                String tag = JOptionPane.showInputDialog("Enter the tag name");
+                String tagText = JOptionPane.showInputDialog("Enter the tag name");
                 //todo - tag adding functionality
                 //should add tag below selected tag, if no tag is selected add a new one to the list
-                TreePath paths = tagsDisplay.getTree().getSelectionPath();
-                System.out.println(paths);
+                tagsDisplay.addTag(new Tag(tagText));
             }
         });
+
 
         //set up tags display
         tagsDisplay = new TagsDisplay();

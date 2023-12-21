@@ -7,6 +7,8 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
 
 public class PaperUI extends JPanel {
 
@@ -17,6 +19,8 @@ public class PaperUI extends JPanel {
     private JButton seeCommentsBtn;
 
     private GridBagConstraints gbc;
+
+    private CommentsDisplay commentsDisplay;
 
 
     public PaperUI(Paper paper) {
@@ -31,7 +35,16 @@ public class PaperUI extends JPanel {
         //Temp exmaple
         paper.addComment(new Comment("This is a comment"));
 
+
+        addMouseListener(new MouseAdapter() {
+            @Override
+            public void mouseReleased(MouseEvent e) {
+                //setBackground(Color.black);
+            }
+        });
+
     }
+
 
     private void addPanelComponents() {
         // set up constraints for grid-bag layout
@@ -73,24 +86,29 @@ public class PaperUI extends JPanel {
         gbc.gridx = 4;
         add(blankspace, gbc);
 
-    }
 
-    private void showComments() {
-
-        // Check if the new row has already been added
-        if (gbc.gridy >= 1) {
-            return; // Avoid adding multiple rows
-        }
-
-        setPreferredSize(new Dimension(0, 150));
         gbc.gridx = 0;
         gbc.gridy = 1;
         gbc.gridwidth = GridBagConstraints.REMAINDER; // Span across the rest of the row
         gbc.fill = GridBagConstraints.HORIZONTAL;
-        CommentsDisplay commentsDisplay = new CommentsDisplay(paper.getComments());
+        commentsDisplay = new CommentsDisplay(paper.getComments());
         commentsDisplay.displayComments();
+        commentsDisplay.setVisible(false);
         add(commentsDisplay, gbc);
 
+    }
+
+    private void showComments() {
+
+        // Check if the display is already visible
+        if (commentsDisplay.isVisible()) {
+            commentsDisplay.setVisible(false);
+            setPreferredSize(new Dimension(0, 40));
+            return;
+        }
+
+        setPreferredSize(new Dimension(0, 150));
+        commentsDisplay.setVisible(true);
         revalidate();
         repaint();
 

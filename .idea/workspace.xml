@@ -4,15 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="caf41903-31e9-4411-a647-9632c151de00" name="Changes" comment="New overall structure">
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_16_12_2023__14_09__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_16_12_2023__14_09__Changes_.xml" afterDir="false" />
+    <list default="true" id="caf41903-31e9-4411-a647-9632c151de00" name="Changes" comment="Added comment display functionality">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/GroupContent/GroupContent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/GroupContent/GroupContent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/GroupContent/Paper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/GroupContent/Paper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/MainUI/CommentsDisplay.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MainUI/CommentsDisplay.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/TagController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller/TagController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/GroupContent/GroupContent.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/MainUI/LeftPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MainUI/LeftPanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/MainUI/MainUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MainUI/MainUI.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/MainUI/PaperUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MainUI/PaperUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/MainUI/PapersDisplay.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MainUI/PapersDisplay.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/MainUI/Papers_list.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MainUI/Papers_list.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/MainUI/RightPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MainUI/RightPanel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/MainUI/TagsDisplay.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MainUI/TagsDisplay.java" afterDir="false" />
     </list>
@@ -90,28 +89,31 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Gradle.ScholarStack [build].executor": "Run",
-    "Gradle.ScholarStack [run].executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "John",
-    "kotlin-language-version-configured": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "preferences.lookFeel",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Gradle.ScholarStack [build].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.ScholarStack [run].executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;John&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\johnn\OneDrive - Imperial College London\Year 3\Software Eng\Project\src\main\java\MainUI" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="" />
     </key>
@@ -188,7 +190,9 @@
       <workItem from="1702632997849" duration="2213000" />
       <workItem from="1702656517523" duration="509000" />
       <workItem from="1702742366243" duration="1827000" />
-      <workItem from="1702891315648" duration="3384000" />
+      <workItem from="1702891315648" duration="3690000" />
+      <workItem from="1703068570533" duration="5054000" />
+      <workItem from="1703164200502" duration="2487000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <option name="closed" value="true" />
@@ -230,7 +234,15 @@
       <option name="project" value="LOCAL" />
       <updated>1702853009762</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Added comment display functionality">
+      <option name="closed" value="true" />
+      <created>1702894995292</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1702894995292</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -241,7 +253,8 @@
     <MESSAGE value="Added Database connector with JDK conflicts resolved" />
     <MESSAGE value="Fixed resizing and menu" />
     <MESSAGE value="New overall structure" />
-    <option name="LAST_COMMIT_MESSAGE" value="New overall structure" />
+    <MESSAGE value="Added comment display functionality" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added comment display functionality" />
   </component>
   <component name="XDebuggerManager">
     <pin-to-top-manager>

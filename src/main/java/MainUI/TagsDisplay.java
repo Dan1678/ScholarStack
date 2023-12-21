@@ -4,31 +4,50 @@ import GroupContent.Tag;
 
 import javax.swing.*;
 import javax.swing.tree.DefaultMutableTreeNode;
+import java.awt.*;
 
 public class TagsDisplay extends JPanel {
 
     private Tag tag;
     private JTree tree;
+    private JScrollPane treeView;
 
     public TagsDisplay() {
+        setPreferredSize(new Dimension(250, 0)); //panel has a set width
+
+
         tag = new Tag("Tags:");
 
-        // get the current tree
-        DefaultMutableTreeNode root = findTreeBelow(tag);
+        tag.addSubTag(new Tag("sub 1"));
+        tag.addSubTag(new Tag("sub 2"));
 
-        // Create the tree and put it in a scroll pane
-        JTree tree = new JTree(root);
-        JScrollPane treeView = new JScrollPane(tree);
-
-        // Add the scroll pane to a window
-        add(treeView);
+        for (Tag t : tag.getSubTags()) {
+            t.addSubTag(new Tag("subsub 1"));
+            t.addSubTag(new Tag("subsub 2"));
+        }
 
         displayTags();
     }
 
     private void displayTags() {
 
+
+        //Remove the old one
+        if (treeView != null) {
+            remove(treeView);
+        }
+
+
         DefaultMutableTreeNode root = findTreeBelow(tag);
+
+        tree = new JTree(root);
+        treeView = new JScrollPane(tree);
+
+        // Add the scroll pane to a window
+        add(treeView);
+
+        revalidate();
+        repaint();
 
     }
 
@@ -52,6 +71,11 @@ public class TagsDisplay extends JPanel {
 
     public void updateTags(Tag tag) {
         this.tag = tag;
+        displayTags();
+    }
+
+    public void addTag(Tag tag) {
+        this.tag.addSubTag(tag);
         displayTags();
     }
 

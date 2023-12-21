@@ -24,8 +24,11 @@ public class RightPanel extends JPanel {
         //add(commentsDisplay, BorderLayout.SOUTH);
         add(papersDisplay, BorderLayout.NORTH);
 
+
+
+        //add some temp papers
         Paper paper = new Paper();
-        paper.setName("PAPER TITLE");
+        paper.setName("PAPER TITLE ");
 
         papersDisplay.addPaper(new PaperUI(paper));
         papersDisplay.addPaper(new PaperUI(paper));
