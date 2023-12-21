@@ -2,15 +2,19 @@
 
 package MainUI;
 
+import GroupContent.Comment;
 import GroupContent.Paper;
 
 import javax.swing.*;
 import java.awt.*;
+import java.util.ArrayList;
 
-public class RightPanel extends JPanel {
+public class RightPanel extends JPanel implements ButtonClickListener{
 
     //private CommentsDisplay commentsDisplay;
     private PapersDisplay papersDisplay;
+
+    private CommentsDisplay commentsDisplay;
 
     public RightPanel() {
 
@@ -18,10 +22,10 @@ public class RightPanel extends JPanel {
 
         setLayout(new BorderLayout());
 
-        //commentsDisplay = new CommentsDisplay();
+        commentsDisplay = new CommentsDisplay();
         papersDisplay = new PapersDisplay();
 
-        //add(commentsDisplay, BorderLayout.SOUTH);
+        add(commentsDisplay, BorderLayout.SOUTH);
         add(papersDisplay, BorderLayout.NORTH);
 
 
@@ -30,10 +34,18 @@ public class RightPanel extends JPanel {
         Paper paper = new Paper();
         paper.setName("PAPER TITLE ");
 
-        papersDisplay.addPaper(new PaperUI(paper));
-        papersDisplay.addPaper(new PaperUI(paper));
-        papersDisplay.addPaper(new PaperUI(paper));
+        papersDisplay.addPaper(new PaperUI(paper), this);
+
+        paper = new Paper();
+        paper.setName("PAPER TITLE 2");
+        papersDisplay.addPaper(new PaperUI(paper), this);
+        papersDisplay.addPaper(new PaperUI(paper), this);
         papersDisplay.drawUI();
+    }
+
+    @Override
+    public void onButtonClicked(Paper paper) {
+        commentsDisplay.displayComments(paper);
     }
 
 }

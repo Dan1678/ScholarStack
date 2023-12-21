@@ -17,10 +17,9 @@ public class PaperUI extends JPanel {
     private JCheckBox checkBox;
     private JButton addTagBtn;
     private JButton seeCommentsBtn;
-
     private GridBagConstraints gbc;
 
-    private CommentsDisplay commentsDisplay;
+    private ButtonClickListener listener;
 
 
     public PaperUI(Paper paper) {
@@ -34,14 +33,6 @@ public class PaperUI extends JPanel {
 
         //Temp exmaple
         paper.addComment(new Comment("This is a comment"));
-
-
-        addMouseListener(new MouseAdapter() {
-            @Override
-            public void mouseReleased(MouseEvent e) {
-                //setBackground(Color.black);
-            }
-        });
 
     }
 
@@ -75,7 +66,9 @@ public class PaperUI extends JPanel {
         seeCommentsBtn.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                showComments();
+                if (listener != null) {
+                    listener.onButtonClicked(paper);
+                }
             }
         });
         add(seeCommentsBtn, gbc);
@@ -87,32 +80,12 @@ public class PaperUI extends JPanel {
         add(blankspace, gbc);
 
 
-        gbc.gridx = 0;
-        gbc.gridy = 1;
-        gbc.gridwidth = GridBagConstraints.REMAINDER; // Span across the rest of the row
-        gbc.fill = GridBagConstraints.HORIZONTAL;
-        commentsDisplay = new CommentsDisplay(paper.getComments());
-        commentsDisplay.displayComments();
-        commentsDisplay.setVisible(false);
-        add(commentsDisplay, gbc);
-
     }
 
-    private void showComments() {
-
-        // Check if the display is already visible
-        if (commentsDisplay.isVisible()) {
-            commentsDisplay.setVisible(false);
-            setPreferredSize(new Dimension(0, 40));
-            return;
-        }
-
-        setPreferredSize(new Dimension(0, 150));
-        commentsDisplay.setVisible(true);
-        revalidate();
-        repaint();
-
+    public void setButtonClickListener(ButtonClickListener listener) {
+        this.listener = listener;
     }
+
 
 
 }

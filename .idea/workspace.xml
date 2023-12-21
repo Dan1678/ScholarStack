@@ -4,16 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="caf41903-31e9-4411-a647-9632c151de00" name="Changes" comment="Added comment display functionality">
+    <list default="true" id="caf41903-31e9-4411-a647-9632c151de00" name="Changes" comment="Refining">
+      <change afterPath="$PROJECT_DIR$/src/main/java/MainUI/ButtonClickListener.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/TagController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller/TagController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/GroupContent/GroupContent.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/MainUI/LeftPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MainUI/LeftPanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/MainUI/MainUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MainUI/MainUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/MainUI/CommentsDisplay.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MainUI/CommentsDisplay.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/MainUI/PaperUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MainUI/PaperUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/MainUI/Papers_list.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MainUI/Papers_list.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/MainUI/PapersDisplay.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MainUI/PapersDisplay.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/MainUI/RightPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MainUI/RightPanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/MainUI/TagsDisplay.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MainUI/TagsDisplay.java" afterDir="false" />
     </list>
     <list id="f4862b22-822d-41c3-ba14-ffe306fc865d" name="Changes by adelinavlasie" comment="" />
     <list id="efbba4e2-aabd-433a-998f-300dbcd02e3e" name="Changes by hc1321" comment="" />
@@ -69,6 +66,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -192,7 +190,7 @@
       <workItem from="1702742366243" duration="1827000" />
       <workItem from="1702891315648" duration="3690000" />
       <workItem from="1703068570533" duration="5054000" />
-      <workItem from="1703164200502" duration="2487000" />
+      <workItem from="1703164200502" duration="6042000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <option name="closed" value="true" />
@@ -242,7 +240,15 @@
       <option name="project" value="LOCAL" />
       <updated>1702894995292</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Refining">
+      <option name="closed" value="true" />
+      <created>1703166819935</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1703166819935</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -254,7 +260,8 @@
     <MESSAGE value="Fixed resizing and menu" />
     <MESSAGE value="New overall structure" />
     <MESSAGE value="Added comment display functionality" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added comment display functionality" />
+    <MESSAGE value="Refining" />
+    <option name="LAST_COMMIT_MESSAGE" value="Refining" />
   </component>
   <component name="XDebuggerManager">
     <pin-to-top-manager>

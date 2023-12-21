@@ -21,7 +21,10 @@ public class PapersDisplay extends JPanel{
 
     }
 
-    public void addPaper(PaperUI paper) {
+
+
+    public void addPaper(PaperUI paper, ButtonClickListener listener) {
+        paper.setButtonClickListener(listener);
         papers.add(paper);
     }
 
