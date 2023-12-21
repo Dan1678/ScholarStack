@@ -13,10 +13,16 @@ public class PapersPanel extends JPanel {
 
         private Papers_list papersList;
         private JTextArea displayArea;
+         private JPanel commentPanel;
 
-        public PapersPanel() {
 
-            setLayout(new BorderLayout());
+    public PapersPanel() {
+
+        commentPanel = new JPanel();
+        commentPanel.setLayout(new BorderLayout());
+        commentPanel.setBorder(BorderFactory.createTitledBorder("Comments"));
+
+        setLayout(new BorderLayout());
             papersList = new Papers_list();
             //Set up panel
             setVisible(true);
@@ -54,25 +60,27 @@ public class PapersPanel extends JPanel {
             });
             JButton addCommentButton = new JButton("Add Comment");
             addCommentButton.addActionListener(new ActionListener() {
-                @Override
-                public void actionPerformed(ActionEvent e) {
-                    String selectedReference = getSelectedReference();
-                    if (selectedReference != null) {
-                        String comment = JOptionPane.showInputDialog("Enter a comment for this reference:");
-                        if (comment != null && !comment.isEmpty()) {
-                            papersList.addComment(selectedReference, comment);
-                            displayPapers();
-                        }
-                    } else {
-                        JOptionPane.showMessageDialog(null, "Please select a reference to add a comment.");
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                String selectedReference = getSelectedReference();
+                if (selectedReference != null) {
+                    String comment = JOptionPane.showInputDialog("Enter a comment for this reference:");
+                    if (comment != null && !comment.isEmpty()) {
+                        // Add the comment to the comment panel
+                        addComment(selectedReference, comment);
                     }
+                } else {
+                    JOptionPane.showMessageDialog(null, "Please select a reference to add a comment.");
                 }
-            });
-            JPanel buttonPanel = new JPanel(new FlowLayout(FlowLayout.CENTER)); // FlowLayout for center alignment
+            }
+        });
+
+        JPanel buttonPanel = new JPanel(new FlowLayout(FlowLayout.CENTER)); // FlowLayout for center alignment
             buttonPanel.add(addReferenceButton);
             buttonPanel.add(generateBibliographyButton);
             buttonPanel.add(addCommentButton);
             add(buttonPanel, BorderLayout.SOUTH);
+            add(commentPanel, BorderLayout.EAST);
 
             displayPapers();
            // JPanel buttonPanel = new JPanel();
@@ -84,15 +92,46 @@ public class PapersPanel extends JPanel {
 
 
         }
+    private void addComment(String selectedReference, String comment) {
+        // Implement logic to add the comment to the comment panel
+        /*JLabel commentLabel = new JLabel(selectedReference + ": " + comment);
+        commentPanel.setLayout(new BoxLayout(commentPanel, BoxLayout.Y_AXIS));//organise comments one below the other
+        commentPanel.add(commentLabel);
+        commentPanel.revalidate();
+        commentPanel.repaint();*/
+        JLabel commentLabel = new JLabel("<html>" + selectedReference + ": " + comment + "</html>");
+        commentLabel.setPreferredSize(new Dimension(800, 50)); // Fixed size for each comment
 
-        public void displayPapers() {
+        // Set line wrap and HTML rendering for the label
+        commentLabel.setVerticalAlignment(SwingConstants.TOP);
+        commentLabel.setHorizontalAlignment(SwingConstants.LEFT);
+        commentLabel.setHorizontalTextPosition(SwingConstants.LEFT);
+        commentLabel.setVerticalTextPosition(SwingConstants.TOP);
+        commentLabel.setOpaque(true);
+
+        // Create a JScrollPane for commentPanel
+        JScrollPane commentScrollPane = new JScrollPane(commentLabel);
+        commentScrollPane.setVerticalScrollBarPolicy(JScrollPane.VERTICAL_SCROLLBAR_ALWAYS);
+
+        // Set preferred size for the scroll pane
+        commentScrollPane.setPreferredSize(new Dimension(200, 300)); // Adjust size as needed
+
+        // Add the scroll pane to your UI layout instead of commentPanel directly
+        add(commentScrollPane, BorderLayout.SOUTH);
+
+        // Revalidate and repaint the scrollPane
+        commentScrollPane.revalidate();
+        commentScrollPane.repaint();
+
+    }
+
+
+    public void displayPapers() {
             displayArea.setText("");//clear before updating
             ArrayList<String> references = papersList.getReferenceList();
             StringBuilder stringBuilder = new StringBuilder();
 
-            /*for (String reference : references) {
-                stringBuilder.append(reference).append("\n");
-            }*/
+
             for (int i = 0; i < references.size(); i++) {
                 stringBuilder.append(i + 1).append(". ").append(references.get(i)).append("\n");
             }
@@ -109,9 +148,7 @@ public class PapersPanel extends JPanel {
         ArrayList<String> references = papersList.getReferenceList();
         StringBuilder bibliography = new StringBuilder("Bibliography:\n");
 
-        /*for (String reference : references) {
-            bibliography.append("- ").append(reference).append("\n");
-        }*/
+
         for (int i = 0; i < references.size(); i++) {
             bibliography.append(i + 1).append(". ").append(references.get(i)).append("\n");
         }
@@ -126,11 +163,11 @@ public class PapersPanel extends JPanel {
 
     private String getSelectedReference() {
         // Fetch the selected reference from your UI element (e.g., displayArea)
-        // For example, if displayArea is a JTextArea:
+
         String selectedText = displayArea.getSelectedText();
         if (selectedText != null && !selectedText.isEmpty()) {
-            // Extract the reference from the selected text (customize based on your format)
-            // For now, assuming each reference is on a new line
+            // Extract the reference from the selected text
+
             return selectedText.trim(); // Trim any extra spaces
         }
         return null;

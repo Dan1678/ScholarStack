@@ -4,7 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="caf41903-31e9-4411-a647-9632c151de00" name="Changes" comment="Fixing databases" />
+    <list default="true" id="caf41903-31e9-4411-a647-9632c151de00" name="Changes" comment="Fixing databases">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/0c15b44d-fd89-4c40-b817-4eb6faf5418a.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/0c15b44d-fd89-4c40-b817-4eb6faf5418a/storage_v2/_src_/database/d6rkhhv2aujh36.HFmGjw.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/0c15b44d-fd89-4c40-b817-4eb6faf5418a/storage_v2/_src_/database/d6rkhhv2aujh36.HFmGjw/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/0c15b44d-fd89-4c40-b817-4eb6faf5418a/storage_v2/_src_/database/d6rkhhv2aujh36.HFmGjw/schema/pg_catalog.0S1ZNQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/0c15b44d-fd89-4c40-b817-4eb6faf5418a/storage_v2/_src_/database/d6rkhhv2aujh36.HFmGjw/schema/public.abK9xQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/MainUI/PapersPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MainUI/PapersPanel.java" afterDir="false" />
+    </list>
     <list id="f4862b22-822d-41c3-ba14-ffe306fc865d" name="Changes by adelinavlasie" comment="" />
     <list id="efbba4e2-aabd-433a-998f-300dbcd02e3e" name="Changes by hc1321" comment="" />
     <list id="ee22f58c-8bfc-471d-9402-c1fb1980b07d" name="Changes by johnn" comment="" />
@@ -41,6 +50,12 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PUSH_TAGS">
+      <GitPushTagMode>
+        <option name="argument" value="--tags" />
+        <option name="title" value="All" />
+      </GitPushTagMode>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectColorInfo">{
@@ -54,6 +69,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Gradle.ScholarStack [run].executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
@@ -223,5 +239,12 @@
     <MESSAGE value="Update so usernames cannot be repeated" />
     <MESSAGE value="Fixing databases" />
     <option name="LAST_COMMIT_MESSAGE" value="Fixing databases" />
+  </component>
+  <component name="XDebuggerManager">
+    <pin-to-top-manager>
+      <pinned-members>
+        <PinnedItemInfo parentTag="GroupContent.Tag" memberName="subTags" />
+      </pinned-members>
+    </pin-to-top-manager>
   </component>
 </project>
