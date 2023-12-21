@@ -13,6 +13,33 @@ public class Main {
             JOptionPane.showMessageDialog(null, e.getMessage());
         }
 
+
+
+
+
+     /*   String tableName = "papers";
+
+        int rowDeleted = 3;
+        boolean wasDeleted = DatabaseManager.deleteRecord(tableName, rowDeleted);
+
+        if(wasDeleted){
+            System.out.println("Record for ID:" + rowDeleted+ "was deleted");
+        }
+        else{
+            System.out.println("Record for ID:"+rowDeleted+"was not deleted");
+        }
+
+        int idToRead = 1;
+        String selOut = "username";
+        String outputCol = DatabaseManager.readRecord(tableName, selOut, idToRead);
+
+        System.out.println("RequiredOutput: "+outputCol);
+
+*/
+
+
+
+
 //        String tableName = "papers";
 //
 //        // Create the specified table
