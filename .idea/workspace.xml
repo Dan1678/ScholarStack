@@ -4,13 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="caf41903-31e9-4411-a647-9632c151de00" name="Changes" comment="Refining">
-      <change afterPath="$PROJECT_DIR$/src/main/java/MainUI/ButtonClickListener.java" afterDir="false" />
+    <list default="true" id="caf41903-31e9-4411-a647-9632c151de00" name="Changes" comment="Changed comments display">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/MainUI/CommentsDisplay.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MainUI/CommentsDisplay.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/MainUI/PaperUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MainUI/PaperUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/MainUI/PapersDisplay.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MainUI/PapersDisplay.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/MainUI/RightPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MainUI/RightPanel.java" afterDir="false" />
     </list>
     <list id="f4862b22-822d-41c3-ba14-ffe306fc865d" name="Changes by adelinavlasie" comment="" />
     <list id="efbba4e2-aabd-433a-998f-300dbcd02e3e" name="Changes by hc1321" comment="" />
@@ -69,6 +64,9 @@
         <option value="Interface" />
       </list>
     </option>
+  </component>
+  <component name="Git.Merge.Settings">
+    <option name="BRANCH" value="master" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
@@ -190,7 +188,7 @@
       <workItem from="1702742366243" duration="1827000" />
       <workItem from="1702891315648" duration="3690000" />
       <workItem from="1703068570533" duration="5054000" />
-      <workItem from="1703164200502" duration="6042000" />
+      <workItem from="1703164200502" duration="7069000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <option name="closed" value="true" />
@@ -248,7 +246,15 @@
       <option name="project" value="LOCAL" />
       <updated>1703166819935</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Changed comments display">
+      <option name="closed" value="true" />
+      <created>1703170314367</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1703170314367</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -261,7 +267,8 @@
     <MESSAGE value="New overall structure" />
     <MESSAGE value="Added comment display functionality" />
     <MESSAGE value="Refining" />
-    <option name="LAST_COMMIT_MESSAGE" value="Refining" />
+    <MESSAGE value="Changed comments display" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changed comments display" />
   </component>
   <component name="XDebuggerManager">
     <pin-to-top-manager>
