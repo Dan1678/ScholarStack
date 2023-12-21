@@ -4,8 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="caf41903-31e9-4411-a647-9632c151de00" name="Changes" comment="Changed comments display">
+    <list default="true" id="caf41903-31e9-4411-a647-9632c151de00" name="Changes" comment="Fixing databases">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_21_12_2023__12_39__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_21_12_2023__12_39__Changes_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/CreateLoginForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CreateLoginForm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/DatabaseManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DatabaseManager.java" afterDir="false" />
     </list>
     <list id="f4862b22-822d-41c3-ba14-ffe306fc865d" name="Changes by adelinavlasie" comment="" />
     <list id="efbba4e2-aabd-433a-998f-300dbcd02e3e" name="Changes by hc1321" comment="" />
@@ -28,29 +32,7 @@
         </task>
         <projects_view>
           <tree_state>
-            <expand>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="ScholarStack" type="f1a62948:ProjectNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="ScholarStack" type="f1a62948:ProjectNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="ScholarStack" type="f1a62948:ProjectNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-                <item name="application" type="c8890929:TasksNode$1" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="ScholarStack" type="f1a62948:ProjectNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-                <item name="build" type="c8890929:TasksNode$1" />
-              </path>
-            </expand>
+            <expand />
             <select />
           </tree_state>
         </projects_view>
@@ -61,19 +43,10 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
-        <option value="Interface" />
       </list>
     </option>
   </component>
-  <component name="Git.Merge.Settings">
-    <option name="BRANCH" value="origin/master" />
-  </component>
   <component name="Git.Settings">
-    <option name="RECENT_BRANCH_BY_REPOSITORY">
-      <map>
-        <entry key="$PROJECT_DIR$" value="master" />
-      </map>
-    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectColorInfo">{
@@ -87,29 +60,28 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
-    &quot;Gradle.ScholarStack [build].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.ScholarStack [run].executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;John&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;database.query.execution&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;postgresql&quot;
+    ]
   }
 }</component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\johnn\OneDrive - Imperial College London\Year 3\Software Eng\Project\src\main\java\MainUI" />
-    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="" />
     </key>
@@ -163,17 +135,8 @@
       <list>
         <item itemvalue="Gradle.ScholarStack [run]" />
         <item itemvalue="Gradle.ScholarStack [build]" />
-        <item itemvalue="Gradle.ScholarStack [run]" />
-        <item itemvalue="Gradle.ScholarStack [build]" />
       </list>
     </recent_temporary>
-  </component>
-  <component name="SharedIndexes">
-    <attachedChunks>
-      <set>
-        <option value="jdk-16.0.2-corretto-16.0.2-3183f394aec4-fe0432aa" />
-      </set>
-    </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -184,11 +147,8 @@
       <option name="presentableId" value="Default" />
       <updated>1702632996779</updated>
       <workItem from="1702632997849" duration="2213000" />
-      <workItem from="1702656517523" duration="509000" />
-      <workItem from="1702742366243" duration="1827000" />
-      <workItem from="1702891315648" duration="3690000" />
-      <workItem from="1703068570533" duration="5054000" />
-      <workItem from="1703164200502" duration="7069000" />
+      <workItem from="1702823715679" duration="1323000" />
+      <workItem from="1702825515919" duration="16907000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <option name="closed" value="true" />
@@ -206,53 +166,53 @@
       <option name="project" value="LOCAL" />
       <updated>1702652836773</updated>
     </task>
-    <task id="LOCAL-00003" summary="Added Database connector with JDK conflicts resolved">
+    <task id="LOCAL-00003" summary="Method to remove rows from database">
       <option name="closed" value="true" />
-      <created>1702652941062</created>
+      <created>1702829443621</created>
       <option name="number" value="00003" />
       <option name="presentableId" value="LOCAL-00003" />
       <option name="project" value="LOCAL" />
-      <updated>1702652941062</updated>
+      <updated>1702829443621</updated>
     </task>
-    <task id="LOCAL-00004" summary="Fixed resizing and menu">
+    <task id="LOCAL-00004" summary="Reading DataBase Columns">
       <option name="closed" value="true" />
-      <created>1702657841689</created>
+      <created>1702833502490</created>
       <option name="number" value="00004" />
       <option name="presentableId" value="LOCAL-00004" />
       <option name="project" value="LOCAL" />
-      <updated>1702657841689</updated>
+      <updated>1702833502490</updated>
     </task>
-    <task id="LOCAL-00005" summary="New overall structure">
+    <task id="LOCAL-00005" summary="Saving username and password to database">
       <option name="closed" value="true" />
-      <created>1702853009762</created>
+      <created>1703079721892</created>
       <option name="number" value="00005" />
       <option name="presentableId" value="LOCAL-00005" />
       <option name="project" value="LOCAL" />
-      <updated>1702853009762</updated>
+      <updated>1703079721892</updated>
     </task>
-    <task id="LOCAL-00006" summary="Added comment display functionality">
+    <task id="LOCAL-00006" summary="Saving username and password to database">
       <option name="closed" value="true" />
-      <created>1702894995292</created>
+      <created>1703079863977</created>
       <option name="number" value="00006" />
       <option name="presentableId" value="LOCAL-00006" />
       <option name="project" value="LOCAL" />
-      <updated>1702894995292</updated>
+      <updated>1703079863977</updated>
     </task>
-    <task id="LOCAL-00007" summary="Refining">
+    <task id="LOCAL-00007" summary="Update so usernames cannot be repeated">
       <option name="closed" value="true" />
-      <created>1703166819935</created>
+      <created>1703081312566</created>
       <option name="number" value="00007" />
       <option name="presentableId" value="LOCAL-00007" />
       <option name="project" value="LOCAL" />
-      <updated>1703166819935</updated>
+      <updated>1703081312566</updated>
     </task>
-    <task id="LOCAL-00008" summary="Changed comments display">
+    <task id="LOCAL-00008" summary="Fixing databases">
       <option name="closed" value="true" />
-      <created>1703170314367</created>
+      <created>1703158858574</created>
       <option name="number" value="00008" />
       <option name="presentableId" value="LOCAL-00008" />
       <option name="project" value="LOCAL" />
-      <updated>1703170314367</updated>
+      <updated>1703158858574</updated>
     </task>
     <option name="localTasksCounter" value="9" />
     <servers />
@@ -263,18 +223,11 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial commit" />
     <MESSAGE value="Added Database connector with JDK conflicts resolved" />
-    <MESSAGE value="Fixed resizing and menu" />
-    <MESSAGE value="New overall structure" />
-    <MESSAGE value="Added comment display functionality" />
-    <MESSAGE value="Refining" />
-    <MESSAGE value="Changed comments display" />
-    <option name="LAST_COMMIT_MESSAGE" value="Changed comments display" />
-  </component>
-  <component name="XDebuggerManager">
-    <pin-to-top-manager>
-      <pinned-members>
-        <PinnedItemInfo parentTag="GroupContent.Tag" memberName="subTags" />
-      </pinned-members>
-    </pin-to-top-manager>
+    <MESSAGE value="Method to remove rows from database" />
+    <MESSAGE value="Reading DataBase Columns" />
+    <MESSAGE value="Saving username and password to database" />
+    <MESSAGE value="Update so usernames cannot be repeated" />
+    <MESSAGE value="Fixing databases" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixing databases" />
   </component>
 </project>

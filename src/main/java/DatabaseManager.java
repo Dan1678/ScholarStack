@@ -117,15 +117,35 @@ public class DatabaseManager {
         } catch (SQLException e) {
             e.printStackTrace();
         }
-        return false;
+        return false;     //if username does not exist
+    }
+
+    public static boolean checkPassword(String userName, String givenPassword){
+        try (Connection conn = DatabaseConnector.connectToDatabase()) {
+            if(conn != null){
+                try (Statement s = conn.createStatement()) {
+                    String query = "SELECT password FROM users WHERE username ='" + userName + "'";
+                    try (ResultSet rset = s.executeQuery(query)){
+                        if (rset.next()) {
+                            String storedPassword = rset.getString("password");
+                            return storedPassword.equals(givenPassword);
+                        }
+                    }
+                }
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return false;      //if user not found or passwords dont match
     }
 
 
-        private static void executeQuery (Connection conn, String query){
+
+    private static void executeQuery (Connection conn, String query){
             try (PreparedStatement statement = conn.prepareStatement(query)) {
                 statement.executeUpdate();
             } catch (SQLException e) {
                 e.printStackTrace();
             }
-        }
     }
+}

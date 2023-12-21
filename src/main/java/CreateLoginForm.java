@@ -11,7 +11,7 @@ import MainUI.*;
 public class CreateLoginForm extends JFrame implements ActionListener
 {
     //initialize button, panel, label, and text field  
-    JButton b1, skiplogin;
+    JButton b1, skiplogin, createAcc;
     JPanel newPanel, newPanel2, newPanel3;
     JPanel backPanel, loginPanel, newPanel22, errorPanel;
     JLabel userLabel, passLabel, passReq, errorLabel;
@@ -23,18 +23,17 @@ public class CreateLoginForm extends JFrame implements ActionListener
     //calling constructor  
     CreateLoginForm()
     {
-        JPanel backPanel = new JPanel(new GridLayout(5,1));
+        backPanel = new JPanel(new GridLayout(5,1));
         backPanel.setSize(1000,1000);
 
         loginPanel = new JPanel();
 
+
         loginLabel = new JLabel();
-        loginLabel.setText("Login");
+        loginLabel.setText("Login or Create Account");
 
         loginPanel.add(loginLabel);
         backPanel.add(loginPanel);
-
-
         add(backPanel);
 
 
@@ -53,9 +52,11 @@ public class CreateLoginForm extends JFrame implements ActionListener
         textField2 = new JPasswordField(15);    //set length for the password  
 
         //create submit button  
-        b1 = new JButton("SUBMIT"); //set label to button
+        b1 = new JButton("Login"); //set label to button
 
         skiplogin = new JButton("Skip login");
+
+        createAcc = new JButton("Create Account");
 
         JLabel passReq = new JLabel("Password must contain at least one number and one symbol");
 
@@ -72,6 +73,7 @@ public class CreateLoginForm extends JFrame implements ActionListener
                   //set button to panel
         newPanel22.add(passReq);
         newPanel3.add(b1);
+        newPanel3.add(createAcc);
         newPanel3.add(skiplogin);
         backPanel.add(newPanel);
         backPanel.add(newPanel2);
@@ -85,9 +87,10 @@ public class CreateLoginForm extends JFrame implements ActionListener
 
 
         //perform action on button click   
-        b1.addActionListener(this);     //add action listener to button
+        createAcc.addActionListener(this);     //add action listener to button
 
         skiplogin.addActionListener(skiploginAL);
+        b1.addActionListener(currAcc);
         setTitle("LOGIN FORM");         //set title to the login form  
     }
 
@@ -109,7 +112,6 @@ public class CreateLoginForm extends JFrame implements ActionListener
     {
         String userName = textField1.getText();        //get user entered username from the textField1
         String passWord = textField2.getText();        //get user entered pasword from the textField2
-
 
         if(isValidUsername(userName) && isValidPassword(passWord)){
             dispose();
@@ -142,6 +144,23 @@ public class CreateLoginForm extends JFrame implements ActionListener
 
 
     }
+
+    ActionListener currAcc = new ActionListener() {
+        @Override
+        public void actionPerformed(ActionEvent e) {
+            String userName = textField1.getText();        //get user entered username from the textField1
+            String passWord = textField2.getText();
+
+            if(DatabaseManager.isUserTaken(userName) && DatabaseManager.checkPassword(userName, passWord)){
+                dispose();
+                MainUI page = new MainUI();
+
+            }
+
+
+        }
+    };
+
     ActionListener skiploginAL = new ActionListener(){
         public void actionPerformed(ActionEvent e){
             dispose();
@@ -154,6 +173,9 @@ public class CreateLoginForm extends JFrame implements ActionListener
 //            page.getContentPane().add(wel_label);
         }
     };
+
+
+
     public String getUserName(){
         return this.userName;
         }

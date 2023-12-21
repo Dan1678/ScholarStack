@@ -1,9 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="dataSourceStorageLocal" created-in="IU-233.11799.300">
-    <data-source name="d6rkhhv2aujh36@ec2-54-246-1-94.eu-west-1.compute.amazonaws.com" uuid="0c15b44d-fd89-4c40-b817-4eb6faf5418a">
-      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" dbms="POSTGRES" exact-version="0" />
-      <schema-mapping />
+  <component name="dataSourceStorageLocal" created-in="IU-232.9921.47">
+    <data-source name="d6rkhhv2aujh36@ec2-54-246-1-94.eu-west-1.compute.amazonaws.com" uuid="3a357e81-7d57-4fa3-930b-5e8480b7aa2d">
+      <database-info product="PostgreSQL" version="15.5 (Ubuntu 15.5-1.pgdg20.04+1)" jdbc-version="4.2" driver-name="PostgreSQL JDBC Driver" driver-version="42.6.0" dbms="POSTGRES" exact-version="15.5" exact-driver-version="42.6">
+        <identifier-quote-string>&quot;</identifier-quote-string>
+      </database-info>
+      <case-sensitivity plain-identifiers="lower" quoted-identifiers="exact" />
+      <secret-storage>master_key</secret-storage>
+      <user-name>mixbutdugvnycu</user-name>
+      <schema-mapping>
+        <introspection-scope>
+          <node kind="database" qname="@">
+            <node kind="schema" qname="@" />
+          </node>
+        </introspection-scope>
+      </schema-mapping>
     </data-source>
   </component>
 </project>
