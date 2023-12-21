@@ -17,14 +17,14 @@ public class Main {
 
 
 
-      /*  String tableName = "papers";
+      /*  String tableName = "users";
 
         int rowDeleted = 6;
         boolean wasDeleted = DatabaseManager.deleteRecord(tableName, rowDeleted);
 
 
 
-        if(wasDeleted){
+       /* if(wasDeleted){
             System.out.println("Record for ID:" + rowDeleted+ "was deleted");
         }
         else{
@@ -37,37 +37,37 @@ public class Main {
 
         System.out.println("RequiredOutput: "+outputCol);
 
-*/
+        boolean tableCreationResult = DatabaseManager.createTable(tableName);
+        boolean insertionResult = DatabaseManager.insertRecord(tableName, "username, password", "'john_does', 'password1234'");
 
+            */
 
+        String tableName = "tags";
 
+        // Create the specified table
+        boolean tableCreationResult = DatabaseManager.createTable(tableName);
 
-//        String tableName = "papers";
-//
-//        // Create the specified table
-//        boolean tableCreationResult = DatabaseManager.createTable(tableName);
-//
-//        if (tableCreationResult) {
-//            System.out.println("Table '" + tableName + "' created successfully!");
-//        } else {
-//            System.out.println("Failed to create table '" + tableName + "'.");
-//        }
+        if (tableCreationResult) {
+            System.out.println("Table '" + tableName + "' created successfully!");
+        } else {
+            System.out.println("Failed to create table '" + tableName + "'.");
+        }
 
-//        // Create the specified table
-//        if (tableCreationResult) {
-//            System.out.println("Table '" + tableName + "' created successfully!");
-//
-//            // Insert a record into the "users" table
-//            boolean insertionResult = DatabaseManager.insertRecord(tableName, "username, password", "'john_doe', 'password123'");
-//
-//            if (insertionResult) {
-//                System.out.println("Record inserted successfully!");
-//            } else {
-//                System.out.println("Failed to insert record.");
-//            }
-//        } else {
-//            System.out.println("Failed to create table '" + tableName + "'.");
-//        }
+        // Create the specified table
+        if (tableCreationResult) {
+            System.out.println("Table '" + tableName + "' created successfully!");
+
+            // Insert a record into the "users" table
+            boolean insertionResult = DatabaseManager.insertRecord(tableName, "username, password", "'john_doe', 'password123'");
+
+            if (insertionResult) {
+                System.out.println("Record inserted successfully!");
+            } else {
+                System.out.println("Failed to insert record.");
+            }
+        } else {
+            System.out.println("Failed to create table '" + tableName + "'.");
+        }
 
     }
 }

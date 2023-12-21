@@ -115,12 +115,15 @@ public class CreateLoginForm extends JFrame implements ActionListener
             dispose();
 
             tableName = "users";
+            boolean tableCreationResult = DatabaseManager.createTable(tableName);
+            if (tableCreationResult) {
 
-            boolean addUser = DatabaseManager.insertRecord(tableName, "username, password", String.format("'%s', '%s'", userName,passWord));
-            if (addUser) {
-                System.out.println("Record inserted successfully!");
-            } else {
-                System.out.println("Failed to insert record.");
+                boolean addUser = DatabaseManager.insertRecord(tableName, "username, password", String.format("'%s', '%s'", userName, passWord));
+                if (addUser) {
+                    System.out.println("Record inserted successfully!");
+                } else {
+                    System.out.println("Failed to insert record.");
+                }
             }
 
             MainUI page = new MainUI();
