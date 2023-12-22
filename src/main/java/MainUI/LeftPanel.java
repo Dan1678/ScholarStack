@@ -13,10 +13,15 @@ import javax.swing.tree.TreePath;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import javax.swing.event.TreeSelectionEvent;
+import javax.swing.event.TreeSelectionListener;
+import javax.swing.tree.DefaultMutableTreeNode;
+
 
 public class LeftPanel extends JPanel {
     private JButton addTagBtn;
     private TagsDisplay tagsDisplay;
+    private Tag selectedTag;
 
 
     public LeftPanel() {
@@ -36,10 +41,24 @@ public class LeftPanel extends JPanel {
             @Override
             public void actionPerformed(ActionEvent e) {
                 String tagText = JOptionPane.showInputDialog("Enter the tag name");
+                if (tagText != null) {
+                    if (selectedTag != null) {
+                        selectedTag.addSubTag(new Tag(tagText));
+                    } else {
+                        tagsDisplay.addTag(new Tag(tagText));
+                    }
+                }
+                else {
+                    //handling when the dialog is canceled (close window button as well)
+                    System.out.println("Tag addition canceled.");
+                }
+            }
+            /*public void actionPerformed(ActionEvent e) {
+                String tagText = JOptionPane.showInputDialog("Enter the tag name");
                 //todo - tag adding functionality
                 //should add tag below selected tag, if no tag is selected add a new one to the list
                 tagsDisplay.addTag(new Tag(tagText));
-            }
+            }*/
         });
 
 

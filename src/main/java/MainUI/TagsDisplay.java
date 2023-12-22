@@ -5,12 +5,15 @@ import GroupContent.Tag;
 import javax.swing.*;
 import javax.swing.tree.DefaultMutableTreeNode;
 import java.awt.*;
+import javax.swing.event.TreeSelectionEvent;
+import javax.swing.event.TreeSelectionListener;
 
 public class TagsDisplay extends JPanel {
 
     private Tag tag;
     private JTree tree;
     private JScrollPane treeView;
+    private LeftPanel parentPanel;
 
     public TagsDisplay() {
         setPreferredSize(new Dimension(250, 0)); //panel has a set width
@@ -29,6 +32,9 @@ public class TagsDisplay extends JPanel {
         displayTags();
     }
 
+    public void setParentPanel(LeftPanel parentPanel) {
+        this.parentPanel = parentPanel;
+    }
     private void displayTags() {
 
 
