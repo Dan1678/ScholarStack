@@ -4,9 +4,11 @@ import javax.swing.*;
 import java.awt.*;
 import java.util.ArrayList;
 
-public class PapersDisplay extends JPanel{
+import static java.awt.AWTEventMulticaster.add;
 
-    private ArrayList<PaperUI> papers;
+/*public class PapersDisplay extends JPanel{
+
+   private ArrayList<PaperUI> papers;
 
     public PapersDisplay() {
         //set up panel
@@ -34,3 +36,37 @@ public class PapersDisplay extends JPanel{
         }
     }
 }
+*/
+import javax.swing.*;
+import java.awt.*;
+import java.util.ArrayList;
+
+public class PapersDisplay extends JScrollPane {
+
+    private JPanel papersPanel; // Panel to hold PaperUI components
+
+
+    public PapersDisplay() {
+        papersPanel = new JPanel();
+        papersPanel.setLayout(new BoxLayout(papersPanel, BoxLayout.Y_AXIS));
+
+        setViewportView(papersPanel);
+        setVerticalScrollBarPolicy(JScrollPane.VERTICAL_SCROLLBAR_ALWAYS);
+        setHorizontalScrollBarPolicy(JScrollPane.HORIZONTAL_SCROLLBAR_ALWAYS);
+
+        // Additional settings for the JScrollPane
+        setPreferredSize(new Dimension(400, 400)); // Set your preferred size
+
+        // Ensure the viewport follows the panel's size changes
+        getViewport().setPreferredSize(papersPanel.getPreferredSize());
+    }
+
+    public void addPaper(PaperUI paper, ButtonClickListener listener) {
+        paper.setButtonClickListener(listener);
+        papersPanel.add(paper);
+        revalidate(); // Revalidate the layout after adding papers
+        repaint(); // Repaint to reflect changes
+    }
+}
+
+

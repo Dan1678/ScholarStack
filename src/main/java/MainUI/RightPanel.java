@@ -2,12 +2,10 @@
 
 package MainUI;
 
-import GroupContent.Comment;
 import GroupContent.Paper;
 
 import javax.swing.*;
 import java.awt.*;
-import java.util.ArrayList;
 
 public class RightPanel extends JPanel implements ButtonClickListener{
 
@@ -39,12 +37,22 @@ public class RightPanel extends JPanel implements ButtonClickListener{
         paper = new Paper();
         paper.setName("PAPER TITLE 2");
         papersDisplay.addPaper(new PaperUI(paper), this);
+
         papersDisplay.addPaper(new PaperUI(paper), this);
-        papersDisplay.drawUI();
+        papersDisplay.addPaper(new PaperUI(paper), this);
+        papersDisplay.addPaper(new PaperUI(paper), this);
+        papersDisplay.addPaper(new PaperUI(paper), this);
+        papersDisplay.addPaper(new PaperUI(paper), this);
+        papersDisplay.addPaper(new PaperUI(paper), this);
+        papersDisplay.addPaper(new PaperUI(paper), this);
+        papersDisplay.addPaper(new PaperUI(paper), this);
+        papersDisplay.addPaper(new PaperUI(paper), this);
+        papersDisplay.addPaper(new PaperUI(paper), this);
+        //papersDisplay.drawUI();
     }
 
     @Override
-    public void onButtonClicked(Paper paper) {
+         public void onButtonClicked(Paper paper) {
         commentsDisplay.displayComments(paper);
     }
 
