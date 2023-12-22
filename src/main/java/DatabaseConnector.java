@@ -25,4 +25,7 @@ public class DatabaseConnector {
             return null; // Return null if the connection fails
         }
     }
+
+    public static class LoginManager {
+    }
 }

@@ -17,10 +17,12 @@
       <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_17_12_2023_12_26__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_17_12_2023_12_26__Changes_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_21_12_2023__12_39__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_21_12_2023__12_39__Changes_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="caf41903-31e9-4411-a647-9632c151de00" name="Changes" comment="Create Account or Login To Old Account option">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/GroupContent/Tag.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/GroupContent/Tag.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/MainUI/LeftPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MainUI/LeftPanel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/MainUI/TagsDisplay.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MainUI/TagsDisplay.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/CreateLoginForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CreateLoginForm.java" afterDir="false" />
     </list>
     <list id="f4862b22-822d-41c3-ba14-ffe306fc865d" name="Changes by adelinavlasie" comment="" />
     <list id="efbba4e2-aabd-433a-998f-300dbcd02e3e" name="Changes by hc1321" comment="" />
@@ -59,7 +61,6 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-    <option name="ROOT_SYNC" value="SYNC" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 6

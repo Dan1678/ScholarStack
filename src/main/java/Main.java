@@ -14,7 +14,18 @@ public class Main {
         }
 
 
+    /*    String testPass = "123456";
+        String testPass2 = "test5%%";
+        String hashed = PasswordHashing.hashPassword(testPass);
+        String hashed1 = PasswordHashing.hashPassword(testPass);
+        String hashed2 = PasswordHashing.hashPassword(testPass2);
 
+        System.out.println("input password: "+testPass);
+        System.out.println("Hashed password: "+ hashed);
+        System.out.println("Hashed password: "+ hashed1);
+        System.out.println("input password2: "+testPass2);
+        System.out.println("Hashed password: "+ hashed2);
+     */
 
 
       /*  String tableName = "users";

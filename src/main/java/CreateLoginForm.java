@@ -1,16 +1,14 @@
-//import required classes and packages  
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
 import java.lang.Exception;
 import MainUI.*;
 
-//create CreateLoginForm class to create login form  
-//class extends JFrame to create a window where our component add  
-//class implements ActionListener to perform an action on button click  
+
 public class CreateLoginForm extends JFrame implements ActionListener
 {
-    //initialize button, panel, label, and text field  
+
     JButton b1, skiplogin, createAcc;
     JPanel newPanel, newPanel2, newPanel3;
     JPanel backPanel, loginPanel, newPanel22, errorPanel;
@@ -20,7 +18,7 @@ public class CreateLoginForm extends JFrame implements ActionListener
     String userName;
     String tableName;
 
-    //calling constructor  
+
     CreateLoginForm()
     {
         backPanel = new JPanel(new GridLayout(5,1));
@@ -37,22 +35,19 @@ public class CreateLoginForm extends JFrame implements ActionListener
         add(backPanel);
 
 
-        //create label for username   
         userLabel = new JLabel();
-        userLabel.setText("Username");      //set label value for textField1  
+        userLabel.setText("Username");
 
-        //create text field to get username from the user  
-        textField1 = new JTextField(15);    //set length of the text  
 
-        //create label for password  
+        textField1 = new JTextField(15);
+
+
         passLabel = new JLabel();
-        passLabel.setText("Password");      //set label value for textField2  
+        passLabel.setText("Password");
 
-        //create text field to get password from the user  
-        textField2 = new JPasswordField(15);    //set length for the password  
+        textField2 = new JPasswordField(15);
 
-        //create submit button  
-        b1 = new JButton("Login"); //set label to button
+        b1 = new JButton("Login");
 
         skiplogin = new JButton("Skip login");
 
@@ -60,17 +55,16 @@ public class CreateLoginForm extends JFrame implements ActionListener
 
         JLabel passReq = new JLabel("Password must contain at least one number and one symbol");
 
-        //create panel to put form elements  
+
         newPanel = new JPanel(new FlowLayout(FlowLayout.CENTER));
         newPanel2 = new JPanel(new FlowLayout(FlowLayout.CENTER));
         newPanel22 = new JPanel();
         newPanel.setSize(200,200);
         newPanel3 = new JPanel();
-        newPanel.add(userLabel);    //set username label to panel
-        newPanel.add(textField1);   //set text field to panel
-        newPanel2.add(passLabel);    //set password label to panel
-        newPanel2.add(textField2);   //set text field to panel
-                  //set button to panel
+        newPanel.add(userLabel);
+        newPanel.add(textField1);
+        newPanel2.add(passLabel);
+        newPanel2.add(textField2);
         newPanel22.add(passReq);
         newPanel3.add(b1);
         newPanel3.add(createAcc);
@@ -81,23 +75,19 @@ public class CreateLoginForm extends JFrame implements ActionListener
         backPanel.add(newPanel3);
        // backPanel.add(newPanel);
 
-
-        //set border to panel   
         add(backPanel, BorderLayout.CENTER);
 
-
-        //perform action on button click   
-        createAcc.addActionListener(this);     //add action listener to button
+        createAcc.addActionListener(this);
 
         skiplogin.addActionListener(skiploginAL);
         b1.addActionListener(currAcc);
-        setTitle("LOGIN FORM");         //set title to the login form  
+        setTitle("LOGIN FORM");
     }
 
     private boolean isValidUsername(String user){
         boolean isValidFormat = user.matches("^[A-Za-z ]+$");
 
-        boolean isTaken = DatabaseManager.isUserTaken(user);
+        boolean isTaken = LoginManager.isUserTaken(user);
 
         return isValidFormat && !isTaken;   //username contains just letters
     }
@@ -107,7 +97,6 @@ public class CreateLoginForm extends JFrame implements ActionListener
     }
 
 
-    //define abstract method actionPerformed() which will be called on button click   
     public void actionPerformed(ActionEvent ae)     //pass action listener as a parameter  
     {
         String userName = textField1.getText();        //get user entered username from the textField1
@@ -120,7 +109,7 @@ public class CreateLoginForm extends JFrame implements ActionListener
             boolean tableCreationResult = DatabaseManager.createTable(tableName);
             if (tableCreationResult) {
 
-                boolean addUser = DatabaseManager.insertRecord(tableName, "username, password", String.format("'%s', '%s'", userName, passWord));
+                boolean addUser = DatabaseManager.insertRecord(tableName, "username, password", String.format("'%s', '%s'", userName, PasswordHashing.hashPassword(passWord)));
                 if (addUser) {
                     System.out.println("Record inserted successfully!");
                 } else {
@@ -151,13 +140,10 @@ public class CreateLoginForm extends JFrame implements ActionListener
             String userName = textField1.getText();        //get user entered username from the textField1
             String passWord = textField2.getText();
 
-            if(DatabaseManager.isUserTaken(userName) && DatabaseManager.checkPassword(userName, passWord)){
+            if(LoginManager.isUserTaken(userName) && LoginManager.checkPassword(userName, passWord)){
                 dispose();
                 MainUI page = new MainUI();
-
             }
-
-
         }
     };
 
