@@ -23,7 +23,7 @@ public class RightPanel extends JPanel implements ButtonClickListener{
         commentsDisplay = new CommentsDisplay();
         papersDisplay = new PapersDisplay();
 
-        add(commentsDisplay, BorderLayout.SOUTH);
+        add(commentsDisplay, BorderLayout.CENTER);
         add(papersDisplay, BorderLayout.NORTH);
 
 
@@ -53,6 +53,8 @@ public class RightPanel extends JPanel implements ButtonClickListener{
 
     @Override
          public void onButtonClicked(Paper paper) {
+
+
         commentsDisplay.displayComments(paper);
     }
 
