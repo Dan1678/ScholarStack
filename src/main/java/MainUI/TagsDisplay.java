@@ -15,6 +15,7 @@ public class TagsDisplay extends JPanel {
     private JScrollPane treeView;
     private LeftPanel parentPanel;
 
+
     public TagsDisplay() {
         setPreferredSize(new Dimension(250, 0)); //panel has a set width
 
