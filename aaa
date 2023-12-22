@@ -1,0 +1,265 @@
+[33mcommit d3ea9dbf7dd69ea25573079f9af8e50a17823e41[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: ka1221an <kaan.aksoy21@imperial.ac.uk>
+Date:   Fri Dec 22 05:39:07 2023 +0300
+
+    Fixed the error for cancelling (adding tags)
+
+[33mcommit 3898ae6cb7b3d86cf20714dd876efaa28d704b6b[m
+Author: ka1221an <kaan.aksoy21@imperial.ac.uk>
+Date:   Fri Dec 22 05:34:40 2023 +0300
+
+    Fixed the error for cancelling (adding tags)
+
+[33mcommit 1d454db3ff53f26154cb3d6570d03de9c05c3c6f[m
+Author: hc1321 <hannacoutts@gmail.com>
+Date:   Thu Dec 21 21:59:06 2023 +0000
+
+    Create Account or Login To Old Account option
+
+[33mcommit a23c926e71eb83a88ed6521e259f378ace312d72[m
+Merge: 3464c31 ef469a2
+Author: BonniciJ <jab21@ic.ac.uk>
+Date:   Thu Dec 21 15:12:34 2023 +0000
+
+    Merge remote-tracking branch 'origin/master' into John
+    
+    # Conflicts:
+    #       .idea/dataSources.local.xml
+    #       .idea/workspace.xml
+
+[33mcommit 3464c31555a201b1338b78bf486fa2f86f38fd4e[m
+Author: BonniciJ <jab21@ic.ac.uk>
+Date:   Thu Dec 21 15:12:03 2023 +0000
+
+    XML
+
+[33mcommit 9a66b18954ae3983ebb42d1ff2081fc8ae791b8e[m
+Author: BonniciJ <jab21@ic.ac.uk>
+Date:   Thu Dec 21 15:11:18 2023 +0000
+
+    XML
+
+[33mcommit 9aa3b28b450d33cb8ef0092c735290d23df9c2bc[m
+Author: BonniciJ <jab21@ic.ac.uk>
+Date:   Thu Dec 21 15:09:08 2023 +0000
+
+    XML
+
+[33mcommit ef469a2a8c9c743c1845483686d05e0170905edc[m
+Author: adelinavlasie <116746233+adelinavlasie@users.noreply.github.com>
+Date:   Thu Dec 21 15:08:46 2023 +0000
+
+    changed comment section
+
+[33mcommit 6f94dbc744fbc80c7a13ec356ac1c87317e8ac78[m
+Author: adelinavlasie <116746233+adelinavlasie@users.noreply.github.com>
+Date:   Thu Dec 21 15:07:54 2023 +0000
+
+    changed comment section
+
+[33mcommit c277c6a28efeb36f4708e3c4cd8689ed28b46c11[m
+Merge: 752b951 b9daad9
+Author: BonniciJ <jab21@ic.ac.uk>
+Date:   Thu Dec 21 14:52:29 2023 +0000
+
+    Merge branch 'master' into John
+    
+    # Conflicts:
+    #       .idea/workspace.xml
+
+[33mcommit 752b951eda22aa0d417e28a39c216bccc8b6bda7[m
+Author: BonniciJ <jab21@ic.ac.uk>
+Date:   Thu Dec 21 14:51:52 2023 +0000
+
+    Changed comments display
+
+[33mcommit f1e14eb3e9a7cb6b281d121e7f1e28fd728e17b7[m
+Author: BonniciJ <jab21@ic.ac.uk>
+Date:   Thu Dec 21 13:53:38 2023 +0000
+
+    Refining
+
+[33mcommit 9ad209b2f789795b106bf5770bf9a6279be9e001[m
+Author: hc1321 <hannacoutts@gmail.com>
+Date:   Thu Dec 21 11:42:05 2023 +0000
+
+    Fixing databases
+
+[33mcommit cfb71f74d369b3f50b9816c41eca1b4be1542dbc[m
+Author: hc1321 <hannacoutts@gmail.com>
+Date:   Thu Dec 21 11:40:56 2023 +0000
+
+    Fixing databases
+
+[33mcommit f7f95d8f9f88fe465aedc2f71000b7d68249a385[m
+Author: hc1321 <hannacoutts@gmail.com>
+Date:   Wed Dec 20 14:08:30 2023 +0000
+
+    Update so usernames cannot be repeated
+
+[33mcommit 6a4933f762ac507e2d1056162f70590f36d558f4[m
+Author: hc1321 <hannacoutts@gmail.com>
+Date:   Wed Dec 20 13:41:27 2023 +0000
+
+    Saving username and password to database
+
+[33mcommit 6045f2987923927d5eb2a6464275967d3b4c9880[m
+Author: BonniciJ <jab21@ic.ac.uk>
+Date:   Mon Dec 18 10:23:13 2023 +0000
+
+    Added comment display functionality
+
+[33mcommit bba523c70ff621ac16f09898c34a297ae7aaf73d[m
+Author: BonniciJ <jab21@ic.ac.uk>
+Date:   Sun Dec 17 22:43:29 2023 +0000
+
+    New overall structure
+
+[33mcommit b9daad922a25739e6df113e0fc9b1ed4a096e768[m
+Author: hc1321 <hannacoutts@gmail.com>
+Date:   Sun Dec 17 17:18:21 2023 +0000
+
+    Reading DataBase Columns
+
+[33mcommit a3582161ffe80c611472184cd05ab8ffa77d6564[m
+Author: hc1321 <hannacoutts@gmail.com>
+Date:   Sun Dec 17 16:10:41 2023 +0000
+
+    Method to remove rows from database
+
+[33mcommit f1ee7b0f825f2cf998a56aa36fc3965d9ec0a3db[m
+Author: adelinavlasie <116746233+adelinavlasie@users.noreply.github.com>
+Date:   Sat Dec 16 16:32:48 2023 +0000
+
+    get bibliography
+    
+    get bibliography option plus references in numerical order
+
+[33mcommit 2b3f5a8154339e961edf5c403fc6ba58dd8002e5[m
+Author: adelinavlasie <116746233+adelinavlasie@users.noreply.github.com>
+Date:   Sat Dec 16 16:31:33 2023 +0000
+
+    added get bibliography options and changed display refrences so they are in numerical order
+
+[33mcommit db278dabce2fea78a5aa3738460128d44e464b27[m
+Author: BonniciJ <jab21@ic.ac.uk>
+Date:   Fri Dec 15 23:25:12 2023 +0000
+
+    Update Tagging & restructure
+
+[33mcommit d57a9c8715267b5ed43fb97a7e41b6fa08b5b8da[m
+Author: adelinavlasie <116746233+adelinavlasie@users.noreply.github.com>
+Date:   Fri Dec 15 16:51:38 2023 +0000
+
+    add ref Harvard and scroll bars
+    
+    add refrence fixed, scroll bars, Harvard ref type
+
+[33mcommit a97beb4c345810ba87d836db374b28d7a12d2069[m
+Merge: ba2b0aa 613e82c
+Author: adelinavlasie <116746233+adelinavlasie@users.noreply.github.com>
+Date:   Fri Dec 15 16:44:20 2023 +0000
+
+    Merge remote-tracking branch 'origin/master'
+
+[33mcommit 613e82cb6f2d43d04c9a143174d82dfa11b3cf1a[m
+Author: BonniciJ <jab21@ic.ac.uk>
+Date:   Fri Dec 15 16:30:38 2023 +0000
+
+    Fixed resizing and menu
+
+[33mcommit dfdf5d3221e7e078a17ff6040aa1698bc0463570[m
+Author: Dan <dc1321@ic.ac.uk>
+Date:   Fri Dec 15 16:19:14 2023 +0000
+
+    Added a database manager class, with table creation and INSERT capabilities
+
+[33mcommit ba2b0aab8714b961b12015ac2b536e1d0965eead[m
+Merge: 67f92af fdac829
+Author: adelinavlasie <116746233+adelinavlasie@users.noreply.github.com>
+Date:   Fri Dec 15 15:11:57 2023 +0000
+
+    Merge remote-tracking branch 'origin/master'
+
+[33mcommit fdac8297df0bf69f5424c15be3f573daf4ecd48a[m
+Author: Dan <dc1321@ic.ac.uk>
+Date:   Fri Dec 15 15:08:46 2023 +0000
+
+    Added Database connector with JDK conflicts resolved
+
+[33mcommit 3649f92ecf4330e29da47c7e0692775706aff967[m
+Author: Dan <dc1321@ic.ac.uk>
+Date:   Fri Dec 15 15:07:16 2023 +0000
+
+    Added Database connector with JDK conflicts resolved
+
+[33mcommit 67f92afbdba982ee49e7c6b444d48a0a0b73c930[m
+Merge: 33dbb9a bfd6a50
+Author: adelinavlasie <116746233+adelinavlasie@users.noreply.github.com>
+Date:   Fri Dec 15 14:59:01 2023 +0000
+
+    Merge remote-tracking branch 'origin/master'
+
+[33mcommit bfd6a505b9580d0dc38103ab2d96059162676db4[m
+Author: BonniciJ <jab21@ic.ac.uk>
+Date:   Fri Dec 15 14:58:29 2023 +0000
+
+    Fixed resizing and menu
+
+[33mcommit 33dbb9a2440260c49f5e0866348d3257be41705b[m
+Merge: 61baa5f a95fcd7
+Author: adelinavlasie <116746233+adelinavlasie@users.noreply.github.com>
+Date:   Fri Dec 15 14:48:24 2023 +0000
+
+    Merge remote-tracking branch 'origin/master'
+
+[33mcommit a95fcd78ec338963254a07db25138c29aa413e95[m
+Author: hc1321 <hannacoutts@gmail.com>
+Date:   Fri Dec 15 14:45:15 2023 +0000
+
+    vevert "Built the databaseconnector class"
+    
+    rrrr reverts commit f43e299d77ae3a525815e8ad5809d54e3761de26.
+
+[33mcommit 61baa5f3c58eef191e88fa1ee2ad6735fe3a7ca2[m
+Merge: 4f4e3ec 021da70
+Author: adelinavlasie <116746233+adelinavlasie@users.noreply.github.com>
+Date:   Fri Dec 15 14:44:46 2023 +0000
+
+    Merge remote-tracking branch 'origin/master'
+
+[33mcommit 4f4e3ecc0bd5c5674f6b5beeb08350a2ce44dca6[m
+Merge: e6fcd7a 3a69733
+Author: adelinavlasie <116746233+adelinavlasie@users.noreply.github.com>
+Date:   Fri Dec 15 14:41:32 2023 +0000
+
+    Merge branch 'master' of https://github.com/Dan1678/ScholarStack
+
+[33mcommit 021da70e03a6e471fdbe752f442adbbee37992f7[m
+Author: hc1321 <hannacoutts@gmail.com>
+Date:   Fri Dec 15 14:35:58 2023 +0000
+
+    Revert "Built the databaseconnector class"
+    revert commit
+    
+    This reverts commit 601fa880ac6201ca3345beafcf478f8277a3d43f.
+
+[33mcommit e6fcd7a713d8bec83ebd1119e5611dfc1e9447d9[m
+Merge: 3e41196 601fa88
+Author: adelinavlasie <116746233+adelinavlasie@users.noreply.github.com>
+Date:   Fri Dec 15 14:16:50 2023 +0000
+
+    Merge branch 'master' of https://github.com/Dan1678/ScholarStack
+    
+    # Conflicts:
+    #       .idea/workspace.xml
+
+[33mcommit 3a69733bc293cc656c6475287fe3ff0d70f4a73a[m[33m ([m[1;31morigin/new[m[33m)[m
+Merge: 126a856 601fa88
+Author: hc1321 <hannacoutts@gmail.com>
+Date:   Fri Dec 15 14:10:38 2023 +0000
+
+    Merge branch 'master' of https://github.com/Dan1678/ScholarStack
+
+[33mcommit 126a856a1a175ffe99514aa91040085416b58cd0[m
+Author: 
