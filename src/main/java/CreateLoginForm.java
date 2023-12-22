@@ -10,11 +10,9 @@ public class CreateLoginForm extends JFrame implements ActionListener
 {
 
     JButton b1, skiplogin, createAcc;
-    JPanel newPanel, newPanel2, newPanel3;
-    JPanel backPanel, loginPanel, newPanel22, errorPanel;
-    JLabel userLabel, passLabel, passReq, errorLabel;
+    JPanel newPanel, newPanel2, newPanel3,  backPanel, loginPanel, newPanel22, errorPanel;
+    JLabel userLabel, passLabel, passReq,loginLabel, userReq, errorLabel;
     final JTextField  textField1, textField2;
-    JLabel loginLabel;
     String userName;
     String tableName;
 
@@ -25,12 +23,18 @@ public class CreateLoginForm extends JFrame implements ActionListener
         backPanel.setSize(1000,1000);
 
         loginPanel = new JPanel();
+        loginPanel.setLayout(new BoxLayout(loginPanel, BoxLayout.Y_AXIS));
 
 
-        loginLabel = new JLabel();
-        loginLabel.setText("Login or Create Account");
+        loginLabel = new JLabel("Login or Create New Account");
+        passLabel = new JLabel("Password must contain at least one number, one symbol (!@#$%^&*) and be more than 6 characters");
+
+        loginLabel.setAlignmentX(Component.CENTER_ALIGNMENT);
+        passLabel.setAlignmentX(Component.CENTER_ALIGNMENT);
 
         loginPanel.add(loginLabel);
+        loginPanel.add(passLabel);
+
         backPanel.add(loginPanel);
         add(backPanel);
 
@@ -53,25 +57,37 @@ public class CreateLoginForm extends JFrame implements ActionListener
 
         createAcc = new JButton("Create Account");
 
-        JLabel passReq = new JLabel("Password must contain at least one number and one symbol");
+        passReq = new JLabel("");
+
+
+        userReq = new JLabel("");
 
 
         newPanel = new JPanel(new FlowLayout(FlowLayout.CENTER));
         newPanel2 = new JPanel(new FlowLayout(FlowLayout.CENTER));
         newPanel22 = new JPanel();
+        newPanel22.setLayout(new BoxLayout(newPanel22, BoxLayout.Y_AXIS));
         newPanel.setSize(200,200);
         newPanel3 = new JPanel();
         newPanel.add(userLabel);
         newPanel.add(textField1);
         newPanel2.add(passLabel);
         newPanel2.add(textField2);
+
+        passReq.setAlignmentX(Component.CENTER_ALIGNMENT);
+        userReq.setAlignmentX(Component.CENTER_ALIGNMENT);
+
         newPanel22.add(passReq);
+        newPanel22.add(userReq);
+
+
         newPanel3.add(b1);
         newPanel3.add(createAcc);
         newPanel3.add(skiplogin);
         backPanel.add(newPanel);
         backPanel.add(newPanel2);
         backPanel.add(newPanel22);
+
         backPanel.add(newPanel3);
        // backPanel.add(newPanel);
 
@@ -85,7 +101,7 @@ public class CreateLoginForm extends JFrame implements ActionListener
     }
 
     private boolean isValidUsername(String user){
-        boolean isValidFormat = user.matches("^[A-Za-z ]+$");
+        boolean isValidFormat = user.matches("^[A-Za-z0-9 ]+$");
 
         boolean isTaken = LoginManager.isUserTaken(user);
 
@@ -101,6 +117,20 @@ public class CreateLoginForm extends JFrame implements ActionListener
     {
         String userName = textField1.getText();        //get user entered username from the textField1
         String passWord = textField2.getText();        //get user entered pasword from the textField2
+        if(!isValidUsername(userName) && isValidPassword(passWord)){
+            userReq.setText("Username taken, please enter an altenate username");
+            passReq.setText("");
+        }
+
+        if(!isValidPassword(passWord) && isValidUsername(userName)){
+            passReq.setText("Please enter a valid password");
+            userReq.setText("");
+        }
+
+        if(!isValidUsername(userName) && !isValidPassword(passWord)){
+            userReq.setText("Username taken, please enter an altenate username");
+            passReq.setText("Please enter a valid password");
+        }
 
         if(isValidUsername(userName) && isValidPassword(passWord)){
             dispose();
@@ -139,6 +169,16 @@ public class CreateLoginForm extends JFrame implements ActionListener
         public void actionPerformed(ActionEvent e) {
             String userName = textField1.getText();        //get user entered username from the textField1
             String passWord = textField2.getText();
+
+            if(!LoginManager.isUserTaken(userName)){
+                userReq.setText("Username not found");
+                passReq.setText("");
+            }
+
+            if(!LoginManager.checkPassword(userName, passWord) && LoginManager.isUserTaken(userName)){
+                passReq.setText("Incorrect Password for user: "+userName);
+                userReq.setText("");
+            }
 
             if(LoginManager.isUserTaken(userName) && LoginManager.checkPassword(userName, passWord)){
                 dispose();
