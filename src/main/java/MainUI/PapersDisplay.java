@@ -2,7 +2,6 @@ package MainUI;
 
 import javax.swing.*;
 import java.awt.*;
-import java.util.ArrayList;
 
 import static java.awt.AWTEventMulticaster.add;
 
@@ -37,9 +36,6 @@ import static java.awt.AWTEventMulticaster.add;
     }
 }
 */
-import javax.swing.*;
-import java.awt.*;
-import java.util.ArrayList;
 
 public class PapersDisplay extends JScrollPane {
 
@@ -61,7 +57,10 @@ public class PapersDisplay extends JScrollPane {
         getViewport().setPreferredSize(papersPanel.getPreferredSize());
     }
 
-    public void addPaper(PaperUI paper, ButtonClickListener listener) {
+    public void addPaperUI(PaperUI paper, ButtonClickListener listener) {
+
+        // For database - this is where it will add a paper
+
         paper.setButtonClickListener(listener);
         papersPanel.add(paper);
         revalidate(); // Revalidate the layout after adding papers
