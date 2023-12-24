@@ -30,45 +30,46 @@ public class RightPanel extends JPanel implements ButtonClickListener{
 
         add(commentsDisplay, BorderLayout.CENTER);
         add(papersDisplay, BorderLayout.NORTH);
+        //new panel for adding papers button
+        JPanel topPanel = new JPanel(); // Panel for holding the "Add Reference" button
+        topPanel.setLayout(new BoxLayout(topPanel, BoxLayout.Y_AXIS));
 
 
+       // add some temp papers
+       Paper paper = new Paper();
+        paper.setName("PAPER TITLE ");
 
-//        //add some temp papers
-//        Paper paper = new Paper();
-//        paper.setName("PAPER TITLE ");
-//
-//        papersDisplay.addPaperUI(new PaperUI(paper), this);
-//
-//        paper = new Paper();
-//        paper.setName("PAPER TITLE 2");
-//        papersDisplay.addPaperUI(new PaperUI(paper), this);
-//
-//        papersDisplay.addPaperUI(new PaperUI(paper), this);
-//        papersDisplay.addPaperUI(new PaperUI(paper), this);
-//        papersDisplay.addPaperUI(new PaperUI(paper), this);
-//        papersDisplay.addPaperUI(new PaperUI(paper), this);
-//        papersDisplay.addPaperUI(new PaperUI(paper), this);
-//        papersDisplay.addPaperUI(new PaperUI(paper), this);
-//        papersDisplay.addPaperUI(new PaperUI(paper), this);
-//        papersDisplay.addPaperUI(new PaperUI(paper), this);
-//        papersDisplay.addPaperUI(new PaperUI(paper), this);
-//        papersDisplay.addPaperUI(new PaperUI(paper), this);
+        papersDisplay.addPaperUI(new PaperUI(paper), this);
+
+        paper = new Paper();
+        paper.setName("PAPER TITLE 2");
+        papersDisplay.addPaperUI(new PaperUI(paper), this);
+        paper.setName("PAPER TITLE 3");
+        papersDisplay.addPaperUI(new PaperUI(paper), this);
+
 
 
         JButton addReferenceButton = new JButton("Add Reference");
+        Paper finalPaper = paper;
         addReferenceButton.addActionListener(new ActionListener() {
-            @Override
+
+            ButtonClickListener listener = null;
             public void actionPerformed(ActionEvent e) {
                 String reference = JOptionPane.showInputDialog("Enter the Harvard reference:");
                 if (reference != null && !reference.isEmpty()&& isValidHarvardReference(reference)) {
-                    addNewPaper(reference);
+                  //  addNewPaper(reference);
+
+                    papersDisplay.addReference(reference, listener);
+                    commentsDisplay.displayComments(finalPaper);
                 }else {
                     JOptionPane.showMessageDialog(null, "Please enter a valid Harvard reference. Make sure to use , in between and . at the end");
                 }
             }
         });
+        topPanel.add(addReferenceButton);
+        topPanel.add(papersDisplay);
+        add(topPanel, BorderLayout.NORTH);
 
-        add(addReferenceButton);
 
     }
 
