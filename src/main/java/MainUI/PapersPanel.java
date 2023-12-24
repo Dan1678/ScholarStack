@@ -1,4 +1,7 @@
 package MainUI;
+import Managers.DatabaseConnector;
+import Managers.DatabaseManager;
+
 
 import javax.swing.*;
 import javax.swing.border.Border;
@@ -8,6 +11,7 @@ import java.awt.event.ActionListener;
 import java.util.ArrayList;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
+
 
 public class PapersPanel extends JPanel {
 
@@ -42,8 +46,20 @@ public class PapersPanel extends JPanel {
                 @Override
                 public void actionPerformed(ActionEvent e) {
                     String reference = JOptionPane.showInputDialog("Enter the Harvard reference:");
-                    if (reference != null && !reference.isEmpty()&& isValidHarvardReference(reference)) {
+                    if (!reference.isEmpty()&& isValidHarvardReference(reference)) {
+                        try {
+                            String tableName = "papers3";
+                            boolean tableCreationResult = DatabaseManager.createTable(tableName, "username", "paper title");
+                            if (tableCreationResult) {
+                                DatabaseManager.insertRecord("papers3", "'username', 'paper title'", String.format("'testUsername', '%s'", reference));
+                            }
+                        } catch (Exception ex) {
+                            ex.printStackTrace();
+                            JOptionPane.showMessageDialog(null, "Error adding reference to database");
+                        }
                         papersList.addPaper(reference);
+
+
                         displayPapers();
                     }else {
                         JOptionPane.showMessageDialog(null, "Please enter a valid Harvard reference. Make sure to use , in between and . at the end");

@@ -1,15 +1,17 @@
+package Managers;
+
 import java.sql.*;
 
 public class DatabaseManager {
 
-    public static boolean createTable(String tableName) {
+    public static boolean createTable(String tableName, String col1, String col2) {
         // Connect to the database
         try (Connection conn = DatabaseConnector.connectToDatabase()) {
             if (conn != null) {
                 System.out.println("Connection to the database successful!");
 
                 // Create a table with the specified name
-                String createTableQuery = String.format("CREATE TABLE IF NOT EXISTS %s (id SERIAL PRIMARY KEY, username VARCHAR(255), password VARCHAR(255))", tableName);
+                String createTableQuery = String.format("CREATE TABLE IF NOT EXISTS %s (id SERIAL PRIMARY KEY, %s VARCHAR(255), %s VARCHAR(255))", tableName, col1, col2);
                 executeQuery(conn, createTableQuery);
 
                 return true; // Table creation successful

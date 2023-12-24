@@ -1,0 +1,998 @@
+Index: .idea/shelf/Uncommitted_changes_before_Update_at_15_12_2023__14_59__Changes_.xml
+===================================================================
+diff --git a/.idea/shelf/Uncommitted_changes_before_Update_at_15_12_2023__14_59__Changes_.xml b/.idea/shelf/Uncommitted_changes_before_Update_at_15_12_2023__14_59__Changes_.xml
+deleted file mode 100644
+--- a/.idea/shelf/Uncommitted_changes_before_Update_at_15_12_2023__14_59__Changes_.xml	(revision bec8cbb169b3742a6d0d1efedd4279631de63a1f)
++++ /dev/null	(revision bec8cbb169b3742a6d0d1efedd4279631de63a1f)
+@@ -1,4 +0,0 @@
+-<changelist name="Uncommitted_changes_before_Update_at_15_12_2023,_14_59_[Changes]" date="1702652400855" recycled="true" deleted="true">
+-  <option name="PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_15_12_2023,_14_59_[Changes]/shelved.patch" />
+-  <option name="DESCRIPTION" value="Uncommitted changes before Update at 15/12/2023, 14:59 [Changes]" />
+-</changelist>
+\ No newline at end of file
+Index: .idea/shelf/Uncommitted_changes_before_Update_at_15_12_2023,_14_48_[Changes]/shelved.patch
+===================================================================
+diff --git a/.idea/shelf/Uncommitted_changes_before_Update_at_15_12_2023,_14_48_[Changes]/shelved.patch b/.idea/shelf/Uncommitted_changes_before_Update_at_15_12_2023,_14_48_[Changes]/shelved.patch
+deleted file mode 100644
+--- a/.idea/shelf/Uncommitted_changes_before_Update_at_15_12_2023,_14_48_[Changes]/shelved.patch	(revision bec8cbb169b3742a6d0d1efedd4279631de63a1f)
++++ /dev/null	(revision bec8cbb169b3742a6d0d1efedd4279631de63a1f)
+@@ -1,159 +0,0 @@
+-Index: .idea/workspace.xml
+-IDEA additional info:
+-Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+-<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<project version=\"4\">\n  <component name=\"AutoImportSettings\">\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\n  </component>\n  <component name=\"ChangeListManager\">\n    <list default=\"true\" id=\"caf41903-31e9-4411-a647-9632c151de00\" name=\"Changes\" comment=\"Began working on login page and UI components.\">\n      <change afterPath=\"$PROJECT_DIR$/src/main/java/DatabaseConnector.java\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/.idea/gradle.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/gradle.xml\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/build.gradle\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/build.gradle\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/Main.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/Main.java\" afterDir=\"false\" />\n    </list>\n    <list id=\"f4862b22-822d-41c3-ba14-ffe306fc865d\" name=\"Changes by adelinavlasie\" comment=\"\" />\n    <list id=\"ee22f58c-8bfc-471d-9402-c1fb1980b07d\" name=\"Changes by johnn\" comment=\"Changes by johnn\" />\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\n  </component>\n  <component name=\"ExternalProjectsData\">\n    <projectState path=\"$PROJECT_DIR$\">\n      <ProjectState />\n    </projectState>\n  </component>\n  <component name=\"ExternalProjectsManager\">\n    <system id=\"GRADLE\">\n      <state>\n        <task path=\"$PROJECT_DIR$\">\n          <activation />\n        </task>\n        <projects_view>\n          <tree_state>\n            <expand />\n            <select />\n          </tree_state>\n        </projects_view>\n      </state>\n    </system>\n  </component>\n  <component name=\"FileTemplateManagerImpl\">\n    <option name=\"RECENT_TEMPLATES\">\n      <list>\n        <option value=\"Class\" />\n      </list>\n    </option>\n  </component>\n  <component name=\"Git.Settings\">\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\n  </component>\n  <component name=\"ProjectColorInfo\">{\n  &quot;associatedIndex&quot;: 6\n}</component>\n  <component name=\"ProjectId\" id=\"2ZZcMR9d9OvzWLINeXRLnXHqGQF\" />\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\" />\n  <component name=\"ProjectViewState\">\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\n    <option name=\"showLibraryContents\" value=\"true\" />\n  </component>\n  <component name=\"PropertiesComponent\">{\n  &quot;keyToString&quot;: {\n    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,\n    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,\n    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,\n    &quot;git-widget-placeholder&quot;: &quot;master&quot;,\n    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,\n    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,\n    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,\n    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,\n    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,\n    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,\n    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,\n    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;\n  }\n}</component>\n  <component name=\"RecentsManager\">\n    <key name=\"CopyClassDialog.RECENTS_KEY\">\n      <recent name=\"\" />\n    </key>\n  </component>\n  <component name=\"RunManager\" selected=\"Gradle.ScholarStack [run]\">\n    <configuration name=\"ScholarStack [build]\" type=\"GradleRunConfiguration\" factoryName=\"Gradle\" temporary=\"true\">\n      <ExternalSystemSettings>\n        <option name=\"executionName\" />\n        <option name=\"externalProjectPath\" value=\"$PROJECT_DIR$\" />\n        <option name=\"externalSystemIdString\" value=\"GRADLE\" />\n        <option name=\"scriptParameters\" />\n        <option name=\"taskDescriptions\">\n          <list />\n        </option>\n        <option name=\"taskNames\">\n          <list>\n            <option value=\"build\" />\n          </list>\n        </option>\n        <option name=\"vmOptions\" />\n      </ExternalSystemSettings>\n      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>\n      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>\n      <DebugAllEnabled>false</DebugAllEnabled>\n      <RunAsTest>false</RunAsTest>\n      <method v=\"2\" />\n    </configuration>\n    <configuration name=\"ScholarStack [run]\" type=\"GradleRunConfiguration\" factoryName=\"Gradle\" temporary=\"true\">\n      <ExternalSystemSettings>\n        <option name=\"executionName\" />\n        <option name=\"externalProjectPath\" value=\"$PROJECT_DIR$\" />\n        <option name=\"externalSystemIdString\" value=\"GRADLE\" />\n        <option name=\"scriptParameters\" />\n        <option name=\"taskDescriptions\">\n          <list />\n        </option>\n        <option name=\"taskNames\">\n          <list>\n            <option value=\"run\" />\n          </list>\n        </option>\n        <option name=\"vmOptions\" />\n      </ExternalSystemSettings>\n      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>\n      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>\n      <DebugAllEnabled>false</DebugAllEnabled>\n      <RunAsTest>false</RunAsTest>\n      <method v=\"2\" />\n    </configuration>\n    <recent_temporary>\n      <list>\n        <item itemvalue=\"Gradle.ScholarStack [run]\" />\n        <item itemvalue=\"Gradle.ScholarStack [build]\" />\n      </list>\n    </recent_temporary>\n  </component>\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\n  <component name=\"TaskManager\">\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\n      <changelist id=\"caf41903-31e9-4411-a647-9632c151de00\" name=\"Changes\" comment=\"\" />\n      <created>1702632996779</created>\n      <option name=\"number\" value=\"Default\" />\n      <option name=\"presentableId\" value=\"Default\" />\n      <updated>1702632996779</updated>\n      <workItem from=\"1702632997849\" duration=\"2510000\" />\n      <workItem from=\"1702641431901\" duration=\"2764000\" />\n    </task>\n    <task id=\"LOCAL-00001\" summary=\"Initial commit\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1702633035887</created>\n      <option name=\"number\" value=\"00001\" />\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1702633035887</updated>\n    </task>\n    <task id=\"LOCAL-00002\" summary=\"Began working on login page and UI components.\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1702635290901</created>\n      <option name=\"number\" value=\"00002\" />\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1702635290901</updated>\n    </task>\n    <task id=\"LOCAL-00003\" summary=\"Changes by johnn\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1702635303569</created>\n      <option name=\"number\" value=\"00003\" />\n      <option name=\"presentableId\" value=\"LOCAL-00003\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1702635303569</updated>\n    </task>\n    <option name=\"localTasksCounter\" value=\"4\" />\n    <servers />\n  </component>\n  <component name=\"TypeScriptGeneratedFilesManager\">\n    <option name=\"version\" value=\"3\" />\n  </component>\n  <component name=\"VcsManagerConfiguration\">\n    <MESSAGE value=\"Initial commit\" />\n    <MESSAGE value=\"Began working on login page and UI components.\" />\n    <MESSAGE value=\"Changes by johnn\" />\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"Changes by johnn\" />\n  </component>\n  <component name=\"XDebuggerManager\">\n    <breakpoint-manager>\n      <breakpoints>\n        <line-breakpoint enabled=\"true\" type=\"java-line\">\n          <url>file://$PROJECT_DIR$/src/main/java/CreateLoginForm.java</url>\n          <line>25</line>\n          <option name=\"timeStamp\" value=\"1\" />\n        </line-breakpoint>\n      </breakpoints>\n    </breakpoint-manager>\n  </component>\n</project>
+-Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+-<+>UTF-8
+-===================================================================
+-diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+---- a/.idea/workspace.xml	(revision 61baa5f3c58eef191e88fa1ee2ad6735fe3a7ca2)
+-+++ b/.idea/workspace.xml	(date 1702651701511)
+-@@ -4,11 +4,8 @@
+-     <option name="autoReloadType" value="SELECTIVE" />
+-   </component>
+-   <component name="ChangeListManager">
+--    <list default="true" id="caf41903-31e9-4411-a647-9632c151de00" name="Changes" comment="Began working on login page and UI components.">
+--      <change afterPath="$PROJECT_DIR$/src/main/java/DatabaseConnector.java" afterDir="false" />
+--      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+-+    <list default="true" id="caf41903-31e9-4411-a647-9632c151de00" name="Changes" comment="Built the databaseconnector class">
+-       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+--      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+-       <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
+-     </list>
+-     <list id="f4862b22-822d-41c3-ba14-ffe306fc865d" name="Changes by adelinavlasie" comment="" />
+-@@ -31,7 +28,29 @@
+-         </task>
+-         <projects_view>
+-           <tree_state>
+--            <expand />
+-+            <expand>
+-+              <path>
+-+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+-+                <item name="ScholarStack" type="f1a62948:ProjectNode" />
+-+              </path>
+-+              <path>
+-+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+-+                <item name="ScholarStack" type="f1a62948:ProjectNode" />
+-+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+-+              </path>
+-+              <path>
+-+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+-+                <item name="ScholarStack" type="f1a62948:ProjectNode" />
+-+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+-+                <item name="application" type="c8890929:TasksNode$1" />
+-+              </path>
+-+              <path>
+-+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+-+                <item name="ScholarStack" type="f1a62948:ProjectNode" />
+-+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+-+                <item name="build" type="c8890929:TasksNode$1" />
+-+              </path>
+-+            </expand>
+-             <select />
+-           </tree_state>
+-         </projects_view>
+-@@ -59,6 +78,7 @@
+-   </component>
+-   <component name="PropertiesComponent">{
+-   &quot;keyToString&quot;: {
+-+    &quot;Gradle.ScholarStack [build].executor&quot;: &quot;Run&quot;,
+-     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+-     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+-     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+-@@ -78,7 +98,7 @@
+-       <recent name="" />
+-     </key>
+-   </component>
+--  <component name="RunManager" selected="Gradle.ScholarStack [run]">
+-+  <component name="RunManager" selected="Gradle.ScholarStack [build]">
+-     <configuration name="ScholarStack [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+-       <ExternalSystemSettings>
+-         <option name="executionName" />
+-@@ -125,8 +145,8 @@
+-     </configuration>
+-     <recent_temporary>
+-       <list>
+--        <item itemvalue="Gradle.ScholarStack [run]" />
+-         <item itemvalue="Gradle.ScholarStack [build]" />
+-+        <item itemvalue="Gradle.ScholarStack [run]" />
+-       </list>
+-     </recent_temporary>
+-   </component>
+-@@ -139,7 +159,7 @@
+-       <option name="presentableId" value="Default" />
+-       <updated>1702632996779</updated>
+-       <workItem from="1702632997849" duration="2510000" />
+--      <workItem from="1702641431901" duration="2764000" />
+-+      <workItem from="1702641431901" duration="2895000" />
+-     </task>
+-     <task id="LOCAL-00001" summary="Initial commit">
+-       <option name="closed" value="true" />
+-@@ -165,7 +185,15 @@
+-       <option name="project" value="LOCAL" />
+-       <updated>1702635303569</updated>
+-     </task>
+--    <option name="localTasksCounter" value="4" />
+-+    <task id="LOCAL-00004" summary="Built the databaseconnector class">
+-+      <option name="closed" value="true" />
+-+      <created>1702648863656</created>
+-+      <option name="number" value="00004" />
+-+      <option name="presentableId" value="LOCAL-00004" />
+-+      <option name="project" value="LOCAL" />
+-+      <updated>1702648863656</updated>
+-+    </task>
+-+    <option name="localTasksCounter" value="5" />
+-     <servers />
+-   </component>
+-   <component name="TypeScriptGeneratedFilesManager">
+-@@ -175,14 +203,15 @@
+-     <MESSAGE value="Initial commit" />
+-     <MESSAGE value="Began working on login page and UI components." />
+-     <MESSAGE value="Changes by johnn" />
+--    <option name="LAST_COMMIT_MESSAGE" value="Changes by johnn" />
+-+    <MESSAGE value="Built the databaseconnector class" />
+-+    <option name="LAST_COMMIT_MESSAGE" value="Built the databaseconnector class" />
+-   </component>
+-   <component name="XDebuggerManager">
+-     <breakpoint-manager>
+-       <breakpoints>
+-         <line-breakpoint enabled="true" type="java-line">
+-           <url>file://$PROJECT_DIR$/src/main/java/CreateLoginForm.java</url>
+--          <line>25</line>
+-+          <line>41</line>
+-           <option name="timeStamp" value="1" />
+-         </line-breakpoint>
+-       </breakpoints>
+-Index: src/main/java/Main.java
+-IDEA additional info:
+-Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+-<+>import javax.swing.*;\nimport java.net.URI;\nimport java.net.URL;\n\npublic class Main {\n    public static void main(String arg[])\n    {\n        MainUI mainUI = new MainUI();\n        try\n        {\n            //create instance of the CreateLoginForm\n            CreateLoginForm form = new CreateLoginForm();\n            form.setSize(300,100);  //set size of the frame\n            form.setVisible(true);  //make form visible to the user\n        }\n        catch(Exception e)\n        {\n            //handle exception\n            JOptionPane.showMessageDialog(null, e.getMessage());\n        }\n\n        if (DatabaseConnector.connectToDatabase()) {\n            System.out.println(\"Connected to the database successfully!\");\n        } else {\n            System.out.println(\"Failed to connect to the database.\");\n        }\n\n\n\n\n    }\n}\n
+-Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+-<+>UTF-8
+-===================================================================
+-diff --git a/src/main/java/Main.java b/src/main/java/Main.java
+---- a/src/main/java/Main.java	(revision 61baa5f3c58eef191e88fa1ee2ad6735fe3a7ca2)
+-+++ b/src/main/java/Main.java	(date 1702651688744)
+-@@ -1,6 +1,7 @@
+- import javax.swing.*;
+- import java.net.URI;
+- import java.net.URL;
+-+import MainUI.MainUI;
+- 
+- public class Main {
+-     public static void main(String arg[])
+-@@ -18,13 +19,13 @@
+-             //handle exception
+-             JOptionPane.showMessageDialog(null, e.getMessage());
+-         }
+--
+-+/*
+-         if (DatabaseConnector.connectToDatabase()) {
+-             System.out.println("Connected to the database successfully!");
+-         } else {
+-             System.out.println("Failed to connect to the database.");
+-         }
+--
+-+*/
+- 
+- 
+- 
+Index: .idea/shelf/Uncommitted_changes_before_Update_at_15_12_2023__14_48__Changes_.xml
+===================================================================
+diff --git a/.idea/shelf/Uncommitted_changes_before_Update_at_15_12_2023__14_48__Changes_.xml b/.idea/shelf/Uncommitted_changes_before_Update_at_15_12_2023__14_48__Changes_.xml
+deleted file mode 100644
+--- a/.idea/shelf/Uncommitted_changes_before_Update_at_15_12_2023__14_48__Changes_.xml	(revision bec8cbb169b3742a6d0d1efedd4279631de63a1f)
++++ /dev/null	(revision bec8cbb169b3742a6d0d1efedd4279631de63a1f)
+@@ -1,4 +0,0 @@
+-<changelist name="Uncommitted_changes_before_Update_at_15_12_2023,_14_48_[Changes]" date="1702651758341" recycled="true" deleted="true">
+-  <option name="PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_15_12_2023,_14_48_[Changes]/shelved.patch" />
+-  <option name="DESCRIPTION" value="Uncommitted changes before Update at 15/12/2023, 14:48 [Changes]" />
+-</changelist>
+\ No newline at end of file
+Index: .idea/shelf/Uncommitted_changes_before_Update_at_15_12_2023__15_11__Changes_.xml
+===================================================================
+diff --git a/.idea/shelf/Uncommitted_changes_before_Update_at_15_12_2023__15_11__Changes_.xml b/.idea/shelf/Uncommitted_changes_before_Update_at_15_12_2023__15_11__Changes_.xml
+deleted file mode 100644
+--- a/.idea/shelf/Uncommitted_changes_before_Update_at_15_12_2023__15_11__Changes_.xml	(revision bec8cbb169b3742a6d0d1efedd4279631de63a1f)
++++ /dev/null	(revision bec8cbb169b3742a6d0d1efedd4279631de63a1f)
+@@ -1,4 +0,0 @@
+-<changelist name="Uncommitted_changes_before_Update_at_15_12_2023,_15_11_[Changes]" date="1702653122160" recycled="true" deleted="true">
+-  <option name="PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_15_12_2023,_15_11_[Changes]/shelved.patch" />
+-  <option name="DESCRIPTION" value="Uncommitted changes before Update at 15/12/2023, 15:11 [Changes]" />
+-</changelist>
+\ No newline at end of file
+Index: .idea/shelf/Uncommitted_changes_before_Update_at_15_12_2023_15_09_[Changes]/shelved.patch
+===================================================================
+diff --git a/.idea/shelf/Uncommitted_changes_before_Update_at_15_12_2023_15_09_[Changes]/shelved.patch b/.idea/shelf/Uncommitted_changes_before_Update_at_15_12_2023_15_09_[Changes]/shelved.patch
+deleted file mode 100644
+--- a/.idea/shelf/Uncommitted_changes_before_Update_at_15_12_2023_15_09_[Changes]/shelved.patch	(revision bec8cbb169b3742a6d0d1efedd4279631de63a1f)
++++ /dev/null	(revision bec8cbb169b3742a6d0d1efedd4279631de63a1f)
+@@ -1,31 +0,0 @@
+-Index: .idea/workspace.xml
+-IDEA additional info:
+-Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+-<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"caf41903-31e9-4411-a647-9632c151de00\" name=\"Changes\" comment=\"Initial commit\">\r\n      <change afterPath=\"$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/src/main/java/CreateLoginForm.java\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/src/main/java/NewPage.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/misc.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/misc.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\r\n    </list>\r\n    <list id=\"f4862b22-822d-41c3-ba14-ffe306fc865d\" name=\"Changes by adelinavlasie\" comment=\"\" />\r\n    <list id=\"efbba4e2-aabd-433a-998f-300dbcd02e3e\" name=\"Changes by hc1321\" comment=\"\" />\r\n    <list id=\"ee22f58c-8bfc-471d-9402-c1fb1980b07d\" name=\"Changes by johnn\" comment=\"\">\r\n      <change beforePath=\"$PROJECT_DIR$/build.gradle\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/build.gradle\" afterDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"ExternalProjectsData\">\r\n    <projectState path=\"$PROJECT_DIR$\">\r\n      <ProjectState />\r\n    </projectState>\r\n  </component>\r\n  <component name=\"ExternalProjectsManager\">\r\n    <system id=\"GRADLE\">\r\n      <state>\r\n        <task path=\"$PROJECT_DIR$\">\r\n          <activation />\r\n        </task>\r\n        <projects_view>\r\n          <tree_state>\r\n            <expand />\r\n            <select />\r\n          </tree_state>\r\n        </projects_view>\r\n      </state>\r\n    </system>\r\n  </component>\r\n  <component name=\"FileTemplateManagerImpl\">\r\n    <option name=\"RECENT_TEMPLATES\">\r\n      <list>\r\n        <option value=\"Class\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"ProjectColorInfo\">{\r\n  &quot;associatedIndex&quot;: 6\r\n}</component>\r\n  <component name=\"ProjectId\" id=\"2ZZcMR9d9OvzWLINeXRLnXHqGQF\" />\r\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\" />\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\">{\r\n  &quot;keyToString&quot;: {\r\n    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,\r\n    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,\r\n    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,\r\n    &quot;git-widget-placeholder&quot;: &quot;master&quot;,\r\n    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,\r\n    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,\r\n    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,\r\n    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,\r\n    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,\r\n    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,\r\n    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,\r\n    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;\r\n  }\r\n}</component>\r\n  <component name=\"RecentsManager\">\r\n    <key name=\"CopyClassDialog.RECENTS_KEY\">\r\n      <recent name=\"\" />\r\n    </key>\r\n  </component>\r\n  <component name=\"RunManager\" selected=\"Gradle.ScholarStack [run]\">\r\n    <configuration name=\"ScholarStack [build]\" type=\"GradleRunConfiguration\" factoryName=\"Gradle\" temporary=\"true\">\r\n      <ExternalSystemSettings>\r\n        <option name=\"executionName\" />\r\n        <option name=\"externalProjectPath\" value=\"$PROJECT_DIR$\" />\r\n        <option name=\"externalSystemIdString\" value=\"GRADLE\" />\r\n        <option name=\"scriptParameters\" />\r\n        <option name=\"taskDescriptions\">\r\n          <list />\r\n        </option>\r\n        <option name=\"taskNames\">\r\n          <list>\r\n            <option value=\"build\" />\r\n          </list>\r\n        </option>\r\n        <option name=\"vmOptions\" />\r\n      </ExternalSystemSettings>\r\n      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>\r\n      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>\r\n      <DebugAllEnabled>false</DebugAllEnabled>\r\n      <RunAsTest>false</RunAsTest>\r\n      <method v=\"2\" />\r\n    </configuration>\r\n    <configuration name=\"ScholarStack [run]\" type=\"GradleRunConfiguration\" factoryName=\"Gradle\" temporary=\"true\">\r\n      <ExternalSystemSettings>\r\n        <option name=\"executionName\" />\r\n        <option name=\"externalProjectPath\" value=\"$PROJECT_DIR$\" />\r\n        <option name=\"externalSystemIdString\" value=\"GRADLE\" />\r\n        <option name=\"scriptParameters\" />\r\n        <option name=\"taskDescriptions\">\r\n          <list />\r\n        </option>\r\n        <option name=\"taskNames\">\r\n          <list>\r\n            <option value=\"run\" />\r\n          </list>\r\n        </option>\r\n        <option name=\"vmOptions\" />\r\n      </ExternalSystemSettings>\r\n      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>\r\n      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>\r\n      <DebugAllEnabled>false</DebugAllEnabled>\r\n      <RunAsTest>false</RunAsTest>\r\n      <method v=\"2\" />\r\n    </configuration>\r\n    <recent_temporary>\r\n      <list>\r\n        <item itemvalue=\"Gradle.ScholarStack [run]\" />\r\n        <item itemvalue=\"Gradle.ScholarStack [build]\" />\r\n      </list>\r\n    </recent_temporary>\r\n  </component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"caf41903-31e9-4411-a647-9632c151de00\" name=\"Changes\" comment=\"\" />\r\n      <created>1702632996779</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1702632996779</updated>\r\n      <workItem from=\"1702632997849\" duration=\"2213000\" />\r\n    </task>\r\n    <task id=\"LOCAL-00001\" summary=\"Initial commit\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1702633035887</created>\r\n      <option name=\"number\" value=\"00001\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1702633035887</updated>\r\n    </task>\r\n    <option name=\"localTasksCounter\" value=\"2\" />\r\n    <servers />\r\n  </component>\r\n  <component name=\"TypeScriptGeneratedFilesManager\">\r\n    <option name=\"version\" value=\"3\" />\r\n  </component>\r\n  <component name=\"VcsManagerConfiguration\">\r\n    <MESSAGE value=\"Initial commit\" />\r\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"Initial commit\" />\r\n  </component>\r\n</project>
+-Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+-<+>UTF-8
+-===================================================================
+-diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+---- a/.idea/workspace.xml	(revision bfd6a505b9580d0dc38103ab2d96059162676db4)
+-+++ b/.idea/workspace.xml	(date 1702652950398)
+-@@ -52,6 +52,20 @@
+-   <component name="Git.Settings">
+-     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+-   </component>
+-+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+-+  "lastFilter": {
+-+    "state": "OPEN",
+-+    "assignee": "hc1321"
+-+  }
+-+}]]></component>
+-+  <component name="GithubPullRequestsUISettings">
+-+    <option name="selectedUrlAndAccountId">
+-+      <UrlAndAccount>
+-+        <option name="accountId" value="94f5c8fa-5dcb-462c-aead-7a111d037cfc" />
+-+        <option name="url" value="https://github.com/Dan1678/ScholarStack.git" />
+-+      </UrlAndAccount>
+-+    </option>
+-+  </component>
+-   <component name="ProjectColorInfo">{
+-   &quot;associatedIndex&quot;: 6
+- }</component>
+Index: .idea/shelf/Uncommitted_changes_before_Update_at_15_12_2023__14_44__Changes_.xml
+===================================================================
+diff --git a/.idea/shelf/Uncommitted_changes_before_Update_at_15_12_2023__14_44__Changes_.xml b/.idea/shelf/Uncommitted_changes_before_Update_at_15_12_2023__14_44__Changes_.xml
+deleted file mode 100644
+--- a/.idea/shelf/Uncommitted_changes_before_Update_at_15_12_2023__14_44__Changes_.xml	(revision bec8cbb169b3742a6d0d1efedd4279631de63a1f)
++++ /dev/null	(revision bec8cbb169b3742a6d0d1efedd4279631de63a1f)
+@@ -1,4 +0,0 @@
+-<changelist name="Uncommitted_changes_before_Update_at_15_12_2023,_14_44_[Changes]" date="1702651537251" recycled="true" deleted="true">
+-  <option name="PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_15_12_2023,_14_44_[Changes]/shelved.patch" />
+-  <option name="DESCRIPTION" value="Uncommitted changes before Update at 15/12/2023, 14:44 [Changes]" />
+-</changelist>
+\ No newline at end of file
+Index: .idea/shelf/Uncommitted_changes_before_Update_at_15_12_2023,_14_59_[Changes]/shelved.patch
+===================================================================
+diff --git a/.idea/shelf/Uncommitted_changes_before_Update_at_15_12_2023,_14_59_[Changes]/shelved.patch b/.idea/shelf/Uncommitted_changes_before_Update_at_15_12_2023,_14_59_[Changes]/shelved.patch
+deleted file mode 100644
+--- a/.idea/shelf/Uncommitted_changes_before_Update_at_15_12_2023,_14_59_[Changes]/shelved.patch	(revision bec8cbb169b3742a6d0d1efedd4279631de63a1f)
++++ /dev/null	(revision bec8cbb169b3742a6d0d1efedd4279631de63a1f)
+@@ -1,163 +0,0 @@
+-Index: .idea/workspace.xml
+-IDEA additional info:
+-Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+-<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<project version=\"4\">\n  <component name=\"AutoImportSettings\">\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\n  </component>\n  <component name=\"ChangeListManager\">\n    <list default=\"true\" id=\"caf41903-31e9-4411-a647-9632c151de00\" name=\"Changes\" comment=\"Initial commit\">\n      <change afterPath=\"$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar\" afterDir=\"false\" />\n      <change afterPath=\"$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties\" afterDir=\"false\" />\n      <change afterPath=\"$PROJECT_DIR$/src/main/java/CreateLoginForm.java\" afterDir=\"false\" />\n      <change afterPath=\"$PROJECT_DIR$/src/main/java/NewPage.java\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/.idea/misc.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/misc.xml\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\n    </list>\n    <list id=\"f4862b22-822d-41c3-ba14-ffe306fc865d\" name=\"Changes by adelinavlasie\" comment=\"\" />\n    <list id=\"efbba4e2-aabd-433a-998f-300dbcd02e3e\" name=\"Changes by hc1321\" comment=\"\" />\n    <list id=\"ee22f58c-8bfc-471d-9402-c1fb1980b07d\" name=\"Changes by johnn\" comment=\"\">\n      <change beforePath=\"$PROJECT_DIR$/build.gradle\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/build.gradle\" afterDir=\"false\" />\n    </list>\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\n  </component>\n  <component name=\"ExternalProjectsData\">\n    <projectState path=\"$PROJECT_DIR$\">\n      <ProjectState />\n    </projectState>\n  </component>\n  <component name=\"ExternalProjectsManager\">\n    <system id=\"GRADLE\">\n      <state>\n        <task path=\"$PROJECT_DIR$\">\n          <activation />\n        </task>\n        <projects_view>\n          <tree_state>\n            <expand />\n            <select />\n          </tree_state>\n        </projects_view>\n      </state>\n    </system>\n  </component>\n  <component name=\"FileTemplateManagerImpl\">\n    <option name=\"RECENT_TEMPLATES\">\n      <list>\n        <option value=\"Class\" />\n      </list>\n    </option>\n  </component>\n  <component name=\"Git.Settings\">\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\n  </component>\n  <component name=\"ProjectColorInfo\"><![CDATA[{\n  \"associatedIndex\": 6\n}]]></component>\n  <component name=\"ProjectId\" id=\"2ZZcMR9d9OvzWLINeXRLnXHqGQF\" />\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\" />\n  <component name=\"ProjectViewState\">\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\n    <option name=\"showLibraryContents\" value=\"true\" />\n  </component>\n  <component name=\"PropertiesComponent\"><![CDATA[{\n  \"keyToString\": {\n    \"RunOnceActivity.OpenProjectViewOnStart\": \"true\",\n    \"RunOnceActivity.ShowReadmeOnStart\": \"true\",\n    \"WebServerToolWindowFactoryState\": \"false\",\n    \"git-widget-placeholder\": \"master\",\n    \"node.js.detected.package.eslint\": \"true\",\n    \"node.js.detected.package.tslint\": \"true\",\n    \"node.js.selected.package.eslint\": \"(autodetect)\",\n    \"node.js.selected.package.tslint\": \"(autodetect)\",\n    \"project.structure.last.edited\": \"Modules\",\n    \"project.structure.proportion\": \"0.0\",\n    \"project.structure.side.proportion\": \"0.0\",\n    \"vue.rearranger.settings.migration\": \"true\"\n  }\n}]]></component>\n  <component name=\"RecentsManager\">\n    <key name=\"CopyClassDialog.RECENTS_KEY\">\n      <recent name=\"\" />\n    </key>\n  </component>\n  <component name=\"RunManager\" selected=\"Gradle.ScholarStack [run]\">\n    <configuration name=\"ScholarStack [build]\" type=\"GradleRunConfiguration\" factoryName=\"Gradle\" temporary=\"true\">\n      <ExternalSystemSettings>\n        <option name=\"executionName\" />\n        <option name=\"externalProjectPath\" value=\"$PROJECT_DIR$\" />\n        <option name=\"externalSystemIdString\" value=\"GRADLE\" />\n        <option name=\"scriptParameters\" />\n        <option name=\"taskDescriptions\">\n          <list />\n        </option>\n        <option name=\"taskNames\">\n          <list>\n            <option value=\"build\" />\n          </list>\n        </option>\n        <option name=\"vmOptions\" />\n      </ExternalSystemSettings>\n      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>\n      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>\n      <DebugAllEnabled>false</DebugAllEnabled>\n      <RunAsTest>false</RunAsTest>\n      <method v=\"2\" />\n    </configuration>\n    <configuration name=\"ScholarStack [run]\" type=\"GradleRunConfiguration\" factoryName=\"Gradle\" temporary=\"true\">\n      <ExternalSystemSettings>\n        <option name=\"executionName\" />\n        <option name=\"externalProjectPath\" value=\"$PROJECT_DIR$\" />\n        <option name=\"externalSystemIdString\" value=\"GRADLE\" />\n        <option name=\"scriptParameters\" />\n        <option name=\"taskDescriptions\">\n          <list />\n        </option>\n        <option name=\"taskNames\">\n          <list>\n            <option value=\"run\" />\n          </list>\n        </option>\n        <option name=\"vmOptions\" />\n      </ExternalSystemSettings>\n      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>\n      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>\n      <DebugAllEnabled>false</DebugAllEnabled>\n      <RunAsTest>false</RunAsTest>\n      <method v=\"2\" />\n    </configuration>\n    <recent_temporary>\n      <list>\n        <item itemvalue=\"Gradle.ScholarStack [build]\" />\n        <item itemvalue=\"Gradle.ScholarStack [run]\" />\n      </list>\n    </recent_temporary>\n  </component>\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\n  <component name=\"TaskManager\">\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\n      <changelist id=\"caf41903-31e9-4411-a647-9632c151de00\" name=\"Changes\" comment=\"\" />\n      <created>1702632996779</created>\n      <option name=\"number\" value=\"Default\" />\n      <option name=\"presentableId\" value=\"Default\" />\n      <updated>1702632996779</updated>\n      <workItem from=\"1702632997849\" duration=\"2213000\" />\n    </task>\n    <task id=\"LOCAL-00001\" summary=\"Initial commit\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1702633035887</created>\n      <option name=\"number\" value=\"00001\" />\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1702633035887</updated>\n    </task>\n    <option name=\"localTasksCounter\" value=\"2\" />\n    <servers />\n  </component>\n  <component name=\"TypeScriptGeneratedFilesManager\">\n    <option name=\"version\" value=\"3\" />\n  </component>\n  <component name=\"VcsManagerConfiguration\">\n    <MESSAGE value=\"Initial commit\" />\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"Initial commit\" />\n  </component>\n</project>
+-Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+-<+>UTF-8
+-===================================================================
+-diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+---- a/.idea/workspace.xml	(revision 33dbb9a2440260c49f5e0866348d3257be41705b)
+-+++ b/.idea/workspace.xml	(date 1702652337621)
+-@@ -4,19 +4,14 @@
+-     <option name="autoReloadType" value="SELECTIVE" />
+-   </component>
+-   <component name="ChangeListManager">
+--    <list default="true" id="caf41903-31e9-4411-a647-9632c151de00" name="Changes" comment="Initial commit">
+--      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+--      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+--      <change afterPath="$PROJECT_DIR$/src/main/java/CreateLoginForm.java" afterDir="false" />
+--      <change afterPath="$PROJECT_DIR$/src/main/java/NewPage.java" afterDir="false" />
+--      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+-+    <list default="true" id="caf41903-31e9-4411-a647-9632c151de00" name="Changes" comment="Built the databaseconnector class">
+-+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+-       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+-+      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
+-     </list>
+-     <list id="f4862b22-822d-41c3-ba14-ffe306fc865d" name="Changes by adelinavlasie" comment="" />
+-     <list id="efbba4e2-aabd-433a-998f-300dbcd02e3e" name="Changes by hc1321" comment="" />
+--    <list id="ee22f58c-8bfc-471d-9402-c1fb1980b07d" name="Changes by johnn" comment="">
+--      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+--    </list>
+-+    <list id="ee22f58c-8bfc-471d-9402-c1fb1980b07d" name="Changes by johnn" comment="" />
+-     <option name="SHOW_DIALOG" value="false" />
+-     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+-     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+-@@ -35,7 +30,29 @@
+-         </task>
+-         <projects_view>
+-           <tree_state>
+--            <expand />
+-+            <expand>
+-+              <path>
+-+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+-+                <item name="ScholarStack" type="f1a62948:ProjectNode" />
+-+              </path>
+-+              <path>
+-+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+-+                <item name="ScholarStack" type="f1a62948:ProjectNode" />
+-+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+-+              </path>
+-+              <path>
+-+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+-+                <item name="ScholarStack" type="f1a62948:ProjectNode" />
+-+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+-+                <item name="application" type="c8890929:TasksNode$1" />
+-+              </path>
+-+              <path>
+-+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+-+                <item name="ScholarStack" type="f1a62948:ProjectNode" />
+-+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+-+                <item name="build" type="c8890929:TasksNode$1" />
+-+              </path>
+-+            </expand>
+-             <select />
+-           </tree_state>
+-         </projects_view>
+-@@ -52,9 +69,9 @@
+-   <component name="Git.Settings">
+-     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+-   </component>
+--  <component name="ProjectColorInfo"><![CDATA[{
+--  "associatedIndex": 6
+--}]]></component>
+-+  <component name="ProjectColorInfo">{
+-+  &quot;associatedIndex&quot;: 6
+-+}</component>
+-   <component name="ProjectId" id="2ZZcMR9d9OvzWLINeXRLnXHqGQF" />
+-   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+-   <component name="ProjectViewState">
+-@@ -67,10 +84,12 @@
+-     "RunOnceActivity.ShowReadmeOnStart": "true",
+-     "WebServerToolWindowFactoryState": "false",
+-     "git-widget-placeholder": "master",
+-+    "kotlin-language-version-configured": "true",
+-     "node.js.detected.package.eslint": "true",
+-     "node.js.detected.package.tslint": "true",
+-     "node.js.selected.package.eslint": "(autodetect)",
+-     "node.js.selected.package.tslint": "(autodetect)",
+-+    "nodejs_package_manager_path": "npm",
+-     "project.structure.last.edited": "Modules",
+-     "project.structure.proportion": "0.0",
+-     "project.structure.side.proportion": "0.0",
+-@@ -134,6 +153,13 @@
+-       </list>
+-     </recent_temporary>
+-   </component>
+-+  <component name="SharedIndexes">
+-+    <attachedChunks>
+-+      <set>
+-+        <option value="jdk-16.0.2-azul-16.0.2-3183f394aec4-de25052a" />
+-+      </set>
+-+    </attachedChunks>
+-+  </component>
+-   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+-   <component name="TaskManager">
+-     <task active="true" id="Default" summary="Default task">
+-@@ -143,6 +169,7 @@
+-       <option name="presentableId" value="Default" />
+-       <updated>1702632996779</updated>
+-       <workItem from="1702632997849" duration="2213000" />
+-+      <workItem from="1702652003535" duration="334000" />
+-     </task>
+-     <task id="LOCAL-00001" summary="Initial commit">
+-       <option name="closed" value="true" />
+-Index: src/main/java/Main.java
+-IDEA additional info:
+-Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+-<+>import javax.swing.*;\n\npublic class Main {\n    public static void main(String arg[])\n    {\n        MainUI mainUI = new MainUI();\n        try\n        {\n            //create instance of the CreateLoginForm\n            CreateLoginForm form = new CreateLoginForm();\n            form.setSize(300,100);  //set size of the frame\n            form.setVisible(true);  //make form visible to the user\n        }\n        catch(Exception e)\n        {\n            //handle exception\n            JOptionPane.showMessageDialog(null, e.getMessage());\n        }\n    }\n}\n
+-Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+-<+>UTF-8
+-===================================================================
+-diff --git a/src/main/java/Main.java b/src/main/java/Main.java
+---- a/src/main/java/Main.java	(revision 33dbb9a2440260c49f5e0866348d3257be41705b)
+-+++ b/src/main/java/Main.java	(date 1702652327875)
+-@@ -1,4 +1,6 @@
+- import javax.swing.*;
+-+import java.net.URI;
+-+import java.net.URL;
+- 
+- public class Main {
+-     public static void main(String arg[])
+-@@ -16,5 +18,15 @@
+-             //handle exception
+-             JOptionPane.showMessageDialog(null, e.getMessage());
+-         }
+-+
+-+        if (DatabaseConnector.connectToDatabase()) {
+-+            System.out.println("Connected to the database successfully!");
+-+        } else {
+-+            System.out.println("Failed to connect to the database.");
+-+        }
+-+
+-+
+-+
+-+
+-     }
+- }
+-Index: .idea/gradle.xml
+-IDEA additional info:
+-Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+-<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<project version=\"4\">\n  <component name=\"GradleSettings\">\n    <option name=\"linkedExternalProjectsSettings\">\n      <GradleProjectSettings>\n        <option name=\"externalProjectPath\" value=\"$PROJECT_DIR$\" />\n        <option name=\"gradleHome\" value=\"\" />\n        <option name=\"modules\">\n          <set>\n            <option value=\"$PROJECT_DIR$\" />\n          </set>\n        </option>\n      </GradleProjectSettings>\n    </option>\n  </component>\n</project>
+-Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+-<+>UTF-8
+-===================================================================
+-diff --git a/.idea/gradle.xml b/.idea/gradle.xml
+---- a/.idea/gradle.xml	(revision 33dbb9a2440260c49f5e0866348d3257be41705b)
+-+++ b/.idea/gradle.xml	(date 1702652327874)
+-@@ -1,5 +1,6 @@
+- <?xml version="1.0" encoding="UTF-8"?>
+- <project version="4">
+-+  <component name="GradleMigrationSettings" migrationVersion="1" />
+-   <component name="GradleSettings">
+-     <option name="linkedExternalProjectsSettings">
+-       <GradleProjectSettings>
+Index: .idea/shelf/Uncommitted_changes_before_Update_at_15_12_2023__16_44__Changes_.xml
+===================================================================
+diff --git a/.idea/shelf/Uncommitted_changes_before_Update_at_15_12_2023__16_44__Changes_.xml b/.idea/shelf/Uncommitted_changes_before_Update_at_15_12_2023__16_44__Changes_.xml
+deleted file mode 100644
+--- a/.idea/shelf/Uncommitted_changes_before_Update_at_15_12_2023__16_44__Changes_.xml	(revision bec8cbb169b3742a6d0d1efedd4279631de63a1f)
++++ /dev/null	(revision bec8cbb169b3742a6d0d1efedd4279631de63a1f)
+@@ -1,4 +0,0 @@
+-<changelist name="Uncommitted_changes_before_Update_at_15_12_2023,_16_44_[Changes]" date="1702658663072" recycled="true" deleted="true">
+-  <option name="PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_15_12_2023,_16_44_[Changes]/shelved.patch" />
+-  <option name="DESCRIPTION" value="Uncommitted changes before Update at 15/12/2023, 16:44 [Changes]" />
+-</changelist>
+\ No newline at end of file
+Index: .idea/shelf/Uncommitted_changes_before_Update_at_15_12_2023_15_09__Changes_.xml
+===================================================================
+diff --git a/.idea/shelf/Uncommitted_changes_before_Update_at_15_12_2023_15_09__Changes_.xml b/.idea/shelf/Uncommitted_changes_before_Update_at_15_12_2023_15_09__Changes_.xml
+deleted file mode 100644
+--- a/.idea/shelf/Uncommitted_changes_before_Update_at_15_12_2023_15_09__Changes_.xml	(revision bec8cbb169b3742a6d0d1efedd4279631de63a1f)
++++ /dev/null	(revision bec8cbb169b3742a6d0d1efedd4279631de63a1f)
+@@ -1,4 +0,0 @@
+-<changelist name="Uncommitted_changes_before_Update_at_15_12_2023_15_09_[Changes]" date="1702652956389" recycled="true" deleted="true">
+-  <option name="PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_15_12_2023_15_09_[Changes]/shelved.patch" />
+-  <option name="DESCRIPTION" value="Uncommitted changes before Update at 15/12/2023 15:09 [Changes]" />
+-</changelist>
+\ No newline at end of file
+Index: .idea/shelf/Uncommitted_changes_before_Update_at_15_12_2023,_16_44_[Changes]/shelved.patch
+===================================================================
+diff --git a/.idea/shelf/Uncommitted_changes_before_Update_at_15_12_2023,_16_44_[Changes]/shelved.patch b/.idea/shelf/Uncommitted_changes_before_Update_at_15_12_2023,_16_44_[Changes]/shelved.patch
+deleted file mode 100644
+--- a/.idea/shelf/Uncommitted_changes_before_Update_at_15_12_2023,_16_44_[Changes]/shelved.patch	(revision bec8cbb169b3742a6d0d1efedd4279631de63a1f)
++++ /dev/null	(revision bec8cbb169b3742a6d0d1efedd4279631de63a1f)
+@@ -1,286 +0,0 @@
+-Index: src/main/java/MainUI/Papers_list.java
+-IDEA additional info:
+-Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+-<+>package MainUI;\n\nimport java.util.ArrayList;\nimport java.util.Scanner;\nimport java.util.regex.Matcher;\nimport java.util.regex.Pattern;\n\nclass Papers_list {\n    ArrayList<String> Papers = new ArrayList<String>();\n    Scanner scanner = new Scanner(System.in);\n    public String paper;\n\n    public void addPaper(String reference) {\n        Papers.add(scanner.next());\n        boolean validInput = false;\n        String userInput;\n        Pattern harvardPattern = Pattern.compile(\"^([A-Z][a-zA-Z]+), ([A-Z][a-zA-Z]+), ([0-9]{4})\\\\.$\");\n\n        while (!validInput) {\n            System.out.println(\"Enter the Harvard reference (Author Last Name, Author First Name, Year): \");\n            userInput = scanner.nextLine();\n\n            Matcher matcher = harvardPattern.matcher(userInput);\n\n            if (matcher.matches()) {\n                Papers.add(userInput);\n                validInput = true;\n            } else {\n                System.out.println(\"Please enter the reference in Harvard format (Last Name, First Name, Year).\");\n            }\n        }\n    }\n\n\n\n    public ArrayList<String> getReferenceList() {\n        return Papers ;\n    }\n}\n\n\n//for (int i = 0; i < Papers.size(); i++) {\n       // System.out.println(cars.get(i));\n\n\n
+-Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+-<+>UTF-8
+-===================================================================
+-diff --git a/src/main/java/MainUI/Papers_list.java b/src/main/java/MainUI/Papers_list.java
+---- a/src/main/java/MainUI/Papers_list.java	(revision ba2b0aab8714b961b12015ac2b536e1d0965eead)
+-+++ b/src/main/java/MainUI/Papers_list.java	(date 1702657918453)
+-@@ -5,26 +5,23 @@
+- import java.util.regex.Matcher;
+- import java.util.regex.Pattern;
+- 
+--class Papers_list {
+--    ArrayList<String> Papers = new ArrayList<String>();
+--    Scanner scanner = new Scanner(System.in);
+--    public String paper;
+-+/*class Papers_list {
+-+    private ArrayList<String> Papers = new ArrayList<>();
+-+
+-+
+- 
+-     public void addPaper(String reference) {
+--        Papers.add(scanner.next());
+--        boolean validInput = false;
+--        String userInput;
+-+
+-+
+-         Pattern harvardPattern = Pattern.compile("^([A-Z][a-zA-Z]+), ([A-Z][a-zA-Z]+), ([0-9]{4})\\.$");
+-+        Matcher matcher = harvardPattern.matcher(reference);
+- 
+--        while (!validInput) {
+--            System.out.println("Enter the Harvard reference (Author Last Name, Author First Name, Year): ");
+--            userInput = scanner.nextLine();
+- 
+--            Matcher matcher = harvardPattern.matcher(userInput);
+-+
+- 
+-             if (matcher.matches()) {
+--                Papers.add(userInput);
+--                validInput = true;
+-+                Papers.add(reference);
+-+                ;
+-             } else {
+-                 System.out.println("Please enter the reference in Harvard format (Last Name, First Name, Year).");
+-             }
+-@@ -34,12 +31,36 @@
+- 
+- 
+-     public ArrayList<String> getReferenceList() {
+--        return Papers ;
+-+
+-+
+-+        return Papers;
+-     }
+--}
+- 
+-+}
+- 
+- //for (int i = 0; i < Papers.size(); i++) {
+-        // System.out.println(cars.get(i));
+-+*/
+-+public class Papers_list {
+-+    private ArrayList<String> Papers = new ArrayList<>();
+-+
+-+    public void addPaper(String reference) {
+-+        //Pattern harvardPattern = Pattern.compile("^([A-Z][a-zA-Z]+), ([A-Z][a-zA-Z]+), ([0-9]{4})\\.$");
+-+      /*  Pattern harvardPattern = Pattern.compile("^([A-Za-z]+) , ([A-Za-z]+), \\d{4}\\.$");
+-+        Matcher matcher = harvardPattern.matcher(reference);
+-+
+-+        if (matcher.matches()) {
+-+            Papers.add(reference);
+-+        } else {
+-+            System.out.println("Please enter the reference in Harvard format (Last Name, First Name, Year).");
+-+        }*/
+-+
+-+            Papers.add(reference);
+-+    }
+-+
+-+    public ArrayList<String> getReferenceList() {
+-+        return Papers;
+-+    }
+-+}
+- 
+- 
+-Index: .idea/workspace.xml
+-IDEA additional info:
+-Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+-<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<project version=\"4\">\n  <component name=\"AutoImportSettings\">\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\n  </component>\n  <component name=\"ChangeListManager\">\n    <list default=\"true\" id=\"caf41903-31e9-4411-a647-9632c151de00\" name=\"Changes\" comment=\"Added Database connector with JDK conflicts resolved\" />\n    <list id=\"f4862b22-822d-41c3-ba14-ffe306fc865d\" name=\"Changes by adelinavlasie\" comment=\"\" />\n    <list id=\"efbba4e2-aabd-433a-998f-300dbcd02e3e\" name=\"Changes by hc1321\" comment=\"\" />\n    <list id=\"ee22f58c-8bfc-471d-9402-c1fb1980b07d\" name=\"Changes by johnn\" comment=\"\" />\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\n  </component>\n  <component name=\"ExternalProjectsData\">\n    <projectState path=\"$PROJECT_DIR$\">\n      <ProjectState />\n    </projectState>\n  </component>\n  <component name=\"ExternalProjectsManager\">\n    <system id=\"GRADLE\">\n      <state>\n        <task path=\"$PROJECT_DIR$\">\n          <activation />\n        </task>\n        <projects_view>\n          <tree_state>\n            <expand />\n            <select />\n          </tree_state>\n        </projects_view>\n      </state>\n    </system>\n  </component>\n  <component name=\"FileTemplateManagerImpl\">\n    <option name=\"RECENT_TEMPLATES\">\n      <list>\n        <option value=\"Class\" />\n      </list>\n    </option>\n  </component>\n  <component name=\"Git.Settings\">\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\n  </component>\n  <component name=\"ProjectColorInfo\">{\n  &quot;associatedIndex&quot;: 6\n}</component>\n  <component name=\"ProjectId\" id=\"2ZZcMR9d9OvzWLINeXRLnXHqGQF\" />\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\" />\n  <component name=\"ProjectViewState\">\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\n    <option name=\"showLibraryContents\" value=\"true\" />\n  </component>\n  <component name=\"PropertiesComponent\">{\n  &quot;keyToString&quot;: {\n    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,\n    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,\n    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,\n    &quot;git-widget-placeholder&quot;: &quot;master&quot;,\n    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,\n    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,\n    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,\n    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,\n    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,\n    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,\n    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,\n    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;\n  }\n}</component>\n  <component name=\"RecentsManager\">\n    <key name=\"CopyClassDialog.RECENTS_KEY\">\n      <recent name=\"\" />\n    </key>\n  </component>\n  <component name=\"RunManager\" selected=\"Gradle.ScholarStack [run]\">\n    <configuration name=\"ScholarStack [build]\" type=\"GradleRunConfiguration\" factoryName=\"Gradle\" temporary=\"true\">\n      <ExternalSystemSettings>\n        <option name=\"executionName\" />\n        <option name=\"externalProjectPath\" value=\"$PROJECT_DIR$\" />\n        <option name=\"externalSystemIdString\" value=\"GRADLE\" />\n        <option name=\"scriptParameters\" />\n        <option name=\"taskDescriptions\">\n          <list />\n        </option>\n        <option name=\"taskNames\">\n          <list>\n            <option value=\"build\" />\n          </list>\n        </option>\n        <option name=\"vmOptions\" />\n      </ExternalSystemSettings>\n      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>\n      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>\n      <DebugAllEnabled>false</DebugAllEnabled>\n      <RunAsTest>false</RunAsTest>\n      <method v=\"2\" />\n    </configuration>\n    <configuration name=\"ScholarStack [run]\" type=\"GradleRunConfiguration\" factoryName=\"Gradle\" temporary=\"true\">\n      <ExternalSystemSettings>\n        <option name=\"executionName\" />\n        <option name=\"externalProjectPath\" value=\"$PROJECT_DIR$\" />\n        <option name=\"externalSystemIdString\" value=\"GRADLE\" />\n        <option name=\"scriptParameters\" />\n        <option name=\"taskDescriptions\">\n          <list />\n        </option>\n        <option name=\"taskNames\">\n          <list>\n            <option value=\"run\" />\n          </list>\n        </option>\n        <option name=\"vmOptions\" />\n      </ExternalSystemSettings>\n      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>\n      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>\n      <DebugAllEnabled>false</DebugAllEnabled>\n      <RunAsTest>false</RunAsTest>\n      <method v=\"2\" />\n    </configuration>\n    <recent_temporary>\n      <list>\n        <item itemvalue=\"Gradle.ScholarStack [run]\" />\n        <item itemvalue=\"Gradle.ScholarStack [build]\" />\n      </list>\n    </recent_temporary>\n  </component>\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\n  <component name=\"TaskManager\">\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\n      <changelist id=\"caf41903-31e9-4411-a647-9632c151de00\" name=\"Changes\" comment=\"\" />\n      <created>1702632996779</created>\n      <option name=\"number\" value=\"Default\" />\n      <option name=\"presentableId\" value=\"Default\" />\n      <updated>1702632996779</updated>\n      <workItem from=\"1702632997849\" duration=\"2213000\" />\n    </task>\n    <task id=\"LOCAL-00001\" summary=\"Initial commit\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1702633035887</created>\n      <option name=\"number\" value=\"00001\" />\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1702633035887</updated>\n    </task>\n    <task id=\"LOCAL-00002\" summary=\"Added Database connector with JDK conflicts resolved\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1702652836773</created>\n      <option name=\"number\" value=\"00002\" />\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1702652836773</updated>\n    </task>\n    <option name=\"localTasksCounter\" value=\"3\" />\n    <servers />\n  </component>\n  <component name=\"TypeScriptGeneratedFilesManager\">\n    <option name=\"version\" value=\"3\" />\n  </component>\n  <component name=\"VcsManagerConfiguration\">\n    <MESSAGE value=\"Initial commit\" />\n    <MESSAGE value=\"Added Database connector with JDK conflicts resolved\" />\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"Added Database connector with JDK conflicts resolved\" />\n  </component>\n</project>
+-Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+-<+>UTF-8
+-===================================================================
+-diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+---- a/.idea/workspace.xml	(revision ba2b0aab8714b961b12015ac2b536e1d0965eead)
+-+++ b/.idea/workspace.xml	(date 1702656746904)
+-@@ -4,7 +4,12 @@
+-     <option name="autoReloadType" value="SELECTIVE" />
+-   </component>
+-   <component name="ChangeListManager">
+--    <list default="true" id="caf41903-31e9-4411-a647-9632c151de00" name="Changes" comment="Added Database connector with JDK conflicts resolved" />
+-+    <list default="true" id="caf41903-31e9-4411-a647-9632c151de00" name="Changes" comment="Added Database connector with JDK conflicts resolved">
+-+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+-+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+-+      <change beforePath="$PROJECT_DIR$/src/main/java/MainUI/PapersPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MainUI/PapersPanel.java" afterDir="false" />
+-+      <change beforePath="$PROJECT_DIR$/src/main/java/MainUI/Papers_list.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MainUI/Papers_list.java" afterDir="false" />
+-+    </list>
+-     <list id="f4862b22-822d-41c3-ba14-ffe306fc865d" name="Changes by adelinavlasie" comment="" />
+-     <list id="efbba4e2-aabd-433a-998f-300dbcd02e3e" name="Changes by hc1321" comment="" />
+-     <list id="ee22f58c-8bfc-471d-9402-c1fb1980b07d" name="Changes by johnn" comment="" />
+-@@ -26,7 +31,29 @@
+-         </task>
+-         <projects_view>
+-           <tree_state>
+--            <expand />
+-+            <expand>
+-+              <path>
+-+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+-+                <item name="ScholarStack" type="f1a62948:ProjectNode" />
+-+              </path>
+-+              <path>
+-+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+-+                <item name="ScholarStack" type="f1a62948:ProjectNode" />
+-+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+-+              </path>
+-+              <path>
+-+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+-+                <item name="ScholarStack" type="f1a62948:ProjectNode" />
+-+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+-+                <item name="application" type="c8890929:TasksNode$1" />
+-+              </path>
+-+              <path>
+-+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+-+                <item name="ScholarStack" type="f1a62948:ProjectNode" />
+-+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+-+                <item name="build" type="c8890929:TasksNode$1" />
+-+              </path>
+-+            </expand>
+-             <select />
+-           </tree_state>
+-         </projects_view>
+-@@ -52,22 +79,23 @@
+-     <option name="hideEmptyMiddlePackages" value="true" />
+-     <option name="showLibraryContents" value="true" />
+-   </component>
+--  <component name="PropertiesComponent">{
+--  &quot;keyToString&quot;: {
+--    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+--    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+--    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+--    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+--    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+--    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+--    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+--    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+--    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+--    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+--    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+--    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+-+  <component name="PropertiesComponent"><![CDATA[{
+-+  "keyToString": {
+-+    "Gradle.ScholarStack [run].executor": "Run",
+-+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+-+    "RunOnceActivity.ShowReadmeOnStart": "true",
+-+    "WebServerToolWindowFactoryState": "false",
+-+    "git-widget-placeholder": "master",
+-+    "node.js.detected.package.eslint": "true",
+-+    "node.js.detected.package.tslint": "true",
+-+    "node.js.selected.package.eslint": "(autodetect)",
+-+    "node.js.selected.package.tslint": "(autodetect)",
+-+    "project.structure.last.edited": "Modules",
+-+    "project.structure.proportion": "0.0",
+-+    "project.structure.side.proportion": "0.0",
+-+    "vue.rearranger.settings.migration": "true"
+-   }
+--}</component>
+-+}]]></component>
+-   <component name="RecentsManager">
+-     <key name="CopyClassDialog.RECENTS_KEY">
+-       <recent name="" />
+-Index: src/main/java/MainUI/PapersPanel.java
+-IDEA additional info:
+-Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+-<+>package MainUI;\n\nimport javax.swing.*;\nimport javax.swing.border.Border;\nimport java.awt.*;\nimport java.awt.event.ActionEvent;\nimport java.awt.event.ActionListener;\nimport java.util.ArrayList;\n\npublic class PapersPanel extends JPanel {\n\n        private Papers_list papersList;\n        private JTextArea displayArea;\n\n        public PapersPanel() {\n\n            //Set up panel\n            setVisible(true);\n            setBorder(BorderFactory.createLineBorder(Color.black));\n\n\n            papersList = new Papers_list();\n\n            displayArea = new JTextArea(30, 50);\n            displayArea.setEditable(false);\n\n            JScrollPane scrollPane = new JScrollPane(displayArea);\n            add(scrollPane);\n            JButton addReferenceButton = new JButton(\"Add Reference\");\n            addReferenceButton.addActionListener(new ActionListener() {\n                @Override\n                public void actionPerformed(ActionEvent e) {\n                    String reference = JOptionPane.showInputDialog(\"Enter the Harvard reference:\");\n                    if (reference != null && !reference.isEmpty()) {\n                        papersList.addPaper(reference);\n                        displayPapers();\n                    }\n                }\n            });\n            add(addReferenceButton);\n\n            displayPapers();\n        }\n\n        public void displayPapers() {\n            displayArea.setText(\"\");//clear before updating\n            ArrayList<String> references = papersList.getReferenceList();\n            StringBuilder stringBuilder = new StringBuilder();\n\n            for (String reference : references) {\n                stringBuilder.append(reference).append(\"\\n\");\n            }\n\n            displayArea.setText(stringBuilder.toString());\n\n        }\n\n\n    }\n\n\n\n\n\n\n\n\n\n\n
+-Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+-<+>UTF-8
+-===================================================================
+-diff --git a/src/main/java/MainUI/PapersPanel.java b/src/main/java/MainUI/PapersPanel.java
+---- a/src/main/java/MainUI/PapersPanel.java	(revision ba2b0aab8714b961b12015ac2b536e1d0965eead)
+-+++ b/src/main/java/MainUI/PapersPanel.java	(date 1702658583680)
+-@@ -6,6 +6,8 @@
+- import java.awt.event.ActionEvent;
+- import java.awt.event.ActionListener;
+- import java.util.ArrayList;
+-+import java.util.regex.Matcher;
+-+import java.util.regex.Pattern;
+- 
+- public class PapersPanel extends JPanel {
+- 
+-@@ -14,32 +16,47 @@
+- 
+-         public PapersPanel() {
+- 
+-+            setLayout(new BorderLayout());
+-+            papersList = new Papers_list();
+-             //Set up panel
+-             setVisible(true);
+-             setBorder(BorderFactory.createLineBorder(Color.black));
+- 
+- 
+--            papersList = new Papers_list();
+- 
+--            displayArea = new JTextArea(30, 50);
+-+
+-+            displayArea = new JTextArea(250, 505);
+-             displayArea.setEditable(false);
+- 
+-             JScrollPane scrollPane = new JScrollPane(displayArea);
+--            add(scrollPane);
+-+            scrollPane.setPreferredSize(new Dimension(500, 300));//make it large otherwise it won t show
+-+            add(scrollPane,BorderLayout.CENTER);
+-             JButton addReferenceButton = new JButton("Add Reference");
+-             addReferenceButton.addActionListener(new ActionListener() {
+-                 @Override
+-                 public void actionPerformed(ActionEvent e) {
+-                     String reference = JOptionPane.showInputDialog("Enter the Harvard reference:");
+--                    if (reference != null && !reference.isEmpty()) {
+-+                    if (reference != null && !reference.isEmpty()&& isValidHarvardReference(reference)) {
+-                         papersList.addPaper(reference);
+-                         displayPapers();
+-+                    }else {
+-+                        JOptionPane.showMessageDialog(null, "Please enter a valid Harvard reference. Make sure to use , in between and . at the end");
+-                     }
+-                 }
+-             });
+--            add(addReferenceButton);
+-+            JPanel buttonPanel = new JPanel(new FlowLayout(FlowLayout.CENTER)); // FlowLayout for center alignment
+-+            buttonPanel.add(addReferenceButton);
+-+            add(buttonPanel, BorderLayout.SOUTH);
+- 
+-             displayPapers();
+-+           // JPanel buttonPanel = new JPanel();
+-+            //buttonPanel.add(addReferenceButton);
+-+
+-+           // setLayout(new BorderLayout());
+-+           // add(addReferenceButton,BorderLayout.SOUTH);
+-+            //add(scrollPane,BorderLayout.CENTER);
+-+
+-+
+-         }
+- 
+-         public void displayPapers() {
+-@@ -54,9 +71,15 @@
+-             displayArea.setText(stringBuilder.toString());
+- 
+-         }
+-+        private boolean isValidHarvardReference(String reference) {
+-+        Pattern harvardPattern = Pattern.compile("^([A-Za-z]+), ([A-Za-z]+), \\d{4}\\.$");
+-+        Matcher matcher = harvardPattern.matcher(reference);
+-+        return matcher.matches();
+-+    }
+-+
+- 
+- 
+--    }
+-+}
+- 
+- 
+- 
+-Index: .idea/gradle.xml
+-IDEA additional info:
+-Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+-<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<project version=\"4\">\n  <component name=\"GradleSettings\">\n    <option name=\"linkedExternalProjectsSettings\">\n      <GradleProjectSettings>\n        <option name=\"externalProjectPath\" value=\"$PROJECT_DIR$\" />\n        <option name=\"gradleHome\" value=\"\" />\n        <option name=\"modules\">\n          <set>\n            <option value=\"$PROJECT_DIR$\" />\n          </set>\n        </option>\n      </GradleProjectSettings>\n    </option>\n  </component>\n</project>
+-Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+-<+>UTF-8
+-===================================================================
+-diff --git a/.idea/gradle.xml b/.idea/gradle.xml
+---- a/.idea/gradle.xml	(revision ba2b0aab8714b961b12015ac2b536e1d0965eead)
+-+++ b/.idea/gradle.xml	(date 1702653122156)
+-@@ -1,5 +1,6 @@
+- <?xml version="1.0" encoding="UTF-8"?>
+- <project version="4">
+-+  <component name="GradleMigrationSettings" migrationVersion="1" />
+-   <component name="GradleSettings">
+-     <option name="linkedExternalProjectsSettings">
+-       <GradleProjectSettings>
+Index: .idea/shelf/Uncommitted_changes_before_Update_at_15_12_2023,_14_44_[Changes]/shelved.patch
+===================================================================
+diff --git a/.idea/shelf/Uncommitted_changes_before_Update_at_15_12_2023,_14_44_[Changes]/shelved.patch b/.idea/shelf/Uncommitted_changes_before_Update_at_15_12_2023,_14_44_[Changes]/shelved.patch
+deleted file mode 100644
+--- a/.idea/shelf/Uncommitted_changes_before_Update_at_15_12_2023,_14_44_[Changes]/shelved.patch	(revision bec8cbb169b3742a6d0d1efedd4279631de63a1f)
++++ /dev/null	(revision bec8cbb169b3742a6d0d1efedd4279631de63a1f)
+@@ -1,113 +0,0 @@
+-Index: .idea/workspace.xml
+-IDEA additional info:
+-Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+-<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<project version=\"4\">\n  <component name=\"AutoImportSettings\">\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\n  </component>\n  <component name=\"ChangeListManager\">\n    <list default=\"true\" id=\"caf41903-31e9-4411-a647-9632c151de00\" name=\"Changes\" comment=\"Built the databaseconnector class\" />\n    <list id=\"f4862b22-822d-41c3-ba14-ffe306fc865d\" name=\"Changes by adelinavlasie\" comment=\"\" />\n    <list id=\"ee22f58c-8bfc-471d-9402-c1fb1980b07d\" name=\"Changes by johnn\" comment=\"Changes by johnn\" />\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\n  </component>\n  <component name=\"ExternalProjectsData\">\n    <projectState path=\"$PROJECT_DIR$\">\n      <ProjectState />\n    </projectState>\n  </component>\n  <component name=\"ExternalProjectsManager\">\n    <system id=\"GRADLE\">\n      <state>\n        <task path=\"$PROJECT_DIR$\">\n          <activation />\n        </task>\n        <projects_view>\n          <tree_state>\n            <expand />\n            <select />\n          </tree_state>\n        </projects_view>\n      </state>\n    </system>\n  </component>\n  <component name=\"FileTemplateManagerImpl\">\n    <option name=\"RECENT_TEMPLATES\">\n      <list>\n        <option value=\"Class\" />\n      </list>\n    </option>\n  </component>\n  <component name=\"Git.Settings\">\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\n  </component>\n  <component name=\"ProjectColorInfo\">{\n  &quot;associatedIndex&quot;: 6\n}</component>\n  <component name=\"ProjectId\" id=\"2ZZcMR9d9OvzWLINeXRLnXHqGQF\" />\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\" />\n  <component name=\"ProjectViewState\">\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\n    <option name=\"showLibraryContents\" value=\"true\" />\n  </component>\n  <component name=\"PropertiesComponent\">{\n  &quot;keyToString&quot;: {\n    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,\n    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,\n    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,\n    &quot;git-widget-placeholder&quot;: &quot;master&quot;,\n    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,\n    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,\n    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,\n    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,\n    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,\n    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,\n    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,\n    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;\n  }\n}</component>\n  <component name=\"RecentsManager\">\n    <key name=\"CopyClassDialog.RECENTS_KEY\">\n      <recent name=\"\" />\n    </key>\n  </component>\n  <component name=\"RunManager\" selected=\"Gradle.ScholarStack [build]\">\n    <configuration name=\"ScholarStack [build]\" type=\"GradleRunConfiguration\" factoryName=\"Gradle\" temporary=\"true\">\n      <ExternalSystemSettings>\n        <option name=\"executionName\" />\n        <option name=\"externalProjectPath\" value=\"$PROJECT_DIR$\" />\n        <option name=\"externalSystemIdString\" value=\"GRADLE\" />\n        <option name=\"scriptParameters\" />\n        <option name=\"taskDescriptions\">\n          <list />\n        </option>\n        <option name=\"taskNames\">\n          <list>\n            <option value=\"build\" />\n          </list>\n        </option>\n        <option name=\"vmOptions\" />\n      </ExternalSystemSettings>\n      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>\n      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>\n      <DebugAllEnabled>false</DebugAllEnabled>\n      <RunAsTest>false</RunAsTest>\n      <method v=\"2\" />\n    </configuration>\n    <configuration name=\"ScholarStack [run]\" type=\"GradleRunConfiguration\" factoryName=\"Gradle\" temporary=\"true\">\n      <ExternalSystemSettings>\n        <option name=\"executionName\" />\n        <option name=\"externalProjectPath\" value=\"$PROJECT_DIR$\" />\n        <option name=\"externalSystemIdString\" value=\"GRADLE\" />\n        <option name=\"scriptParameters\" />\n        <option name=\"taskDescriptions\">\n          <list />\n        </option>\n        <option name=\"taskNames\">\n          <list>\n            <option value=\"run\" />\n          </list>\n        </option>\n        <option name=\"vmOptions\" />\n      </ExternalSystemSettings>\n      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>\n      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>\n      <DebugAllEnabled>false</DebugAllEnabled>\n      <RunAsTest>false</RunAsTest>\n      <method v=\"2\" />\n    </configuration>\n    <recent_temporary>\n      <list>\n        <item itemvalue=\"Gradle.ScholarStack [build]\" />\n        <item itemvalue=\"Gradle.ScholarStack [run]\" />\n      </list>\n    </recent_temporary>\n  </component>\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\n  <component name=\"TaskManager\">\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\n      <changelist id=\"caf41903-31e9-4411-a647-9632c151de00\" name=\"Changes\" comment=\"\" />\n      <created>1702632996779</created>\n      <option name=\"number\" value=\"Default\" />\n      <option name=\"presentableId\" value=\"Default\" />\n      <updated>1702632996779</updated>\n      <workItem from=\"1702632997849\" duration=\"2510000\" />\n      <workItem from=\"1702641431901\" duration=\"2895000\" />\n    </task>\n    <task id=\"LOCAL-00001\" summary=\"Initial commit\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1702633035887</created>\n      <option name=\"number\" value=\"00001\" />\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1702633035887</updated>\n    </task>\n    <task id=\"LOCAL-00002\" summary=\"Began working on login page and UI components.\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1702635290901</created>\n      <option name=\"number\" value=\"00002\" />\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1702635290901</updated>\n    </task>\n    <task id=\"LOCAL-00003\" summary=\"Changes by johnn\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1702635303569</created>\n      <option name=\"number\" value=\"00003\" />\n      <option name=\"presentableId\" value=\"LOCAL-00003\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1702635303569</updated>\n    </task>\n    <task id=\"LOCAL-00004\" summary=\"Built the databaseconnector class\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1702648863656</created>\n      <option name=\"number\" value=\"00004\" />\n      <option name=\"presentableId\" value=\"LOCAL-00004\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1702648863656</updated>\n    </task>\n    <option name=\"localTasksCounter\" value=\"5\" />\n    <servers />\n  </component>\n  <component name=\"TypeScriptGeneratedFilesManager\">\n    <option name=\"version\" value=\"3\" />\n  </component>\n  <component name=\"VcsManagerConfiguration\">\n    <MESSAGE value=\"Initial commit\" />\n    <MESSAGE value=\"Began working on login page and UI components.\" />\n    <MESSAGE value=\"Changes by johnn\" />\n    <MESSAGE value=\"Built the databaseconnector class\" />\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"Built the databaseconnector class\" />\n  </component>\n  <component name=\"XDebuggerManager\">\n    <breakpoint-manager>\n      <breakpoints>\n        <line-breakpoint enabled=\"true\" type=\"java-line\">\n          <url>file://$PROJECT_DIR$/src/main/java/CreateLoginForm.java</url>\n          <line>41</line>\n          <option name=\"timeStamp\" value=\"1\" />\n        </line-breakpoint>\n      </breakpoints>\n    </breakpoint-manager>\n  </component>\n</project>
+-Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+-<+>UTF-8
+-===================================================================
+-diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+---- a/.idea/workspace.xml	(revision 4f4e3ecc0bd5c5674f6b5beeb08350a2ce44dca6)
+-+++ b/.idea/workspace.xml	(date 1702651483855)
+-@@ -4,7 +4,10 @@
+-     <option name="autoReloadType" value="SELECTIVE" />
+-   </component>
+-   <component name="ChangeListManager">
+--    <list default="true" id="caf41903-31e9-4411-a647-9632c151de00" name="Changes" comment="Built the databaseconnector class" />
+-+    <list default="true" id="caf41903-31e9-4411-a647-9632c151de00" name="Changes" comment="Add panels to UI">
+-+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+-+      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
+-+    </list>
+-     <list id="f4862b22-822d-41c3-ba14-ffe306fc865d" name="Changes by adelinavlasie" comment="" />
+-     <list id="ee22f58c-8bfc-471d-9402-c1fb1980b07d" name="Changes by johnn" comment="Changes by johnn" />
+-     <option name="SHOW_DIALOG" value="false" />
+-@@ -25,7 +28,29 @@
+-         </task>
+-         <projects_view>
+-           <tree_state>
+--            <expand />
+-+            <expand>
+-+              <path>
+-+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+-+                <item name="ScholarStack" type="f1a62948:ProjectNode" />
+-+              </path>
+-+              <path>
+-+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+-+                <item name="ScholarStack" type="f1a62948:ProjectNode" />
+-+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+-+              </path>
+-+              <path>
+-+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+-+                <item name="ScholarStack" type="f1a62948:ProjectNode" />
+-+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+-+                <item name="application" type="c8890929:TasksNode$1" />
+-+              </path>
+-+              <path>
+-+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+-+                <item name="ScholarStack" type="f1a62948:ProjectNode" />
+-+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+-+                <item name="build" type="c8890929:TasksNode$1" />
+-+              </path>
+-+            </expand>
+-             <select />
+-           </tree_state>
+-         </projects_view>
+-@@ -53,6 +78,7 @@
+-   </component>
+-   <component name="PropertiesComponent">{
+-   &quot;keyToString&quot;: {
+-+    &quot;Gradle.ScholarStack [build].executor&quot;: &quot;Run&quot;,
+-     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+-     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+-     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+-@@ -178,14 +204,15 @@
+-     <MESSAGE value="Began working on login page and UI components." />
+-     <MESSAGE value="Changes by johnn" />
+-     <MESSAGE value="Built the databaseconnector class" />
+--    <option name="LAST_COMMIT_MESSAGE" value="Built the databaseconnector class" />
+-+    <MESSAGE value="Add panels to UI" />
+-+    <option name="LAST_COMMIT_MESSAGE" value="Add panels to UI" />
+-   </component>
+-   <component name="XDebuggerManager">
+-     <breakpoint-manager>
+-       <breakpoints>
+-         <line-breakpoint enabled="true" type="java-line">
+-           <url>file://$PROJECT_DIR$/src/main/java/CreateLoginForm.java</url>
+--          <line>41</line>
+-+          <line>43</line>
+-           <option name="timeStamp" value="1" />
+-         </line-breakpoint>
+-       </breakpoints>
+-Index: src/main/java/Main.java
+-IDEA additional info:
+-Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+-<+>import javax.swing.*;\nimport java.net.URI;\nimport java.net.URL;\n\npublic class Main {\n    public static void main(String arg[])\n    {\n        MainUI mainUI = new MainUI();\n        try\n        {\n            //create instance of the CreateLoginForm\n            CreateLoginForm form = new CreateLoginForm();\n            form.setSize(300,100);  //set size of the frame\n            form.setVisible(true);  //make form visible to the user\n        }\n        catch(Exception e)\n        {\n            //handle exception\n            JOptionPane.showMessageDialog(null, e.getMessage());\n        }\n\n        if (DatabaseConnector.connectToDatabase()) {\n            System.out.println(\"Connected to the database successfully!\");\n        } else {\n            System.out.println(\"Failed to connect to the database.\");\n        }\n\n\n\n\n    }\n}\n
+-Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+-<+>UTF-8
+-===================================================================
+-diff --git a/src/main/java/Main.java b/src/main/java/Main.java
+---- a/src/main/java/Main.java	(revision 4f4e3ecc0bd5c5674f6b5beeb08350a2ce44dca6)
+-+++ b/src/main/java/Main.java	(date 1702651467805)
+-@@ -1,6 +1,7 @@
+- import javax.swing.*;
+- import java.net.URI;
+- import java.net.URL;
+-+import MainUI.MainUI;
+- 
+- public class Main {
+-     public static void main(String arg[])
+-@@ -18,13 +19,13 @@
+-             //handle exception
+-             JOptionPane.showMessageDialog(null, e.getMessage());
+-         }
+--
+-+/*
+-         if (DatabaseConnector.connectToDatabase()) {
+-             System.out.println("Connected to the database successfully!");
+-         } else {
+-             System.out.println("Failed to connect to the database.");
+-         }
+--
+-+*/
+- 
+- 
+- 
+Index: .idea/shelf/Uncommitted_changes_before_Update_at_15_12_2023,_15_11_[Changes]/shelved.patch
+===================================================================
+diff --git a/.idea/shelf/Uncommitted_changes_before_Update_at_15_12_2023,_15_11_[Changes]/shelved.patch b/.idea/shelf/Uncommitted_changes_before_Update_at_15_12_2023,_15_11_[Changes]/shelved.patch
+deleted file mode 100644
+--- a/.idea/shelf/Uncommitted_changes_before_Update_at_15_12_2023,_15_11_[Changes]/shelved.patch	(revision bec8cbb169b3742a6d0d1efedd4279631de63a1f)
++++ /dev/null	(revision bec8cbb169b3742a6d0d1efedd4279631de63a1f)
+@@ -1,132 +0,0 @@
+-Index: .idea/workspace.xml
+-IDEA additional info:
+-Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+-<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<project version=\"4\">\n  <component name=\"AutoImportSettings\">\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\n  </component>\n  <component name=\"ChangeListManager\">\n    <list default=\"true\" id=\"caf41903-31e9-4411-a647-9632c151de00\" name=\"Changes\" comment=\"Initial commit\">\n      <change afterPath=\"$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar\" afterDir=\"false\" />\n      <change afterPath=\"$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties\" afterDir=\"false\" />\n      <change afterPath=\"$PROJECT_DIR$/src/main/java/CreateLoginForm.java\" afterDir=\"false\" />\n      <change afterPath=\"$PROJECT_DIR$/src/main/java/NewPage.java\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/.idea/misc.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/misc.xml\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\n    </list>\n    <list id=\"f4862b22-822d-41c3-ba14-ffe306fc865d\" name=\"Changes by adelinavlasie\" comment=\"\" />\n    <list id=\"efbba4e2-aabd-433a-998f-300dbcd02e3e\" name=\"Changes by hc1321\" comment=\"\" />\n    <list id=\"ee22f58c-8bfc-471d-9402-c1fb1980b07d\" name=\"Changes by johnn\" comment=\"\">\n      <change beforePath=\"$PROJECT_DIR$/build.gradle\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/build.gradle\" afterDir=\"false\" />\n    </list>\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\n  </component>\n  <component name=\"ExternalProjectsData\">\n    <projectState path=\"$PROJECT_DIR$\">\n      <ProjectState />\n    </projectState>\n  </component>\n  <component name=\"ExternalProjectsManager\">\n    <system id=\"GRADLE\">\n      <state>\n        <task path=\"$PROJECT_DIR$\">\n          <activation />\n        </task>\n        <projects_view>\n          <tree_state>\n            <expand />\n            <select />\n          </tree_state>\n        </projects_view>\n      </state>\n    </system>\n  </component>\n  <component name=\"FileTemplateManagerImpl\">\n    <option name=\"RECENT_TEMPLATES\">\n      <list>\n        <option value=\"Class\" />\n      </list>\n    </option>\n  </component>\n  <component name=\"Git.Settings\">\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\n  </component>\n  <component name=\"ProjectColorInfo\">{\n  &quot;associatedIndex&quot;: 6\n}</component>\n  <component name=\"ProjectId\" id=\"2ZZcMR9d9OvzWLINeXRLnXHqGQF\" />\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\" />\n  <component name=\"ProjectViewState\">\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\n    <option name=\"showLibraryContents\" value=\"true\" />\n  </component>\n  <component name=\"PropertiesComponent\">{\n  &quot;keyToString&quot;: {\n    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,\n    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,\n    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,\n    &quot;git-widget-placeholder&quot;: &quot;master&quot;,\n    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,\n    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,\n    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,\n    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,\n    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,\n    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,\n    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,\n    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;\n  }\n}</component>\n  <component name=\"RecentsManager\">\n    <key name=\"CopyClassDialog.RECENTS_KEY\">\n      <recent name=\"\" />\n    </key>\n  </component>\n  <component name=\"RunManager\" selected=\"Gradle.ScholarStack [run]\">\n    <configuration name=\"ScholarStack [build]\" type=\"GradleRunConfiguration\" factoryName=\"Gradle\" temporary=\"true\">\n      <ExternalSystemSettings>\n        <option name=\"executionName\" />\n        <option name=\"externalProjectPath\" value=\"$PROJECT_DIR$\" />\n        <option name=\"externalSystemIdString\" value=\"GRADLE\" />\n        <option name=\"scriptParameters\" />\n        <option name=\"taskDescriptions\">\n          <list />\n        </option>\n        <option name=\"taskNames\">\n          <list>\n            <option value=\"build\" />\n          </list>\n        </option>\n        <option name=\"vmOptions\" />\n      </ExternalSystemSettings>\n      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>\n      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>\n      <DebugAllEnabled>false</DebugAllEnabled>\n      <RunAsTest>false</RunAsTest>\n      <method v=\"2\" />\n    </configuration>\n    <configuration name=\"ScholarStack [run]\" type=\"GradleRunConfiguration\" factoryName=\"Gradle\" temporary=\"true\">\n      <ExternalSystemSettings>\n        <option name=\"executionName\" />\n        <option name=\"externalProjectPath\" value=\"$PROJECT_DIR$\" />\n        <option name=\"externalSystemIdString\" value=\"GRADLE\" />\n        <option name=\"scriptParameters\" />\n        <option name=\"taskDescriptions\">\n          <list />\n        </option>\n        <option name=\"taskNames\">\n          <list>\n            <option value=\"run\" />\n          </list>\n        </option>\n        <option name=\"vmOptions\" />\n      </ExternalSystemSettings>\n      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>\n      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>\n      <DebugAllEnabled>false</DebugAllEnabled>\n      <RunAsTest>false</RunAsTest>\n      <method v=\"2\" />\n    </configuration>\n    <recent_temporary>\n      <list>\n        <item itemvalue=\"Gradle.ScholarStack [run]\" />\n        <item itemvalue=\"Gradle.ScholarStack [build]\" />\n      </list>\n    </recent_temporary>\n  </component>\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\n  <component name=\"TaskManager\">\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\n      <changelist id=\"caf41903-31e9-4411-a647-9632c151de00\" name=\"Changes\" comment=\"\" />\n      <created>1702632996779</created>\n      <option name=\"number\" value=\"Default\" />\n      <option name=\"presentableId\" value=\"Default\" />\n      <updated>1702632996779</updated>\n      <workItem from=\"1702632997849\" duration=\"2213000\" />\n    </task>\n    <task id=\"LOCAL-00001\" summary=\"Initial commit\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1702633035887</created>\n      <option name=\"number\" value=\"00001\" />\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1702633035887</updated>\n    </task>\n    <option name=\"localTasksCounter\" value=\"2\" />\n    <servers />\n  </component>\n  <component name=\"TypeScriptGeneratedFilesManager\">\n    <option name=\"version\" value=\"3\" />\n  </component>\n  <component name=\"VcsManagerConfiguration\">\n    <MESSAGE value=\"Initial commit\" />\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"Initial commit\" />\n  </component>\n</project>
+-Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+-<+>UTF-8
+-===================================================================
+-diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+---- a/.idea/workspace.xml	(revision 67f92afbdba982ee49e7c6b444d48a0a0b73c930)
+-+++ b/.idea/workspace.xml	(date 1702652809305)
+-@@ -5,18 +5,12 @@
+-   </component>
+-   <component name="ChangeListManager">
+-     <list default="true" id="caf41903-31e9-4411-a647-9632c151de00" name="Changes" comment="Initial commit">
+--      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+--      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+--      <change afterPath="$PROJECT_DIR$/src/main/java/CreateLoginForm.java" afterDir="false" />
+--      <change afterPath="$PROJECT_DIR$/src/main/java/NewPage.java" afterDir="false" />
+--      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+-+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+-       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+-     </list>
+-     <list id="f4862b22-822d-41c3-ba14-ffe306fc865d" name="Changes by adelinavlasie" comment="" />
+-     <list id="efbba4e2-aabd-433a-998f-300dbcd02e3e" name="Changes by hc1321" comment="" />
+--    <list id="ee22f58c-8bfc-471d-9402-c1fb1980b07d" name="Changes by johnn" comment="">
+--      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+--    </list>
+-+    <list id="ee22f58c-8bfc-471d-9402-c1fb1980b07d" name="Changes by johnn" comment="" />
+-     <option name="SHOW_DIALOG" value="false" />
+-     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+-     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+-@@ -35,7 +29,29 @@
+-         </task>
+-         <projects_view>
+-           <tree_state>
+--            <expand />
+-+            <expand>
+-+              <path>
+-+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+-+                <item name="ScholarStack" type="f1a62948:ProjectNode" />
+-+              </path>
+-+              <path>
+-+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+-+                <item name="ScholarStack" type="f1a62948:ProjectNode" />
+-+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+-+              </path>
+-+              <path>
+-+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+-+                <item name="ScholarStack" type="f1a62948:ProjectNode" />
+-+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+-+                <item name="application" type="c8890929:TasksNode$1" />
+-+              </path>
+-+              <path>
+-+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+-+                <item name="ScholarStack" type="f1a62948:ProjectNode" />
+-+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+-+                <item name="build" type="c8890929:TasksNode$1" />
+-+              </path>
+-+            </expand>
+-             <select />
+-           </tree_state>
+-         </projects_view>
+-@@ -61,22 +77,23 @@
+-     <option name="hideEmptyMiddlePackages" value="true" />
+-     <option name="showLibraryContents" value="true" />
+-   </component>
+--  <component name="PropertiesComponent">{
+--  &quot;keyToString&quot;: {
+--    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+--    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+--    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+--    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+--    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+--    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+--    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+--    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+--    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+--    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+--    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+--    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+-+  <component name="PropertiesComponent"><![CDATA[{
+-+  "keyToString": {
+-+    "Gradle.ScholarStack [run].executor": "Run",
+-+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+-+    "RunOnceActivity.ShowReadmeOnStart": "true",
+-+    "WebServerToolWindowFactoryState": "false",
+-+    "git-widget-placeholder": "master",
+-+    "node.js.detected.package.eslint": "true",
+-+    "node.js.detected.package.tslint": "true",
+-+    "node.js.selected.package.eslint": "(autodetect)",
+-+    "node.js.selected.package.tslint": "(autodetect)",
+-+    "project.structure.last.edited": "Modules",
+-+    "project.structure.proportion": "0.0",
+-+    "project.structure.side.proportion": "0.0",
+-+    "vue.rearranger.settings.migration": "true"
+-   }
+--}</component>
+-+}]]></component>
+-   <component name="RecentsManager">
+-     <key name="CopyClassDialog.RECENTS_KEY">
+-       <recent name="" />
+-@@ -133,6 +150,13 @@
+-         <item itemvalue="Gradle.ScholarStack [build]" />
+-       </list>
+-     </recent_temporary>
+-+  </component>
+-+  <component name="SharedIndexes">
+-+    <attachedChunks>
+-+      <set>
+-+        <option value="jdk-16.0.2-corretto-16.0.2-3183f394aec4-d86ce77a" />
+-+      </set>
+-+    </attachedChunks>
+-   </component>
+-   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+-   <component name="TaskManager">
+-Index: .idea/gradle.xml
+-IDEA additional info:
+-Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+-<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<project version=\"4\">\n  <component name=\"GradleSettings\">\n    <option name=\"linkedExternalProjectsSettings\">\n      <GradleProjectSettings>\n        <option name=\"externalProjectPath\" value=\"$PROJECT_DIR$\" />\n        <option name=\"gradleHome\" value=\"\" />\n        <option name=\"modules\">\n          <set>\n            <option value=\"$PROJECT_DIR$\" />\n          </set>\n        </option>\n      </GradleProjectSettings>\n    </option>\n  </component>\n</project>
+-Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+-<+>UTF-8
+-===================================================================
+-diff --git a/.idea/gradle.xml b/.idea/gradle.xml
+---- a/.idea/gradle.xml	(revision 67f92afbdba982ee49e7c6b444d48a0a0b73c930)
+-+++ b/.idea/gradle.xml	(date 1702652400822)
+-@@ -1,5 +1,6 @@
+- <?xml version="1.0" encoding="UTF-8"?>
+- <project version="4">
+-+  <component name="GradleMigrationSettings" migrationVersion="1" />
+-   <component name="GradleSettings">
+-     <option name="linkedExternalProjectsSettings">
+-       <GradleProjectSettings>

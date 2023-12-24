@@ -1,3 +1,8 @@
+import Managers.DatabaseManager;
+import Managers.CreateLoginForm;
+import Managers.LoginManager;
+
+
 import javax.swing.*;
 
 public class Main {
@@ -14,6 +19,7 @@ public class Main {
         }
 
 
+
     /*    String testPass = "123456";
         String testPass2 = "test5%%";
         String hashed = PasswordHashing.hashPassword(testPass);
@@ -27,21 +33,26 @@ public class Main {
         System.out.println("Hashed password: "+ hashed2);
      */
 
+       /* String tableName = "tags";
+        int rowDeleted = 1;
 
-      /*  String tableName = "users";
+        for (int a = 1; a <= 167; a++){
 
-        int rowDeleted = 6;
-        boolean wasDeleted = DatabaseManager.deleteRecord(tableName, rowDeleted);
-
-
-
-       /* if(wasDeleted){
-            System.out.println("Record for ID:" + rowDeleted+ "was deleted");
+            boolean wasDeleted = DatabaseManager.deleteRecord(tableName, a);
+            if(wasDeleted){
+                System.out.println("Record for ID:" + rowDeleted+ "was deleted");
+            }
+            else{
+                System.out.println("Record for ID:"+rowDeleted+"was not deleted");
+            }
         }
-        else{
-            System.out.println("Record for ID:"+rowDeleted+"was not deleted");
-        }
+        */
+        //boolean wasDeleted = DatabaseManager.deleteRecord(tableName, rowDeleted);
 
+
+
+
+        /*
         int idToRead = 1;
         String selOut = "username";
         String outputCol = DatabaseManager.readRecord(tableName, selOut, idToRead);
@@ -51,34 +62,36 @@ public class Main {
         boolean tableCreationResult = DatabaseManager.createTable(tableName);
         boolean insertionResult = DatabaseManager.insertRecord(tableName, "username, password", "'john_does', 'password1234'");
 
-            */
+        */
 
-        String tableName = "tags";
-
-        // Create the specified table
-        boolean tableCreationResult = DatabaseManager.createTable(tableName);
-
-        if (tableCreationResult) {
-            System.out.println("Table '" + tableName + "' created successfully!");
-        } else {
-            System.out.println("Failed to create table '" + tableName + "'.");
-        }
-
-        // Create the specified table
-        if (tableCreationResult) {
-            System.out.println("Table '" + tableName + "' created successfully!");
-
-            // Insert a record into the "users" table
-            boolean insertionResult = DatabaseManager.insertRecord(tableName, "username, password", "'john_doe', 'password123'");
-
-            if (insertionResult) {
-                System.out.println("Record inserted successfully!");
-            } else {
-                System.out.println("Failed to insert record.");
-            }
-        } else {
-            System.out.println("Failed to create table '" + tableName + "'.");
-        }
+//        String tableName = "papers3";
+//        String col1 = "username";
+//        String col2 = "paper title";
+//
+//        // Create the specified table
+//        boolean tableCreationResult = DatabaseManager.createTable(tableName, col1, col2);
+////
+//        if (tableCreationResult) {
+//            System.out.println("Table '" + tableName + "' created successfully!");
+//        } else {
+//            System.out.println("Failed to create table '" + tableName + "'.");
+//        }
+//
+//        // Create the specified table
+//        if (tableCreationResult) {
+//            System.out.println("Table '" + tableName + "' created successfully!");
+//
+//            // Insert a record into the "users" table
+//            boolean insertionResult = DatabaseManager.insertRecord(tableName, "username, password", "'john_doe', 'password123'");
+//
+//            if (insertionResult) {
+//                System.out.println("Record inserted successfully!");
+//            } else {
+//                System.out.println("Failed to insert record.");
+//            }
+//        } else {
+//            System.out.println("Failed to create table '" + tableName + "'.");
+//        }
 
     }
 }

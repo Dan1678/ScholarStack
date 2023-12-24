@@ -1,3 +1,7 @@
+package Managers;
+
+import Managers.DatabaseConnector;
+
 import java.sql.*;
 
 public class LoginManager {

@@ -1,4 +1,4 @@
-
+package Managers;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
@@ -17,7 +17,7 @@ public class CreateLoginForm extends JFrame implements ActionListener
     String tableName;
 
 
-    CreateLoginForm()
+    public CreateLoginForm()
     {
         backPanel = new JPanel(new GridLayout(5,1));
         backPanel.setSize(1000,1000);
@@ -136,7 +136,7 @@ public class CreateLoginForm extends JFrame implements ActionListener
             dispose();
 
             tableName = "users";
-            boolean tableCreationResult = DatabaseManager.createTable(tableName);
+            boolean tableCreationResult = DatabaseManager.createTable(tableName, "username", "password");
             if (tableCreationResult) {
 
                 boolean addUser = DatabaseManager.insertRecord(tableName, "username, password", String.format("'%s', '%s'", userName, PasswordHashing.hashPassword(passWord)));
