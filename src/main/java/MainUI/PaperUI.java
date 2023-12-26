@@ -33,6 +33,9 @@ public class PaperUI extends JPanel {
         paper.addComment(new Comment("This is a comment"));
 
     }
+    public Paper getPaper() {
+        return paper;
+    }
 
 
     private void addPanelComponents() {
@@ -78,6 +81,9 @@ public class PaperUI extends JPanel {
         add(blankspace, gbc);
 
 
+    }
+    public JCheckBox getCheckBox() {
+        return checkBox;
     }
 
     public void setButtonClickListener(ButtonClickListener listener) {

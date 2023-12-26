@@ -4,6 +4,7 @@ import GroupContent.Paper;
 
 import javax.swing.*;
 import java.awt.*;
+import java.util.ArrayList;
 
 import static java.awt.AWTEventMulticaster.add;
 
@@ -44,9 +45,10 @@ public class PapersDisplay extends JScrollPane {
     private String reference;
 
     private JPanel papersPanel; // Panel to hold PaperUI components
-
+    private ArrayList<PaperUI> papersList;
 
     public PapersDisplay() {
+        papersList = new ArrayList<>();
         papersPanel = new JPanel();
         papersPanel.setLayout(new BoxLayout(papersPanel, BoxLayout.Y_AXIS));
 
@@ -63,6 +65,7 @@ public class PapersDisplay extends JScrollPane {
     public void addPaperUI(PaperUI paperUI, ButtonClickListener listener) {
         paperUI.setButtonClickListener(listener);
         papersPanel.add(paperUI);
+        papersList.add(paperUI);
 
         revalidate(); // Revalidate the layout after adding papers
         repaint();
@@ -77,6 +80,19 @@ public class PapersDisplay extends JScrollPane {
             addPaperUI(newPaperUI, listener);
 
         }
+
+    public ArrayList<Paper> getCheckedPapers() {
+        ArrayList<Paper> checkedPapers = new ArrayList<>();
+        for (Component component : papersPanel.getComponents()) {
+            if (component instanceof PaperUI) {
+                PaperUI paperUI = (PaperUI) component;
+                if (paperUI.getCheckBox().isSelected()) {
+                    checkedPapers.add(paperUI.getPaper());
+                }
+            }
+        }
+        return checkedPapers;
+    }
 //    public void addPaperUI(PaperUI paper, ButtonClickListener listener) {
 //
 //        // For database - this is where it will add a paper

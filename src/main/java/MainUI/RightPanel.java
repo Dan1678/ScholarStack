@@ -31,9 +31,13 @@ public class RightPanel extends JPanel implements ButtonClickListener{
         add(commentsDisplay, BorderLayout.CENTER);
         add(papersDisplay, BorderLayout.NORTH);
         //new panel for adding papers button
+        JPanel buttonsPanel = new JPanel();
+       // buttonsPanel.setLayout(new BoxLayout(buttonsPanel, BoxLayout.Y_AXIS));
+        buttonsPanel.setLayout(new FlowLayout(FlowLayout.LEFT));
         JPanel topPanel = new JPanel(); // Panel for holding the "Add Reference" button
         topPanel.setLayout(new BoxLayout(topPanel, BoxLayout.Y_AXIS));
 
+        topPanel.add(buttonsPanel);
 
        // add some temp papers
        Paper paper = new Paper();
@@ -66,8 +70,33 @@ public class RightPanel extends JPanel implements ButtonClickListener{
                 }
             }
         });
+        JButton getBibliographyButton = new JButton("Get Bibliography");
+        getBibliographyButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                // Retrieve the selected papers from PapersDisplay
+                ArrayList<Paper> selectedPapers = papersDisplay.getCheckedPapers();
+
+                // Generate the bibliography using the selected papers
+                if (!selectedPapers.isEmpty()) {
+
+                    StringBuilder bibliography = new StringBuilder("Selected References:\n");
+                    for (Paper paper : selectedPapers) {
+                        bibliography.append("- ").append(paper.getName()).append("\n");
+                    }
+
+                    // Display the bibliography
+                    JOptionPane.showMessageDialog(null, bibliography.toString(), "Bibliography", JOptionPane.INFORMATION_MESSAGE);
+                } else {
+                    // If no papers were selected
+                    JOptionPane.showMessageDialog(null, "No papers selected!", "Bibliography", JOptionPane.WARNING_MESSAGE);
+                }
+            }
+        });
+        topPanel.add(getBibliographyButton);
         topPanel.add(addReferenceButton);
         topPanel.add(papersDisplay);
+
         add(topPanel, BorderLayout.NORTH);
 
 
