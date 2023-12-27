@@ -33,5 +33,8 @@ public class Tag {
         return subTags;
     }
 
-
+    @Override
+    public String toString() {
+        return name;
+    }
 }

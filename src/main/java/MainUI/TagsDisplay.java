@@ -5,8 +5,9 @@ import GroupContent.Tag;
 import javax.swing.*;
 import javax.swing.tree.DefaultMutableTreeNode;
 import java.awt.*;
-import javax.swing.event.TreeSelectionEvent;
-import javax.swing.event.TreeSelectionListener;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
+import javax.swing.tree.TreePath;
 
 public class TagsDisplay extends JPanel {
 
@@ -18,7 +19,6 @@ public class TagsDisplay extends JPanel {
 
     public TagsDisplay() {
         setPreferredSize(new Dimension(250, 0)); //panel has a set width
-
 
         tag = new Tag("Tags:");
 
@@ -48,6 +48,29 @@ public class TagsDisplay extends JPanel {
         DefaultMutableTreeNode root = findTreeBelow(tag);
 
         tree = new JTree(root);
+        tree.setPreferredSize(new Dimension(250, 0));
+        // Add MouseListener to JTree
+        tree.addMouseListener(new MouseAdapter() {
+            @Override
+            public void mouseClicked(MouseEvent e) {
+                if (e.getClickCount() == 3) {
+                    // on triple click
+                    DefaultMutableTreeNode selectedNode = (DefaultMutableTreeNode) tree.getLastSelectedPathComponent();  //get selected node
+                    if (selectedNode != null) { //ensure it isnt empty
+                        tree.expandPath(new TreePath(selectedNode.getPath())); //ensure the node is expanded (so it is visible)
+
+                        Object nodeInfo = selectedNode.getUserObject();
+                        if (nodeInfo instanceof Tag) { //the tree elements should be of type Tag
+                            Tag selectedTag = (Tag) nodeInfo; //cast to tag object
+                            addSubTag(selectedTag);
+                        }
+
+                    }
+                }
+            }
+        });
+
+
         treeView = new JScrollPane(tree);
 
         // Add the scroll pane to a window
@@ -66,7 +89,7 @@ public class TagsDisplay extends JPanel {
             return null;
         }
 
-        DefaultMutableTreeNode parent = new DefaultMutableTreeNode(parentTag.getName());
+        DefaultMutableTreeNode parent = new DefaultMutableTreeNode(parentTag);
 
         //recursive case
         for (Tag t : parentTag.getSubTags()) {
@@ -74,6 +97,14 @@ public class TagsDisplay extends JPanel {
             parent.add(treeBelow);
         }
         return parent;
+    }
+
+    private void addSubTag(Tag selectedTag) {
+        String tagText = JOptionPane.showInputDialog("Enter the tag name");
+        if (tagText != null) {
+            selectedTag.addSubTag(new Tag(tagText));
+        }
+        displayTags();
     }
 
     public void updateTags(Tag tag) {

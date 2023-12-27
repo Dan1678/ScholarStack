@@ -19,7 +19,6 @@ import javax.swing.tree.DefaultMutableTreeNode;
 
 
 public class LeftPanel extends JPanel {
-    private JButton addTagBtn;
     private TagsDisplay tagsDisplay;
     private Tag selectedTag;
 
@@ -32,39 +31,9 @@ public class LeftPanel extends JPanel {
         setLayout (new BorderLayout());
 
 
-        addTagBtn = new JButton("Add Tag");
-        addTagBtn.setFont(new Font("Arial", Font.BOLD, 24));
-        addTagBtn.setSize(new Dimension(200, 75));
-        add(addTagBtn, BorderLayout.NORTH );
-
-        addTagBtn.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                String tagText = JOptionPane.showInputDialog("Enter the tag name");
-                if (tagText != null) {
-                    if (selectedTag != null) {
-                        selectedTag.addSubTag(new Tag(tagText));
-                    } else {
-                        tagsDisplay.addTag(new Tag(tagText));
-                    }
-                }
-                else {
-                    //handling when the dialog is canceled (close window button as well)
-                    System.out.println("Tag addition canceled.");
-                }
-            }
-            /*public void actionPerformed(ActionEvent e) {
-                String tagText = JOptionPane.showInputDialog("Enter the tag name");
-                //todo - tag adding functionality
-                //should add tag below selected tag, if no tag is selected add a new one to the list
-                tagsDisplay.addTag(new Tag(tagText));
-            }*/
-        });
-
-
         //set up tags display
         tagsDisplay = new TagsDisplay();
-        add(tagsDisplay, BorderLayout.WEST);
+        add(tagsDisplay, BorderLayout.CENTER);
 
 
     }

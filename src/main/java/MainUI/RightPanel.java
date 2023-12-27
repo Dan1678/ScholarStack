@@ -51,6 +51,7 @@ public class RightPanel extends JPanel implements ButtonClickListener{
         paper = new Paper();
         paper.setName("PAPER TITLE 2");
         papersDisplay.addPaperUI(new PaperUI(paper), this);
+        paper = new Paper();
         paper.setName("PAPER TITLE 3");
         papersDisplay.addPaperUI(new PaperUI(paper), this);
 

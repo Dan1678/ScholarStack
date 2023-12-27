@@ -23,14 +23,21 @@ public class PaperUI extends JPanel {
     public PaperUI(Paper paper) {
         this.paper = paper;
         //set up panel
-        setPreferredSize(new Dimension(0, 40)); //panel has a set width
+
+        //ensure the added papers have a fixed height
+        int paperHeight = 40;
+        setPreferredSize(new Dimension(100, paperHeight));
+        setMaximumSize(new Dimension(100000, paperHeight));
+        setMinimumSize(new Dimension(0, paperHeight));
+
         setBorder(BorderFactory.createLineBorder(Color.black));
         setLayout(new GridBagLayout());
 
         addPanelComponents();
 
         //Temp exmaple
-        paper.addComment(new Comment("This is a comment"));
+        paper.addComment(new Comment("This is a comment 1"));
+        paper.addComment(new Comment("This is a comment 2"));
 
     }
     public Paper getPaper() {
@@ -79,7 +86,6 @@ public class PaperUI extends JPanel {
         blankspace.setSize(10, 10);
         gbc.gridx = 4;
         add(blankspace, gbc);
-
 
     }
     public JCheckBox getCheckBox() {
