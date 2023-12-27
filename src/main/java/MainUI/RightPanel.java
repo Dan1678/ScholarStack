@@ -3,6 +3,8 @@
 package MainUI;
 
 import GroupContent.Paper;
+import Managers.DatabaseManager;
+import Managers.PasswordHashing;
 
 import javax.swing.*;
 import java.awt.*;
@@ -30,75 +32,45 @@ public class RightPanel extends JPanel implements ButtonClickListener{
 
         add(commentsDisplay, BorderLayout.CENTER);
         add(papersDisplay, BorderLayout.NORTH);
-        //new panel for adding papers button
-        JPanel buttonsPanel = new JPanel();
-       // buttonsPanel.setLayout(new BoxLayout(buttonsPanel, BoxLayout.Y_AXIS));
-        buttonsPanel.setLayout(new FlowLayout(FlowLayout.LEFT));
-        JPanel topPanel = new JPanel(); // Panel for holding the "Add Reference" button
-        topPanel.setLayout(new BoxLayout(topPanel, BoxLayout.Y_AXIS));
 
-        topPanel.add(buttonsPanel);
 
-       // add some temp papers
-       Paper paper = new Paper();
-        paper.setName("PAPER TITLE ");
 
-        papersDisplay.addPaperUI(new PaperUI(paper), this);
-
-        paper = new Paper();
-        paper.setName("PAPER TITLE 2");
-        papersDisplay.addPaperUI(new PaperUI(paper), this);
-        paper.setName("PAPER TITLE 3");
-        papersDisplay.addPaperUI(new PaperUI(paper), this);
-
+//        //add some temp papers
+//        Paper paper = new Paper();
+//        paper.setName("PAPER TITLE ");
+//
+//        papersDisplay.addPaperUI(new PaperUI(paper), this);
+//
+//        paper = new Paper();
+//        paper.setName("PAPER TITLE 2");
+//        papersDisplay.addPaperUI(new PaperUI(paper), this);
+//
+//        papersDisplay.addPaperUI(new PaperUI(paper), this);
+//        papersDisplay.addPaperUI(new PaperUI(paper), this);
+//        papersDisplay.addPaperUI(new PaperUI(paper), this);
+//        papersDisplay.addPaperUI(new PaperUI(paper), this);
+//        papersDisplay.addPaperUI(new PaperUI(paper), this);
+//        papersDisplay.addPaperUI(new PaperUI(paper), this);
+//        papersDisplay.addPaperUI(new PaperUI(paper), this);
+//        papersDisplay.addPaperUI(new PaperUI(paper), this);
+//        papersDisplay.addPaperUI(new PaperUI(paper), this);
+//        papersDisplay.addPaperUI(new PaperUI(paper), this);
 
 
         JButton addReferenceButton = new JButton("Add Reference");
-        Paper finalPaper = paper;
         addReferenceButton.addActionListener(new ActionListener() {
-
-            ButtonClickListener listener = null;
+            @Override
             public void actionPerformed(ActionEvent e) {
                 String reference = JOptionPane.showInputDialog("Enter the Harvard reference:");
                 if (reference != null && !reference.isEmpty()&& isValidHarvardReference(reference)) {
-                  //  addNewPaper(reference);
-
-                    papersDisplay.addReference(reference, listener);
-                    commentsDisplay.displayComments(finalPaper);
+                    addNewPaper(reference);
                 }else {
                     JOptionPane.showMessageDialog(null, "Please enter a valid Harvard reference. Make sure to use , in between and . at the end");
                 }
             }
         });
-        JButton getBibliographyButton = new JButton("Get Bibliography");
-        getBibliographyButton.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                // Retrieve the selected papers from PapersDisplay
-                ArrayList<Paper> selectedPapers = papersDisplay.getCheckedPapers();
 
-                // Generate the bibliography using the selected papers
-                if (!selectedPapers.isEmpty()) {
-
-                    StringBuilder bibliography = new StringBuilder("Selected References:\n");
-                    for (Paper paper : selectedPapers) {
-                        bibliography.append("- ").append(paper.getName()).append("\n");
-                    }
-
-                    // Display the bibliography
-                    JOptionPane.showMessageDialog(null, bibliography.toString(), "Bibliography", JOptionPane.INFORMATION_MESSAGE);
-                } else {
-                    // If no papers were selected
-                    JOptionPane.showMessageDialog(null, "No papers selected!", "Bibliography", JOptionPane.WARNING_MESSAGE);
-                }
-            }
-        });
-        topPanel.add(getBibliographyButton);
-        topPanel.add(addReferenceButton);
-        topPanel.add(papersDisplay);
-
-        add(topPanel, BorderLayout.NORTH);
-
+        add(addReferenceButton);
 
     }
 

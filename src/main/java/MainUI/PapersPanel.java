@@ -47,18 +47,8 @@ public class PapersPanel extends JPanel {
                 public void actionPerformed(ActionEvent e) {
                     String reference = JOptionPane.showInputDialog("Enter the Harvard reference:");
                     if (!reference.isEmpty()&& isValidHarvardReference(reference)) {
-                        try {
-                            String tableName = "papers3";
-                            boolean tableCreationResult = DatabaseManager.createTable(tableName, "username", "paper title");
-                            if (tableCreationResult) {
-                                DatabaseManager.insertRecord("papers3", "'username', 'paper title'", String.format("'testUsername', '%s'", reference));
-                            }
-                        } catch (Exception ex) {
-                            ex.printStackTrace();
-                            JOptionPane.showMessageDialog(null, "Error adding reference to database");
-                        }
-                        papersList.addPaper(reference);
 
+                        papersList.addPaper(reference);
 
                         displayPapers();
                     }else {
