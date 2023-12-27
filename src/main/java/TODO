@@ -1,0 +1,31 @@
+General todo list
+In order of priority
+
+Next meeting - 2nd Jan 9am
+
+
+--> Comments:
+    --> display comments properly                           - John
+    --> replies to comments                                 - John
+    --> sort this out with database                         - Hanna
+--> Tags:
+    --> Make it work                                        - Kaan & Adelina
+    --> Add tags to papers                                  - Kaan & Adelina
+    --> Tags on database                                    - Dan
+--> Read from database on startup                           - Hanna
+    --> Show up to date papers, comments and tags           - Hanna & John
+--> Say "welcome User ___" at top when logged in            - Adelina
+--> Have username for owners of all comments and papers     - Adelina
+--> Backup functionality                                    - Dan
+
+
+--> Bibliography                                            - Adelina & John
+    --> Make bibliography export to bibtex
+    --> Extend papers to have all bibliographic information
+    --> Ordering papers in the bibliography
+
+
+
+--> UNIT TESTS
+--> Runtime logging
+--> Error handling
