@@ -18,6 +18,8 @@ public class TagsDisplay extends JPanel {
 
 
     public TagsDisplay() {
+        JLabel infoLabel = new JLabel("Triple click to add tag");
+        add(infoLabel);
         setPreferredSize(new Dimension(250, 0)); //panel has a set width
 
         tag = new Tag("Tags:");
