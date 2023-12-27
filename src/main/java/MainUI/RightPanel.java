@@ -64,6 +64,11 @@ public class RightPanel extends JPanel implements ButtonClickListener{
                 String reference = JOptionPane.showInputDialog("Enter the Harvard reference:");
                 if (reference != null && !reference.isEmpty()&& isValidHarvardReference(reference)) {
                     addNewPaper(reference);
+                    String tableName = "papers3";
+                    String columns = "username, \"paper title\"";
+                    String values = String.format("'testUsername', '%s'", String.format(reference));
+
+                    boolean addPaper = DatabaseManager.insertRecord(tableName, columns, values);
                 }else {
                     JOptionPane.showMessageDialog(null, "Please enter a valid Harvard reference. Make sure to use , in between and . at the end");
                 }
