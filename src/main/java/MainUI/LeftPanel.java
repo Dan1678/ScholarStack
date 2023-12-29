@@ -20,7 +20,7 @@ public class LeftPanel extends JPanel {
 
 
 
-    public LeftPanel() {
+    public LeftPanel(String UserName) {
         //set up panel
         setPreferredSize(new Dimension(300, 0)); //panel has a set width
         setVisible(true);
@@ -33,9 +33,17 @@ public class LeftPanel extends JPanel {
         add(tagsDisplay, BorderLayout.CENTER);
 
         //add welcomeUser message
-        WelcomeUser welcomeUser = new WelcomeUser();
-        JPanel welcomePanel = welcomeUser.createWelcomePanel();
-        add(welcomePanel, BorderLayout.NORTH);
+//        WelcomeUser welcomeUser = new WelcomeUser();
+//        JPanel welcomePanel = welcomeUser.createWelcomePanel();
+//        add(welcomePanel, BorderLayout.NORTH);
+
+        JPanel welcomePanel = new JPanel();
+        JLabel welLabel = new JLabel();
+        welLabel.setText("Welcome "+UserName+"!");
+        welcomePanel.add(welLabel);
+
+        add(welLabel, BorderLayout.NORTH);
+
 
 
     }

@@ -61,7 +61,7 @@ public class PaperUI extends JPanel {
         title = new JLabel();
         userUploaded = new JLabel();
         userUploaded.setText(paper.getUser(paper.getName()));
-        title.setText(paper.getName()+ "Uploaded by: "+paper.getUser(paper.getName()));
+        title.setText(paper.getName()+ "  Uploaded by: "+paper.getUser(paper.getName()));
 
         gbc.gridx = 1;
         gbc.weightx = 1; // This allows the label to expand and shrink - this line is from ChatGPT
