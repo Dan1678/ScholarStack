@@ -72,7 +72,7 @@ public class DatabaseManager {
 
     //Read record from a table id
     //selectedoutput is desired column
-    public static String readRecord(String tableName, String selectedOutput, int id) {
+    public static String readRecord(String tableName, String selectedOutput, String knownCol, String knownInput) {
         String result = "";
         try (Connection conn = DatabaseConnector.connectToDatabase()) {
             if (conn != null) {
@@ -81,7 +81,10 @@ public class DatabaseManager {
 
                 try {
                     Statement s =conn.createStatement();
-                    String sql = String.format("SELECT %s FROM %s WHERE id=" + id, selectedOutput, tableName);
+                //    SELECT "username" FROM papers3 WHERE username = 'testpaperUpload';
+
+                    String sql = "SELECT \"" + selectedOutput + "\" FROM " + tableName + " WHERE \"" + knownCol + "\" = '" + knownInput + "'";
+
                     ResultSet rset=s.executeQuery(sql);
                     while(rset.next()){
                         result = rset.getString(selectedOutput);

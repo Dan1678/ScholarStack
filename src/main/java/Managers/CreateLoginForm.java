@@ -2,7 +2,7 @@ package Managers;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
-import java.lang.Exception;
+
 import MainUI.*;
 
 
@@ -113,7 +113,7 @@ public class CreateLoginForm extends JFrame implements ActionListener
     }
 
 
-    public void actionPerformed(ActionEvent ae)     //pass action listener as a parameter  
+    public void actionPerformed(ActionEvent ae)
     {
         String userName = textField1.getText();        //get user entered username from the textField1
         String passWord = textField2.getText();        //get user entered pasword from the textField2
@@ -133,7 +133,9 @@ public class CreateLoginForm extends JFrame implements ActionListener
         }
 
         if(isValidUsername(userName) && isValidPassword(passWord)){
+            this.userName = userName;
             dispose();
+
 
             tableName = "users";
             boolean tableCreationResult = DatabaseManager.createTable(tableName, "username", "password");
@@ -141,13 +143,15 @@ public class CreateLoginForm extends JFrame implements ActionListener
 
                 boolean addUser = DatabaseManager.insertRecord(tableName, "username, password", String.format("'%s', '%s'", userName, PasswordHashing.hashPassword(passWord)));
                 if (addUser) {
+
                     System.out.println("Record inserted successfully!");
                 } else {
                     System.out.println("Failed to insert record.");
                 }
             }
 
-            MainUI page = new MainUI();
+            MainUI page = new MainUI(this.userName);
+            String userName1 = page.getUserName();
 
             //page.setVisible(true);
             //JLabel wel_label = new JLabel("Welcome: "+userName);
@@ -164,11 +168,12 @@ public class CreateLoginForm extends JFrame implements ActionListener
 
     }
 
+
     ActionListener currAcc = new ActionListener() {
-        @Override
         public void actionPerformed(ActionEvent e) {
             String userName = textField1.getText();        //get user entered username from the textField1
             String passWord = textField2.getText();
+
 
             if(!LoginManager.isUserTaken(userName)){
                 userReq.setText("Username not found");
@@ -181,8 +186,11 @@ public class CreateLoginForm extends JFrame implements ActionListener
             }
 
             if(LoginManager.isUserTaken(userName) && LoginManager.checkPassword(userName, passWord)){
+
                 dispose();
-                MainUI page = new MainUI();
+                MainUI page = new MainUI(userName);
+                String userName1 = page.getUserName();
+
             }
         }
     };
@@ -190,7 +198,7 @@ public class CreateLoginForm extends JFrame implements ActionListener
     ActionListener skiploginAL = new ActionListener(){
         public void actionPerformed(ActionEvent e){
             dispose();
-            MainUI page = new MainUI();
+            MainUI page = new MainUI("Skipped login user");
 
 //            page.setVisible(true);
 //            JLabel wel_label = new JLabel("Welcome: "+userName);

@@ -1,5 +1,7 @@
 package MainUI;
 
+import Managers.CreateLoginForm;
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.WindowAdapter;
@@ -13,9 +15,14 @@ public class MainUI extends JFrame {
     private LeftPanel leftPanel;
     private RightPanel rightPanel;
     private TopMenuBar menuBar;
+    public String userName;
 
-    public MainUI() { //set up a new blank group
+    public MainUI(String UserName){ //set up a new blank group
+        this.userName = UserName;
         setupFrame();
+    }
+    public String getUserName(){
+        return this.userName;
     }
 
     private void setupFrame() {
@@ -27,7 +34,7 @@ public class MainUI extends JFrame {
         leftPanel = new LeftPanel();
         add(leftPanel, BorderLayout.WEST);
 
-        rightPanel = new RightPanel();
+        rightPanel = new RightPanel(this.userName);
         add(rightPanel, BorderLayout.CENTER);
 
 

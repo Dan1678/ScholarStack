@@ -52,17 +52,24 @@ public class Main {
 
 
 
-        /*
-        int idToRead = 1;
-        String selOut = "username";
-        String outputCol = DatabaseManager.readRecord(tableName, selOut, idToRead);
+//        String tableName = "papers3";
+//        int idToRead = 1;
+//        String selOut = "username";
+//        String outputCol = DatabaseManager.readRecord("papers3", "username", "paper title", "test, test, 4444.");
+//
+//        System.out.println("RequiredOutput: "+outputCol);
 
-        System.out.println("RequiredOutput: "+outputCol);
+ //
+       // SELECT "username" FROM papers3 WHERE "paper title" = 'testing, testing, 4444.';
+ //       String sql = "SELECT " + selectedOutput + " FROM " + tableName + " WHERE " + knownCol + " = '" + knownInput + "'";
+       // readRecord(String tableName, String selectedOutput, String knownCol, String knownInput)
+//        SELECT "username" FROM papers3 WHERE username = 'testpaperUpload';
+//        "SELECT %s FROM %s WHERE "+knownCol+" ="+knownInput, selectedOutput, tableName
 
-        boolean tableCreationResult = DatabaseManager.createTable(tableName);
-        boolean insertionResult = DatabaseManager.insertRecord(tableName, "username, password", "'john_does', 'password1234'");
+       // boolean tableCreationResult = DatabaseManager.createTable(tableName);
+        //boolean insertionResult = DatabaseManager.insertRecord(tableName, "username, password", "'john_does', 'password1234'");
 
-        */
+
 
 //        String tableName = "papers3";
 //        String col1 = "username";

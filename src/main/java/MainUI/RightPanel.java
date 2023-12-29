@@ -3,6 +3,7 @@
 package MainUI;
 
 import GroupContent.Paper;
+import Managers.CreateLoginForm;
 import Managers.DatabaseManager;
 import Managers.PasswordHashing;
 
@@ -21,7 +22,8 @@ public class RightPanel extends JPanel implements ButtonClickListener{
 
     private CommentsDisplay commentsDisplay;
 
-    public RightPanel() {
+    public RightPanel(String UserName) {
+
 
         // todo may be able to get rid of this as it only contains the papers display
 
@@ -67,7 +69,8 @@ public class RightPanel extends JPanel implements ButtonClickListener{
                     addNewPaper(reference);
                     String tableName = "papers3";
                     String columns = "username, \"paper title\"";
-                    String values = String.format("'testUsername', '%s'", String.format(reference));
+
+                    String values = String.format("'%s', '%s'", UserName, reference);
 
                     boolean addPaper = DatabaseManager.insertRecord(tableName, columns, values);
 

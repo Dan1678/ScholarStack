@@ -2,9 +2,11 @@ package GroupContent;
 
 import java.util.ArrayList;
 
+
+
 public class Paper {
 
-    private String name;
+    private String name, n;
     private ArrayList<Comment> comments;
     private ArrayList<Tag> tags;
 
@@ -34,5 +36,12 @@ public class Paper {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public String getUser(String n){
+        this.n = n;
+        String UserUpload = Managers.DatabaseManager.readRecord("papers3", "username", "paper title", this.n);
+        System.out.println(UserUpload);
+        return UserUpload;
     }
 }

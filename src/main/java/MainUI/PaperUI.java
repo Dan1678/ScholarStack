@@ -11,7 +11,7 @@ import java.awt.event.ActionListener;
 public class PaperUI extends JPanel {
 
     private Paper paper;
-    private JLabel title;
+    private JLabel title, userUploaded;
     private JCheckBox checkBox;
     private JButton addTagBtn;
     private JButton seeCommentsBtn;
@@ -59,10 +59,15 @@ public class PaperUI extends JPanel {
         add(checkBox, gbc);
 
         title = new JLabel();
-        title.setText(paper.getName());
+        userUploaded = new JLabel();
+        userUploaded.setText(paper.getUser(paper.getName()));
+        title.setText(paper.getName()+ "Uploaded by: "+paper.getUser(paper.getName()));
+
         gbc.gridx = 1;
         gbc.weightx = 1; // This allows the label to expand and shrink - this line is from ChatGPT
         add(title, gbc);
+        //add(userUploaded, gbc);
+        //add(, gbc);
         gbc.weightx = 0;
 
         addTagBtn = new JButton("Tag Paper");
