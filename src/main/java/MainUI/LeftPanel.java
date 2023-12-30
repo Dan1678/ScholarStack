@@ -33,16 +33,16 @@ public class LeftPanel extends JPanel {
         add(tagsDisplay, BorderLayout.CENTER);
 
         //add welcomeUser message
-//        WelcomeUser welcomeUser = new WelcomeUser();
-//        JPanel welcomePanel = welcomeUser.createWelcomePanel();
-//        add(welcomePanel, BorderLayout.NORTH);
+        WelcomeUser welcomeUser = new WelcomeUser();
+        JPanel welcomePanel = welcomeUser.createWelcomePanel(UserName);
+        add(welcomePanel, BorderLayout.NORTH);
 
-        JPanel welcomePanel = new JPanel();
-        JLabel welLabel = new JLabel();
-        welLabel.setText("Welcome "+UserName+"!");
-        welcomePanel.add(welLabel);
-
-        add(welLabel, BorderLayout.NORTH);
+//        JPanel welcomePanel = new JPanel();
+//        JLabel welLabel = new JLabel();
+//        welLabel.setText("Welcome "+UserName+"!");
+//        welcomePanel.add(welLabel);
+//
+//        add(welLabel, BorderLayout.NORTH);
 
 
 

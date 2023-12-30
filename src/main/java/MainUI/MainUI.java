@@ -32,6 +32,7 @@ public class MainUI extends JFrame {
         setVisible(true); // making the frame visible
         //add panels
         leftPanel = new LeftPanel(this.userName);
+
         add(leftPanel, BorderLayout.WEST);
 
         rightPanel = new RightPanel(this.userName);

@@ -77,7 +77,7 @@ public class RightPanel extends JPanel implements ButtonClickListener{
                     papersDisplay.addReference(reference, listener);
                     commentsDisplay.displayComments(finalPaper);
                 }else {
-                    JOptionPane.showMessageDialog(null, "Please enter a valid Harvard reference. Make sure to use , in between and . at the end");
+                    JOptionPane.showMessageDialog(null, "Please enter a valid Harvard reference. e.g. name ,name. 2345. title.");
                 }
             }
         });
@@ -114,9 +114,17 @@ public class RightPanel extends JPanel implements ButtonClickListener{
     }
 
     private boolean isValidHarvardReference(String reference) {
-        Pattern harvardPattern = Pattern.compile("^([A-Za-z]+), ([A-Za-z]+), \\d{4}\\.$");
-        Matcher matcher = harvardPattern.matcher(reference);
-        return matcher.matches();
+        Pattern harvardPattern = Pattern.compile("^([A-Za-z]+( [A-Za-z]+)*), ([A-Za-z]+( [A-Za-z]+)*)\\. \\d{4}\\. [A-Za-z0-9\\s]+\\.$");
+        Pattern bookPattern = Pattern.compile("^[A-Za-z\\s]+\\s\\(\\d{4}\\) [A-Za-z0-9\\s,:.-]+, [A-Za-z0-9\\s:]+, [A-Za-z\\s]+$");
+        Pattern articlePattern = Pattern.compile("^\"[A-Za-z0-9\\s]+\", ([A-Za-z]+( [A-Za-z]+)*), \\d{4}, [0-9]+\\(\\d+\\)\\.$");
+        Matcher harvardMatcher = harvardPattern.matcher(reference);
+        Matcher bookMatcher = bookPattern.matcher(reference);
+        Matcher articleMatcher = articlePattern.matcher(reference);
+
+        // Check if the reference matches any of the patterns
+        return harvardMatcher.matches() || bookMatcher.matches() || articleMatcher.matches();
+
+
     }
 
     @Override
