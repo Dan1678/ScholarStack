@@ -1,0 +1,467 @@
+Index: src/main/java/MainUI/Papers_list.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package MainUI;\n\nimport java.util.ArrayList;\nimport java.util.HashMap;\nimport java.util.Map;\nimport java.util.Scanner;\nimport java.util.regex.Matcher;\nimport java.util.regex.Pattern;\n\npublic class Papers_list {\n    private ArrayList<String> Papers = new ArrayList<>();\n    private Map<String, String> comments = new HashMap<>();\n\n    public void addPaper(String reference) {\n\n\n            Papers.add(reference);\n    }\n    public void addComment(String reference, String comment) {\n        comments.put(reference, comment);\n    }\n\n    public ArrayList<String> getReferenceList() {\n        return Papers;\n    }\n    public Map<String, String> getCommentsMap() {\n        return comments;\n    }\n}\n\n\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/MainUI/Papers_list.java b/src/main/java/MainUI/Papers_list.java
+--- a/src/main/java/MainUI/Papers_list.java	(revision 652df9d4058a962cc280a5ee6849084fd812415d)
++++ b/src/main/java/MainUI/Papers_list.java	(date 1703609886489)
+@@ -1,31 +1,31 @@
+-package MainUI;
+-
+-import java.util.ArrayList;
+-import java.util.HashMap;
+-import java.util.Map;
+-import java.util.Scanner;
+-import java.util.regex.Matcher;
+-import java.util.regex.Pattern;
+-
+-public class Papers_list {
+-    private ArrayList<String> Papers = new ArrayList<>();
+-    private Map<String, String> comments = new HashMap<>();
+-
+-    public void addPaper(String reference) {
+-
+-
+-            Papers.add(reference);
+-    }
+-    public void addComment(String reference, String comment) {
+-        comments.put(reference, comment);
+-    }
+-
+-    public ArrayList<String> getReferenceList() {
+-        return Papers;
+-    }
+-    public Map<String, String> getCommentsMap() {
+-        return comments;
+-    }
+-}
++//package MainUI;
++//
++//import java.util.ArrayList;
++//import java.util.HashMap;
++//import java.util.Map;
++//import java.util.Scanner;
++//import java.util.regex.Matcher;
++//import java.util.regex.Pattern;
++//
++//public class Papers_list {
++//    private ArrayList<String> Papers = new ArrayList<>();
++//    private Map<String, String> comments = new HashMap<>();
++//
++//    public void addPaper(String reference) {
++//
++//
++//            Papers.add(reference);
++//    }
++//    public void addComment(String reference, String comment) {
++//        comments.put(reference, comment);
++//    }
++//
++//    public ArrayList<String> getReferenceList() {
++//        return Papers;
++//    }
++//    public Map<String, String> getCommentsMap() {
++//        return comments;
++//    }
++//}
+ 
+ 
+Index: src/main/java/MainUI/PapersPanel.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package MainUI;\nimport Managers.DatabaseConnector;\nimport Managers.DatabaseManager;\n\n\nimport javax.swing.*;\nimport javax.swing.border.Border;\nimport java.awt.*;\nimport java.awt.event.ActionEvent;\nimport java.awt.event.ActionListener;\nimport java.util.ArrayList;\nimport java.util.regex.Matcher;\nimport java.util.regex.Pattern;\n\n\npublic class PapersPanel extends JPanel {\n\n        private Papers_list papersList;\n        private JTextArea displayArea;\n         private JPanel commentPanel;\n\n\n    public PapersPanel() {\n\n        commentPanel = new JPanel();\n        commentPanel.setLayout(new BorderLayout());\n        commentPanel.setBorder(BorderFactory.createTitledBorder(\"Comments\"));\n\n        setLayout(new BorderLayout());\n            papersList = new Papers_list();\n            //Set up panel\n            setVisible(true);\n            setBorder(BorderFactory.createLineBorder(Color.black));\n\n\n\n\n            displayArea = new JTextArea(250, 505);\n            displayArea.setEditable(false);\n\n            JScrollPane scrollPane = new JScrollPane(displayArea);\n            scrollPane.setPreferredSize(new Dimension(500, 300));//make it large otherwise it won t show\n            add(scrollPane,BorderLayout.CENTER);\n            JButton addReferenceButton = new JButton(\"Add Reference\");\n            addReferenceButton.addActionListener(new ActionListener() {\n                @Override\n                public void actionPerformed(ActionEvent e) {\n                    String reference = JOptionPane.showInputDialog(\"Enter the Harvard reference:\");\n                    if (!reference.isEmpty()&& isValidHarvardReference(reference)) {\n                        try {\n                            String tableName = \"papers3\";\n                            boolean tableCreationResult = DatabaseManager.createTable(tableName, \"username\", \"paper title\");\n                            if (tableCreationResult) {\n                                DatabaseManager.insertRecord(\"papers3\", \"'username', 'paper title'\", String.format(\"'testUsername', '%s'\", reference));\n                            }\n                        } catch (Exception ex) {\n                            ex.printStackTrace();\n                            JOptionPane.showMessageDialog(null, \"Error adding reference to database\");\n                        }\n                        papersList.addPaper(reference);\n\n\n                        displayPapers();\n                    }else {\n                        JOptionPane.showMessageDialog(null, \"Please enter a valid Harvard reference. Make sure to use , in between and . at the end\");\n                    }\n                }\n            });\n\n            JButton generateBibliographyButton = new JButton(\"Generate Bibliography\");\n            generateBibliographyButton.addActionListener(new ActionListener() {\n                @Override\n                public void actionPerformed(ActionEvent e) {\n                    generateBibliography();\n                }\n            });\n            JButton addCommentButton = new JButton(\"Add Comment\");\n            addCommentButton.addActionListener(new ActionListener() {\n            @Override\n            public void actionPerformed(ActionEvent e) {\n                String selectedReference = getSelectedReference();\n                if (selectedReference != null) {\n                    String comment = JOptionPane.showInputDialog(\"Enter a comment for this reference:\");\n                    if (comment != null && !comment.isEmpty()) {\n                        // Add the comment to the comment panel\n                        addComment(selectedReference, comment);\n                    }\n                } else {\n                    JOptionPane.showMessageDialog(null, \"Please select a reference to add a comment.\");\n                }\n            }\n        });\n\n        JPanel buttonPanel = new JPanel(new FlowLayout(FlowLayout.CENTER)); // FlowLayout for center alignment\n            buttonPanel.add(addReferenceButton);\n            buttonPanel.add(generateBibliographyButton);\n            buttonPanel.add(addCommentButton);\n            add(buttonPanel, BorderLayout.SOUTH);\n            add(commentPanel, BorderLayout.EAST);\n\n            displayPapers();\n           // JPanel buttonPanel = new JPanel();\n            //buttonPanel.add(addReferenceButton);\n\n           // setLayout(new BorderLayout());\n           // add(addReferenceButton,BorderLayout.SOUTH);\n            //add(scrollPane,BorderLayout.CENTER);\n\n\n        }\n    private void addComment(String selectedReference, String comment) {\n        // Implement logic to add the comment to the comment panel\n        /*JLabel commentLabel = new JLabel(selectedReference + \": \" + comment);\n        commentPanel.setLayout(new BoxLayout(commentPanel, BoxLayout.Y_AXIS));//organise comments one below the other\n        commentPanel.add(commentLabel);\n        commentPanel.revalidate();\n        commentPanel.repaint();*/\n        JLabel commentLabel = new JLabel(\"<html>\" + selectedReference + \": \" + comment + \"</html>\");\n        commentLabel.setPreferredSize(new Dimension(800, 50)); // Fixed size for each comment\n\n        // Set line wrap and HTML rendering for the label\n        commentLabel.setVerticalAlignment(SwingConstants.TOP);\n        commentLabel.setHorizontalAlignment(SwingConstants.LEFT);\n        commentLabel.setHorizontalTextPosition(SwingConstants.LEFT);\n        commentLabel.setVerticalTextPosition(SwingConstants.TOP);\n        commentLabel.setOpaque(true);\n\n        // Create a JScrollPane for commentPanel\n        JScrollPane commentScrollPane = new JScrollPane(commentLabel);\n        commentScrollPane.setVerticalScrollBarPolicy(JScrollPane.VERTICAL_SCROLLBAR_ALWAYS);\n\n        // Set preferred size for the scroll pane\n        commentScrollPane.setPreferredSize(new Dimension(200, 300)); // Adjust size as needed\n\n        // Add the scroll pane to your UI layout instead of commentPanel directly\n        add(commentScrollPane, BorderLayout.SOUTH);\n\n        // Revalidate and repaint the scrollPane\n        commentScrollPane.revalidate();\n        commentScrollPane.repaint();\n\n    }\n\n\n    public void displayPapers() {\n            displayArea.setText(\"\");//clear before updating\n            ArrayList<String> references = papersList.getReferenceList();\n            StringBuilder stringBuilder = new StringBuilder();\n\n\n            for (int i = 0; i < references.size(); i++) {\n                stringBuilder.append(i + 1).append(\". \").append(references.get(i)).append(\"\\n\");\n            }\n\n            displayArea.setText(stringBuilder.toString());\n\n        }\n        private boolean isValidHarvardReference(String reference) {\n        Pattern harvardPattern = Pattern.compile(\"^([A-Za-z]+), ([A-Za-z]+), \\\\d{4}\\\\.$\");\n        Matcher matcher = harvardPattern.matcher(reference);\n        return matcher.matches();\n    }\n    private void generateBibliography() {\n        ArrayList<String> references = papersList.getReferenceList();\n        StringBuilder bibliography = new StringBuilder(\"Bibliography:\\n\");\n\n\n        for (int i = 0; i < references.size(); i++) {\n            bibliography.append(i + 1).append(\". \").append(references.get(i)).append(\"\\n\");\n        }\n\n        // Display the bibliography in a dialog\n        JTextArea bibliographyTextArea = new JTextArea(bibliography.toString(), 20, 50);\n        bibliographyTextArea.setEditable(false);\n        JScrollPane scrollPane = new JScrollPane(bibliographyTextArea);\n\n        JOptionPane.showMessageDialog(null, scrollPane, \"Generated Bibliography\", JOptionPane.PLAIN_MESSAGE);\n    }\n\n    private String getSelectedReference() {\n        // Fetch the selected reference from your UI element (e.g., displayArea)\n\n        String selectedText = displayArea.getSelectedText();\n        if (selectedText != null && !selectedText.isEmpty()) {\n            // Extract the reference from the selected text\n\n            return selectedText.trim(); // Trim any extra spaces\n        }\n        return null;\n    }\n}\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/MainUI/PapersPanel.java b/src/main/java/MainUI/PapersPanel.java
+--- a/src/main/java/MainUI/PapersPanel.java	(revision 652df9d4058a962cc280a5ee6849084fd812415d)
++++ b/src/main/java/MainUI/PapersPanel.java	(date 1703609858953)
+@@ -1,194 +1,194 @@
+-package MainUI;
+-import Managers.DatabaseConnector;
+-import Managers.DatabaseManager;
+-
+-
+-import javax.swing.*;
+-import javax.swing.border.Border;
+-import java.awt.*;
+-import java.awt.event.ActionEvent;
+-import java.awt.event.ActionListener;
+-import java.util.ArrayList;
+-import java.util.regex.Matcher;
+-import java.util.regex.Pattern;
+-
+-
+-public class PapersPanel extends JPanel {
+-
+-        private Papers_list papersList;
+-        private JTextArea displayArea;
+-         private JPanel commentPanel;
+-
+-
+-    public PapersPanel() {
+-
+-        commentPanel = new JPanel();
+-        commentPanel.setLayout(new BorderLayout());
+-        commentPanel.setBorder(BorderFactory.createTitledBorder("Comments"));
+-
+-        setLayout(new BorderLayout());
+-            papersList = new Papers_list();
+-            //Set up panel
+-            setVisible(true);
+-            setBorder(BorderFactory.createLineBorder(Color.black));
+-
+-
+-
+-
+-            displayArea = new JTextArea(250, 505);
+-            displayArea.setEditable(false);
+-
+-            JScrollPane scrollPane = new JScrollPane(displayArea);
+-            scrollPane.setPreferredSize(new Dimension(500, 300));//make it large otherwise it won t show
+-            add(scrollPane,BorderLayout.CENTER);
+-            JButton addReferenceButton = new JButton("Add Reference");
+-            addReferenceButton.addActionListener(new ActionListener() {
+-                @Override
+-                public void actionPerformed(ActionEvent e) {
+-                    String reference = JOptionPane.showInputDialog("Enter the Harvard reference:");
+-                    if (!reference.isEmpty()&& isValidHarvardReference(reference)) {
+-                        try {
+-                            String tableName = "papers3";
+-                            boolean tableCreationResult = DatabaseManager.createTable(tableName, "username", "paper title");
+-                            if (tableCreationResult) {
+-                                DatabaseManager.insertRecord("papers3", "'username', 'paper title'", String.format("'testUsername', '%s'", reference));
+-                            }
+-                        } catch (Exception ex) {
+-                            ex.printStackTrace();
+-                            JOptionPane.showMessageDialog(null, "Error adding reference to database");
+-                        }
+-                        papersList.addPaper(reference);
+-
+-
+-                        displayPapers();
+-                    }else {
+-                        JOptionPane.showMessageDialog(null, "Please enter a valid Harvard reference. Make sure to use , in between and . at the end");
+-                    }
+-                }
+-            });
+-
+-            JButton generateBibliographyButton = new JButton("Generate Bibliography");
+-            generateBibliographyButton.addActionListener(new ActionListener() {
+-                @Override
+-                public void actionPerformed(ActionEvent e) {
+-                    generateBibliography();
+-                }
+-            });
+-            JButton addCommentButton = new JButton("Add Comment");
+-            addCommentButton.addActionListener(new ActionListener() {
+-            @Override
+-            public void actionPerformed(ActionEvent e) {
+-                String selectedReference = getSelectedReference();
+-                if (selectedReference != null) {
+-                    String comment = JOptionPane.showInputDialog("Enter a comment for this reference:");
+-                    if (comment != null && !comment.isEmpty()) {
+-                        // Add the comment to the comment panel
+-                        addComment(selectedReference, comment);
+-                    }
+-                } else {
+-                    JOptionPane.showMessageDialog(null, "Please select a reference to add a comment.");
+-                }
+-            }
+-        });
+-
+-        JPanel buttonPanel = new JPanel(new FlowLayout(FlowLayout.CENTER)); // FlowLayout for center alignment
+-            buttonPanel.add(addReferenceButton);
+-            buttonPanel.add(generateBibliographyButton);
+-            buttonPanel.add(addCommentButton);
+-            add(buttonPanel, BorderLayout.SOUTH);
+-            add(commentPanel, BorderLayout.EAST);
+-
+-            displayPapers();
+-           // JPanel buttonPanel = new JPanel();
+-            //buttonPanel.add(addReferenceButton);
+-
+-           // setLayout(new BorderLayout());
+-           // add(addReferenceButton,BorderLayout.SOUTH);
+-            //add(scrollPane,BorderLayout.CENTER);
+-
+-
+-        }
+-    private void addComment(String selectedReference, String comment) {
+-        // Implement logic to add the comment to the comment panel
+-        /*JLabel commentLabel = new JLabel(selectedReference + ": " + comment);
+-        commentPanel.setLayout(new BoxLayout(commentPanel, BoxLayout.Y_AXIS));//organise comments one below the other
+-        commentPanel.add(commentLabel);
+-        commentPanel.revalidate();
+-        commentPanel.repaint();*/
+-        JLabel commentLabel = new JLabel("<html>" + selectedReference + ": " + comment + "</html>");
+-        commentLabel.setPreferredSize(new Dimension(800, 50)); // Fixed size for each comment
+-
+-        // Set line wrap and HTML rendering for the label
+-        commentLabel.setVerticalAlignment(SwingConstants.TOP);
+-        commentLabel.setHorizontalAlignment(SwingConstants.LEFT);
+-        commentLabel.setHorizontalTextPosition(SwingConstants.LEFT);
+-        commentLabel.setVerticalTextPosition(SwingConstants.TOP);
+-        commentLabel.setOpaque(true);
+-
+-        // Create a JScrollPane for commentPanel
+-        JScrollPane commentScrollPane = new JScrollPane(commentLabel);
+-        commentScrollPane.setVerticalScrollBarPolicy(JScrollPane.VERTICAL_SCROLLBAR_ALWAYS);
+-
+-        // Set preferred size for the scroll pane
+-        commentScrollPane.setPreferredSize(new Dimension(200, 300)); // Adjust size as needed
+-
+-        // Add the scroll pane to your UI layout instead of commentPanel directly
+-        add(commentScrollPane, BorderLayout.SOUTH);
+-
+-        // Revalidate and repaint the scrollPane
+-        commentScrollPane.revalidate();
+-        commentScrollPane.repaint();
+-
+-    }
+-
+-
+-    public void displayPapers() {
+-            displayArea.setText("");//clear before updating
+-            ArrayList<String> references = papersList.getReferenceList();
+-            StringBuilder stringBuilder = new StringBuilder();
+-
+-
+-            for (int i = 0; i < references.size(); i++) {
+-                stringBuilder.append(i + 1).append(". ").append(references.get(i)).append("\n");
+-            }
+-
+-            displayArea.setText(stringBuilder.toString());
+-
+-        }
+-        private boolean isValidHarvardReference(String reference) {
+-        Pattern harvardPattern = Pattern.compile("^([A-Za-z]+), ([A-Za-z]+), \\d{4}\\.$");
+-        Matcher matcher = harvardPattern.matcher(reference);
+-        return matcher.matches();
+-    }
+-    private void generateBibliography() {
+-        ArrayList<String> references = papersList.getReferenceList();
+-        StringBuilder bibliography = new StringBuilder("Bibliography:\n");
+-
+-
+-        for (int i = 0; i < references.size(); i++) {
+-            bibliography.append(i + 1).append(". ").append(references.get(i)).append("\n");
+-        }
+-
+-        // Display the bibliography in a dialog
+-        JTextArea bibliographyTextArea = new JTextArea(bibliography.toString(), 20, 50);
+-        bibliographyTextArea.setEditable(false);
+-        JScrollPane scrollPane = new JScrollPane(bibliographyTextArea);
+-
+-        JOptionPane.showMessageDialog(null, scrollPane, "Generated Bibliography", JOptionPane.PLAIN_MESSAGE);
+-    }
+-
+-    private String getSelectedReference() {
+-        // Fetch the selected reference from your UI element (e.g., displayArea)
+-
+-        String selectedText = displayArea.getSelectedText();
+-        if (selectedText != null && !selectedText.isEmpty()) {
+-            // Extract the reference from the selected text
+-
+-            return selectedText.trim(); // Trim any extra spaces
+-        }
+-        return null;
+-    }
+-}
++//package MainUI;
++//import Managers.DatabaseConnector;
++//import Managers.DatabaseManager;
++//
++//
++//import javax.swing.*;
++//import javax.swing.border.Border;
++//import java.awt.*;
++//import java.awt.event.ActionEvent;
++//import java.awt.event.ActionListener;
++//import java.util.ArrayList;
++//import java.util.regex.Matcher;
++//import java.util.regex.Pattern;
++//
++//
++//public class PapersPanel extends JPanel {
++//
++//        private Papers_list papersList;
++//        private JTextArea displayArea;
++//         private JPanel commentPanel;
++//
++//
++//    public PapersPanel() {
++//
++//        commentPanel = new JPanel();
++//        commentPanel.setLayout(new BorderLayout());
++//        commentPanel.setBorder(BorderFactory.createTitledBorder("Comments"));
++//
++//        setLayout(new BorderLayout());
++//            papersList = new Papers_list();
++//            //Set up panel
++//            setVisible(true);
++//            setBorder(BorderFactory.createLineBorder(Color.black));
++//
++//
++//
++//
++//            displayArea = new JTextArea(250, 505);
++//            displayArea.setEditable(false);
++//
++//            JScrollPane scrollPane = new JScrollPane(displayArea);
++//            scrollPane.setPreferredSize(new Dimension(500, 300));//make it large otherwise it won t show
++//            add(scrollPane,BorderLayout.CENTER);
++//            JButton addReferenceButton = new JButton("Add Reference");
++//            addReferenceButton.addActionListener(new ActionListener() {
++//                @Override
++//                public void actionPerformed(ActionEvent e) {
++//                    String reference = JOptionPane.showInputDialog("Enter the Harvard reference:");
++//                    if (!reference.isEmpty()&& isValidHarvardReference(reference)) {
++//                        try {
++//                            String tableName = "papers3";
++//                            boolean tableCreationResult = DatabaseManager.createTable(tableName, "username", "paper title");
++//                            if (tableCreationResult) {
++//                                DatabaseManager.insertRecord("papers3", "'username', 'paper title'", String.format("'testUsername', '%s'", reference));
++//                            }
++//                        } catch (Exception ex) {
++//                            ex.printStackTrace();
++//                            JOptionPane.showMessageDialog(null, "Error adding reference to database");
++//                        }
++//                        papersList.addPaper(reference);
++//
++//
++//                        displayPapers();
++//                    }else {
++//                        JOptionPane.showMessageDialog(null, "Please enter a valid Harvard reference. Make sure to use , in between and . at the end");
++//                    }
++//                }
++//            });
++//
++//            JButton generateBibliographyButton = new JButton("Generate Bibliography");
++//            generateBibliographyButton.addActionListener(new ActionListener() {
++//                @Override
++//                public void actionPerformed(ActionEvent e) {
++//                    generateBibliography();
++//                }
++//            });
++//            JButton addCommentButton = new JButton("Add Comment");
++//            addCommentButton.addActionListener(new ActionListener() {
++//            @Override
++//            public void actionPerformed(ActionEvent e) {
++//                String selectedReference = getSelectedReference();
++//                if (selectedReference != null) {
++//                    String comment = JOptionPane.showInputDialog("Enter a comment for this reference:");
++//                    if (comment != null && !comment.isEmpty()) {
++//                        // Add the comment to the comment panel
++//                        addComment(selectedReference, comment);
++//                    }
++//                } else {
++//                    JOptionPane.showMessageDialog(null, "Please select a reference to add a comment.");
++//                }
++//            }
++//        });
++//
++//        JPanel buttonPanel = new JPanel(new FlowLayout(FlowLayout.CENTER)); // FlowLayout for center alignment
++//            buttonPanel.add(addReferenceButton);
++//            buttonPanel.add(generateBibliographyButton);
++//            buttonPanel.add(addCommentButton);
++//            add(buttonPanel, BorderLayout.SOUTH);
++//            add(commentPanel, BorderLayout.EAST);
++//
++//            displayPapers();
++//           // JPanel buttonPanel = new JPanel();
++//            //buttonPanel.add(addReferenceButton);
++//
++//           // setLayout(new BorderLayout());
++//           // add(addReferenceButton,BorderLayout.SOUTH);
++//            //add(scrollPane,BorderLayout.CENTER);
++//
++//
++//        }
++//    private void addComment(String selectedReference, String comment) {
++//        // Implement logic to add the comment to the comment panel
++//        /*JLabel commentLabel = new JLabel(selectedReference + ": " + comment);
++//        commentPanel.setLayout(new BoxLayout(commentPanel, BoxLayout.Y_AXIS));//organise comments one below the other
++//        commentPanel.add(commentLabel);
++//        commentPanel.revalidate();
++//        commentPanel.repaint();*/
++//        JLabel commentLabel = new JLabel("<html>" + selectedReference + ": " + comment + "</html>");
++//        commentLabel.setPreferredSize(new Dimension(800, 50)); // Fixed size for each comment
++//
++//        // Set line wrap and HTML rendering for the label
++//        commentLabel.setVerticalAlignment(SwingConstants.TOP);
++//        commentLabel.setHorizontalAlignment(SwingConstants.LEFT);
++//        commentLabel.setHorizontalTextPosition(SwingConstants.LEFT);
++//        commentLabel.setVerticalTextPosition(SwingConstants.TOP);
++//        commentLabel.setOpaque(true);
++//
++//        // Create a JScrollPane for commentPanel
++//        JScrollPane commentScrollPane = new JScrollPane(commentLabel);
++//        commentScrollPane.setVerticalScrollBarPolicy(JScrollPane.VERTICAL_SCROLLBAR_ALWAYS);
++//
++//        // Set preferred size for the scroll pane
++//        commentScrollPane.setPreferredSize(new Dimension(200, 300)); // Adjust size as needed
++//
++//        // Add the scroll pane to your UI layout instead of commentPanel directly
++//        add(commentScrollPane, BorderLayout.SOUTH);
++//
++//        // Revalidate and repaint the scrollPane
++//        commentScrollPane.revalidate();
++//        commentScrollPane.repaint();
++//
++//    }
++//
++//
++//    public void displayPapers() {
++//            displayArea.setText("");//clear before updating
++//            ArrayList<String> references = papersList.getReferenceList();
++//            StringBuilder stringBuilder = new StringBuilder();
++//
++//
++//            for (int i = 0; i < references.size(); i++) {
++//                stringBuilder.append(i + 1).append(". ").append(references.get(i)).append("\n");
++//            }
++//
++//            displayArea.setText(stringBuilder.toString());
++//
++//        }
++//        private boolean isValidHarvardReference(String reference) {
++//        Pattern harvardPattern = Pattern.compile("^([A-Za-z]+), ([A-Za-z]+), \\d{4}\\.$");
++//        Matcher matcher = harvardPattern.matcher(reference);
++//        return matcher.matches();
++//    }
++//    private void generateBibliography() {
++//        ArrayList<String> references = papersList.getReferenceList();
++//        StringBuilder bibliography = new StringBuilder("Bibliography:\n");
++//
++//
++//        for (int i = 0; i < references.size(); i++) {
++//            bibliography.append(i + 1).append(". ").append(references.get(i)).append("\n");
++//        }
++//
++//        // Display the bibliography in a dialog
++//        JTextArea bibliographyTextArea = new JTextArea(bibliography.toString(), 20, 50);
++//        bibliographyTextArea.setEditable(false);
++//        JScrollPane scrollPane = new JScrollPane(bibliographyTextArea);
++//
++//        JOptionPane.showMessageDialog(null, scrollPane, "Generated Bibliography", JOptionPane.PLAIN_MESSAGE);
++//    }
++//
++//    private String getSelectedReference() {
++//        // Fetch the selected reference from your UI element (e.g., displayArea)
++//
++//        String selectedText = displayArea.getSelectedText();
++//        if (selectedText != null && !selectedText.isEmpty()) {
++//            // Extract the reference from the selected text
++//
++//            return selectedText.trim(); // Trim any extra spaces
++//        }
++//        return null;
++//    }
++//}
+ 
+ 
+ 
