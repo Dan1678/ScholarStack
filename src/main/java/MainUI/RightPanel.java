@@ -25,8 +25,6 @@ public class RightPanel extends JPanel implements ButtonClickListener{
     public RightPanel(String UserName) {
 
 
-        // todo may be able to get rid of this as it only contains the papers display
-
         setLayout(new BorderLayout());
 
         commentsDisplay = new CommentsDisplay();

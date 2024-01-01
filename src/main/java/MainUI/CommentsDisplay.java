@@ -1,9 +1,11 @@
 package MainUI;
 
 import GroupContent.Comment;
+import GroupContent.HierarchicalContent;
 import GroupContent.Paper;
 
 import javax.swing.*;
+import javax.swing.tree.DefaultTreeCellRenderer;
 import java.awt.*;
 import java.util.ArrayList;
 
@@ -30,7 +32,7 @@ public class CommentsDisplay extends JScrollPane {
 
     public CommentsDisplay() {
         commentsPanel = new JPanel();
-        commentsPanel.setLayout(new BoxLayout(commentsPanel, BoxLayout.Y_AXIS));
+        commentsPanel.setLayout(new BorderLayout());
 
         setViewportView(commentsPanel);
         setVerticalScrollBarPolicy(JScrollPane.VERTICAL_SCROLLBAR_ALWAYS);
@@ -40,25 +42,33 @@ public class CommentsDisplay extends JScrollPane {
     public void displayComments(Paper paper) {
         commentsPanel.removeAll();
 
-        JLabel titleLabel = new JLabel(paper.getName());
-        titleLabel.setFont(titleLabel.getFont().deriveFont(Font.BOLD));
-        commentsPanel.add(titleLabel);
 
         ArrayList<Comment> comments = paper.getComments();
+        JTree tree = comments.get(0).getDisplayTree();
+        commentsPanel.add(comments.get(0).getDisplayTree(), BorderLayout.CENTER);
 
-        if (comments.isEmpty()) {
-            JLabel noCommentsLabel = new JLabel("No comments available");
-            noCommentsLabel.setForeground(Color.GRAY);
-            noCommentsLabel.setHorizontalAlignment(SwingConstants.CENTER);
-            commentsPanel.add(noCommentsLabel);
-        } else {
-            for (Comment c : comments) {
-                CommentPanel commentPanel = new CommentPanel(c.getContent());
-                commentsPanel.add(commentPanel);
-            }
-        }
+//        commentsPanel.removeAll();
+//
+//        JLabel titleLabel = new JLabel(paper.getName());
+//        titleLabel.setFont(titleLabel.getFont().deriveFont(Font.BOLD));
+//        commentsPanel.add(titleLabel);
+//
+//        ArrayList<Comment> comments = paper.getComments();
+//
+//        if (comments.isEmpty()) {
+//            JLabel noCommentsLabel = new JLabel("No comments available");
+//            noCommentsLabel.setForeground(Color.GRAY);
+//            noCommentsLabel.setHorizontalAlignment(SwingConstants.CENTER);
+//            commentsPanel.add(noCommentsLabel);
+//        } else {
+//            for (Comment c : comments) {
+//                CommentPanel commentPanel = new CommentPanel(c.getContent());
+//                commentsPanel.add(commentPanel);
+//            }
+//        }
 
         revalidate();
         repaint();
     }
 }
+

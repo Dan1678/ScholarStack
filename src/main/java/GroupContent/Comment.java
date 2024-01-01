@@ -1,18 +1,12 @@
 package GroupContent;
 
-public class Comment {
+import javax.swing.*;
 
-    private String content;
+public class Comment extends HierarchicalContent{
+
 
     public Comment(String content) {
-        this.content = content;
+        super(content);
     }
 
-    public String getContent() {
-        return content;
-    }
-
-    public void setContent(String content) {
-        this.content = content;
-    }
 }
