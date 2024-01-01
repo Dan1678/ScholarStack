@@ -2,6 +2,7 @@ package MainUI;
 
 import GroupContent.Comment;
 import GroupContent.Paper;
+import GroupContent.Tag;
 
 import javax.swing.*;
 import java.awt.*;
@@ -72,6 +73,17 @@ public class PaperUI extends JPanel {
 
         addTagBtn = new JButton("Tag Paper");
         gbc.gridx = 2;
+        addTagBtn.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                String tagString = JOptionPane.showInputDialog("Enter tag:");
+                if (listener != null) {
+                    Tag tag = new Tag(tagString);
+                    paper.addTags(tag);
+                    System.out.println(paper.getTags());
+                }
+            }
+        });
         add(addTagBtn, gbc);
 
         seeCommentsBtn = new JButton("See Comments");

@@ -24,8 +24,8 @@ public class TagsDisplay extends JPanel {
 
         tag = new Tag("Tags:");
 
-        tag.addSubTag(new Tag("sub 1"));
-        tag.addSubTag(new Tag("sub 2"));
+        tag.addSubTag(new Tag("PAPER TITLE"));
+        tag.addSubTag(new Tag("PAPER TITLE 2"));
 
         for (Tag t : tag.getSubTags()) {
             t.addSubTag(new Tag("subsub 1"));

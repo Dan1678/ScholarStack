@@ -65,7 +65,7 @@ public class RightPanel extends JPanel implements ButtonClickListener{
             @Override
             public void actionPerformed(ActionEvent e) {
                 String reference = JOptionPane.showInputDialog("Enter the Harvard reference:");
-                if (reference != null && !reference.isEmpty()&& isValidHarvardReference(reference)) {
+                if (reference != null && !reference.isEmpty() && isValidHarvardReference(reference)) {
                     addNewPaper(reference);
                     String tableName = "papers3";
                     String columns = "username, \"paper title\"";
@@ -76,7 +76,10 @@ public class RightPanel extends JPanel implements ButtonClickListener{
 
                     papersDisplay.addReference(reference, listener);
                     commentsDisplay.displayComments(finalPaper);
-                }else {
+                }else if (reference != null && !reference.isEmpty()) {
+                    System.out.println("Reference addition canceled.");
+
+                } else {
                     JOptionPane.showMessageDialog(null, "Please enter a valid Harvard reference. e.g. name ,name. 2345. title.");
                 }
             }

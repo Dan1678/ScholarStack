@@ -12,6 +12,7 @@ public class Paper {
 
     public Paper() {
         comments = new ArrayList<>();
+        tags = new ArrayList<>();
     }
 
     public void addComment(Comment comment) {
