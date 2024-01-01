@@ -46,15 +46,15 @@ public class RightPanel extends JPanel implements ButtonClickListener{
 
         // add some temp papers
         Paper paper = new Paper();
-        paper.setName("PAPER TITLE ");
+        paper.setName("Smith, J., Johnson, A. (2010). *The Art of Collaboration*. London: ABC Publishing.");
 
         papersDisplay.addPaperUI(new PaperUI(paper), this);
 
         paper = new Paper();
-        paper.setName("PAPER TITLE 2");
+        paper.setName("Smith, J. (2022). \"The Art of Referencing.\" Reference Guides Online. Available at: https://www.example.com/reference-guide [Accessed 30 December 2023].\n");
         papersDisplay.addPaperUI(new PaperUI(paper), this);
         paper = new Paper();
-        paper.setName("PAPER TITLE 3");
+        paper.setName("Smith, J., Johnson, A. (2010). \"The Art of Writing Articles.\" Journal of Academic Writing. 5(2): 123-135.\n");
         papersDisplay.addPaperUI(new PaperUI(paper), this);
 
 
@@ -80,7 +80,7 @@ public class RightPanel extends JPanel implements ButtonClickListener{
                     System.out.println("Reference addition canceled.");
 
                 } else {
-                    JOptionPane.showMessageDialog(null, "Please enter a valid Harvard reference. e.g. name ,name. 2345. title.");
+                    JOptionPane.showMessageDialog(null, "Please enter a valid Harvard reference: \n -for a book. Example: Author Last Name, Author Initial(s). (Year).*Book Title*. Place of Publication: Publisher.\n -for an article. Example: Author Last Name, Author Initial(s). (Year). \"Article Title.\" Journal Name. Volume(Issue): Page Numbers.\n -for a website.Example: Author Last Name, Author Initial(s) or Organization. (Year). \\\"Webpage Title.\\\" Website Name. Available at: URL [Accessed Day Month Year].");
                 }
             }
         });
@@ -96,8 +96,14 @@ public class RightPanel extends JPanel implements ButtonClickListener{
                 if (!selectedPapers.isEmpty()) {
 
                     StringBuilder bibliography = new StringBuilder("Selected References:\n");
+//                    for (Paper paper : selectedPapers) {
+//                        bibliography.append("- ").append(paper.getName()).append("\n");
+//                    }
+                     int counter = 1;
+
                     for (Paper paper : selectedPapers) {
-                        bibliography.append("- ").append(paper.getName()).append("\n");
+                        bibliography.append(counter).append(". ").append(paper.getName()).append("\n");
+                        counter++;
                     }
 
                     // Display the bibliography
@@ -118,14 +124,17 @@ public class RightPanel extends JPanel implements ButtonClickListener{
 
     private boolean isValidHarvardReference(String reference) {
         Pattern harvardPattern = Pattern.compile("^([A-Za-z]+( [A-Za-z]+)*), ([A-Za-z]+( [A-Za-z]+)*)\\. \\d{4}\\. [A-Za-z0-9\\s]+\\.$");
-        Pattern bookPattern = Pattern.compile("^[A-Za-z\\s]+\\s\\(\\d{4}\\) [A-Za-z0-9\\s,:.-]+, [A-Za-z0-9\\s:]+, [A-Za-z\\s]+$");
-        Pattern articlePattern = Pattern.compile("^\"[A-Za-z0-9\\s]+\", ([A-Za-z]+( [A-Za-z]+)*), \\d{4}, [0-9]+\\(\\d+\\)\\.$");
+        Pattern harvardBookPattern = Pattern.compile("^(?:[A-Z][a-zA-Z]+(?:, [A-Z][a-zA-Z]+)*(?:,? (?:&|and) [A-Z][a-zA-Z]+(?:, [A-Z][a-zA-Z]+)*)*\\.\\s*(?:\\([\\d]{4}\\)\\.)?\\s*)?([^\"]+)(?:\\.\\s*(?:\\d+)(?:st|nd|rd|th)?\\s*ed\\.)?\\.\\s*([^:\\.,]+)(?:\\s*:\\s*([^\\.,]+))?(?:[\\.:](.*))?$");
+        Pattern harvardArticlePattern = Pattern.compile("^(?:[A-Z][a-zA-Z]+(?:, [A-Z][a-zA-Z]+)*(?:,? (?:&|and) [A-Z][a-zA-Z]+(?:, [A-Z][a-zA-Z]+)*)*\\.\\s*(?:\\([\\d]{4}\\)\\.)?\\s*)?\"([^\"]+)\"\\.\\s*([^\\.,]+)\\.\\s*(?:([\\d]+)\\s*\\(([\\d]+)\\)\\s*)?:\\s*([^\\.,]+)(?:[\\.:](.*))?$");
+        Pattern harvardWebsitePattern = Pattern.compile("^(?:[A-Z][a-zA-Z]+(?:, [A-Z][a-zA-Z]+)*(?:,? (?:&|and) [A-Z][a-zA-Z]+(?:, [A-Z][a-zA-Z]+)*)*\\.\\s*(?:\\([\\d]{4}\\)\\.)?\\s*)?(?:\"([^\"]+)\"\\.\\s*)?([^\\.,]+)\\.\\s*Available at: (https?://\\S+) \\[Accessed (\\d{1,2}\\s(?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)\\s\\d{4})\\]");
+
         Matcher harvardMatcher = harvardPattern.matcher(reference);
-        Matcher bookMatcher = bookPattern.matcher(reference);
-        Matcher articleMatcher = articlePattern.matcher(reference);
+        Matcher bookMatcher = harvardBookPattern.matcher(reference);
+        Matcher articleMatcher = harvardArticlePattern.matcher(reference);
+        Matcher websiteMatcher=harvardWebsitePattern.matcher(reference);
 
         // Check if the reference matches any of the patterns
-        return harvardMatcher.matches() || bookMatcher.matches() || articleMatcher.matches();
+        return harvardMatcher.matches() || bookMatcher.matches() || articleMatcher.matches() || websiteMatcher.matches();
 
 
     }

@@ -26,7 +26,7 @@ public class PaperUI extends JPanel {
         //set up panel
 
         //ensure the added papers have a fixed height
-        int paperHeight = 40;
+        int paperHeight = 70;//was 40
         setPreferredSize(new Dimension(100, paperHeight));
         setMaximumSize(new Dimension(100000, paperHeight));
         setMinimumSize(new Dimension(0, paperHeight));
@@ -60,9 +60,21 @@ public class PaperUI extends JPanel {
         add(checkBox, gbc);
 
         title = new JLabel();
-        userUploaded = new JLabel();
-        userUploaded.setText(paper.getUser(paper.getName()));
-        title.setText(paper.getName()+ "  Uploaded by: "+paper.getUser(paper.getName()));
+        //try html wrap
+//
+
+        String fullTitle = "<html><body style='width: 450px; text-align: center;'>" +
+                "<span style='font-size: 10px; font-weight: bold;'>" + paper.getName() + "</span>" +
+                "<br><span style='font-size: 8px; color: gray;'>Uploaded by: " + paper.getUser(paper.getName()) + "</span>" +
+                "</body></html>";
+        JLabel title = new JLabel(fullTitle);
+        title.setToolTipText(paper.getName() + " Uploaded by: " + paper.getUser(paper.getName())); // Set tooltip to display the full text on hover
+
+
+        add(title, gbc);
+//        userUploaded = new JLabel();
+//        userUploaded.setText(paper.getUser(paper.getName()));
+//        title.setText(paper.getName()+ "  Uploaded by: "+paper.getUser(paper.getName()));
 
         gbc.gridx = 1;
         gbc.weightx = 1; // This allows the label to expand and shrink - this line is from ChatGPT
