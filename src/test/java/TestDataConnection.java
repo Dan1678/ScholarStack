@@ -1,5 +1,3 @@
-package ManagersTests;
-
 import Managers.DatabaseConnector;
 import org.junit.jupiter.api.Test;
 
