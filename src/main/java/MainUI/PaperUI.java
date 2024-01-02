@@ -91,10 +91,14 @@ public class PaperUI extends JPanel {
                                                                 JOptionPane.PLAIN_MESSAGE, null, options, options[0]);
                 if (optionChosen == 0) {
                     String tagString = JOptionPane.showInputDialog("Enter tag:");
-                    if (listener != null) {
+                    if (listener != null && tagString != null) {
+                        System.out.println("if executed");
                         Tag tag = new Tag(tagString);
                         paper.addTags(tag);
                         System.out.println(paper.getTags());
+                    }
+                    else {
+                        System.out.println("Tag addition cancelled");
                     }
                 } else if (optionChosen == 1) {
                     String subtagString = JOptionPane.showInputDialog("Enter subtag:");
