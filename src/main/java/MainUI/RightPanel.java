@@ -6,6 +6,7 @@ import GroupContent.Paper;
 import Managers.DatabaseManager;
 
 import javax.swing.*;
+import javax.xml.crypto.Data;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -40,13 +41,44 @@ public class RightPanel extends JPanel implements ButtonClickListener{
 
         topPanel.add(buttonsPanel, BorderLayout.CENTER);
 
+
+        Paper paper = new Paper();
+        for(int i = 0; i <= DatabaseManager.getLargestId("papers4"); i++) {
+            String paperTitle = DatabaseManager.readRecord2("papers4", "papertitle", i);
+
+            if (paperTitle == null) {
+                continue;
+            }
+
+
+            System.out.println("Paper name: " + paperTitle);
+            String username = DatabaseManager.readRecord2("papers4", "username", i);
+            System.out.println("User uploaded: " + username);
+
+            paper.setName(paperTitle);
+            papersDisplay.addPaperUI(new PaperUI(paper), this);
+
+        }
+
+
+
+
         // add some temp papers
-        papersDisplay.addReference("Smith, J., Johnson, A. (2010). *The Art of Collaboration*. London: ABC Publishing.", this);
-        papersDisplay.addReference("Smith, J. (2022). \"The Art of Referencing.\" Reference Guides Online. Available at: https://www.example.com/reference-guide [Accessed 30 December 2023].\n", this);
-        papersDisplay.addReference("Smith, J., Johnson, A. (2010). \"The Art of Writing Articles.\" Journal of Academic Writing. 5(2): 123-135.\n", this);
+       /* Paper paper = new Paper();
+        paper.setName("Smith, J., Johnson, A. (2010). *The Art of Collaboration*. London: ABC Publishing.");
 
+        papersDisplay.addPaperUI(new PaperUI(paper), this);
 
+        paper = new Paper();
+        paper.setName("Smith, J. (2022). \"The Art of Referencing.\" Reference Guides Online. Available at: https://www.example.com/reference-guide [Accessed 30 December 2023].\n");
+        papersDisplay.addPaperUI(new PaperUI(paper), this);
+        paper = new Paper();
+        paper.setName("Smith, J., Johnson, A. (2010). \"The Art of Writing Articles.\" Journal of Academic Writing. 5(2): 123-135.\n");
+        papersDisplay.addPaperUI(new PaperUI(paper), this);
+
+*/
         JButton addReferenceButton = new JButton("Add Reference");
+        Paper finalPaper = paper;
         addReferenceButton.addActionListener(new ActionListener() {
             ButtonClickListener listener = null;
             @Override
@@ -54,16 +86,17 @@ public class RightPanel extends JPanel implements ButtonClickListener{
                 String reference = JOptionPane.showInputDialog("Enter the Harvard reference:");
                 if (reference != null && !reference.isEmpty() && isValidHarvardReference(reference)) {
                     addNewPaper(reference);
-                    String tableName = "papers3";
-                    String columns = "username, \"paper title\"";
+                    String tableName = "papers4";
+                    String columns = "username, papertitle";
 
                     String values = String.format("'%s', '%s'", UserName, reference);
 
                     boolean addPaper = DatabaseManager.insertRecord(tableName, columns, values);
 
                     papersDisplay.addReference(reference, listener);
-//                }else if (reference != null && !reference.isEmpty()) {
-//                    System.out.println("Reference addition canceled.");
+                    commentsDisplay.displayComments(finalPaper);
+                }else if (reference != null && !reference.isEmpty()) {
+                    System.out.println("Reference addition canceled.");
 
                 } else {
                     JOptionPane.showMessageDialog(null, "Please enter a valid Harvard reference: \n -for a book. Example: Author Last Name, Author Initial(s). (Year).*Book Title*. Place of Publication: Publisher.\n -for an article. Example: Author Last Name, Author Initial(s). (Year). \"Article Title.\" Journal Name. Volume(Issue): Page Numbers.\n -for a website.Example: Author Last Name, Author Initial(s) or Organization. (Year). \\\"Webpage Title.\\\" Website Name. Available at: URL [Accessed Day Month Year].");
@@ -82,7 +115,9 @@ public class RightPanel extends JPanel implements ButtonClickListener{
                 if (!selectedPapers.isEmpty()) {
 
                     StringBuilder bibliography = new StringBuilder("Selected References:\n");
-
+//                    for (Paper paper : selectedPapers) {
+//                        bibliography.append("- ").append(paper.getName()).append("\n");
+//                    }
                      int counter = 1;
 
                     for (Paper paper : selectedPapers) {
@@ -107,18 +142,18 @@ public class RightPanel extends JPanel implements ButtonClickListener{
     }
 
     private boolean isValidHarvardReference(String reference) {
-       // Pattern harvardPattern = Pattern.compile("^([A-Za-z]+( [A-Za-z]+)*), ([A-Za-z]+( [A-Za-z]+)*)\\. \\d{4}\\. [A-Za-z0-9\\s]+\\.$");
-        Pattern harvardBookPattern = Pattern.compile("^(?:[A-Z][a-zA-Z]+(?:, [A-Z][a-zA-Z]+)*(?:,? (?:&|and) [A-Z][a-zA-Z]+(?:, [A-Z][a-zA-Z]+)*)*\\.\\s*(?:\\(\\d{4}\\)\\.)?\\s*)?([^\"]+)(?:\\.\\s*\\d+(?:st|nd|rd|th)?\\s*ed\\.)?\\.\\s*([^:.,]+)(?:\\s*:\\s*([^.,]+))?(?:[.:](.*))?$");
-        Pattern harvardArticlePattern = Pattern.compile("^(?:[A-Z][a-zA-Z]+(?:, [A-Z][a-zA-Z]+)*(?:,? (?:&|and) [A-Z][a-zA-Z]+(?:, [A-Z][a-zA-Z]+)*)*\\.\\s*(?:\\(\\d{4}\\)\\.)?\\s*)?\"([^\"]+)\"\\.\\s*([^.,]+)\\.\\s*(?:(\\d+)\\s*\\((\\d+)\\)\\s*)?:\\s*([^.,]+)(?:[.:](.*))?$");
-        Pattern harvardWebsitePattern = Pattern.compile("^(?:[A-Z][a-zA-Z]+(?:, [A-Z][a-zA-Z]+)*(?:,? (?:&|and) [A-Z][a-zA-Z]+(?:, [A-Z][a-zA-Z]+)*)*\\.\\s*(?:\\(\\d{4}\\)\\.)?\\s*)?(?:\"([^\"]+)\"\\.\\s*)?([^.,]+)\\.\\s*Available at: (https?://\\S+) \\[Accessed (\\d{1,2}\\s(?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)\\s\\d{4})]");
+        Pattern harvardPattern = Pattern.compile("^([A-Za-z]+( [A-Za-z]+)*), ([A-Za-z]+( [A-Za-z]+)*)\\. \\d{4}\\. [A-Za-z0-9\\s]+\\.$");
+        Pattern harvardBookPattern = Pattern.compile("^(?:[A-Z][a-zA-Z]+(?:, [A-Z][a-zA-Z]+)*(?:,? (?:&|and) [A-Z][a-zA-Z]+(?:, [A-Z][a-zA-Z]+)*)*\\.\\s*(?:\\([\\d]{4}\\)\\.)?\\s*)?([^\"]+)(?:\\.\\s*(?:\\d+)(?:st|nd|rd|th)?\\s*ed\\.)?\\.\\s*([^:\\.,]+)(?:\\s*:\\s*([^\\.,]+))?(?:[\\.:](.*))?$");
+        Pattern harvardArticlePattern = Pattern.compile("^(?:[A-Z][a-zA-Z]+(?:, [A-Z][a-zA-Z]+)*(?:,? (?:&|and) [A-Z][a-zA-Z]+(?:, [A-Z][a-zA-Z]+)*)*\\.\\s*(?:\\([\\d]{4}\\)\\.)?\\s*)?\"([^\"]+)\"\\.\\s*([^\\.,]+)\\.\\s*(?:([\\d]+)\\s*\\(([\\d]+)\\)\\s*)?:\\s*([^\\.,]+)(?:[\\.:](.*))?$");
+        Pattern harvardWebsitePattern = Pattern.compile("^(?:[A-Z][a-zA-Z]+(?:, [A-Z][a-zA-Z]+)*(?:,? (?:&|and) [A-Z][a-zA-Z]+(?:, [A-Z][a-zA-Z]+)*)*\\.\\s*(?:\\([\\d]{4}\\)\\.)?\\s*)?(?:\"([^\"]+)\"\\.\\s*)?([^\\.,]+)\\.\\s*Available at: (https?://\\S+) \\[Accessed (\\d{1,2}\\s(?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)\\s\\d{4})\\]");
 
-        //Matcher harvardMatcher = harvardPattern.matcher(reference);
+        Matcher harvardMatcher = harvardPattern.matcher(reference);
         Matcher bookMatcher = harvardBookPattern.matcher(reference);
         Matcher articleMatcher = harvardArticlePattern.matcher(reference);
         Matcher websiteMatcher=harvardWebsitePattern.matcher(reference);
 
         // Check if the reference matches any of the patterns
-        return bookMatcher.matches() || articleMatcher.matches() || websiteMatcher.matches();
+        return harvardMatcher.matches() || bookMatcher.matches() || articleMatcher.matches() || websiteMatcher.matches();
 
 
     }
@@ -140,7 +175,10 @@ public class RightPanel extends JPanel implements ButtonClickListener{
     public void redrawPapers(ArrayList<String> papersList) {
 
         for (String paperName : papersList) {
-            papersDisplay.addReference(paperName, this);
+            Paper paper = new Paper();
+            paper.setName(paperName);
+
+            papersDisplay.addPaperUI(new PaperUI(paper), this);
         }
     }
 

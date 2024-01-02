@@ -42,21 +42,22 @@ public class Main {
         System.out.println("Hashed password: "+ hashed2);
      */
 
-       /* String tableName = "tags";
-        int rowDeleted = 1;
+//        String tableName = "papers4";
+//        int rowDeleted = 1;
+//        boolean wasDeleted = DatabaseManager.deleteRecord(tableName, rowDeleted);
 
-        for (int a = 1; a <= 167; a++){
+//
+//
+//            boolean wasDeleted = DatabaseManager.deleteRecord(tableName, a);
+//            if(wasDeleted){
+//                System.out.println("Record for ID:" + rowDeleted+ "was deleted");
+//            }
+//            else{
+//                System.out.println("Record for ID:"+rowDeleted+"was not deleted");
+//            }
+//        }
 
-            boolean wasDeleted = DatabaseManager.deleteRecord(tableName, a);
-            if(wasDeleted){
-                System.out.println("Record for ID:" + rowDeleted+ "was deleted");
-            }
-            else{
-                System.out.println("Record for ID:"+rowDeleted+"was not deleted");
-            }
-        }
-        */
-        //boolean wasDeleted = DatabaseManager.deleteRecord(tableName, rowDeleted);
+        //
 
 
 
@@ -80,13 +81,13 @@ public class Main {
 
 
 
-//        String tableName = "papers3";
+//        String tableName = "papers4";
 //        String col1 = "username";
-//        String col2 = "paper title";
+//        String col2 = "paperTitle";
 //
 //        // Create the specified table
 //        boolean tableCreationResult = DatabaseManager.createTable(tableName, col1, col2);
-////
+//
 //        if (tableCreationResult) {
 //            System.out.println("Table '" + tableName + "' created successfully!");
 //        } else {
