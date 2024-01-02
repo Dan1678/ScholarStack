@@ -44,6 +44,7 @@ public class RightPanel extends JPanel implements ButtonClickListener{
 
         Paper paper = new Paper();
         for(int i = 0; i <= DatabaseManager.getLargestId("papers4"); i++) {
+            paper = new Paper();
             String paperTitle = DatabaseManager.readRecord2("papers4", "papertitle", i);
 
             if (paperTitle == null) {
