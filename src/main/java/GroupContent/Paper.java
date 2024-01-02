@@ -53,9 +53,10 @@ public class Paper {
     }
 
     public String getUser(String n){
-        this.n = n;
-        String UserUpload = Managers.DatabaseManager.readRecord("papers3", "username", "paper title", this.n);
-        System.out.println(UserUpload);
+        this.n = name;
+        String UserUpload = Managers.DatabaseManager.readRecord("papers4", "username", "papertitle", this.n);
         return UserUpload;
     }
+
+
 }
