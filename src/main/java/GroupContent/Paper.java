@@ -9,10 +9,12 @@ public class Paper {
     private String name, n;
     private ArrayList<Comment> comments;
     private ArrayList<Tag> tags;
+    public static ArrayList<Paper> allPapers = new ArrayList<>(); //is public ok for this attribute, I believe paper instances can't be modified from an arraylist?
 
     public Paper() {
         comments = new ArrayList<>();
         tags = new ArrayList<>();
+        allPapers.add(this);
     }
 
     public void addComment(Comment comment) {

@@ -1,6 +1,8 @@
 package MainUI;
 
 import GroupContent.Tag;
+import GroupContent.Paper;
+import static GroupContent.Paper.allPapers;
 
 import javax.swing.*;
 import javax.swing.tree.DefaultMutableTreeNode;
@@ -22,7 +24,8 @@ public class TagsDisplay extends JPanel {
         add(infoLabel);
         setPreferredSize(new Dimension(250, 0)); //panel has a set width
 
-        tag = new Tag("Tags:");
+        tag = new Tag("Papers:");
+
 
         tag.addSubTag(new Tag("PAPER TITLE"));
         tag.addSubTag(new Tag("PAPER TITLE 2"));

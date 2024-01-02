@@ -7,6 +7,7 @@
 package MainUI;
 
 import GroupContent.Tag;
+import GroupContent.Paper;
 
 import javax.swing.*;
 import java.awt.*;
