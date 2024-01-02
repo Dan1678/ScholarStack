@@ -100,7 +100,7 @@ public class CreateLoginForm extends JFrame implements ActionListener
         setTitle("LOGIN FORM");
     }
 
-    private boolean isValidUsername(String user){
+    public boolean isValidUsername(String user){
         boolean isValidFormat = user.matches("^[A-Za-z0-9 ]+$");
 
         boolean isTaken = LoginManager.isUserTaken(user);
@@ -108,7 +108,7 @@ public class CreateLoginForm extends JFrame implements ActionListener
         return isValidFormat && !isTaken;   //username contains just letters
     }
 
-    private boolean isValidPassword(String pass){
+    public boolean isValidPassword(String pass){
         return pass.matches("^(?=.*[0-9])(?=.*[!@#$%^&*]).{6,}$");   //password has to contain one number, one symbol, at least 6 characters
     }
 
