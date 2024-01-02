@@ -16,11 +16,12 @@ public class HierarchicalContent {
     private String content;
     private ArrayList<HierarchicalContent> subContent;
     private JTree tree;
+    private Integer ID;
 
-    public HierarchicalContent(String content) {
+    public HierarchicalContent(String content, Integer ID) {
         this.content = content;
+        this.ID = ID;
         subContent = new ArrayList<>();
-
     }
 
     public JTree getDisplayTree() {
@@ -43,11 +44,11 @@ public class HierarchicalContent {
                         tree.expandPath(new TreePath(selectedNode.getPath())); //ensure the node is expanded (so it is visible)
 
                         Object nodeInfo = selectedNode.getUserObject();
-                        if (nodeInfo instanceof HierarchicalContent) { //the tree elements should be of type Tag
-                            HierarchicalContent selectedContent = (HierarchicalContent) nodeInfo; //cast to tag object
-                            String tagText = JOptionPane.showInputDialog("Enter the content");
-                            if (tagText != null) {
-                                selectedContent.addSubContent(new HierarchicalContent("<html>" + tagText + "</html>"));
+                        if (nodeInfo instanceof HierarchicalContent) { //the tree elements should be of type HierarchicalContent
+                            HierarchicalContent selectedContent = (HierarchicalContent) nodeInfo; //cast to HierarchicalContent object
+                            String commentText = JOptionPane.showInputDialog("Enter the content");
+                            if (commentText != null) {
+                                selectedContent.addSubContent(new HierarchicalContent(commentText, selectedContent.getID()));
                             }
 
                         }
@@ -92,6 +93,14 @@ public class HierarchicalContent {
 
     public ArrayList<HierarchicalContent> getSubContent() {
         return subContent;
+    }
+
+    public Integer getID() {
+        return ID;
+    }
+
+    public void setID(Integer ID) {
+        this.ID = ID;
     }
 
     @Override

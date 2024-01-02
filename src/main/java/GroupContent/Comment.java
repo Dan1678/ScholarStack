@@ -5,8 +5,8 @@ import javax.swing.*;
 public class Comment extends HierarchicalContent{
 
 
-    public Comment(String content) {
-        super(content);
+    public Comment(String content, Integer ID) {
+        super(content, ID);
     }
 
 }
