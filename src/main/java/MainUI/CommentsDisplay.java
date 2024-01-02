@@ -40,7 +40,7 @@ public class CommentsDisplay extends JScrollPane {
     }
 
     public void displayComments(Paper paper) {
-        //commentsPanel.removeAll();
+        commentsPanel.removeAll();
 
         ArrayList<Comment> comments = paper.getComments();
         JTree tree = comments.get(0).getDisplayTree();
