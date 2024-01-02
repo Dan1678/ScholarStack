@@ -27,8 +27,17 @@ public class Paper {
         tags.add(tag);
     }
 
-    public ArrayList getTags() {
+    public ArrayList<Tag> getTags() {
         return tags;
+    }
+
+    public ArrayList<String> getTagsStringList() {
+        ArrayList<String> tagsStringList = new ArrayList<>();;
+        for(Tag tag:tags) {
+            String tagName = tag.toString();
+            tagsStringList.add(tagName);
+        }
+        return tagsStringList;
     }
 
     public String getName() {

@@ -88,11 +88,35 @@ public class PaperUI extends JPanel {
         addTagBtn.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                String tagString = JOptionPane.showInputDialog("Enter tag:");
-                if (listener != null) {
-                    Tag tag = new Tag(tagString);
-                    paper.addTags(tag);
-                    System.out.println(paper.getTags());
+                String[] options = { "Tag", "Subtag" };
+                int optionChosen = JOptionPane.showOptionDialog(null, "Choose an option:",
+                                                                "Tag or Subtag", JOptionPane.DEFAULT_OPTION,
+                                                                JOptionPane.PLAIN_MESSAGE, null, options, options[0]);
+                if (optionChosen == 0) {
+                    String tagString = JOptionPane.showInputDialog("Enter tag:");
+                    if (listener != null) {
+                        Tag tag = new Tag(tagString);
+                        paper.addTags(tag);
+                        System.out.println(paper.getTags());
+                    }
+                } else if (optionChosen == 1) {
+                    String subtagString = JOptionPane.showInputDialog("Enter subtag:");
+                    Tag subtag = new Tag(subtagString);
+                    if (listener != null) {
+                        String[] tagOptions = paper.getTagsStringList().toArray(new String[0]);
+                        int tagOptionChosen = JOptionPane.showOptionDialog(null, "Choose an option:",
+                                "Tag or Subtag", JOptionPane.DEFAULT_OPTION,
+                                JOptionPane.PLAIN_MESSAGE, null, tagOptions, tagOptions[0]);
+                        for(Tag chosenTag:paper.getTags()){
+                            if(tagOptionChosen == paper.getTags().indexOf(chosenTag)){
+                                chosenTag.addSubTag(subtag);
+                            }
+                            System.out.println(chosenTag.getSubTags());
+                        }
+                    }
+
+                } else {
+                    System.out.println("Dialog closed or unexpected option selected");
                 }
             }
         });
