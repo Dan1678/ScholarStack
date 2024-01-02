@@ -65,6 +65,7 @@ public class PaperUI extends JPanel {
                 "<br><span style='font-size: 8px; color: gray;'>Uploaded by: " + paper.getUser(paper.getName()) + "</span>" +
                 "</body></html>";
         JLabel title = new JLabel(fullTitle);
+
         title.setToolTipText(paper.getName() + " Uploaded by: " + paper.getUser(paper.getName())); // Set tooltip to display the full text on hover
 
 

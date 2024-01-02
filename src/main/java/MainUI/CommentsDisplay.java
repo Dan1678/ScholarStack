@@ -36,12 +36,11 @@ public class CommentsDisplay extends JScrollPane {
 
         setViewportView(commentsPanel);
         setVerticalScrollBarPolicy(JScrollPane.VERTICAL_SCROLLBAR_ALWAYS);
-        setHorizontalScrollBarPolicy(JScrollPane.HORIZONTAL_SCROLLBAR_NEVER);
+        setHorizontalScrollBarPolicy(JScrollPane.HORIZONTAL_SCROLLBAR_ALWAYS);
     }
 
     public void displayComments(Paper paper) {
-        commentsPanel.removeAll();
-
+        //commentsPanel.removeAll();
 
         ArrayList<Comment> comments = paper.getComments();
         JTree tree = comments.get(0).getDisplayTree();

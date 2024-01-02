@@ -3,11 +3,10 @@
 package MainUI;
 
 import GroupContent.Paper;
-import Managers.CreateLoginForm;
 import Managers.DatabaseManager;
-import Managers.PasswordHashing;
 
 import javax.swing.*;
+import javax.xml.crypto.Data;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -42,8 +41,30 @@ public class RightPanel extends JPanel implements ButtonClickListener{
 
         topPanel.add(buttonsPanel, BorderLayout.CENTER);
 
-        // add some temp papers
+
         Paper paper = new Paper();
+        for(int i = 0; i <= DatabaseManager.getLargestId("papers4"); i++) {
+            String paperTitle = DatabaseManager.readRecord2("papers4", "papertitle", i);
+
+            if (paperTitle == null) {
+                continue;
+            }
+
+
+            System.out.println("Paper name: " + paperTitle);
+            String username = DatabaseManager.readRecord2("papers4", "username", i);
+            System.out.println("User uploaded: " + username);
+
+            paper.setName(paperTitle);
+            papersDisplay.addPaperUI(new PaperUI(paper), this);
+
+        }
+
+
+
+
+        // add some temp papers
+       /* Paper paper = new Paper();
         paper.setName("Smith, J., Johnson, A. (2010). *The Art of Collaboration*. London: ABC Publishing.");
 
         papersDisplay.addPaperUI(new PaperUI(paper), this);
@@ -55,7 +76,7 @@ public class RightPanel extends JPanel implements ButtonClickListener{
         paper.setName("Smith, J., Johnson, A. (2010). \"The Art of Writing Articles.\" Journal of Academic Writing. 5(2): 123-135.\n");
         papersDisplay.addPaperUI(new PaperUI(paper), this);
 
-
+*/
         JButton addReferenceButton = new JButton("Add Reference");
         Paper finalPaper = paper;
         addReferenceButton.addActionListener(new ActionListener() {
@@ -65,8 +86,8 @@ public class RightPanel extends JPanel implements ButtonClickListener{
                 String reference = JOptionPane.showInputDialog("Enter the Harvard reference:");
                 if (reference != null && !reference.isEmpty() && isValidHarvardReference(reference)) {
                     addNewPaper(reference);
-                    String tableName = "papers3";
-                    String columns = "username, \"paper title\"";
+                    String tableName = "papers4";
+                    String columns = "username, papertitle";
 
                     String values = String.format("'%s', '%s'", UserName, reference);
 

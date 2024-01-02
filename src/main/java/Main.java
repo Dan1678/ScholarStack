@@ -1,7 +1,7 @@
 import Managers.DatabaseManager;
 import Managers.CreateLoginForm;
 import Managers.LoginManager;
-
+import Managers.BackupManager;
 
 import javax.swing.*;
 
@@ -18,7 +18,16 @@ public class Main {
             JOptionPane.showMessageDialog(null, e.getMessage());
         }
 
-
+//        BackupManager backupManager = new BackupManager(
+//                "ec2-54-246-1-94.eu-west-1.compute.amazonaws.com",
+//                "d6rkhhv2aujh36",
+//                "mixbutdugvnycu",
+//                "03f7fa8bfe5bfc30d6776369a8163f90164d68fcebaeecc32f073d7c4a334b94");
+//
+//        String backupFilePath = "C:\\SS_Backup\\heroku_backup2.backup";
+//
+//        // Create the backup
+//        backupManager.createBackup(backupFilePath);
 
     /*    String testPass = "123456";
         String testPass2 = "test5%%";
@@ -33,21 +42,22 @@ public class Main {
         System.out.println("Hashed password: "+ hashed2);
      */
 
-       /* String tableName = "tags";
-        int rowDeleted = 1;
+//        String tableName = "papers4";
+//        int rowDeleted = 1;
+//        boolean wasDeleted = DatabaseManager.deleteRecord(tableName, rowDeleted);
 
-        for (int a = 1; a <= 167; a++){
+//
+//
+//            boolean wasDeleted = DatabaseManager.deleteRecord(tableName, a);
+//            if(wasDeleted){
+//                System.out.println("Record for ID:" + rowDeleted+ "was deleted");
+//            }
+//            else{
+//                System.out.println("Record for ID:"+rowDeleted+"was not deleted");
+//            }
+//        }
 
-            boolean wasDeleted = DatabaseManager.deleteRecord(tableName, a);
-            if(wasDeleted){
-                System.out.println("Record for ID:" + rowDeleted+ "was deleted");
-            }
-            else{
-                System.out.println("Record for ID:"+rowDeleted+"was not deleted");
-            }
-        }
-        */
-        //boolean wasDeleted = DatabaseManager.deleteRecord(tableName, rowDeleted);
+        //
 
 
 
@@ -71,13 +81,13 @@ public class Main {
 
 
 
-//        String tableName = "papers3";
+//        String tableName = "papers4";
 //        String col1 = "username";
-//        String col2 = "paper title";
+//        String col2 = "paperTitle";
 //
 //        // Create the specified table
 //        boolean tableCreationResult = DatabaseManager.createTable(tableName, col1, col2);
-////
+//
 //        if (tableCreationResult) {
 //            System.out.println("Table '" + tableName + "' created successfully!");
 //        } else {
