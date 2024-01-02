@@ -41,21 +41,12 @@ public class RightPanel extends JPanel implements ButtonClickListener{
         topPanel.add(buttonsPanel, BorderLayout.CENTER);
 
         // add some temp papers
-        Paper paper = new Paper();
-        paper.setName("Smith, J., Johnson, A. (2010). *The Art of Collaboration*. London: ABC Publishing.");
-
-        papersDisplay.addPaperUI(new PaperUI(paper), this);
-
-        paper = new Paper();
-        paper.setName("Smith, J. (2022). \"The Art of Referencing.\" Reference Guides Online. Available at: https://www.example.com/reference-guide [Accessed 30 December 2023].\n");
-        papersDisplay.addPaperUI(new PaperUI(paper), this);
-        paper = new Paper();
-        paper.setName("Smith, J., Johnson, A. (2010). \"The Art of Writing Articles.\" Journal of Academic Writing. 5(2): 123-135.\n");
-        papersDisplay.addPaperUI(new PaperUI(paper), this);
+        papersDisplay.addReference("Smith, J., Johnson, A. (2010). *The Art of Collaboration*. London: ABC Publishing.", this);
+        papersDisplay.addReference("Smith, J. (2022). \"The Art of Referencing.\" Reference Guides Online. Available at: https://www.example.com/reference-guide [Accessed 30 December 2023].\n", this);
+        papersDisplay.addReference("Smith, J., Johnson, A. (2010). \"The Art of Writing Articles.\" Journal of Academic Writing. 5(2): 123-135.\n", this);
 
 
         JButton addReferenceButton = new JButton("Add Reference");
-        Paper finalPaper = paper;
         addReferenceButton.addActionListener(new ActionListener() {
             ButtonClickListener listener = null;
             @Override
@@ -71,7 +62,6 @@ public class RightPanel extends JPanel implements ButtonClickListener{
                     boolean addPaper = DatabaseManager.insertRecord(tableName, columns, values);
 
                     papersDisplay.addReference(reference, listener);
-                    commentsDisplay.displayComments(finalPaper);
 //                }else if (reference != null && !reference.isEmpty()) {
 //                    System.out.println("Reference addition canceled.");
 
@@ -150,10 +140,7 @@ public class RightPanel extends JPanel implements ButtonClickListener{
     public void redrawPapers(ArrayList<String> papersList) {
 
         for (String paperName : papersList) {
-            Paper paper = new Paper();
-            paper.setName(paperName);
-
-            papersDisplay.addPaperUI(new PaperUI(paper), this);
+            papersDisplay.addReference(paperName, this);
         }
     }
 

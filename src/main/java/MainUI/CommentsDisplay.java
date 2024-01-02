@@ -36,7 +36,7 @@ public class CommentsDisplay extends JScrollPane {
 
         setViewportView(commentsPanel);
         setVerticalScrollBarPolicy(JScrollPane.VERTICAL_SCROLLBAR_ALWAYS);
-        setHorizontalScrollBarPolicy(JScrollPane.HORIZONTAL_SCROLLBAR_NEVER);
+        setHorizontalScrollBarPolicy(JScrollPane.HORIZONTAL_SCROLLBAR_ALWAYS);
     }
 
     public void displayComments(Paper paper) {

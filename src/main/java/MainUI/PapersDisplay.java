@@ -62,7 +62,7 @@ public class PapersDisplay extends JScrollPane {
         // Ensure the viewport follows the panel's size changes
         getViewport().setPreferredSize(papersPanel.getPreferredSize());
     }
-    public void addPaperUI(PaperUI paperUI, ButtonClickListener listener) {
+    private void addPaperUI(PaperUI paperUI, ButtonClickListener listener) {
         paperUI.setButtonClickListener(listener);
         papersPanel.add(paperUI);
         papersList.add(paperUI);
