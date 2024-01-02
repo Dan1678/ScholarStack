@@ -29,7 +29,8 @@ public class HierarchicalContent {
         DefaultMutableTreeNode root = findTreeBelow(this);
 
         tree = new JTree(root);
-        tree.setCellRenderer(new WrappedTreeRndr());
+        //tree.setCellRenderer(new WrappedTreeRndr());
+
         // Add MouseListener to JTree
         tree.addMouseListener(new MouseAdapter() {
             @Override
@@ -46,7 +47,7 @@ public class HierarchicalContent {
                             HierarchicalContent selectedContent = (HierarchicalContent) nodeInfo; //cast to tag object
                             String tagText = JOptionPane.showInputDialog("Enter the content");
                             if (tagText != null) {
-                                selectedContent.addSubContent(new HierarchicalContent(tagText));
+                                selectedContent.addSubContent(new HierarchicalContent("<html>" + tagText + "</html>"));
                             }
 
                         }

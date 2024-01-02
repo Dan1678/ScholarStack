@@ -14,6 +14,8 @@ public class Paper {
     public Paper() {
         comments = new ArrayList<>();
         tags = new ArrayList<>();
+
+        addComment(new Comment("Triple click here to add comment"));
         allPapers.add(this);
     }
 

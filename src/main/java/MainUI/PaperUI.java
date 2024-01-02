@@ -36,9 +36,6 @@ public class PaperUI extends JPanel {
 
         addPanelComponents();
 
-        //Temp exmaple
-        paper.addComment(new Comment("This is a comment 1"));
-        paper.addComment(new Comment("This is a comment 2"));
 
     }
     public Paper getPaper() {

@@ -10,21 +10,21 @@ import java.awt.*;
 import java.util.ArrayList;
 
 // Define a custom panel for comments
-class CommentPanel extends JPanel {
-    //panel which holds one comment
-    CommentPanel(String commentContent) {
-        setLayout(new BorderLayout());
-        setBorder(BorderFactory.createEmptyBorder(5, 5, 5, 5)); // Add padding
-
-        JLabel commentLabel = new JLabel("<html><body width='300'>" + commentContent + "</body></html>");
-        commentLabel.setVerticalAlignment(SwingConstants.TOP);
-        add(commentLabel, BorderLayout.WEST);
-
-        JButton replyBtn = new JButton("Reply");
-        add(replyBtn, BorderLayout.EAST);
-        //Do the thing we did for show comments with the interface
-    }
-}
+//class CommentPanel extends JPanel {
+//    //panel which holds one comment
+//    CommentPanel(String commentContent) {
+//        setLayout(new BorderLayout());
+//        setBorder(BorderFactory.createEmptyBorder(5, 5, 5, 5)); // Add padding
+//
+//        JLabel commentLabel = new JLabel("<html><body width='300'>" + commentContent + "</body></html>");
+//        commentLabel.setVerticalAlignment(SwingConstants.TOP);
+//        add(commentLabel, BorderLayout.WEST);
+//
+//        JButton replyBtn = new JButton("Reply");
+//        add(replyBtn, BorderLayout.EAST);
+//        //Do the thing we did for show comments with the interface
+//    }
+//}
 
 public class CommentsDisplay extends JScrollPane {
     //scroll pane which holds multiple comment panels
@@ -47,12 +47,14 @@ public class CommentsDisplay extends JScrollPane {
         JTree tree = comments.get(0).getDisplayTree();
         commentsPanel.add(comments.get(0).getDisplayTree(), BorderLayout.CENTER);
 
-//        commentsPanel.removeAll();
-//
-//        JLabel titleLabel = new JLabel(paper.getName());
-//        titleLabel.setFont(titleLabel.getFont().deriveFont(Font.BOLD));
-//        commentsPanel.add(titleLabel);
-//
+        JLabel titleLabel = new JLabel(paper.getName());
+        titleLabel.setFont(titleLabel.getFont().deriveFont(Font.BOLD, 15));
+        commentsPanel.add(titleLabel, BorderLayout.NORTH);
+
+        JLabel infoLabel = new JLabel("Triple click on a comment to add a reply");
+        infoLabel.setFont(infoLabel.getFont().deriveFont(Font.BOLD));
+        commentsPanel.add(infoLabel, BorderLayout.SOUTH);
+
 //        ArrayList<Comment> comments = paper.getComments();
 //
 //        if (comments.isEmpty()) {
