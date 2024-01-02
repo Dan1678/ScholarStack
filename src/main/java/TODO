@@ -5,17 +5,20 @@ Next meeting - 2nd Jan 9am
 
 
 --> Comments:
-    --> display comments properly                           - John
-    --> replies to comments                                 - John
+    + display comments properly                           - John
+        --> Ensure comments wrap text properly              -John
+    + replies to comments                                 - John
     --> sort this out with database                         - Hanna
 --> Tags:
     --> Make it work                                        - Kaan & Adelina
-    --> Add tags to papers                                  - Kaan & Adelina
+    + Add tags to papers                                  - Kaan & Adelina
     --> Tags on database                                    - Dan
---> Read from database on startup                           - Hanna
++ Read from database on startup                           - Hanna
     --> Show up to date papers, comments and tags           - Hanna & John
---> Say "welcome User ___" at top when logged in            - Adelina(done)
++ Say "welcome User ___" at top when logged in            - Adelina(done)
 --> Have username for owners of all comments and papers     - Adelina
+    + For papers
+    --> For comments
 --> Backup functionality                                    - Dan
 
 
@@ -25,9 +28,11 @@ Next meeting - 2nd Jan 9am
     --> Ordering papers in the bibliography
 
 
-
 --> UNIT TESTS
 --> Runtime logging
 --> Error handling
+
+
+
 
 --> Reference anything over 6 lines
