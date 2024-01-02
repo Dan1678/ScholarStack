@@ -3,9 +3,7 @@
 package MainUI;
 
 import GroupContent.Paper;
-import Managers.CreateLoginForm;
 import Managers.DatabaseManager;
-import Managers.PasswordHashing;
 
 import javax.swing.*;
 import java.awt.*;
@@ -74,8 +72,8 @@ public class RightPanel extends JPanel implements ButtonClickListener{
 
                     papersDisplay.addReference(reference, listener);
                     commentsDisplay.displayComments(finalPaper);
-                }else if (reference != null && !reference.isEmpty()) {
-                    System.out.println("Reference addition canceled.");
+//                }else if (reference != null && !reference.isEmpty()) {
+//                    System.out.println("Reference addition canceled.");
 
                 } else {
                     JOptionPane.showMessageDialog(null, "Please enter a valid Harvard reference: \n -for a book. Example: Author Last Name, Author Initial(s). (Year).*Book Title*. Place of Publication: Publisher.\n -for an article. Example: Author Last Name, Author Initial(s). (Year). \"Article Title.\" Journal Name. Volume(Issue): Page Numbers.\n -for a website.Example: Author Last Name, Author Initial(s) or Organization. (Year). \\\"Webpage Title.\\\" Website Name. Available at: URL [Accessed Day Month Year].");
@@ -94,9 +92,7 @@ public class RightPanel extends JPanel implements ButtonClickListener{
                 if (!selectedPapers.isEmpty()) {
 
                     StringBuilder bibliography = new StringBuilder("Selected References:\n");
-//                    for (Paper paper : selectedPapers) {
-//                        bibliography.append("- ").append(paper.getName()).append("\n");
-//                    }
+
                      int counter = 1;
 
                     for (Paper paper : selectedPapers) {
@@ -121,18 +117,18 @@ public class RightPanel extends JPanel implements ButtonClickListener{
     }
 
     private boolean isValidHarvardReference(String reference) {
-        Pattern harvardPattern = Pattern.compile("^([A-Za-z]+( [A-Za-z]+)*), ([A-Za-z]+( [A-Za-z]+)*)\\. \\d{4}\\. [A-Za-z0-9\\s]+\\.$");
-        Pattern harvardBookPattern = Pattern.compile("^(?:[A-Z][a-zA-Z]+(?:, [A-Z][a-zA-Z]+)*(?:,? (?:&|and) [A-Z][a-zA-Z]+(?:, [A-Z][a-zA-Z]+)*)*\\.\\s*(?:\\([\\d]{4}\\)\\.)?\\s*)?([^\"]+)(?:\\.\\s*(?:\\d+)(?:st|nd|rd|th)?\\s*ed\\.)?\\.\\s*([^:\\.,]+)(?:\\s*:\\s*([^\\.,]+))?(?:[\\.:](.*))?$");
-        Pattern harvardArticlePattern = Pattern.compile("^(?:[A-Z][a-zA-Z]+(?:, [A-Z][a-zA-Z]+)*(?:,? (?:&|and) [A-Z][a-zA-Z]+(?:, [A-Z][a-zA-Z]+)*)*\\.\\s*(?:\\([\\d]{4}\\)\\.)?\\s*)?\"([^\"]+)\"\\.\\s*([^\\.,]+)\\.\\s*(?:([\\d]+)\\s*\\(([\\d]+)\\)\\s*)?:\\s*([^\\.,]+)(?:[\\.:](.*))?$");
-        Pattern harvardWebsitePattern = Pattern.compile("^(?:[A-Z][a-zA-Z]+(?:, [A-Z][a-zA-Z]+)*(?:,? (?:&|and) [A-Z][a-zA-Z]+(?:, [A-Z][a-zA-Z]+)*)*\\.\\s*(?:\\([\\d]{4}\\)\\.)?\\s*)?(?:\"([^\"]+)\"\\.\\s*)?([^\\.,]+)\\.\\s*Available at: (https?://\\S+) \\[Accessed (\\d{1,2}\\s(?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)\\s\\d{4})\\]");
+       // Pattern harvardPattern = Pattern.compile("^([A-Za-z]+( [A-Za-z]+)*), ([A-Za-z]+( [A-Za-z]+)*)\\. \\d{4}\\. [A-Za-z0-9\\s]+\\.$");
+        Pattern harvardBookPattern = Pattern.compile("^(?:[A-Z][a-zA-Z]+(?:, [A-Z][a-zA-Z]+)*(?:,? (?:&|and) [A-Z][a-zA-Z]+(?:, [A-Z][a-zA-Z]+)*)*\\.\\s*(?:\\(\\d{4}\\)\\.)?\\s*)?([^\"]+)(?:\\.\\s*\\d+(?:st|nd|rd|th)?\\s*ed\\.)?\\.\\s*([^:.,]+)(?:\\s*:\\s*([^.,]+))?(?:[.:](.*))?$");
+        Pattern harvardArticlePattern = Pattern.compile("^(?:[A-Z][a-zA-Z]+(?:, [A-Z][a-zA-Z]+)*(?:,? (?:&|and) [A-Z][a-zA-Z]+(?:, [A-Z][a-zA-Z]+)*)*\\.\\s*(?:\\(\\d{4}\\)\\.)?\\s*)?\"([^\"]+)\"\\.\\s*([^.,]+)\\.\\s*(?:(\\d+)\\s*\\((\\d+)\\)\\s*)?:\\s*([^.,]+)(?:[.:](.*))?$");
+        Pattern harvardWebsitePattern = Pattern.compile("^(?:[A-Z][a-zA-Z]+(?:, [A-Z][a-zA-Z]+)*(?:,? (?:&|and) [A-Z][a-zA-Z]+(?:, [A-Z][a-zA-Z]+)*)*\\.\\s*(?:\\(\\d{4}\\)\\.)?\\s*)?(?:\"([^\"]+)\"\\.\\s*)?([^.,]+)\\.\\s*Available at: (https?://\\S+) \\[Accessed (\\d{1,2}\\s(?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)\\s\\d{4})]");
 
-        Matcher harvardMatcher = harvardPattern.matcher(reference);
+        //Matcher harvardMatcher = harvardPattern.matcher(reference);
         Matcher bookMatcher = harvardBookPattern.matcher(reference);
         Matcher articleMatcher = harvardArticlePattern.matcher(reference);
         Matcher websiteMatcher=harvardWebsitePattern.matcher(reference);
 
         // Check if the reference matches any of the patterns
-        return harvardMatcher.matches() || bookMatcher.matches() || articleMatcher.matches() || websiteMatcher.matches();
+        return bookMatcher.matches() || articleMatcher.matches() || websiteMatcher.matches();
 
 
     }
