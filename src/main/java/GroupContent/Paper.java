@@ -1,7 +1,8 @@
 package GroupContent;
 
-import java.util.ArrayList;
+import Managers.DatabaseManager;
 
+import java.util.ArrayList;
 
 
 public class Paper {
@@ -15,11 +16,14 @@ public class Paper {
         comments = new ArrayList<>();
         tags = new ArrayList<>();
 
-        addComment(new Comment("Triple click here to add comment", null));
+        addComment(new Comment("Triple click here to add comment", null, null));
+        System.out.println(this.getUser(this.getName()));
+
         allPapers.add(this);
     }
 
     public void addComment(Comment comment) {
+
         comments.add(comment);
     }
 

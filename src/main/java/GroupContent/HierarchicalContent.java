@@ -1,6 +1,9 @@
 package GroupContent;
 
 import MainUI.WrappedTreeRndr;
+import Managers.DatabaseManager;
+import MainUI.RightPanel;
+import MainUI.CommentsDisplay;
 import jdk.javadoc.internal.doclets.formats.html.markup.Head;
 
 import javax.swing.*;
@@ -9,18 +12,20 @@ import javax.swing.tree.TreePath;
 import java.awt.*;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
+import java.sql.Timestamp;
 import java.util.ArrayList;
 
 public class HierarchicalContent {
 
-    private String content;
+    private String content, UserName;
     private ArrayList<HierarchicalContent> subContent;
     private JTree tree;
     private Integer ID;
 
-    public HierarchicalContent(String content, Integer ID) {
+    public HierarchicalContent(String content, Integer ID, String UserName) {
         this.content = content;
         this.ID = ID;
+        this.UserName = UserName;
         subContent = new ArrayList<>();
     }
 
@@ -48,7 +53,13 @@ public class HierarchicalContent {
                             HierarchicalContent selectedContent = (HierarchicalContent) nodeInfo; //cast to HierarchicalContent object
                             String commentText = JOptionPane.showInputDialog("Enter the content");
                             if (commentText != null) {
-                                selectedContent.addSubContent(new HierarchicalContent(commentText, selectedContent.getID()));
+                                selectedContent.addSubContent(new HierarchicalContent(commentText, selectedContent.getID(), UserName));
+
+                                int paper = DatabaseManager.getPaperId("papers4", String.format(CommentsDisplay.getPaper().getName()));
+                                System.out.println(paper);
+
+                                DatabaseManager.insertComments(null, String.format(commentText), RightPanel.getLoggedInUser(), new Timestamp(System.currentTimeMillis()), paper);
+
                             }
 
                         }

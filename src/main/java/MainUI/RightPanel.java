@@ -20,9 +20,10 @@ public class RightPanel extends JPanel implements ButtonClickListener{
     private PapersDisplay papersDisplay;
 
     private CommentsDisplay commentsDisplay;
+    public static String UserName;
 
     public RightPanel(String UserName) {
-
+        RightPanel.UserName = UserName;
 
         setLayout(new BorderLayout());
 
@@ -187,6 +188,10 @@ public class RightPanel extends JPanel implements ButtonClickListener{
         //code
 
         return  papersList;
+    }
+
+    public static String getLoggedInUser(){
+        return UserName;
     }
 
 }

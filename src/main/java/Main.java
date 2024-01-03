@@ -4,6 +4,7 @@ import Managers.LoginManager;
 import Managers.BackupManager;
 
 import javax.swing.*;
+import java.sql.Timestamp;
 
 public class Main {
     public static void main(String arg[]) {
@@ -17,6 +18,8 @@ public class Main {
             //handle exception
             JOptionPane.showMessageDialog(null, e.getMessage());
         }
+
+        //DatabaseManager.insertComments(null, "testComment", 2, new Timestamp(System.currentTimeMillis()));
 
 //        BackupManager backupManager = new BackupManager(
 //                "ec2-54-246-1-94.eu-west-1.compute.amazonaws.com",
@@ -42,9 +45,9 @@ public class Main {
         System.out.println("Hashed password: "+ hashed2);
      */
 
-//        String tableName = "papers4";
+//       String tableName = "comments";
 //        int rowDeleted = 1;
-//        boolean wasDeleted = DatabaseManager.deleteRecord(tableName, rowDeleted);
+//       boolean wasDeleted = DatabaseManager.deleteRecord(tableName, rowDeleted);
 
 //
 //

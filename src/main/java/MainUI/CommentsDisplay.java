@@ -29,10 +29,13 @@ import java.util.ArrayList;
 public class CommentsDisplay extends JScrollPane {
     //scroll pane which holds multiple comment panels
     private JPanel commentsPanel; // Panel to hold comment components
+    public static Paper paper;
+
 
     public CommentsDisplay() {
         commentsPanel = new JPanel();
         commentsPanel.setLayout(new BorderLayout());
+
 
         setViewportView(commentsPanel);
         setVerticalScrollBarPolicy(JScrollPane.VERTICAL_SCROLLBAR_ALWAYS);
@@ -40,9 +43,13 @@ public class CommentsDisplay extends JScrollPane {
     }
 
     public void displayComments(Paper paper) {
+        CommentsDisplay.paper = paper;
         commentsPanel.removeAll();
 
         ArrayList<Comment> comments = paper.getComments();
+
+
+
         JTree tree = comments.get(0).getDisplayTree();
         commentsPanel.add(comments.get(0).getDisplayTree(), BorderLayout.CENTER);
 
@@ -70,6 +77,10 @@ public class CommentsDisplay extends JScrollPane {
 
         revalidate();
         repaint();
+    }
+
+    public static Paper getPaper(){
+        return paper;
     }
 }
 

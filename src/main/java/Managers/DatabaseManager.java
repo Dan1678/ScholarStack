@@ -1,6 +1,7 @@
 package Managers;
 
 import java.sql.*;
+import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -51,6 +52,39 @@ public class DatabaseManager {
             return false; // Insertion failed due to SQL exception
         }
     }
+
+    public static boolean insertComments(Integer parentID, String content, String userName, Timestamp time, int paperID) {
+        // Connect to the database
+        try (Connection conn = DatabaseConnector.connectToDatabase()) {
+            if (conn != null) {
+                System.out.println("Connection to the database successful!");
+                // String colString = String.join(", ", columns);
+                // String valString = String.join(", ", values);
+
+                String parentIDValue = (parentID == null) ? "NULL" : parentID.toString();
+
+                String timeValue = (time == null) ? "NULL" : "'" + time.toString() + "'";
+
+
+                String insertQuery = String.format(
+                        "INSERT INTO comments (parent_id, content, username, timestamp, \"paperID\") VALUES (%s, '%s', '%s', %s, %d)",
+                        parentIDValue, content.replaceAll("'", "''"), userName.replaceAll("'", "''"), timeValue, paperID
+                );
+
+                executeQuery(conn, insertQuery);
+
+                return true; // Insertion successful
+            } else {
+                System.out.println("Connection to the database failed");
+                return false; // Insertion failed due to connection failure
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+            return false; // Insertion failed due to SQL exception
+        }
+    }
+
+
 
     //Deleting records
     public static boolean deleteRecord(String tableName, int id) {
@@ -171,6 +205,34 @@ public class DatabaseManager {
 
         return largestId;
     }
+
+    public static Integer getPaperId(String tableName, String paperTitle) {
+        Integer id = null;
+
+        try (Connection conn = DatabaseConnector.connectToDatabase()) {
+            if (conn != null) {
+                try (Statement stmt = conn.createStatement()) {
+                    // Sanitize paperTitle to prevent SQL injection
+                    // This is a basic example, you should implement a more robust method
+                    String sanitizedTitle = paperTitle.replace("'", "''");
+
+                    String sql = "SELECT id FROM " + tableName + " WHERE papertitle = '" + sanitizedTitle + "'";
+                    ResultSet rs = stmt.executeQuery(sql);
+
+                    if (rs.next()) {
+                        id = rs.getInt("id");
+                    }
+                }
+            } else {
+                System.out.println("Connection to database failed");
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+
+        return id;
+    }
+
 
     public static void getAllPaperNamesFromDB(String tableName, int noRows) {
         try (Connection conn = DatabaseConnector.connectToDatabase()) {
