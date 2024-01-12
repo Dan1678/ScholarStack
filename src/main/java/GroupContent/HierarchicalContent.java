@@ -57,8 +57,22 @@ public class HierarchicalContent {
 
                                 int paper = DatabaseManager.getPaperId("papers4", String.format(CommentsDisplay.getPaper().getName()));
                                 System.out.println(paper);
+                                System.out.println(selectedContent.getContent());
 
-                                DatabaseManager.insertComments(null, String.format(commentText), RightPanel.getLoggedInUser(), new Timestamp(System.currentTimeMillis()), paper);
+
+
+                                //DatabaseManager.insertComments(parentID, String.format(commentText), RightPanel.getLoggedInUser(), new Timestamp(System.currentTimeMillis()), paper);
+                                if (selectedContent.getContent() == "Triple click here to add comment"){
+
+                                    DatabaseManager.insertComments(null, String.format(commentText), RightPanel.getLoggedInUser(), new Timestamp(System.currentTimeMillis()), paper);
+                                }
+
+                                if (selectedContent.getContent() != "Triple click here to add comment"){
+                                    int parentID = DatabaseManager.getCommentId("comments", String.format(selectedContent.getContent()));
+                                    DatabaseManager.insertComments(parentID, String.format(commentText), RightPanel.getLoggedInUser(), new Timestamp(System.currentTimeMillis()), paper);
+                                }
+
+                               // DatabaseManager.insertComments(parentID, String.format(commentText), RightPanel.getLoggedInUser(), new Timestamp(System.currentTimeMillis()), paper);
 
                             }
 
