@@ -46,7 +46,7 @@ public class RightPanel extends JPanel implements ButtonClickListener{
         Paper paper = new Paper();
         for(int i = 0; i <= DatabaseManager.getLargestId("papers4"); i++) {
             paper = new Paper();
-            String paperTitle = DatabaseManager.readRecord2("papers4", "papertitle", i);
+            String paperTitle = (DatabaseManager.readRecord2("papers4", "papertitle", "id", i));
 
             if (paperTitle == null) {
                 continue;
@@ -54,7 +54,7 @@ public class RightPanel extends JPanel implements ButtonClickListener{
 
 
             System.out.println("Paper name: " + paperTitle);
-            String username = DatabaseManager.readRecord2("papers4", "username", i);
+            String username = String.valueOf(DatabaseManager.readRecord2("papers4", "username", "id", i));
             System.out.println("User uploaded: " + username);
 
             paper.setName(paperTitle);

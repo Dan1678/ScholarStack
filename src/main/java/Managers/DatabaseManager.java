@@ -1,9 +1,7 @@
 package Managers;
 
+import java.awt.*;
 import java.sql.*;
-import java.time.LocalDate;
-import java.util.ArrayList;
-import java.util.List;
 
 public class DatabaseManager {
 
@@ -144,7 +142,7 @@ public class DatabaseManager {
     }
 
 
-    public static String readRecord2(String tableName, String selectedOutput, int knownID) {
+    public static String readRecord2(String tableName, String selectedOutput, String idType, int knownID) {
         String result = null;
         try (Connection conn = DatabaseConnector.connectToDatabase()) {
             if (conn != null) {
@@ -155,7 +153,7 @@ public class DatabaseManager {
                     Statement s =conn.createStatement();
                     //    SELECT "username" FROM papers3 WHERE username = 'testpaperUpload';
 
-                    String sql = "SELECT " + selectedOutput + " FROM " + tableName + " WHERE id=" + knownID;
+                    String sql = "SELECT " + selectedOutput + " FROM " + tableName + " WHERE "+ idType +"=" + knownID;
 
 
                     ResultSet rset=s.executeQuery(sql);

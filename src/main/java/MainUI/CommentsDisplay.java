@@ -3,6 +3,7 @@ package MainUI;
 import GroupContent.Comment;
 import GroupContent.HierarchicalContent;
 import GroupContent.Paper;
+import Managers.DatabaseManager;
 
 import javax.swing.*;
 import javax.swing.tree.DefaultTreeCellRenderer;
@@ -43,6 +44,7 @@ public class CommentsDisplay extends JScrollPane {
     }
 
     public void displayComments(Paper paper) {
+        String paperName = paper.getName();
         CommentsDisplay.paper = paper;
         commentsPanel.removeAll();
 
@@ -50,7 +52,8 @@ public class CommentsDisplay extends JScrollPane {
 
 
 
-        JTree tree = comments.get(0).getDisplayTree();
+
+        //commentsPanel.add(DatabaseManager.readRecord2("comments", "content", "paperID", paperID));
         commentsPanel.add(comments.get(0).getDisplayTree(), BorderLayout.CENTER);
 
         JLabel titleLabel = new JLabel(paper.getName());

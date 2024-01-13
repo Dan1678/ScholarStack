@@ -2,6 +2,7 @@ package GroupContent;
 
 import Managers.DatabaseManager;
 
+import javax.swing.*;
 import java.util.ArrayList;
 
 
@@ -17,6 +18,17 @@ public class Paper {
         tags = new ArrayList<>();
 
         addComment(new Comment("Triple click here to add comment", null, null));
+        //find content of commetns where paperID = this paperID and parent id = null
+        //find content of comments with parent ID =! null display underneath
+
+
+        //int paperID;
+        //paperID = DatabaseManager.getPaperId("papers4", this.getName());
+
+        String commentsNew = DatabaseManager.readRecord2("comments","content", "paperID", 2);
+        System.out.println(commentsNew);
+
+        addComment(new Comment(commentsNew, null, "testing display comments"));
         System.out.println(this.getUser(this.getName()));
 
         allPapers.add(this);
