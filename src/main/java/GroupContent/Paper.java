@@ -1,8 +1,9 @@
 package GroupContent;
 
 import Managers.DatabaseManager;
-
+import GroupContent.Comment;
 import javax.swing.*;
+import java.awt.*;
 import java.util.ArrayList;
 
 
@@ -21,6 +22,7 @@ public class Paper {
         System.out.println("this.name test:  "+this.name);
 
         addComment(new Comment("Triple click here to add comment", null, null));
+
         PaperComments(this);
 
         //find content of commetns where paperID = this paperID and parent id = null
@@ -34,20 +36,71 @@ public class Paper {
         allPapers.add(this);
     }
 
+
     public void PaperComments(Paper p){
         String name = p.getName();
+        System.out.println("TEST");
 
-        System.out.println("This.getName test: "+ name);
-        if (name!= null) {
-            String paperID = String.valueOf((DatabaseManager.getPaperId("papers4", name)));
-            String CommentContent = DatabaseManager.readRecord("comments", "content", "paperID", paperID);
-            System.out.println("Paper from comments name: "+this.name);
-            System.out.println("Comment content: "+CommentContent);
+        if (name == null) {
+            System.out.println("Paper name is null, no comments");
+            return;
+        }
 
-            p.addComment(new Comment(CommentContent, null, "testing user"));
+
+        //get this papers id to use for the comments
+        int paperId = DatabaseManager.getPaperId("papers4", name);
+
+        //if doesnt exist
+        if (paperId == -1) {
+            System.out.println("Paper ID not found for name: " + name);
+            return;
+        }
+
+        // get all the comments
+        ArrayList<Comment> comments = DatabaseManager.getCommentsForPaper(paperId);
+
+
+        // add comments to paper
+        for (Comment comment : comments) {
+            p.addComment(comment);
+            System.out.println("Comment content: " + comment.getContent());
         }
 
     }
+
+    /*public void PaperComments(Paper p){
+        String name = p.getName();
+        System.out.println("TEST");
+
+        for (int b = 0; b<= DatabaseManager.getLargestId("comments"); b++){     //go through all comments in table
+
+            //System.out.println("This.getName test: "+ name);
+            if(name == null){
+                break;
+            }
+
+            if (name!= null) {
+                String paperID = String.valueOf((DatabaseManager.getPaperId("papers4", name)));
+
+                //check if for multiple comments on same paper
+                //
+                //gets comment from the paper
+                //String paperTitle = (DatabaseManager.readRecord2("papers4", "papertitle", "id", i));
+
+
+                String CommentContent = DatabaseManager.readRecord3("comments", "content", "paperID", paperID, b);
+                if (CommentContent == null){
+                    continue;
+                }
+                System.out.println("Paper from comments name: "+this.name);
+                System.out.println("Comment content: "+CommentContent);
+
+                p.addComment(new Comment(CommentContent, null, "testing user"));
+            }
+        }
+
+
+    } */
 
     public void addComment(Comment comment) {
 
