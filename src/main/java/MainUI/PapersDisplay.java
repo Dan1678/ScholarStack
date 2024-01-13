@@ -71,7 +71,7 @@ public class PapersDisplay extends JScrollPane {
         repaint();
     }
     public void addReference(String reference, ButtonClickListener listener) {
-        Paper paper = new Paper();
+        Paper paper = new Paper(reference);
         paper.setName(reference);
         PaperUI newPaperUI = new PaperUI(paper);
 

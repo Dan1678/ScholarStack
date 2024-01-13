@@ -43,10 +43,12 @@ public class RightPanel extends JPanel implements ButtonClickListener{
         topPanel.add(buttonsPanel, BorderLayout.CENTER);
 
 
-        Paper paper = new Paper();
+        //Paper paper = new Paper();
+        Paper paper = new Paper(null);
         for(int i = 0; i <= DatabaseManager.getLargestId("papers4"); i++) {
-            paper = new Paper();
+
             String paperTitle = (DatabaseManager.readRecord2("papers4", "papertitle", "id", i));
+            paper = new Paper(paperTitle);
 
             if (paperTitle == null) {
                 continue;
@@ -172,7 +174,7 @@ public class RightPanel extends JPanel implements ButtonClickListener{
     public void redrawPapers(ArrayList<String> papersList) {
 
         for (String paperName : papersList) {
-            Paper paper = new Paper();
+            Paper paper = new Paper(paperName);
             paper.setName(paperName);
 
             papersDisplay.addPaperUI(new PaperUI(paper), this);
