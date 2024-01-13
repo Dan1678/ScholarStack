@@ -31,7 +31,12 @@ public class Paper {
 
         //int paperID;
         //paperID = DatabaseManager.getPaperId("papers4", this.getName());
-        //PaperComments(this);
+
+        String commentsNew = DatabaseManager.readRecord2("comments","content", "paperID", 2);
+        System.out.println(commentsNew);
+
+        addComment(new Comment(commentsNew, null, "testing display comments"));
+        System.out.println(this.getUser(this.getName()));
 
         allPapers.add(this);
     }
@@ -129,7 +134,7 @@ public class Paper {
     }
 
     public String getName() {
-        return this.name;
+        return name;
     }
 
     public void setName(String name) {
@@ -141,13 +146,6 @@ public class Paper {
         String UserUpload = Managers.DatabaseManager.readRecord("papers4", "username", "papertitle", this.n);
         return UserUpload;
     }
-
-    /*public int getThisPaperId(String n){
-        this.n = name;
-
-        int PaperID = Managers.DatabaseManager.getPaperId("papers4", this.n);
-        return PaperID;
-    } */
 
 
 }
