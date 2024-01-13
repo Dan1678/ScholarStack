@@ -412,6 +412,32 @@ public class DatabaseManager {
         return comments;
     }
 
+    public static ArrayList<Comment> getSubComments(int parentID) {
+        ArrayList<Comment> Subcomments = new ArrayList<>();
+
+        String sql = "SELECT id, content, username FROM comments WHERE parent_ID =" + parentID;
+
+
+
+        try (Connection conn = DatabaseConnector.connectToDatabase();
+             Statement stmt = conn.createStatement();
+             ResultSet rset = stmt.executeQuery(sql)) {
+
+            while (rset.next()) {
+                Integer id = rset.getInt("id");
+                String content = rset.getString("content");
+                String username = rset.getString("username");
+
+
+                Comment comment = new Comment(content, id, username);
+                Subcomments.add(comment);
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return Subcomments;
+    }
+
 
 
     private static void executeQuery (Connection conn, String query){
