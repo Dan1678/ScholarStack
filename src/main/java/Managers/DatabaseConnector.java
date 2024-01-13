@@ -33,7 +33,13 @@ public class DatabaseConnector {
         } catch (SQLException e) {
             // Print and log the exception details
             e.printStackTrace();
-            log.logger.severe("Connection failed:" + e.getMessage());
+            try {
+                // Specify the log file name when creating the Log instance
+                log = new Log("log.txt");
+                log.logger.severe("Connection failed:" + e.getMessage());
+            } catch (IOException p) {
+                log.logger.warning("Log unsuccessful:" + p.getMessage());
+            }
             System.out.println("Connection failed: " + e.getMessage());
             return null; // Return null if the connection fails
         }

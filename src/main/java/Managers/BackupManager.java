@@ -13,6 +13,9 @@ public class BackupManager {
     private String user;
     private String password;
 
+    static Log log;
+
+
     public BackupManager(String host, String database, String user, String password) {
         this.host = host;
         this.database = database;
@@ -58,6 +61,14 @@ public class BackupManager {
             // Wait for the process to complete and print its exit value
             p.waitFor();
             System.out.println("Backup process exit value: " + p.exitValue());
+
+            try {
+                // Specify the log file name when creating the Log instance
+                log = new Log("log.txt");
+                log.logger.severe("Backup process exit value: " + p.exitValue());
+            } catch (IOException e) {
+                log.logger.warning("Log unsuccessful:" + e.getMessage());
+            }
 
         } catch (IOException | InterruptedException e) {
             System.out.println(e.getMessage());
