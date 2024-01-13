@@ -1,11 +1,12 @@
 package Managers;
 
+import java.io.IOException;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 
 public class DatabaseConnector {
-
+    static Log log;
     public static Connection connectToDatabase() {
         try {
 
@@ -18,11 +19,21 @@ public class DatabaseConnector {
 
             String dbUrl = "jdbc:postgresql://" + host + ":" + port + "/" + databaseName + "?sslmode=require";
 
+            try {
+                // Specify the log file name when creating the Log instance
+                log = new Log("log.txt");
+                log.logger.info("Connection Successful");
+            } catch (IOException e) {
+                log.logger.warning("Log unsuccessful:" + e.getMessage());
+            }
+
             // Connect to the database
             return DriverManager.getConnection(dbUrl, username, password);
+
         } catch (SQLException e) {
-            // Print the exception details
+            // Print and log the exception details
             e.printStackTrace();
+            log.logger.severe("Connection failed:" + e.getMessage());
             System.out.println("Connection failed: " + e.getMessage());
             return null; // Return null if the connection fails
         }
