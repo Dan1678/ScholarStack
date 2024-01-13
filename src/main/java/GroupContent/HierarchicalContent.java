@@ -87,6 +87,7 @@ public class HierarchicalContent {
 
     }
 
+
     private DefaultMutableTreeNode findTreeBelow(HierarchicalContent parentContent) {
         //Gets the tree of all nodes underneath parent tag
 

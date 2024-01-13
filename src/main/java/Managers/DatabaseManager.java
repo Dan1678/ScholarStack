@@ -314,7 +314,7 @@ public class DatabaseManager {
                     ResultSet rs = stmt.executeQuery(sql);
 
                     if (rs.next()) {
-                        id = rs.getInt("id");
+                        id = rs.getInt("parent_id");
                     }
                 }
             } else {

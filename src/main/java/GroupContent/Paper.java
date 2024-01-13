@@ -68,10 +68,43 @@ public class Paper {
 
         // add comments to paper
         for (Comment comment : comments) {
-            p.addComment(comment);
-            System.out.println("Comment content: " + comment.getContent());
+            System.out.println(comment.toString());
+            int parentID = DatabaseManager.getCommentParentID("comments", comment.toString());
+            if (parentID == 0){ //Get all comments with parent ID of null
+                //recurse on each of those to get children
+                int commentID = DatabaseManager.getCommentId("comments", comment.toString());
+                Comment commentsWithChildren = getChildComments(comment, commentID);
+                if (commentsWithChildren != null) {
+                    this.comments.get(0).addSubContent(commentsWithChildren);
+                } else {
+                    this.comments.get(0).addSubContent(comment);
+                }
+
+            }
+
         }
         return;
+    }
+
+    private Comment getChildComments(Comment parentComment, int parentID) {
+        ArrayList<Comment> children =  DatabaseManager.getSubComments(parentID); //get all child comments of the parent ID
+
+        //BASE CASE: there are no tags with the parent ID of the current comment (i.e. no children)
+        if (children.size() == 0) {
+            return null;
+        }
+
+        //RECURSIVE CASE: call the current method on each of the children
+        for (Comment child : children) {
+            int childID = DatabaseManager.getCommentId("comments", child.toString());
+            Comment childrenOfChild = getChildComments(child, childID);
+            if (childrenOfChild != null) {
+                child.addSubContent(childrenOfChild);
+                parentComment.addSubContent(child);
+            }
+        }
+
+        return  parentComment;
     }
 
     /*public void PaperComments(Paper p){
