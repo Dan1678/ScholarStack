@@ -1,13 +1,15 @@
 package Managers;
 
+import GroupContent.Comment;
+
+import java.awt.*;
 import java.sql.*;
-import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 
+
 public class DatabaseManager {
 
-    private static Log log;
     public static boolean createTable(String tableName, String col1, String col2) {
         // Connect to the database
         try (Connection conn = DatabaseConnector.connectToDatabase()) {
@@ -144,8 +146,7 @@ public class DatabaseManager {
         return result;
     }
 
-
-    public static String readRecord2(String tableName, String selectedOutput, int knownID) {
+    public static String readRecord3(String tableName, String selectedOutput, String knownCol, String knownInput, int id) {
         String result = null;
         try (Connection conn = DatabaseConnector.connectToDatabase()) {
             if (conn != null) {
@@ -156,7 +157,45 @@ public class DatabaseManager {
                     Statement s =conn.createStatement();
                     //    SELECT "username" FROM papers3 WHERE username = 'testpaperUpload';
 
-                    String sql = "SELECT " + selectedOutput + " FROM " + tableName + " WHERE id=" + knownID;
+                    String sql = "SELECT \"" + selectedOutput + "\" FROM " + tableName +
+                            " WHERE \"" + knownCol + "\" = '" + knownInput + "'" +
+                            " AND id = " + id;
+
+                    ResultSet rset=s.executeQuery(sql);
+                    while(rset.next()){
+                        result = rset.getString(selectedOutput);
+                    }
+                    rset.close();
+                    s.close();
+                    conn.close();
+                }
+                catch (Exception e){
+                }
+
+            }
+            else{
+                System.out.println("Connection to database failed");
+            }
+
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return result;
+    }
+
+
+    public static String readRecord2(String tableName, String selectedOutput, String idType, int knownID) {
+        String result = null;
+        try (Connection conn = DatabaseConnector.connectToDatabase()) {
+            if (conn != null) {
+                System.out.println("Connection to the database successful!");
+
+
+                try {
+                    Statement s =conn.createStatement();
+                    //    SELECT "username" FROM papers3 WHERE username = 'testpaperUpload';
+
+                    String sql = "SELECT " + selectedOutput + " FROM " + tableName + " WHERE "+ idType +"=" + knownID;
 
 
                     ResultSet rset=s.executeQuery(sql);
@@ -320,6 +359,31 @@ public class DatabaseManager {
         } catch (SQLException e) {
             e.printStackTrace();
         }
+    }
+    public static ArrayList<Comment> getCommentsForPaper(int paperId) {
+        ArrayList<Comment> comments = new ArrayList<>();
+
+        String sql = "SELECT id, content, username FROM comments WHERE \"paperID\" = " + paperId;
+
+
+
+        try (Connection conn = DatabaseConnector.connectToDatabase();
+             Statement stmt = conn.createStatement();
+             ResultSet rset = stmt.executeQuery(sql)) {
+
+            while (rset.next()) {
+                Integer id = rset.getInt("id");
+                String content = rset.getString("content");
+                String username = rset.getString("username");
+
+
+                Comment comment = new Comment(content, id, username);
+                comments.add(comment);
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return comments;
     }
 
 
