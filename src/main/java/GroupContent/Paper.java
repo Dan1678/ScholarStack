@@ -71,7 +71,7 @@ public class Paper {
             p.addComment(comment);
             System.out.println("Comment content: " + comment.getContent());
         }
-
+        return;
     }
 
     /*public void PaperComments(Paper p){
