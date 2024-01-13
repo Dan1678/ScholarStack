@@ -32,11 +32,11 @@ public class Paper {
         //int paperID;
         //paperID = DatabaseManager.getPaperId("papers4", this.getName());
 
-        //String commentsNew = DatabaseManager.readRecord2("comments","content", "paperID", 2);
-        //System.out.println(commentsNew);
+        String commentsNew = DatabaseManager.readRecord2("comments","content", "paperID", 2);
+        System.out.println(commentsNew);
 
-        //addComment(new Comment(commentsNew, null, "testing display comments"));
-        //System.out.println(this.getUser(this.getName()));
+        addComment(new Comment(commentsNew, null, "testing display comments"));
+        System.out.println(this.getUser(this.getName()));
 
         allPapers.add(this);
     }
