@@ -12,7 +12,7 @@ public class Paper {
     private String name, n;
     private ArrayList<Comment> comments;
     private ArrayList<Tag> tags;
-    public static ArrayList<Paper> allPapers = new ArrayList<>(); //is public ok for this attribute, I believe paper instances can't be modified from an arraylist?
+    public static ArrayList<Paper> allPapers = new ArrayList<>();
 
     public Paper(String paperTitle) {
         this.name = paperTitle;
@@ -53,13 +53,14 @@ public class Paper {
 
 
         //get this papers id to use for the comments
-        int paperId = DatabaseManager.getPaperId("papers4", name);
+        Integer paperId = DatabaseManager.getPaperId("papers4", name);
 
         //if doesnt exist
-        if (paperId == -1) {
+        if (paperId == null) {
             System.out.println("Paper ID not found for name: " + name);
             return;
         }
+
 
         // get all the comments
         ArrayList<Comment> comments = DatabaseManager.getCommentsForPaper(paperId);
