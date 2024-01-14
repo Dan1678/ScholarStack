@@ -300,32 +300,6 @@ public class DatabaseManager {
         return id;
     }
 
-    public static Integer getCommentParentID(String tableName, String commentTitle) {
-        Integer id = null;
-
-        try (Connection conn = DatabaseConnector.connectToDatabase()) {
-            if (conn != null) {
-                try (Statement stmt = conn.createStatement()) {
-                    // Sanitize paperTitle to prevent SQL injection
-                    // This is a basic example, you should implement a more robust method
-                    String sanitizedTitle = commentTitle.replace("'", "''");
-
-                    String sql = "SELECT parent_id FROM " + tableName + " WHERE content = '" + sanitizedTitle + "'";
-                    ResultSet rs = stmt.executeQuery(sql);
-
-                    if (rs.next()) {
-                        id = rs.getInt("id");
-                    }
-                }
-            } else {
-                System.out.println("Connection to database failed");
-            }
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
-
-        return id;
-    }
 
     public static void getAllPaperNamesFromDB(String tableName, int noRows) {
         try (Connection conn = DatabaseConnector.connectToDatabase()) {

@@ -34,7 +34,6 @@ public class HierarchicalContent {
 
         DefaultMutableTreeNode root = findTreeBelow(this);
 
-
         tree = new JTree(root);
         //tree.setCellRenderer(new WrappedTreeRndr());
 
@@ -90,7 +89,7 @@ public class HierarchicalContent {
     private DefaultMutableTreeNode findTreeBelow(HierarchicalContent parentContent) {
         //Gets the tree of all nodes underneath parent tag
 
-        //base case   - use instead databasemanager.getcommentparentid to check if parent id exists
+        //base case
         if (parentContent.getSubContent() == null) {
             return null;
         }
@@ -129,22 +128,11 @@ public class HierarchicalContent {
         this.ID = ID;
     }
 
+    public String getUserName() {
+        return UserName;
+    }
     @Override
     public String toString() {
         return content;
     }
 }
-
-
-/*int i =0;
-        for (i = 0; i < comments.size(); i++){
-            int parentID = DatabaseManager.getCommentParentID("comments", String.valueOf(comments.get(i)));
-            if (parentID == Integer.parseInt(null)) {
-                commentsPanel.add(comments.get(0).getDisplayTree(), BorderLayout.CENTER);    //make new tree for that comment
-            }
-
-            //commentsPanel.add(comments.get(0).getDisplayTree(), BorderLayout.CENTER);
-
-            commentsPanel.add(comments.get(1).getDisplayTree(), BorderLayout.CENTER);
-            //commentsPanel.add(comments.get(i).getDisplayTree(), BorderLayout.CENTER);
-        }*/
