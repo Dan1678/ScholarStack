@@ -70,7 +70,7 @@ public class Paper {
         for (Comment comment : comments) {
             int parentID = DatabaseManager.getCommentParentID("comments", comment.toString());
             if (parentID == 0){ //Get all comments with parent ID of null
-                //recurse on each of those to get children
+                //recurse on each of those to get their children
                 int commentID = DatabaseManager.getCommentId("comments", comment.toString());
                 Comment commentsWithChildren = getChildComments(comment, commentID);
                 if (commentsWithChildren != null) {
@@ -98,7 +98,7 @@ public class Paper {
             int childID = DatabaseManager.getCommentId("comments", child.toString());
             Comment childrenOfChild = getChildComments(child, childID);
             if (childrenOfChild != null) {
-                child.addSubContent(childrenOfChild);
+                child = childrenOfChild;
             }
             parentComment.addSubContent(child);
         }
