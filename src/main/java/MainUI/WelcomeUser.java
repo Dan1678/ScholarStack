@@ -10,7 +10,7 @@ public class WelcomeUser {
         JLabel welcomeMessage = new JLabel("Welcome, " +UserName + "!");
 
         // Create a Font object specifying font name, style, and size
-        Font customFont = new Font("Courier", Font.BOLD, 16); // Change the font details as needed
+        Font customFont = new Font("CopperPlate", Font.BOLD, 16); // Change the font details as needed
 
         // Set the custom font to the JLabel
         welcomeMessage.setFont(customFont);

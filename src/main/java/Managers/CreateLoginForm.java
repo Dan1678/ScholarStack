@@ -19,6 +19,10 @@ public class CreateLoginForm extends JFrame implements ActionListener
 
     public CreateLoginForm()
     {
+//        JLabel textLabel = new JLabel("ScholarStack");
+////        textLabel.setFont(new Font("Arial", Font.PLAIN, 16)); // Set the font if needed
+//        loginPanel.add(textLabel);  // Add to the left panel or the panel where you want the text
+
         backPanel = new JPanel(new GridLayout(5,1));
         backPanel.setSize(1000,1000);
 
@@ -28,6 +32,13 @@ public class CreateLoginForm extends JFrame implements ActionListener
 
         loginLabel = new JLabel("Login or Create New Account");
         passLabel = new JLabel("Password must contain at least one number, one symbol (!@#$%^&*) and be more than 6 characters");
+        JLabel textLabel = new JLabel("ScholarStack");
+        textLabel.setFont(new Font("CopperPlate", Font.BOLD, 50));
+        textLabel.setBorder(BorderFactory.createLineBorder(Color.BLACK, 2));
+        textLabel.setForeground(Color.GRAY);
+        textLabel.setAlignmentX((Component.CENTER_ALIGNMENT));
+        loginPanel.add(textLabel);
+
 
         loginLabel.setAlignmentX(Component.CENTER_ALIGNMENT);
         passLabel.setAlignmentX(Component.CENTER_ALIGNMENT);
