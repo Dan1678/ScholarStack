@@ -16,7 +16,6 @@ public class TopMenuBar extends JMenuBar{
     //top menu bar
 
     public TopMenuBar(JFrame parentFrame) {
-        this.backupManager = backupManager;
 
         // Menu items EXAMPLE
         JMenu fileMenu = new JMenu("File");
