@@ -6,7 +6,7 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 
 public class DatabaseConnector {
-    static Log log;
+    //static Log log;
     public static Connection connectToDatabase() {
         try {
 
@@ -19,13 +19,13 @@ public class DatabaseConnector {
 
             String dbUrl = "jdbc:postgresql://" + host + ":" + port + "/" + databaseName + "?sslmode=require";
 
-            try {
+           /* try {
                 // Specify the log file name when creating the Log instance
                 log = new Log("log.txt");
                 log.logger.info("Connection Successful");
             } catch (IOException e) {
                 log.logger.warning("Log unsuccessful:" + e.getMessage());
-            }
+            } */
 
             // Connect to the database
             return DriverManager.getConnection(dbUrl, username, password);
@@ -33,13 +33,13 @@ public class DatabaseConnector {
         } catch (SQLException e) {
             // Print and log the exception details
             e.printStackTrace();
-            try {
+            //try {
                 // Specify the log file name when creating the Log instance
-                log = new Log("log.txt");
+               /* log = new Log("log.txt");
                 log.logger.severe("Connection failed:" + e.getMessage());
             } catch (IOException p) {
                 log.logger.warning("Log unsuccessful:" + p.getMessage());
-            }
+            } */
             System.out.println("Connection failed: " + e.getMessage());
             return null; // Return null if the connection fails
         }

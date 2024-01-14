@@ -6,13 +6,28 @@ import java.awt.*;
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collectors;
 
 
 public class DatabaseManager {
 
+    private static Connection conn = null;
+
+    static {
+        //try {
+            conn = DatabaseConnector.connectToDatabase();
+            if (conn != null) {
+                System.out.println("Connection to the database successful!");
+            } else {
+                System.out.println("Failed to make connection!");
+            }
+       // } catch (SQLException e) {
+         //   e.printStackTrace();
+       // }
+    }
+
     public static boolean createTable(String tableName, String col1, String col2) {
         // Connect to the database
-        try (Connection conn = DatabaseConnector.connectToDatabase()) {
             if (conn != null) {
                 System.out.println("Connection to the database successful!");
 
@@ -25,17 +40,14 @@ public class DatabaseManager {
                 System.out.println("Connection to the database failed");
                 return false; // Table creation failed due to connection failure
             }
-        } catch (SQLException e) {
-            e.printStackTrace();
-            return false; // Table creation failed due to SQL exception
-        }
+
     }
 
 
 
     public static boolean insertRecord(String tableName, String columns, String values) {
         // Connect to the database
-        try (Connection conn = DatabaseConnector.connectToDatabase()) {
+
             if (conn != null) {
                 System.out.println("Connection to the database successful!");
                // String colString = String.join(", ", columns);
@@ -50,15 +62,11 @@ public class DatabaseManager {
                 System.out.println("Connection to the database failed");
                 return false; // Insertion failed due to connection failure
             }
-        } catch (SQLException e) {
-            e.printStackTrace();
-            return false; // Insertion failed due to SQL exception
-        }
+
     }
 
     public static boolean insertComments(Integer parentID, String content, String userName, Timestamp time, Integer paperID) {
         // Connect to the database
-        try (Connection conn = DatabaseConnector.connectToDatabase()) {
             if (conn != null) {
                 System.out.println("Connection to the database successful!");
                 // String colString = String.join(", ", columns);
@@ -81,17 +89,14 @@ public class DatabaseManager {
                 System.out.println("Connection to the database failed");
                 return false; // Insertion failed due to connection failure
             }
-        } catch (SQLException e) {
-            e.printStackTrace();
-            return false; // Insertion failed due to SQL exception
-        }
+
     }
 
 
 
     //Deleting records
     public static boolean deleteRecord(String tableName, int id) {
-        try (Connection conn = DatabaseConnector.connectToDatabase()) {
+
             if (conn != null) {
                 System.out.println("Connection to the database successful!");
 
@@ -103,17 +108,14 @@ public class DatabaseManager {
                 System.out.println("Connection to database failed");
                 return false;
             }
-        } catch (SQLException e) {
-            e.printStackTrace();
-            return false;
-        }
+
     }
 
     //Read record from a table id
     //selectedoutput is desired column
     public static String readRecord(String tableName, String selectedOutput, String knownCol, String knownInput) {
         String result = null;
-        try (Connection conn = DatabaseConnector.connectToDatabase()) {
+
             if (conn != null) {
                 System.out.println("Connection to the database successful!");
 
@@ -130,7 +132,7 @@ public class DatabaseManager {
                     }
                     rset.close();
                     s.close();
-                    conn.close();
+
                 }
                 catch (Exception e){
                 }
@@ -140,15 +142,12 @@ public class DatabaseManager {
                 System.out.println("Connection to database failed");
             }
 
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
         return result;
     }
 
     public static String readRecord3(String tableName, String selectedOutput, String knownCol, String knownInput, int id) {
         String result = null;
-        try (Connection conn = DatabaseConnector.connectToDatabase()) {
+
             if (conn != null) {
                 System.out.println("Connection to the database successful!");
 
@@ -167,7 +166,7 @@ public class DatabaseManager {
                     }
                     rset.close();
                     s.close();
-                    conn.close();
+                    //conn.close();
                 }
                 catch (Exception e){
                 }
@@ -177,16 +176,14 @@ public class DatabaseManager {
                 System.out.println("Connection to database failed");
             }
 
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
+
         return result;
     }
 
 
     public static String readRecord2(String tableName, String selectedOutput, String idType, int knownID) {
         String result = null;
-        try (Connection conn = DatabaseConnector.connectToDatabase()) {
+
             if (conn != null) {
                 System.out.println("Connection to the database successful!");
 
@@ -204,7 +201,7 @@ public class DatabaseManager {
                     }
                     rset.close();
                     s.close();
-                    conn.close();
+                    //conn.close();
                 }
                 catch (Exception e){
                 }
@@ -214,9 +211,7 @@ public class DatabaseManager {
                 System.out.println("Connection to database failed");
             }
 
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
+
         return result;
     }
 
@@ -224,8 +219,9 @@ public class DatabaseManager {
     public static int getLargestId(String tableName) {
         int largestId = 0;
 
-        try (Connection conn = DatabaseConnector.connectToDatabase()) {
+
             if (conn != null) {
+                //System.out.println("TESTXX");
                 try (Statement stmt = conn.createStatement()) {
                     String sql = "SELECT MAX(id) FROM " + tableName;
                     ResultSet rs = stmt.executeQuery(sql);
@@ -239,9 +235,7 @@ public class DatabaseManager {
             } else {
                 System.out.println("Connection to database failed");
             }
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
+
 
         return largestId;
     }
@@ -250,7 +244,7 @@ public class DatabaseManager {
     public static Integer getPaperId(String tableName, String paperTitle) {
         Integer id = null;
 
-        try (Connection conn = DatabaseConnector.connectToDatabase()) {
+
             if (conn != null) {
                 try (Statement stmt = conn.createStatement()) {
                     // Sanitize paperTitle to prevent SQL injection
@@ -263,13 +257,13 @@ public class DatabaseManager {
                     if (rs.next()) {
                         id = rs.getInt("id");
                     }
+                } catch (SQLException e) {
+                    e.printStackTrace();
                 }
             } else {
                 System.out.println("Connection to database failed");
             }
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
+
 
         return id;
     }
@@ -277,7 +271,7 @@ public class DatabaseManager {
     public static Integer getCommentId(String tableName, String commentTitle) {
         Integer id = null;
 
-        try (Connection conn = DatabaseConnector.connectToDatabase()) {
+
             if (conn != null) {
                 try (Statement stmt = conn.createStatement()) {
                     // Sanitize paperTitle to prevent SQL injection
@@ -290,13 +284,13 @@ public class DatabaseManager {
                     if (rs.next()) {
                         id = rs.getInt("id");
                     }
+                } catch (SQLException e) {
+                    e.printStackTrace();
                 }
             } else {
                 System.out.println("Connection to database failed");
             }
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
+
 
         return id;
     }
@@ -304,7 +298,7 @@ public class DatabaseManager {
     public static Integer getId(String tableName, String content, String colName) {
         Integer id = null;
 
-        try (Connection conn = DatabaseConnector.connectToDatabase()) {
+
             if (conn != null) {
                 try (Statement stmt = conn.createStatement()) {
                     // Sanitize paperTitle to prevent SQL injection
@@ -317,13 +311,13 @@ public class DatabaseManager {
                     if (rs.next()) {
                         id = rs.getInt("id");
                     }
+                } catch (SQLException e) {
+                    e.printStackTrace();
                 }
             } else {
                 System.out.println("Connection to database failed");
             }
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
+
 
         return id;
     }
@@ -331,7 +325,7 @@ public class DatabaseManager {
     public static Integer getCommentParentID(String tableName, String commentTitle) {
         Integer id = null;
 
-        try (Connection conn = DatabaseConnector.connectToDatabase()) {
+
             if (conn != null) {
                 try (Statement stmt = conn.createStatement()) {
                     // Sanitize paperTitle to prevent SQL injection
@@ -345,18 +339,20 @@ public class DatabaseManager {
                         id = rs.getInt("parent_id");
                     }
                 }
+                catch (SQLException e) {
+            e.printStackTrace();
+        }
             } else {
                 System.out.println("Connection to database failed");
             }
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
 
         return id;
     }
 
+
+
     public static void getAllPaperNamesFromDB(String tableName, int noRows) {
-        try (Connection conn = DatabaseConnector.connectToDatabase()) {
+
             if (conn != null) {
                 System.out.println("Connection to the database successful!");
 
@@ -379,15 +375,13 @@ public class DatabaseManager {
             } else {
                 System.out.println("Connection to database failed");
             }
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
+
     }
 
 
     //not sure if need
     public static void getAllUSerNamesFromDB(String tableName, int noRows) {
-        try (Connection conn = DatabaseConnector.connectToDatabase()) {
+
             if (conn != null) {
                 System.out.println("Connection to the database successful!");
 
@@ -410,61 +404,109 @@ public class DatabaseManager {
             } else {
                 System.out.println("Connection to database failed");
             }
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
+
     }
     public static ArrayList<Comment> getCommentsForPaper(int paperId) {
         ArrayList<Comment> comments = new ArrayList<>();
+        if (conn != null) {
+            try (Statement stmt = conn.createStatement()) {
+                String sql = "SELECT id, content, username FROM comments WHERE \"paperID\" = " + paperId;
+                ResultSet rset = stmt.executeQuery(sql);
 
-        String sql = "SELECT id, content, username FROM comments WHERE \"paperID\" = " + paperId;
+                while (rset.next()) {
+                    Integer id = rset.getInt("id");
+                    String content = rset.getString("content");
+                    String username = rset.getString("username");
 
-
-
-        try (Connection conn = DatabaseConnector.connectToDatabase();
-             Statement stmt = conn.createStatement();
-             ResultSet rset = stmt.executeQuery(sql)) {
-
-            while (rset.next()) {
-                Integer id = rset.getInt("id");
-                String content = rset.getString("content");
-                String username = rset.getString("username");
-
-
-                Comment comment = new Comment(content, id, username);
-                comments.add(comment);
+                    Comment comment = new Comment(content, id, username);
+                    comments.add(comment);
+                }
+            } catch (SQLException e) {
+                e.printStackTrace();
             }
-        } catch (SQLException e) {
-            e.printStackTrace();
+        } else {
+            System.out.println("Connection to database failed");
         }
         return comments;
     }
 
+
+    public static ArrayList<Integer> getTagsForPaper(int paperId) {
+        ArrayList<Integer> tagIDs = new ArrayList<>();
+
+        if (conn != null) {
+            try (Statement stmt = conn.createStatement();
+                 ResultSet rset = stmt.executeQuery("SELECT tagid FROM tagpaperlink3 WHERE paperid = " + paperId)) {
+
+                while (rset.next()) {
+                    int id = rset.getInt("tagid");
+                    tagIDs.add(id);
+                }
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }
+        }
+
+         else {
+            System.out.println("Connection to database failed");
+        }
+        return tagIDs;
+    }
+
+    public static ArrayList<String> getTagNamesFromIDs(ArrayList<Integer> tagIDs) {
+        ArrayList<String> tagNames = new ArrayList<>();
+        if (tagIDs.isEmpty()) {
+            return tagNames; // Return the empty tagNames list
+        }
+
+        if (conn != null) {
+            try (Statement stmt = conn.createStatement()) {
+                String sql = "SELECT \"TagName\" FROM \"Tags\" WHERE id IN (" +
+                        tagIDs.stream()
+                                .map(String::valueOf)
+                                .collect(Collectors.joining(",")) + ")";
+                try (ResultSet rset = stmt.executeQuery(sql)) {
+                    while (rset.next()) {
+                        String tagName = rset.getString("TagName");
+                        tagNames.add(tagName);
+                    }
+                }
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }
+        } else {
+            System.out.println("Connection to database failed");
+        }
+
+        return tagNames;
+    }
+
+
     public static ArrayList<Comment> getSubComments(int parentID) {
         ArrayList<Comment> Subcomments = new ArrayList<>();
 
-        String sql = "SELECT id, content, username FROM comments WHERE parent_ID =" + parentID;
+        if (conn != null) {
+            try (Statement stmt = conn.createStatement()) {
+                String sql = "SELECT id, content, username FROM comments WHERE parent_ID = " + parentID;
+                ResultSet rset = stmt.executeQuery(sql);
 
+                while (rset.next()) {
+                    Integer id = rset.getInt("id");
+                    String content = rset.getString("content");
+                    String username = rset.getString("username");
 
-
-        try (Connection conn = DatabaseConnector.connectToDatabase();
-             Statement stmt = conn.createStatement();
-             ResultSet rset = stmt.executeQuery(sql)) {
-
-            while (rset.next()) {
-                Integer id = rset.getInt("id");
-                String content = rset.getString("content");
-                String username = rset.getString("username");
-
-
-                Comment comment = new Comment(content, id, username);
-                Subcomments.add(comment);
+                    Comment comment = new Comment(content, id, username);
+                    Subcomments.add(comment);
+                }
+            } catch (SQLException e) {
+                e.printStackTrace();
             }
-        } catch (SQLException e) {
-            e.printStackTrace();
+        } else {
+            System.out.println("Connection to database failed");
         }
         return Subcomments;
     }
+
 
 
 
