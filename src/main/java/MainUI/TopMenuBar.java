@@ -70,11 +70,7 @@ class TopMenuBar extends JMenuBar{
          backupMenuItem.addActionListener(new ActionListener() {
              @Override
              public void actionPerformed(ActionEvent e) {
-                 if (backupManager != null) {
-                     backupManager.createBackup("C:\\SS_Backup\\heroku_backup2.backup");
-                 } else {
-                     System.err.println("BackupManager is not initialized!");
-                 }
+                 backupManager.createBackup("C:\\SS_Backup\\heroku_backup2.backup");
              }
          });
          add(backupMenuItem);
