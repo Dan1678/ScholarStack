@@ -1,25 +1,22 @@
 package MainUI;
 
+import Managers.BackupManager;
+
 import javax.swing.*;
 import javax.swing.filechooser.FileNameExtensionFilter;
-import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import Managers.BackupManager;
 class TopMenuBar extends JMenuBar{
-    private JMenuItem backupMenuItem;
     private BackupManager backupManager;
     private JFrame parentFrame;
 
 
     //top menu bar
 
-     // Menu items EXAMPLE
-     private JMenu fileMenu;
+    public TopMenuBar() {
 
-     public TopMenuBar() {
-
-         fileMenu = new JMenu("File");
+        // Menu items EXAMPLE
+        JMenu fileMenu = new JMenu("File");
 
          // create menuitems (may want to impliment as an array list as this grows)
          JMenuItem exit = new JMenuItem("Exit");
@@ -79,7 +76,7 @@ class TopMenuBar extends JMenuBar{
          });
          add(backupMenuItem);
 */
-         backupMenuItem = new JMenuItem("Back up");
+         JMenuItem backupMenuItem = new JMenuItem("Back up");
          backupMenuItem.addActionListener(new ActionListener() {
              @Override
              public void actionPerformed(ActionEvent e) {
@@ -95,7 +92,7 @@ class TopMenuBar extends JMenuBar{
         fileChooser.setFileSelectionMode(JFileChooser.FILES_ONLY);
         fileChooser.setFileFilter(new FileNameExtensionFilter("Backup Files (*.backup)", "backup"));
 
-        Component parentFrame = null;
+
         int userSelection = fileChooser.showSaveDialog(parentFrame);
 
         if (userSelection == JFileChooser.APPROVE_OPTION) {
@@ -105,4 +102,7 @@ class TopMenuBar extends JMenuBar{
     }
 
 
+    public void setBackupManager(BackupManager backupManager) {
+        this.backupManager = backupManager;
+    }
 }
