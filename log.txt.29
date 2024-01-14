@@ -11202,3 +11202,2073 @@ Jan 14, 2024 12:47:51 PM Managers.DatabaseConnector connectToDatabase
 WARNING: Log unsuccessful:Couldn't get lock for log.txt
 Jan 14, 2024 12:47:51 PM Managers.DatabaseConnector connectToDatabase
 WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:23:14 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:23:14 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:26:49 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:26:49 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:26:49 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:26:50 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:26:50 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:26:50 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:26:50 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:26:51 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:26:51 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:26:51 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:26:51 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:26:51 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:26:52 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:26:52 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:26:52 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:26:52 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:26:53 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:26:53 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:26:53 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:26:53 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:26:53 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:26:54 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:26:54 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:26:54 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:26:54 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:26:54 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:26:55 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:26:55 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:26:55 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:26:55 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:26:55 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:26:56 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:26:56 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:26:56 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:26:56 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:26:56 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:26:57 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:26:57 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:26:57 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:26:57 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:26:57 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:26:58 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:26:58 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:26:58 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:26:58 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:26:58 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:26:59 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:26:59 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:26:59 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:26:59 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:26:59 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:27:00 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:27:00 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:27:00 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:27:00 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:27:00 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:27:01 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:27:01 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:27:01 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:27:01 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:27:02 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:27:02 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:27:02 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:27:02 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:27:02 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:27:03 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:27:03 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:27:03 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:27:03 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:27:03 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:27:04 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:27:04 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:27:04 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:27:04 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:27:04 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:27:05 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:27:05 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:27:05 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:27:05 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:27:05 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:27:06 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:27:06 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:27:06 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:27:06 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:27:06 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:27:07 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:27:07 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:27:07 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:27:07 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:27:07 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:27:08 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:27:08 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:27:08 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:27:08 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:27:08 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:27:09 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:27:09 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:27:09 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:27:09 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:27:09 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:27:10 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:27:10 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:27:10 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:27:10 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:27:10 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:27:11 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:27:11 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:27:11 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:27:11 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:27:11 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:27:12 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:27:12 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:27:12 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:27:12 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:27:12 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:27:13 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:27:13 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:27:13 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:27:13 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:27:13 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:27:14 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:27:14 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:27:14 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:27:14 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:27:14 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:27:15 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:27:15 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:27:15 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:27:15 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:27:15 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:27:16 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:27:16 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:27:16 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:27:17 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:27:17 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:27:17 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:27:17 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:27:18 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:27:18 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:27:18 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:27:18 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:27:19 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:27:19 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:28:04 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:28:04 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:28:04 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:28:05 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:28:09 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:28:10 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:33:35 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:33:35 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:33:35 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:33:35 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:33:35 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:33:36 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:33:36 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:33:36 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:33:36 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:33:37 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:33:37 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:33:37 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:33:37 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:33:37 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:33:38 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:33:38 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:33:38 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:33:38 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:33:38 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:33:39 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:33:39 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:33:39 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:33:39 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:33:40 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:33:40 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:33:40 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:33:40 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:33:40 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:33:41 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:33:41 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:33:41 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:33:41 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:33:41 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:33:42 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:33:42 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:33:42 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:33:42 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:33:42 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:33:43 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:33:43 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:33:43 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:33:43 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:33:43 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:33:44 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:33:44 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:33:44 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:33:44 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:33:44 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:33:45 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:33:45 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:33:45 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:33:45 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:33:46 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:33:46 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:33:46 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:33:46 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:33:46 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:33:47 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:33:47 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:33:47 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:33:47 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:33:47 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:33:48 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:33:48 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:33:48 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:33:48 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:33:48 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:33:49 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:33:49 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:33:49 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:33:49 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:33:49 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:33:50 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:33:50 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:33:50 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:33:50 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:33:50 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:33:51 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:33:51 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:33:51 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:33:51 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:33:51 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:33:52 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:33:52 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:33:52 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:33:52 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:33:53 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:33:53 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:33:53 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:33:53 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:33:53 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:33:54 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:33:54 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:33:54 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:33:54 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:33:54 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:33:55 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:33:55 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:33:55 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:33:55 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:33:55 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:33:56 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:33:56 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:33:56 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:33:56 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:33:56 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:33:57 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:33:57 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:33:57 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:33:57 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:33:58 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:33:58 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:33:58 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:33:58 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:33:58 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:33:59 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:33:59 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:33:59 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:33:59 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:33:59 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:34:00 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:34:00 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:34:00 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:34:00 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:34:01 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:34:01 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:34:01 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:34:01 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:34:01 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:34:02 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:34:02 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:34:02 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:34:02 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:34:02 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:34:03 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:34:03 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:34:03 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:34:03 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:34:04 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:34:04 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:34:04 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:34:04 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:34:04 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:34:11 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:34:11 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:34:11 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:34:12 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:35:19 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:35:19 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:35:19 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:35:20 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:35:20 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:35:20 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:35:20 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:35:21 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:35:21 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:35:21 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:35:21 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:35:22 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:35:22 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:35:22 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:35:22 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:35:23 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:35:23 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:35:23 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:35:23 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:35:23 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:35:24 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:35:24 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:35:24 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:35:24 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:35:25 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:35:25 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:35:25 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:35:25 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:35:26 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:35:26 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:35:26 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:35:26 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:35:27 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:35:27 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:35:27 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:35:27 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:35:28 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:35:28 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:35:28 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:35:28 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:35:28 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:35:29 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:35:29 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:35:29 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:35:29 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:35:30 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:35:30 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:35:30 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:35:30 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:35:30 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:35:31 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:35:31 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:35:31 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:35:31 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:35:31 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:35:32 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:35:32 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:35:32 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:35:32 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:35:32 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:35:33 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:35:33 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:35:33 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:35:33 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:35:33 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:35:34 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:35:34 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:35:34 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:35:34 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:35:34 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:35:35 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:35:35 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:35:35 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:35:35 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:35:35 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:35:36 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:35:36 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:35:36 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:35:36 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:35:36 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:35:37 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:35:37 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:35:37 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:35:37 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:35:37 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:35:38 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:35:38 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:35:38 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:35:38 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:35:39 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:35:39 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:35:39 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:35:39 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:35:39 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:35:39 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:35:40 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:35:40 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:35:40 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:35:40 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:35:41 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:35:41 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:35:41 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:35:41 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:35:41 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:35:42 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:35:42 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:35:42 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:35:42 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:35:42 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:35:43 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:35:43 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:35:43 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:35:43 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:35:43 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:35:44 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:35:44 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:35:44 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:35:44 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:35:44 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:35:44 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:35:45 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:35:45 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:35:45 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:35:45 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:35:46 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:35:46 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:35:46 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:35:46 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:35:46 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:35:47 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:35:47 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:35:47 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:35:47 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:35:47 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:35:47 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:35:48 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:35:48 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:35:48 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:35:48 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:35:48 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:35:49 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:35:49 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:35:49 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:35:55 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:35:55 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:35:55 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:35:55 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:37:11 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:37:12 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:37:12 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:37:12 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:37:12 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:37:12 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:37:13 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:37:13 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:37:13 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:37:13 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:37:14 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:37:14 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:37:14 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:37:14 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:37:14 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:37:14 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:37:15 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:37:15 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:37:15 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:37:15 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:37:15 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:37:16 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:37:16 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:37:16 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:37:16 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:37:17 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:37:17 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:37:17 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:37:17 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:37:17 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:37:18 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:37:18 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:37:18 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:37:18 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:37:18 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:37:19 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:37:19 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:37:19 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:37:19 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:37:19 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:37:20 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:37:20 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:37:20 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:37:20 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:37:21 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:37:21 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:37:21 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:37:21 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:37:21 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:37:22 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:37:22 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:37:22 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:37:22 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:37:22 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:37:23 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:37:23 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:37:23 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:37:23 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:37:23 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:37:24 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:37:24 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:37:24 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:37:24 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:37:24 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:37:25 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:37:25 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:37:25 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:37:25 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:37:25 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:37:26 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:37:26 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:37:26 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:37:26 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:37:26 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:37:27 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:37:27 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:37:27 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:37:27 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:37:27 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:37:28 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:37:28 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:37:28 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:37:28 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:37:29 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:37:29 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:37:29 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:37:29 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:37:29 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:37:29 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:37:30 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:37:30 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:37:30 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:37:30 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:37:31 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:37:31 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:37:31 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:37:31 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:37:31 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:37:32 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:37:32 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:37:32 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:37:32 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:37:32 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:37:33 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:37:33 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:37:33 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:37:33 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:37:33 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:37:34 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:37:34 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:37:34 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:37:34 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:37:34 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:37:35 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:37:35 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:37:35 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:37:35 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:37:35 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:37:36 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:37:36 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:37:36 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:37:36 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:37:37 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:37:37 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:37:37 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:37:37 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:37:37 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:37:37 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:37:38 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:37:38 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:37:38 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:37:38 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:37:38 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:37:39 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:37:39 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:37:39 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:37:39 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:37:40 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:37:40 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:37:40 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:37:40 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:37:40 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:37:41 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:37:47 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:37:47 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:37:47 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:37:48 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:37:59 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:37:59 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:38:33 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:38:33 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:38:33 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:38:33 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:38:33 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:38:34 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:38:34 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:38:34 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:38:34 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:38:35 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:38:35 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:38:35 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:38:35 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:38:36 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:38:36 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:38:36 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:38:36 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:38:36 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:38:37 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:38:37 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:38:37 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:38:37 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:38:37 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:38:38 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:38:38 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:38:38 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:38:38 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:38:38 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:38:39 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:38:39 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:38:39 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:38:39 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:38:40 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:38:40 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:38:40 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:38:40 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:38:40 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:38:41 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:38:41 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:38:41 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:38:41 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:38:41 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:38:42 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:38:42 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:38:42 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:38:42 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:38:42 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:38:43 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:38:43 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:38:43 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:38:43 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:38:44 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:38:44 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:38:44 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:38:44 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:38:44 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:38:45 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:38:45 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:38:45 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:38:45 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:38:45 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:38:46 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:38:46 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:38:46 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:38:46 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:38:46 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:38:47 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:38:47 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:38:47 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:38:47 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:38:47 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:38:48 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:38:48 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:38:48 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:38:48 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:38:48 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:38:49 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:38:49 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:38:49 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:38:49 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:38:49 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:38:50 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:38:50 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:38:50 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:38:50 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:38:50 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:38:51 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:38:51 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:38:51 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:38:51 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:38:51 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:38:52 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:38:52 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:38:52 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:38:52 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:38:52 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:38:53 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:38:53 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:38:53 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:38:53 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:38:54 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:38:54 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:38:54 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:38:54 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:38:54 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:38:55 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:38:55 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:38:55 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:38:55 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:38:55 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:38:56 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:38:56 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:38:56 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:38:56 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:38:57 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:38:57 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:38:57 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:38:57 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:38:57 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:38:58 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:38:58 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:38:58 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:38:58 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:38:58 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:38:59 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:38:59 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:38:59 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:38:59 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:39:00 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:39:00 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:39:00 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:39:00 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:39:00 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:39:01 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:39:01 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:39:01 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:39:01 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:39:01 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:39:02 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:39:02 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:39:02 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:39:02 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:39:03 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:39:11 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:39:11 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:39:11 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:39:12 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:39:18 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:39:18 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:43:50 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:43:51 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:43:51 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:43:51 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:43:51 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:43:51 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:43:52 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:43:52 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:43:52 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:43:52 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:43:52 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:43:53 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:43:53 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:43:53 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:43:53 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:43:53 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:43:54 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:43:54 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:43:54 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:43:54 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:43:54 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:43:55 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:43:55 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:43:55 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:43:55 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:43:55 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:43:56 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:43:56 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:43:56 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:43:56 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:43:57 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:43:57 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:43:57 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:43:57 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:43:57 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:43:58 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:43:58 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:43:58 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:43:58 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:43:58 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:43:58 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:43:59 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:43:59 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:43:59 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:43:59 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:43:59 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:44:00 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:44:00 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:44:00 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:44:00 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:44:00 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:44:01 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:44:01 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:44:01 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:44:01 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:44:01 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:44:02 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:44:02 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:44:02 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:44:02 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:44:02 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:44:03 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:44:03 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:44:03 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:44:03 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:44:03 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:44:04 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:44:04 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:44:04 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:44:04 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:44:04 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:44:05 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:44:05 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:44:05 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:44:05 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:44:06 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:44:06 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:44:06 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:44:06 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:44:07 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:44:07 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:44:07 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:44:07 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:44:08 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:44:08 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:44:08 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:44:08 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:44:08 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:44:09 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:44:09 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:44:09 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:44:09 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:44:09 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:44:10 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:44:10 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:44:10 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:44:10 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:44:10 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:44:11 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:44:11 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:44:11 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:44:11 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:44:11 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:44:12 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:44:12 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:44:12 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:44:12 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:44:12 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:44:13 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:44:13 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:44:13 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:44:13 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:44:13 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:44:14 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:44:14 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:44:14 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:44:14 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:44:14 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:44:15 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:44:15 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:44:15 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:44:15 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:44:15 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:44:16 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:44:16 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:44:16 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:44:16 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:44:16 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:44:17 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:44:17 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:44:17 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:44:17 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:44:18 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:44:18 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:44:18 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:44:18 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:44:18 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:44:18 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:44:19 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:44:19 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:44:19 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:44:19 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:44:20 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:44:29 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:44:29 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:44:29 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:44:29 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:44:37 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:44:37 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:45:57 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:45:57 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:45:57 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:45:58 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:45:58 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:45:58 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:45:58 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:45:58 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:45:59 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:45:59 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:45:59 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:45:59 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:45:59 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:46:00 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:46:00 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:46:00 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:46:00 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:46:01 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:46:01 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:46:01 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:46:01 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:46:01 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:46:02 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:46:02 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:46:02 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:46:02 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:46:02 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:46:03 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:46:03 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:46:03 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:46:03 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:46:03 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:46:04 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:46:04 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:46:04 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:46:04 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:46:05 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:46:05 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:46:05 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:46:05 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:46:06 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:46:06 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:46:06 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:46:06 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:46:06 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:46:07 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:46:07 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:46:07 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:46:07 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:46:07 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:46:08 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:46:08 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:46:08 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:46:08 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:46:08 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:46:09 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:46:09 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:46:09 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:46:09 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:46:09 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:46:10 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:46:10 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:46:10 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:46:10 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:46:10 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:46:11 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:46:11 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:46:11 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:46:11 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:46:11 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:46:12 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:46:12 PM Managers.DatabaseConnector connectToDatabase
+INFO: Connection Successful
+Jan 14, 2024 1:46:12 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:46:12 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:46:12 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:46:13 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:46:13 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:46:13 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:46:13 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:46:14 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:46:14 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:46:14 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:46:14 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:46:14 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:46:14 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:46:15 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:46:15 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:46:15 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:46:15 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:46:15 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:46:16 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:46:16 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:46:16 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:46:16 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:46:17 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:46:17 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:46:17 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:46:17 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:46:17 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:46:18 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:46:18 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:46:18 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:46:18 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:46:18 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:46:19 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:46:19 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:46:19 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:46:19 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:46:19 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:46:20 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:46:20 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:46:20 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:46:20 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:46:20 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:46:21 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:46:21 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:46:21 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:46:21 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:46:21 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:46:22 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:46:22 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:46:22 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:46:22 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:46:22 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:46:23 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:46:23 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:46:23 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:46:23 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:46:23 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:46:23 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:46:24 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:46:24 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:46:24 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:46:24 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:46:25 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:46:25 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:46:25 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:46:25 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:46:25 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:46:26 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:46:26 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:46:26 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt
+Jan 14, 2024 1:46:26 PM Managers.DatabaseConnector connectToDatabase
+WARNING: Log unsuccessful:Couldn't get lock for log.txt

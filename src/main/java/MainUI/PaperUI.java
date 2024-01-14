@@ -100,7 +100,10 @@ public class PaperUI extends JPanel {
                         String columns = "\"TagName\", \"ParentTagID\"";
                         String values = String.format("'%s', NULL", tagString);
 
-                        DatabaseManager.insertRecord(tableName, columns, values);
+                        if (DatabaseManager.getId("\"Tags\"", tagString, "\"TagName\"" ) == null){
+                            DatabaseManager.insertRecord(tableName, columns, values);
+                        }
+
 
                         String cols = "paperid, tagid";
                         int TagID = DatabaseManager.getId("\"Tags\"", tagString, "\"TagName\"" );
@@ -108,8 +111,8 @@ public class PaperUI extends JPanel {
 
                         System.out.println("tag id: "+TagID+" PaperID: "+paperID);
 
-                        String values2 = String.format("%d, %d", TagID, paperID);
-                        DatabaseManager.insertRecord("tagpaperlink2", cols, values2);
+                        String values2 = String.format("%d, %d", paperID, TagID);
+                        DatabaseManager.insertRecord("tagpaperlink3", cols, values2);
 
                         Tag tag = new Tag(tagString);
                         paper.addTags(tag);
