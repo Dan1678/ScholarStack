@@ -15,10 +15,7 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class RightPanel extends JPanel implements ButtonClickListener{
-
-    //private CommentsDisplay commentsDisplay;
     private PapersDisplay papersDisplay;
-
     private CommentsDisplay commentsDisplay;
     public static String UserName;
 
@@ -35,15 +32,16 @@ public class RightPanel extends JPanel implements ButtonClickListener{
 
         //new panel for adding papers button
         JPanel buttonsPanel = new JPanel();
-        // buttonsPanel.setLayout(new BoxLayout(buttonsPanel, BoxLayout.Y_AXIS));
         buttonsPanel.setLayout(new FlowLayout(FlowLayout.LEFT));
-        JPanel topPanel = new JPanel(); // Panel for holding the "Add Reference" button
+
+        // Panel for holding the "Add Reference" button
+        JPanel topPanel = new JPanel();
         topPanel.setLayout(new BorderLayout());
 
         topPanel.add(buttonsPanel, BorderLayout.CENTER);
 
 
-        //Paper paper = new Paper();
+        //get the papers from the data base
         Paper paper = new Paper(null);
         for(int i = 0; i <= DatabaseManager.getLargestId("papers4"); i++) {
 
@@ -66,26 +64,12 @@ public class RightPanel extends JPanel implements ButtonClickListener{
 
 
 
-
-        // add some temp papers
-       /* Paper paper = new Paper();
-        paper.setName("Smith, J., Johnson, A. (2010). *The Art of Collaboration*. London: ABC Publishing.");
-
-        papersDisplay.addPaperUI(new PaperUI(paper), this);
-
-        paper = new Paper();
-        paper.setName("Smith, J. (2022). \"The Art of Referencing.\" Reference Guides Online. Available at: https://www.example.com/reference-guide [Accessed 30 December 2023].\n");
-        papersDisplay.addPaperUI(new PaperUI(paper), this);
-        paper = new Paper();
-        paper.setName("Smith, J., Johnson, A. (2010). \"The Art of Writing Articles.\" Journal of Academic Writing. 5(2): 123-135.\n");
-        papersDisplay.addPaperUI(new PaperUI(paper), this);
-
-*/
         JButton addReferenceButton = new JButton("Add Reference");
         Paper finalPaper = paper;
         addReferenceButton.addActionListener(new ActionListener() {
-            ButtonClickListener listener = null;
+             ButtonClickListener listener = null;
             @Override
+            //add the new reference to the database and check if it fits the Harvard style
             public void actionPerformed(ActionEvent e) {
                 String reference = JOptionPane.showInputDialog("Enter the Harvard reference:");
                 if (reference != null && !reference.isEmpty() && isValidHarvardReference(reference)) {
@@ -107,6 +91,7 @@ public class RightPanel extends JPanel implements ButtonClickListener{
             }
         });
 
+        //new method for gnerating a bibliography from the papers which have a ticed box and put them in numerical order
         JButton getBibliographyButton = new JButton("Get Bibliography");
         getBibliographyButton.addActionListener(new ActionListener() {
             @Override
@@ -136,18 +121,18 @@ public class RightPanel extends JPanel implements ButtonClickListener{
         });
         buttonsPanel.add(getBibliographyButton);
         buttonsPanel.add(addReferenceButton);
-        topPanel.add(papersDisplay, BorderLayout.SOUTH);
 
+        topPanel.add(papersDisplay, BorderLayout.SOUTH);
         add(topPanel, BorderLayout.NORTH);
 
     }
-
+    //create pattern to check the references put in by the user
     private boolean isValidHarvardReference(String reference) {
         Pattern harvardBookPattern = Pattern.compile("^(?:[A-Z][a-zA-Z]+(?:, [A-Z][a-zA-Z]+)*(?:,? (?:&|and) [A-Z][a-zA-Z]+(?:, [A-Z][a-zA-Z]+)*)*\\.\\s*(?:\\(\\d{4}\\)\\.)?\\s*)?([^\"]+)(?:\\.\\s*\\d+(?:st|nd|rd|th)?\\s*ed\\.)?\\.\\s*([^:.,]+)(?:\\s*:\\s*([^.,]+))?(?:[.:](.*))?$");
         Pattern harvardArticlePattern = Pattern.compile("^(?:[A-Z][a-zA-Z]+(?:, [A-Z][a-zA-Z]+)*(?:,? (?:&|and) [A-Z][a-zA-Z]+(?:, [A-Z][a-zA-Z]+)*)*\\.\\s*(?:\\(\\d{4}\\)\\.)?\\s*)?\"([^\"]+)\"\\.\\s*([^.,]+)\\.\\s*(?:(\\d+)\\s*\\((\\d+)\\)\\s*)?:\\s*([^.,]+)(?:[.:](.*))?$");
         Pattern harvardWebsitePattern = Pattern.compile("^(?:[A-Z][a-zA-Z]+(?:, [A-Z][a-zA-Z]+)*(?:,? (?:&|and) [A-Z][a-zA-Z]+(?:, [A-Z][a-zA-Z]+)*)*\\.\\s*(?:\\(\\d{4}\\)\\.)?\\s*)?(?:\"([^\"]+)\"\\.\\s*)?([^.,]+)\\.\\s*Available at: (https?://\\S+) \\[Accessed (\\d{1,2}\\s(?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)\\s\\d{4})]");
 
-         Matcher bookMatcher = harvardBookPattern.matcher(reference);
+        Matcher bookMatcher = harvardBookPattern.matcher(reference);
         Matcher articleMatcher = harvardArticlePattern.matcher(reference);
         Matcher websiteMatcher=harvardWebsitePattern.matcher(reference);
 
@@ -159,7 +144,6 @@ public class RightPanel extends JPanel implements ButtonClickListener{
 
     @Override
          public void onButtonClicked(Paper paper) {
-
 
         commentsDisplay.displayComments(paper);
     }
@@ -176,22 +160,17 @@ public class RightPanel extends JPanel implements ButtonClickListener{
         for (String paperName : papersList) {
             Paper paper = new Paper(paperName);
             paper.setName(paperName);
-
             papersDisplay.addPaperUI(new PaperUI(paper), this);
         }
     }
 
     public ArrayList<String> getPapersFromDB() {
         //get papers from the database and display them on the UI
-        //maybe wont be a string
         ArrayList<String> papersList = new ArrayList<>();
-
-
-        //code
-
         return  papersList;
     }
 
+    //get the username of the person that posted the reference
     public static String getLoggedInUser(){
         return UserName;
     }

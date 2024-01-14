@@ -7,6 +7,7 @@ import javax.swing.filechooser.FileNameExtensionFilter;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 public class TopMenuBar extends JMenuBar{
+    // class to include top bar at the top of the page with different functionalities
     private JMenu fileMenu;
     private JMenuItem backupMenuItem;
     private BackupManager backupManager;
@@ -20,7 +21,7 @@ public class TopMenuBar extends JMenuBar{
         // Menu items EXAMPLE
         JMenu fileMenu = new JMenu("File");
 
-         // create menuitems (may want to impliment as an array list as this grows)
+         // create menu items (may want to impliment as an array list as this grows)
          JMenuItem exit = new JMenuItem("Exit");
 
          // Add action listener to the exit item
@@ -62,22 +63,8 @@ public class TopMenuBar extends JMenuBar{
          add(exampleMenu);
          //END EXAMPLE
 
-         /*backupMenuItem = new JMenuItem("Back up");
-         BackupManager backupManager = new BackupManager(
-                "ec2-54-246-1-94.eu-west-1.compute.amazonaws.com",
-                "d6rkhhv2aujh36",
-                "mixbutdugvnycu",
-                "03f7fa8bfe5bfc30d6776369a8163f90164d68fcebaeecc32f073d7c4a334b94");
 
-        String backupFilePath = "C:\\SS_Backup\\heroku_backup2.backup";
-         backupMenuItem.addActionListener(new ActionListener() {
-             @Override
-             public void actionPerformed(ActionEvent e) {
-                 backupManager.createBackup("C:\\SS_Backup\\heroku_backup2.backup");
-             }
-         });
-         add(backupMenuItem);
-*/
+//add back up option to top bar
          JMenuItem backupMenuItem = new JMenuItem("Back up");
          backupMenuItem.addActionListener(new ActionListener() {
              @Override
@@ -88,6 +75,7 @@ public class TopMenuBar extends JMenuBar{
          add(backupMenuItem);
      }
 
+     //create option to allow user to choose the file for the back-up and error handling
     private void chooseBackupFilePath() {
         JFileChooser fileChooser = new JFileChooser();
         fileChooser.setDialogTitle("Choose Backup File Path");
@@ -106,7 +94,7 @@ public class TopMenuBar extends JMenuBar{
             }}
     }
 
-
+//initialize backup manager
     public void setBackupManager(BackupManager backupManager) {
         this.backupManager = backupManager;
     }
