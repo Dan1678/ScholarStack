@@ -6,7 +6,7 @@ public class PasswordHashing {
     public static String hashPassword(String password) {
         MessageDigest messageDigest = null;
         try {
-            messageDigest = MessageDigest.getInstance("MD5");      //using md5 algorithm
+            messageDigest = MessageDigest.getInstance("SHA-256");      //using md5 algorithm
             messageDigest.update(password.getBytes());
 
             byte[] resultByteArr = messageDigest.digest();
