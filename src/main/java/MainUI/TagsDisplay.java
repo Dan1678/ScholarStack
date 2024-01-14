@@ -2,6 +2,8 @@ package MainUI;
 
 import GroupContent.Tag;
 import GroupContent.Paper;
+import Managers.DatabaseManager;
+
 import static GroupContent.Paper.allPapers;
 
 import javax.swing.*;
@@ -26,9 +28,22 @@ public class TagsDisplay extends JPanel {
 
         tag = new Tag("Papers:");
 
+        //change this not to be a loop
 
-        tag.addSubTag(new Tag("PAPER TITLE"));
-        tag.addSubTag(new Tag("PAPER TITLE 2"));
+        for(int i = 0; i <= DatabaseManager.getLargestId("papers4"); i++) {
+
+            String paperTitle = (DatabaseManager.readRecord2("papers4", "papertitle", "id", i));
+
+            if (paperTitle == null) {
+                continue;
+            }
+
+            tag.addSubTag(new Tag(paperTitle));
+
+        }
+
+       // tag.addSubTag(new Tag("PAPER TITLE"));
+       // tag.addSubTag(new Tag("PAPER TITLE 2"));
 
         for (Tag t : tag.getSubTags()) {
             t.addSubTag(new Tag("subsub 1"));
@@ -107,6 +122,7 @@ public class TagsDisplay extends JPanel {
     private void addSubTag(Tag selectedTag) {
         String tagText = JOptionPane.showInputDialog("Enter the tag name");
         if (tagText != null) {
+
             selectedTag.addSubTag(new Tag(tagText));
         }
         displayTags();

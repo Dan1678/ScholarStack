@@ -3,6 +3,7 @@ package MainUI;
 import GroupContent.Comment;
 import GroupContent.Paper;
 import GroupContent.Tag;
+import Managers.DatabaseManager;
 
 import javax.swing.*;
 import java.awt.*;
@@ -94,6 +95,22 @@ public class PaperUI extends JPanel {
                     String tagString = JOptionPane.showInputDialog("Enter tag:");
                     if (listener != null && tagString != null) {
                         System.out.println("if executed");
+
+                        String tableName = "\"Tags\"";
+                        String columns = "\"TagName\", \"ParentTagID\"";
+                        String values = String.format("'%s', NULL", tagString);
+
+                        DatabaseManager.insertRecord(tableName, columns, values);
+
+                        String cols = "paperid, tagid";
+                        int TagID = DatabaseManager.getId("\"Tags\"", tagString, "\"TagName\"" );
+                        int paperID = DatabaseManager.getPaperId("papers4", paper.getName());
+
+                        System.out.println("tag id: "+TagID+" PaperID: "+paperID);
+
+                        String values2 = String.format("%d, %d", TagID, paperID);
+                        DatabaseManager.insertRecord("tagpaperlink2", cols, values2);
+
                         Tag tag = new Tag(tagString);
                         paper.addTags(tag);
                         System.out.println(paper.getTags());
@@ -111,6 +128,16 @@ public class PaperUI extends JPanel {
                                 JOptionPane.PLAIN_MESSAGE, null, tagOptions, tagOptions[0]);
                         for(Tag chosenTag:paper.getTags()){
                             if(tagOptionChosen == paper.getTags().indexOf(chosenTag)){
+                                int TagParentID = DatabaseManager.getId("\"Tags\"", chosenTag.toString(), "\"TagName\"");
+
+
+                                String tableName = "\"Tags\"";
+                                String cols = "\"TagName\", \"ParentTagID\"";
+                                String vals = String.format("'%s', %d", subtagString, TagParentID);
+
+
+                                DatabaseManager.insertRecord(tableName, cols, vals);
+
                                 chosenTag.addSubTag(subtag);
                             }
                             System.out.println(chosenTag.getSubTags());

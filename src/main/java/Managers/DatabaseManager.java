@@ -246,6 +246,7 @@ public class DatabaseManager {
         return largestId;
     }
 
+    //!!make all getIDs into same func
     public static Integer getPaperId(String tableName, String paperTitle) {
         Integer id = null;
 
@@ -284,6 +285,33 @@ public class DatabaseManager {
                     String sanitizedTitle = commentTitle.replace("'", "''");
 
                     String sql = "SELECT id FROM " + tableName + " WHERE content = '" + sanitizedTitle + "'";
+                    ResultSet rs = stmt.executeQuery(sql);
+
+                    if (rs.next()) {
+                        id = rs.getInt("id");
+                    }
+                }
+            } else {
+                System.out.println("Connection to database failed");
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+
+        return id;
+    }
+
+    public static Integer getId(String tableName, String content, String colName) {
+        Integer id = null;
+
+        try (Connection conn = DatabaseConnector.connectToDatabase()) {
+            if (conn != null) {
+                try (Statement stmt = conn.createStatement()) {
+                    // Sanitize paperTitle to prevent SQL injection
+                    // This is a basic example, you should implement a more robust method
+                    String sanitizedTitle = content.replace("'", "''");
+
+                    String sql = "SELECT id FROM " + tableName + " WHERE " + colName + " = '" + sanitizedTitle + "'";
                     ResultSet rs = stmt.executeQuery(sql);
 
                     if (rs.next()) {
