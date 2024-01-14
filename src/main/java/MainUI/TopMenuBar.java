@@ -1,12 +1,16 @@
 package MainUI;
 
 import javax.swing.*;
+import javax.swing.filechooser.FileNameExtensionFilter;
+import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import Managers.BackupManager;
 class TopMenuBar extends JMenuBar{
     private JMenuItem backupMenuItem;
     private BackupManager backupManager;
+    private JFrame parentFrame;
+
 
     //top menu bar
 
@@ -59,7 +63,7 @@ class TopMenuBar extends JMenuBar{
          add(exampleMenu);
          //END EXAMPLE
 
-         backupMenuItem = new JMenuItem("Back up");
+         /*backupMenuItem = new JMenuItem("Back up");
          BackupManager backupManager = new BackupManager(
                 "ec2-54-246-1-94.eu-west-1.compute.amazonaws.com",
                 "d6rkhhv2aujh36",
@@ -74,7 +78,31 @@ class TopMenuBar extends JMenuBar{
              }
          });
          add(backupMenuItem);
-
+*/
+         backupMenuItem = new JMenuItem("Back up");
+         backupMenuItem.addActionListener(new ActionListener() {
+             @Override
+             public void actionPerformed(ActionEvent e) {
+                 chooseBackupFilePath();
+             }
+         });
+         add(backupMenuItem);
      }
+
+    private void chooseBackupFilePath() {
+        JFileChooser fileChooser = new JFileChooser();
+        fileChooser.setDialogTitle("Choose Backup File Path");
+        fileChooser.setFileSelectionMode(JFileChooser.FILES_ONLY);
+        fileChooser.setFileFilter(new FileNameExtensionFilter("Backup Files (*.backup)", "backup"));
+
+        Component parentFrame = null;
+        int userSelection = fileChooser.showSaveDialog(parentFrame);
+
+        if (userSelection == JFileChooser.APPROVE_OPTION) {
+            String filePath = fileChooser.getSelectedFile().getAbsolutePath();
+            backupManager.createBackup(filePath);
+        }
+    }
+
 
 }
