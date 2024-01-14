@@ -3,8 +3,10 @@ package MainUI;
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-
+import Managers.BackupManager;
 class TopMenuBar extends JMenuBar{
+    private JMenuItem backupMenuItem;
+    private BackupManager backupManager;
 
     //top menu bar
 
@@ -56,6 +58,26 @@ class TopMenuBar extends JMenuBar{
 
          add(exampleMenu);
          //END EXAMPLE
+
+         backupMenuItem = new JMenuItem("Back up");
+         BackupManager backupManager = new BackupManager(
+                "ec2-54-246-1-94.eu-west-1.compute.amazonaws.com",
+                "d6rkhhv2aujh36",
+                "mixbutdugvnycu",
+                "03f7fa8bfe5bfc30d6776369a8163f90164d68fcebaeecc32f073d7c4a334b94");
+
+        String backupFilePath = "C:\\SS_Backup\\heroku_backup2.backup";
+         backupMenuItem.addActionListener(new ActionListener() {
+             @Override
+             public void actionPerformed(ActionEvent e) {
+                 if (backupManager != null) {
+                     backupManager.createBackup("C:\\SS_Backup\\heroku_backup2.backup");
+                 } else {
+                     System.err.println("BackupManager is not initialized!");
+                 }
+             }
+         });
+         add(backupMenuItem);
 
      }
 
