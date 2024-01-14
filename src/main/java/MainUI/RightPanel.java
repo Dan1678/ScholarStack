@@ -52,10 +52,7 @@ public class RightPanel extends JPanel implements ButtonClickListener{
                 continue;
             }
 
-
-            System.out.println("Paper name: " + paperTitle);
             String username = String.valueOf(DatabaseManager.readRecord2("papers4", "username", "id", i));
-            System.out.println("User uploaded: " + username);
 
             paper.setName(paperTitle);
             papersDisplay.addPaperUI(new PaperUI(paper), this);
