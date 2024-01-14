@@ -20,13 +20,15 @@ public class TagsListDisplay extends JScrollPane {
         displayTags();
 
 
+        //add scroll bars
         setViewportView(tagsListPanel);
         setVerticalScrollBarPolicy(JScrollPane.VERTICAL_SCROLLBAR_ALWAYS);
         setHorizontalScrollBarPolicy(JScrollPane.HORIZONTAL_SCROLLBAR_ALWAYS);
     }
 
     public void displayTags() {
-
+        //display all tags
+        //In future this will be called to refresh tree
         tagsListPanel.removeAll();
         Tag tag = getTagsFromDB();
         tagsListPanel.add(tag.getDisplayTree(), BorderLayout.CENTER);

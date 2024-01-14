@@ -6,6 +6,7 @@ import javax.swing.*;
 import javax.swing.filechooser.FileNameExtensionFilter;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+
 public class TopMenuBar extends JMenuBar{
     // class to include top bar at the top of the page with different functionalities
     private JMenu fileMenu;

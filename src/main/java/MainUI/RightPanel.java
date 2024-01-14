@@ -6,7 +6,6 @@ import GroupContent.Paper;
 import Managers.DatabaseManager;
 
 import javax.swing.*;
-import javax.xml.crypto.Data;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -41,7 +40,7 @@ public class RightPanel extends JPanel implements ButtonClickListener{
         topPanel.add(buttonsPanel, BorderLayout.CENTER);
 
 
-        //get the papers from the data base
+        //get the papers from the database
         Paper paper = new Paper(null);
         for(int i = 0; i <= DatabaseManager.getLargestId("papers4"); i++) {
 
@@ -60,7 +59,7 @@ public class RightPanel extends JPanel implements ButtonClickListener{
         }
 
 
-
+        //add the add reference button
         JButton addReferenceButton = new JButton("Add Reference");
         Paper finalPaper = paper;
         addReferenceButton.addActionListener(new ActionListener() {
@@ -100,8 +99,7 @@ public class RightPanel extends JPanel implements ButtonClickListener{
                 if (!selectedPapers.isEmpty()) {
 
                     StringBuilder bibliography = new StringBuilder("Selected References:\n");
-//
-                     int counter = 1;
+                    int counter = 1;
 
                     for (Paper paper : selectedPapers) {
                         bibliography.append(counter).append(". ").append(paper.getName()).append("\n");

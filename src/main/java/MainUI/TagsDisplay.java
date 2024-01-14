@@ -2,10 +2,7 @@ package MainUI;
 
 import GroupContent.HierarchicalContent;
 import GroupContent.Tag;
-import GroupContent.Paper;
 import Managers.DatabaseManager;
-
-import static GroupContent.Paper.allPapers;
 
 import javax.swing.*;
 import javax.swing.tree.DefaultMutableTreeNode;

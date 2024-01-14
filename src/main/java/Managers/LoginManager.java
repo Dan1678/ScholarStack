@@ -1,6 +1,5 @@
 package Managers;
 
-import Managers.DatabaseConnector;
 
 import java.io.IOException;
 import java.sql.*;

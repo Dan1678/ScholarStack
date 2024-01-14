@@ -1,6 +1,5 @@
 package MainUI;
 
-import GroupContent.Comment;
 import GroupContent.Paper;
 import GroupContent.Tag;
 import Managers.DatabaseManager;
@@ -59,7 +58,6 @@ public class PaperUI extends JPanel {
 
         title = new JLabel();
         //try html wrap
-//
 
         String fullTitle = "<html><body style='width: 450px; text-align: center;'>" +
                 "<span style='font-size: 10px; font-weight: bold;'>" + paper.getName() + "</span>" +
@@ -71,9 +69,7 @@ public class PaperUI extends JPanel {
 
 
         add(title, gbc);
-//        userUploaded = new JLabel();
-//        userUploaded.setText(paper.getUser(paper.getName()));
-//        title.setText(paper.getName()+ "  Uploaded by: "+paper.getUser(paper.getName()));
+
 
         gbc.gridx = 1;
         gbc.weightx = 1; // This allows the label to expand and shrink - this line is from ChatGPT

@@ -1,10 +1,7 @@
 package GroupContent;
 
-import MainUI.CommentsDisplay;
-import MainUI.RightPanel;
 import Managers.DatabaseManager;
 
-import java.sql.Timestamp;
 import java.util.ArrayList;
 
 public class Tag extends HierarchicalContent{
@@ -21,16 +18,14 @@ public class Tag extends HierarchicalContent{
         super(content, null, null);
     }
 
+    //Similar to method in comment to ensure it connects to the appropriate table in the database
     @Override
     protected void addNewContent(HierarchicalContent selectedContent, String contentText) {
-        //int paper = DatabaseManager.getPaperId("", String.format(CommentsDisplay.getPaper().getName()));
-
-        //DatabaseManager.insertComments(parentID, String.format(commentText), RightPanel.getLoggedInUser(), new Timestamp(System.currentTimeMillis()), paper);
         if (selectedContent.getContent() == "Triple click here to add tags"){
+            //Parent tag
             DatabaseManager.insertTags(0, String.format(contentText));
-        }
-
-        else if (selectedContent.getContent() != "Triple click here to add tags"){
+        } else {
+            //Sub tag
             int parentID = DatabaseManager.getId("\"Tags\"", String.format(selectedContent.getContent()), "\"TagName\"");
             DatabaseManager.insertTags(parentID, String.format(contentText));
         }
@@ -39,30 +34,4 @@ public class Tag extends HierarchicalContent{
         return name;
     }
 
-   /* public void editName(String name) {
-        this.name = name;
-    }
-
-    public void addSubTag(Tag tag) {
-        subTags.add(tag);
-    }
-
-    public void deleteSubTag(Tag tag) {
-        // will not work well for removing tags with subtags. todo
-        subTags.remove(tag);
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public ArrayList<Tag> getSubTags() {
-        return subTags;
-    }
-
-
-    @Override
-    public String toString() {
-        return name;
-    }*/
 }

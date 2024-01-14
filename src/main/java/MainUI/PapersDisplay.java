@@ -6,13 +6,11 @@ import javax.swing.*;
 import java.awt.*;
 import java.util.ArrayList;
 
-import static java.awt.AWTEventMulticaster.add;
 
 //PapersDisplay hold all the papers and include the methods to get the paper format, to get a reference and check if the tic box is ticked
 
 public class PapersDisplay extends JScrollPane {
     private String reference;
-
     private JPanel papersPanel; // Panel to hold PaperUI components
     private ArrayList<PaperUI> papersList;
 

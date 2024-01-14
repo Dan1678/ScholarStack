@@ -1,9 +1,6 @@
 package GroupContent;
 
 import Managers.DatabaseManager;
-import GroupContent.Comment;
-import javax.swing.*;
-import java.awt.*;
 import java.util.ArrayList;
 
 
@@ -19,24 +16,14 @@ public class Paper {
         comments = new ArrayList<>();
         tags = new ArrayList<>();
 
-        System.out.println("this.name test:  "+this.name);
 
         addComment(new Comment("Triple click here to add comment", null, null));
 
         PaperComments(this);
 
-        //find content of commetns where paperID = this paperID and parent id = null
-        //find content of comments with parent ID =! null display underneath
-
-
-        //int paperID;
-        //paperID = DatabaseManager.getPaperId("papers4", this.getName());
-
         String commentsNew = DatabaseManager.readRecord2("comments","content", "paperID", 2);
-        System.out.println(commentsNew);
 
         addComment(new Comment(commentsNew, null, "testing display comments"));
-        System.out.println(this.getUser(this.getName()));
 
         allPapers.add(this);
     }
@@ -105,40 +92,6 @@ public class Paper {
 
         return  parentComment;
     }
-
-    /*public void PaperComments(Paper p){
-        String name = p.getName();
-        System.out.println("TEST");
-
-        for (int b = 0; b<= DatabaseManager.getLargestId("comments"); b++){     //go through all comments in table
-
-            //System.out.println("This.getName test: "+ name);
-            if(name == null){
-                break;
-            }
-
-            if (name!= null) {
-                String paperID = String.valueOf((DatabaseManager.getPaperId("papers4", name)));
-
-                //check if for multiple comments on same paper
-                //
-                //gets comment from the paper
-                //String paperTitle = (DatabaseManager.readRecord2("papers4", "papertitle", "id", i));
-
-
-                String CommentContent = DatabaseManager.readRecord3("comments", "content", "paperID", paperID, b);
-                if (CommentContent == null){
-                    continue;
-                }
-                System.out.println("Paper from comments name: "+this.name);
-                System.out.println("Comment content: "+CommentContent);
-
-                p.addComment(new Comment(CommentContent, null, "testing user"));
-            }
-        }
-
-
-    } */
 
     public void addComment(Comment comment) {
 

@@ -1,18 +1,10 @@
 package GroupContent;
 
-import MainUI.WrappedTreeRndr;
-import Managers.DatabaseManager;
-import MainUI.RightPanel;
-import MainUI.CommentsDisplay;
-import jdk.javadoc.internal.doclets.formats.html.markup.Head;
-
 import javax.swing.*;
 import javax.swing.tree.DefaultMutableTreeNode;
 import javax.swing.tree.TreePath;
-import java.awt.*;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
-import java.sql.Timestamp;
 import java.util.ArrayList;
 
 public class HierarchicalContent {
