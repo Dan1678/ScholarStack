@@ -67,7 +67,6 @@ public class BackupManager {
                 log = new Log("log.txt");
                 log.logger.severe("Backup process exit value: " + p.exitValue());
             } catch (IOException e) {
-                log.logger.warning("Log unsuccessful:" + e.getMessage());
             }
 
         } catch (IOException | InterruptedException e) {
