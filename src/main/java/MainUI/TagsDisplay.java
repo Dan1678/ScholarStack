@@ -24,7 +24,7 @@ public class TagsDisplay extends JPanel {
 
 
     public TagsDisplay() {
-        JLabel infoLabel = new JLabel("Triple click to add tag");
+        JLabel infoLabel = new JLabel("This shows what tags belong to what papers");
         add(infoLabel);
         setPreferredSize(new Dimension(250, 0)); //panel has a set width
 

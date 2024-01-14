@@ -7,19 +7,15 @@
 package MainUI;
 
 import GroupContent.Tag;
-import GroupContent.Paper;
 
 import javax.swing.*;
 import java.awt.*;
 
 
 public class LeftPanel extends JPanel {
+    private TagsDisplay tagsOnPapersDisplay;
     private TagsDisplay tagsDisplay;
     private Tag selectedTag;
-
-
-
-
 
     public LeftPanel(String UserName) {
         //set up panel
@@ -28,31 +24,27 @@ public class LeftPanel extends JPanel {
         setBorder(BorderFactory.createLineBorder(Color.black));
         setLayout(new BorderLayout());
 
-
-        //set up tags display
-        tagsDisplay = new TagsDisplay();
-        add(tagsDisplay, BorderLayout.CENTER);
-
         //add welcomeUser message
         WelcomeUser welcomeUser = new WelcomeUser();
         JPanel welcomePanel = welcomeUser.createWelcomePanel(UserName);
         add(welcomePanel, BorderLayout.NORTH);
 
-//        JPanel welcomePanel = new JPanel();
-//        JLabel welLabel = new JLabel();
-//        welLabel.setText("Welcome "+UserName+"!");
-//        welcomePanel.add(welLabel);
-//
-//        add(welLabel, BorderLayout.NORTH);
+        JPanel tagsDisplayPanel = new JPanel();
+        GridLayout gridLayout = new GridLayout(2,1);
+        tagsDisplayPanel.setLayout(gridLayout);
 
+
+        //set up tags displays
+        tagsOnPapersDisplay = new TagsDisplay();
+        tagsDisplayPanel.add(tagsOnPapersDisplay, gridLayout);
+
+        tagsDisplay = new TagsDisplay();
+        tagsDisplayPanel.add(tagsDisplay, gridLayout);
+
+        add(tagsDisplayPanel, BorderLayout.CENTER);
 
 
     }
-
-
-
-
-
 
 
 }

@@ -51,28 +51,11 @@ public class HierarchicalContent {
                         Object nodeInfo = selectedNode.getUserObject();
                         if (nodeInfo instanceof HierarchicalContent) { //the tree elements should be of type HierarchicalContent
                             HierarchicalContent selectedContent = (HierarchicalContent) nodeInfo; //cast to HierarchicalContent object
-                            String commentText = JOptionPane.showInputDialog("Enter the content");
-                            if (commentText != null) {
-                                selectedContent.addSubContent(new HierarchicalContent(commentText, selectedContent.getID(), UserName));
+                            String contentText = JOptionPane.showInputDialog("Enter the content");
+                            if (contentText != null) {
+                                selectedContent.addSubContent(new HierarchicalContent(contentText, selectedContent.getID(), UserName));
 
-                                int paper = DatabaseManager.getPaperId("papers4", String.format(CommentsDisplay.getPaper().getName()));
-                                System.out.println(paper);
-                                System.out.println(selectedContent.getContent());
-
-
-
-                                //DatabaseManager.insertComments(parentID, String.format(commentText), RightPanel.getLoggedInUser(), new Timestamp(System.currentTimeMillis()), paper);
-                                if (selectedContent.getContent() == "Triple click here to add comment"){
-
-                                    DatabaseManager.insertComments(null, String.format(commentText), RightPanel.getLoggedInUser(), new Timestamp(System.currentTimeMillis()), paper);
-                                }
-
-                                if (selectedContent.getContent() != "Triple click here to add comment"){
-                                    int parentID = DatabaseManager.getCommentId("comments", String.format(selectedContent.getContent()));
-                                    DatabaseManager.insertComments(parentID, String.format(commentText), RightPanel.getLoggedInUser(), new Timestamp(System.currentTimeMillis()), paper);
-                                }
-
-                               // DatabaseManager.insertComments(parentID, String.format(commentText), RightPanel.getLoggedInUser(), new Timestamp(System.currentTimeMillis()), paper);
+                                addNewComment(selectedContent, contentText);
 
                             }
 
@@ -83,6 +66,10 @@ public class HierarchicalContent {
         });
 
         return tree;
+
+    }
+
+    protected void addNewComment(HierarchicalContent selectedContent, String contentText) {
 
     }
 
