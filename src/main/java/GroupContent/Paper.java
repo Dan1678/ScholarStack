@@ -83,7 +83,7 @@ public class Paper {
             }
 
         }
-        return;
+
     }
 
     private Comment getChildComments(Comment parentComment, int parentID) {

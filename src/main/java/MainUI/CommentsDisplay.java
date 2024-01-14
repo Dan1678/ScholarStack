@@ -52,10 +52,9 @@ public class CommentsDisplay extends JScrollPane {
 
 
 
-        commentsPanel.add(comments.get(0).getDisplayTree(), BorderLayout.CENTER);
+
         //commentsPanel.add(DatabaseManager.readRecord2("comments", "content", "paperID", paperID));
-
-
+        commentsPanel.add(comments.get(0).getDisplayTree(), BorderLayout.CENTER);
 
         JLabel titleLabel = new JLabel(paper.getName());
         titleLabel.setFont(titleLabel.getFont().deriveFont(Font.BOLD, 15));
