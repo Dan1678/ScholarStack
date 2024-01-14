@@ -321,39 +321,7 @@ public class DatabaseManager {
 
 
 
-
-//    public static Map<Integer, ArrayList<String>> getAllTagsByPaperId() {
-//        Map<Integer, ArrayList<String>> allTagsByPaperId = new HashMap<>();
-//
-//        if (conn != null) {
-//            String sql = "SELECT paperid, TagName FROM tagpaperlink3 " +
-//                    "JOIN Tags ON tagpaperlink3.tagid = Tags.ID";
-//
-//            try (Statement stmt = conn.createStatement();
-//                 ResultSet rs = stmt.executeQuery(sql)) {
-//                while (rs.next()) {
-//                    int paperId = rs.getInt("paperid");
-//                    String tagName = rs.getString("TagName");
-//
-//                    // If there's not already a list for this paper ID, create one
-//                    allTagsByPaperId.computeIfAbsent(paperId, k -> new ArrayList<>()).add(tagName);
-//                }
-//            } catch (SQLException e) {
-//                e.printStackTrace();
-//            }
-//        } else {
-//            System.out.println("Connection to database failed");
-//        }
-//
-//        return allTagsByPaperId;
-//    }
-
-
-
-
-
-
-    //!!make all getIDs into same func
+   //!!make all getIDs into same func
     public static Integer getPaperId(String tableName, String paperTitle) {
         Integer id = null;
 

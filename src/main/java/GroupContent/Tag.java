@@ -35,6 +35,9 @@ public class Tag extends HierarchicalContent{
             DatabaseManager.insertTags(parentID, String.format(contentText));
         }
     }
+    public String getName() {
+        return name;
+    }
 
    /* public void editName(String name) {
         this.name = name;

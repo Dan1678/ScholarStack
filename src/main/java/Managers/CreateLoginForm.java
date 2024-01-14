@@ -164,11 +164,7 @@ public class CreateLoginForm extends JFrame implements ActionListener
             MainUI page = new MainUI(this.userName);
             String userName1 = page.getUserName();
 
-            //page.setVisible(true);
-            //JLabel wel_label = new JLabel("Welcome: "+userName);
-            //page.add(wel_label);
 
-            //page.getContentPane().add(wel_label);
         }
         else{
             //show error message
