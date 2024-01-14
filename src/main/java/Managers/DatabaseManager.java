@@ -7,6 +7,10 @@ import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
+import java.util.Map;
+import java.util.HashMap;
+import java.util.List;
+
 
 
 public class DatabaseManager {
@@ -239,6 +243,96 @@ public class DatabaseManager {
 
         return largestId;
     }
+
+    public static ArrayList<String> getTagNamesByPaperId(int paperId) {
+        ArrayList<String> tagNames = new ArrayList<>();
+        if (conn != null) {
+            // Directly inserting the paperId into the SQL query. Be cautious with this approach.
+
+
+            String sql = "SELECT \"Tags\".\"TagName\", \"papers4\".\"papertitle\" " + "FROM \"Tags\" " +
+                    "JOIN tagpaperlink3 ON \"Tags\".ID = tagpaperlink3.TagID " +
+                    "JOIN \"papers4\" ON \"papers4\".\"id\" = tagpaperlink3.PaperID " +
+                    "WHERE \"papers4\".\"id\" = " + paperId;
+
+
+
+
+            try (Statement stmt = conn.createStatement();
+                 ResultSet rs = stmt.executeQuery(sql)) {
+
+                while (rs.next()) {
+                    tagNames.add(rs.getString("TagName"));
+                }
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }
+        } else {
+            System.out.println("Connection to database failed");
+        }
+
+        return tagNames;
+    }
+
+    public static Map<Integer, String> getAllPaperTitlesWithIds(String tableName) {
+        Map<Integer, String> titlesMap = new HashMap<>();
+
+        if (conn != null) {
+            String sql = "SELECT id, papertitle FROM " + tableName;
+
+            try (Statement stmt = conn.createStatement();
+                 ResultSet rs = stmt.executeQuery(sql)) {
+
+                while (rs.next()) {
+                    int id = rs.getInt("id");
+                    String title = rs.getString("papertitle");
+                    titlesMap.put(id, title);
+                }
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }
+        } else {
+            System.out.println("Connection to database failed");
+        }
+
+        return titlesMap;
+    }
+
+
+
+
+
+
+//    public static Map<Integer, ArrayList<String>> getAllTagsByPaperId() {
+//        Map<Integer, ArrayList<String>> allTagsByPaperId = new HashMap<>();
+//
+//        if (conn != null) {
+//            String sql = "SELECT paperid, TagName FROM tagpaperlink3 " +
+//                    "JOIN Tags ON tagpaperlink3.tagid = Tags.ID";
+//
+//            try (Statement stmt = conn.createStatement();
+//                 ResultSet rs = stmt.executeQuery(sql)) {
+//                while (rs.next()) {
+//                    int paperId = rs.getInt("paperid");
+//                    String tagName = rs.getString("TagName");
+//
+//                    // If there's not already a list for this paper ID, create one
+//                    allTagsByPaperId.computeIfAbsent(paperId, k -> new ArrayList<>()).add(tagName);
+//                }
+//            } catch (SQLException e) {
+//                e.printStackTrace();
+//            }
+//        } else {
+//            System.out.println("Connection to database failed");
+//        }
+//
+//        return allTagsByPaperId;
+//    }
+
+
+
+
+
 
     //!!make all getIDs into same func
     public static Integer getPaperId(String tableName, String paperTitle) {

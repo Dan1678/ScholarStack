@@ -12,6 +12,7 @@ import java.awt.*;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.util.ArrayList;
+import java.util.Map;
 import javax.swing.tree.TreePath;
 
 public class TagsDisplay extends JPanel {
@@ -31,38 +32,91 @@ public class TagsDisplay extends JPanel {
 
         //change this not to be a loop
 
-        for(int i = 0; i <= DatabaseManager.getLargestId("papers4"); i++) {
+
+//        for (Map.Entry<Integer, String> entry : allPaperTitles.entrySet()) {
+//            int paperId = entry.getKey();
+//            String paperTitle = entry.getValue();
+//
+//            if (paperTitle == null) {
+//                continue;
+//            }
+//
+//            Tag tempTag = new Tag(paperTitle);
+//
+//            ArrayList<String> tagNamesList = allTagsByPaperId.get(paperId);
+//            if (tagNamesList != null) {
+//                for (String tagName : tagNamesList) {
+//                    tempTag.addSubTag(new Tag(tagName));
+//                }
+//            }
+//        }
+//
+//        displayTags();
+//    }
+        int largestId = DatabaseManager.getLargestId("papers4");
+
+
+        Map<Integer, String> paperTitles = DatabaseManager.getAllPaperTitlesWithIds("papers4");
+
+        for (int i = 0; i <= largestId; i++) {
+            if (!paperTitles.containsKey(i)) {
+                continue;
+            }
+            String paperTitle = paperTitles.get(i);
+            Tag tempTag = new Tag(paperTitle);
+
+
+            ArrayList<String> tagNamesList = DatabaseManager.getTagNamesByPaperId(i);
+
+            for (String tagName : tagNamesList) {
+                tempTag.addSubTag(new Tag(tagName));
+            }
+            tag.addSubTag(tempTag);
+        }
+
+        displayTags();
+    }
+
+
+
+
+           /* for(int i = 0; i <= DatabaseManager.getLargestId("papers4"); i++) {
 
             String paperTitle = (DatabaseManager.readRecord2("papers4", "papertitle", "id", i));
 
             if (paperTitle == null) {
                 continue;
             }
+            Tag tempTag = new Tag(paperTitle);
+            //!!from joining table get all tag names
 
-            tag.addSubTag(new Tag(paperTitle));
 
-            /*for (Tag t : tag.getSubTags()) {
-                ///get the paper id
-                int PaperId = DatabaseManager.getPaperId("papers4", paperTitle);
+            //tag.addSubTag(new Tag(paperTitle));
+            ///get the paper id
+            int PaperId = DatabaseManager.getPaperId("papers4", paperTitle);
 
-                //get list of tags ids from tagspaperlink3 with same paperid
-                ArrayList<Integer> tagsList = DatabaseManager.getTagsForPaper(PaperId);
-                ArrayList<String> tagNameList = DatabaseManager.getTagNamesFromIDs(tagsList);
+            // for (Tag t : tag.getSubTags()) {
 
-                for (i = 0; i < tagNameList.size(); i++){
-                    t.addSubTag(new Tag(tagNameList.get(i)));
-                }
+            //get list of tags ids from tagspaperlink3 with same paperid
+            ArrayList<String> tagNamesList = DatabaseManager.getTagNamesByPaperId(PaperId);
+
+            for (i = 0; i < tagNamesList.size(); i++) {
+                tempTag.addSubTag(new Tag(tagNamesList.get(i)));
+            }
+        }
+            displayTags();
+        }
                 //add subtag to paper for each
                 //t.addSubTag(new Tag("subsub 1"));
                 //t.addSubTag(new Tag("subsub 2"));
-            } */
+            //}
+           // tag.addSubTag(tempTag);
 
-        }
 
        // tag.addSubTag(new Tag("PAPER TITLE"));
        // tag.addSubTag(new Tag("PAPER TITLE 2"));
 
-        /*for (Tag t : tag.getSubTags()) {
+        for (Tag t : tag.getSubTags()) {
             ///get the paper id
             DatabaseManager.getPaperId("papers4", paperTitle);
 
@@ -72,8 +126,7 @@ public class TagsDisplay extends JPanel {
             t.addSubTag(new Tag("subsub 2"));
         } */
 
-        displayTags();
-    }
+
 
     public void setParentPanel(LeftPanel parentPanel) {
         this.parentPanel = parentPanel;
