@@ -1,5 +1,6 @@
 package MainUI;
 
+import Managers.BackupManager;
 import Managers.CreateLoginForm;
 
 import javax.swing.*;
@@ -38,9 +39,16 @@ public class MainUI extends JFrame {
         rightPanel = new RightPanel(this.userName);
         add(rightPanel, BorderLayout.CENTER);
 
+        BackupManager backupManager = new BackupManager(
+                "ec2-54-246-1-94.eu-west-1.compute.amazonaws.com",
+                "d6rkhhv2aujh36",
+                "mixbutdugvnycu",
+                "03f7fa8bfe5bfc30d6776369a8163f90164d68fcebaeecc32f073d7c4a334b94");
 
+        TopMenuBar menuBar = new TopMenuBar(this);
+        menuBar.setBackupManager(backupManager);
         //add menu bar
-        menuBar = new TopMenuBar();
+       // menuBar = new TopMenuBar();
         setJMenuBar(menuBar);
 
         // This next line closes the program when the frame is closed

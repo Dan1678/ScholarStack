@@ -6,14 +6,17 @@ import javax.swing.*;
 import javax.swing.filechooser.FileNameExtensionFilter;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-class TopMenuBar extends JMenuBar{
+public class TopMenuBar extends JMenuBar{
+    private JMenu fileMenu;
+    private JMenuItem backupMenuItem;
     private BackupManager backupManager;
     private JFrame parentFrame;
 
 
     //top menu bar
 
-    public TopMenuBar() {
+    public TopMenuBar(JFrame parentFrame) {
+        this.backupManager = backupManager;
 
         // Menu items EXAMPLE
         JMenu fileMenu = new JMenu("File");
@@ -97,8 +100,11 @@ class TopMenuBar extends JMenuBar{
 
         if (userSelection == JFileChooser.APPROVE_OPTION) {
             String filePath = fileChooser.getSelectedFile().getAbsolutePath();
-            backupManager.createBackup(filePath);
-        }
+            if (backupManager != null) {
+                backupManager.createBackup(filePath);
+            } else {
+                System.err.println("BackupManager is not initialized!");
+            }}
     }
 
 
