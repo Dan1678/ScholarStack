@@ -14,7 +14,7 @@ import java.awt.*;
 
 public class LeftPanel extends JPanel {
     private TagsDisplay tagsOnPapersDisplay;
-    private TagsDisplay tagsDisplay;
+    private TagsListDisplay tagsDisplay;
     private Tag selectedTag;
 
     public LeftPanel(String UserName) {
@@ -38,7 +38,7 @@ public class LeftPanel extends JPanel {
         tagsOnPapersDisplay = new TagsDisplay();
         tagsDisplayPanel.add(tagsOnPapersDisplay, gridLayout);
 
-        tagsDisplay = new TagsDisplay();
+        tagsDisplay = new TagsListDisplay();
         tagsDisplayPanel.add(tagsDisplay, gridLayout);
 
         add(tagsDisplayPanel, BorderLayout.CENTER);

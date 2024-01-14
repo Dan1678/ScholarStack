@@ -1,5 +1,6 @@
 package MainUI;
 
+import GroupContent.HierarchicalContent;
 import GroupContent.Tag;
 import GroupContent.Paper;
 import Managers.DatabaseManager;
@@ -30,29 +31,7 @@ public class TagsDisplay extends JPanel {
 
         tag = new Tag("Papers:");
 
-        //change this not to be a loop
 
-
-//        for (Map.Entry<Integer, String> entry : allPaperTitles.entrySet()) {
-//            int paperId = entry.getKey();
-//            String paperTitle = entry.getValue();
-//
-//            if (paperTitle == null) {
-//                continue;
-//            }
-//
-//            Tag tempTag = new Tag(paperTitle);
-//
-//            ArrayList<String> tagNamesList = allTagsByPaperId.get(paperId);
-//            if (tagNamesList != null) {
-//                for (String tagName : tagNamesList) {
-//                    tempTag.addSubTag(new Tag(tagName));
-//                }
-//            }
-//        }
-//
-//        displayTags();
-//    }
         int largestId = DatabaseManager.getLargestId("papers4");
 
 
@@ -77,62 +56,12 @@ public class TagsDisplay extends JPanel {
         displayTags();
     }
 
-
-
-
-           /* for(int i = 0; i <= DatabaseManager.getLargestId("papers4"); i++) {
-
-            String paperTitle = (DatabaseManager.readRecord2("papers4", "papertitle", "id", i));
-
-            if (paperTitle == null) {
-                continue;
-            }
-            Tag tempTag = new Tag(paperTitle);
-            //!!from joining table get all tag names
-
-
-            //tag.addSubTag(new Tag(paperTitle));
-            ///get the paper id
-            int PaperId = DatabaseManager.getPaperId("papers4", paperTitle);
-
-            // for (Tag t : tag.getSubTags()) {
-
-            //get list of tags ids from tagspaperlink3 with same paperid
-            ArrayList<String> tagNamesList = DatabaseManager.getTagNamesByPaperId(PaperId);
-
-            for (i = 0; i < tagNamesList.size(); i++) {
-                tempTag.addSubTag(new Tag(tagNamesList.get(i)));
-            }
-        }
-            displayTags();
-        }
-                //add subtag to paper for each
-                //t.addSubTag(new Tag("subsub 1"));
-                //t.addSubTag(new Tag("subsub 2"));
-            //}
-           // tag.addSubTag(tempTag);
-
-
-       // tag.addSubTag(new Tag("PAPER TITLE"));
-       // tag.addSubTag(new Tag("PAPER TITLE 2"));
-
-        for (Tag t : tag.getSubTags()) {
-            ///get the paper id
-            DatabaseManager.getPaperId("papers4", paperTitle);
-
-            //get all tags associated with that paper
-            //add subtag to paper for each
-            t.addSubTag(new Tag("subsub 1"));
-            t.addSubTag(new Tag("subsub 2"));
-        } */
-
-
-
     public void setParentPanel(LeftPanel parentPanel) {
         this.parentPanel = parentPanel;
     }
-    private void displayTags() {
 
+
+    private void displayTags() {
 
         //Remove the old one
         if (treeView != null) {
