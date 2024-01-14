@@ -11,7 +11,7 @@ public class TestTagAddition {
     @Test
     public void testIfTagAdded() {
         Paper paper = new Paper("Test paper");
-        Tag tag = new Tag("Test tag");
+        Tag tag = new Tag("Test tag", null, null);
 
         paper.addTags(tag);
 

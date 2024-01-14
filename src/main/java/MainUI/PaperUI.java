@@ -114,7 +114,7 @@ public class PaperUI extends JPanel {
                         String values2 = String.format("%d, %d", paperID, TagID);
                         DatabaseManager.insertRecord("tagpaperlink3", cols, values2);
 
-                        Tag tag = new Tag(tagString);
+                        Tag tag = new Tag(tagString, null, null);
                         paper.addTags(tag);
                         System.out.println(paper.getTags());
                     }
@@ -123,7 +123,7 @@ public class PaperUI extends JPanel {
                     }
                 } else if (optionChosen == 1) {
                     String subtagString = JOptionPane.showInputDialog("Enter subtag:");
-                    Tag subtag = new Tag(subtagString);
+                    Tag subtag = new Tag(subtagString, null, null);
                     if (listener != null) {
                         String[] tagOptions = paper.getTagsStringList().toArray(new String[0]);
                         int tagOptionChosen = JOptionPane.showOptionDialog(null, "Choose an option:",
@@ -141,9 +141,9 @@ public class PaperUI extends JPanel {
 
                                 DatabaseManager.insertRecord(tableName, cols, vals);
 
-                                chosenTag.addSubTag(subtag);
+                                chosenTag.addSubContent(subtag);
                             }
-                            System.out.println(chosenTag.getSubTags());
+                            System.out.println(chosenTag.getSubContent());
                         }
                     }
 

@@ -1,16 +1,13 @@
 package Managers;
 
 import GroupContent.Comment;
+import GroupContent.Tag;
 
-import java.awt.*;
 import java.sql.*;
 import java.util.ArrayList;
-import java.util.List;
 import java.util.stream.Collectors;
 import java.util.Map;
 import java.util.HashMap;
-import java.util.List;
-
 
 
 public class DatabaseManager {
@@ -93,6 +90,28 @@ public class DatabaseManager {
                 System.out.println("Connection to the database failed");
                 return false; // Insertion failed due to connection failure
             }
+
+    }
+
+    public static void insertTags(int parentID, String content) {
+        // Connect to the database
+        if (conn != null) {
+            System.out.println("Connection to the database successful!");
+            // String colString = String.join(", ", columns);
+            // String valString = String.join(", ", values);
+
+            //String parentIDValue = (parentID == 0) ? "NULL" : parentID.toString();
+
+            String insertQuery = String.format(
+                    "INSERT INTO \"Tags\" (\"TagName\", \"ParentTagID\") VALUES ('%s', '%d')",
+                    content.replaceAll("'", "''"), parentID);
+
+
+            executeQuery(conn, insertQuery);
+
+        } else {
+            System.out.println("Connection to the database failed");
+        }
 
     }
 
@@ -443,34 +462,59 @@ public class DatabaseManager {
         return id;
     }
 
+    public static Integer getTagParentID(String tableName, String commentTitle) {
+        Integer id = null;
 
 
-    public static void getAllPaperNamesFromDB(String tableName, int noRows) {
+        if (conn != null) {
+            try (Statement stmt = conn.createStatement()) {
+                // Sanitize paperTitle to prevent SQL injection
+                // This is a basic example, you should implement a more robust method
+                String sanitizedTitle = commentTitle.replace("'", "''");
 
-            if (conn != null) {
-                System.out.println("Connection to the database successful!");
+                String sql = "SELECT \"ParentTagID\" FROM " + tableName + " WHERE \"TagName\" = '" + sanitizedTitle + "'";
+                ResultSet rs = stmt.executeQuery(sql);
 
-                try (Statement stmt = conn.createStatement()) {
-                    // Fixed the SQL query string
-                    String sql = "SELECT * FROM " + tableName + " LIMIT " + noRows;
-                    ResultSet rs = stmt.executeQuery(sql);
-
-                    while (rs.next()) {
-                        ResultSetMetaData rsmd = rs.getMetaData();
-                        //int columnsNumber = rsmd.getColumnCount();
-                        System.out.println("tesing get all papers from db"+rs.getString(3));
-
-                        System.out.println();
-                    }
-                    rs.close();
-                } catch (SQLException e) {
-                    e.printStackTrace();
+                if (rs.next()) {
+                    id = rs.getInt("ParentTagID");
                 }
-            } else {
-                System.out.println("Connection to database failed");
             }
+            catch (SQLException e) {
+                e.printStackTrace();
+            }
+        } else {
+            System.out.println("Connection to database failed");
+        }
 
+        return id;
     }
+
+
+
+    public static ArrayList<Tag> getTags() {
+        ArrayList<Tag> tags = new ArrayList<>();
+        if (conn != null) {
+            try (Statement stmt = conn.createStatement()) {
+                String sql = "SELECT \"TagName\" FROM \"Tags\"";
+                ResultSet rset = stmt.executeQuery(sql);
+
+                while (rset.next()) {
+
+                    String content = rset.getString("TagName");
+
+
+                    Tag tag = new Tag(content, null, null);
+                    tags.add(tag);
+                }
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }
+        } else {
+            System.out.println("Connection to database failed");
+        }
+        return tags;
+    }
+
 
 
     //not sure if need
@@ -599,6 +643,32 @@ public class DatabaseManager {
             System.out.println("Connection to database failed");
         }
         return Subcomments;
+    }
+
+    public static ArrayList<Tag> getSubTags(int parentID) {
+        ArrayList<Tag> Subtags = new ArrayList<>();
+
+        if (conn != null) {
+            try (Statement stmt = conn.createStatement()) {
+                String sql = "SELECT \"TagName\" FROM \"Tags\" WHERE \"ParentTagID\" = " + parentID;
+
+                ResultSet rset = stmt.executeQuery(sql);
+
+                while (rset.next()) {
+
+                    String content = rset.getString("TagName");
+
+
+                    Tag tag = new Tag(content, null, null);
+                    Subtags.add(tag);
+                }
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }
+        } else {
+            System.out.println("Connection to database failed");
+        }
+        return Subtags;
     }
 
 

@@ -7,7 +7,7 @@ public class TestTagConstructor {
     @Test
     public void testTag() {
         String tagName = "Test tag";
-        Tag tag = new Tag(tagName);
+        Tag tag = new Tag(tagName, null, null);
 
         assertEquals(tagName, tag.getName());
     }

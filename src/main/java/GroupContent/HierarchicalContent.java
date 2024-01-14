@@ -55,7 +55,8 @@ public class HierarchicalContent {
                             if (contentText != null) {
                                 selectedContent.addSubContent(new HierarchicalContent(contentText, selectedContent.getID(), UserName));
 
-                                addNewComment(selectedContent, contentText);
+                                addNewContent(selectedContent, contentText);
+
 
                             }
 
@@ -69,7 +70,7 @@ public class HierarchicalContent {
 
     }
 
-    protected void addNewComment(HierarchicalContent selectedContent, String contentText) {
+    protected void addNewContent(HierarchicalContent selectedContent, String contentText) {
 
     }
 

@@ -69,9 +69,9 @@ public class TagsDisplay extends JPanel {
             ArrayList<String> tagNamesList = DatabaseManager.getTagNamesByPaperId(i);
 
             for (String tagName : tagNamesList) {
-                tempTag.addSubTag(new Tag(tagName));
+                tempTag.addSubContent(new Tag(tagName));
             }
-            tag.addSubTag(tempTag);
+            tag.addSubContent(tempTag);
         }
 
         displayTags();
@@ -180,15 +180,15 @@ public class TagsDisplay extends JPanel {
         //Gets the tree of all nodes underneath parent tag
 
         //base case
-        if (parentTag.getSubTags() == null) {
+        if (parentTag.getSubContent() == null) {
             return null;
         }
 
         DefaultMutableTreeNode parent = new DefaultMutableTreeNode(parentTag);
 
         //recursive case
-        for (Tag t : parentTag.getSubTags()) {
-            DefaultMutableTreeNode treeBelow = findTreeBelow(t);
+        for (HierarchicalContent t : parentTag.getSubContent()) {
+            DefaultMutableTreeNode treeBelow = findTreeBelow((Tag)t);
             parent.add(treeBelow);
         }
         return parent;
@@ -198,7 +198,7 @@ public class TagsDisplay extends JPanel {
         String tagText = JOptionPane.showInputDialog("Enter the tag name");
         if (tagText != null) {
 
-            selectedTag.addSubTag(new Tag(tagText));
+            selectedTag.addSubContent(new Tag(tagText));
         }
         displayTags();
     }
@@ -209,7 +209,7 @@ public class TagsDisplay extends JPanel {
     }
 
     public void addTag(Tag tag) {
-        this.tag.addSubTag(tag);
+        this.tag.addSubContent(tag);
         displayTags();
     }
 

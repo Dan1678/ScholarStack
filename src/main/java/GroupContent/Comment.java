@@ -16,7 +16,7 @@ public class Comment extends HierarchicalContent{
 
 
     @Override
-    protected void addNewComment(HierarchicalContent selectedContent, String contentText) {
+    protected void addNewContent(HierarchicalContent selectedContent, String contentText) {
         int paper = DatabaseManager.getPaperId("papers4", String.format(CommentsDisplay.getPaper().getName()));
 
         //DatabaseManager.insertComments(parentID, String.format(commentText), RightPanel.getLoggedInUser(), new Timestamp(System.currentTimeMillis()), paper);
