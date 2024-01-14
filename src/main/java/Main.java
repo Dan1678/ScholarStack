@@ -19,18 +19,7 @@ public class Main {
             JOptionPane.showMessageDialog(null, e.getMessage());
         }
 
-        //DatabaseManager.insertComments(null, "testComment", 2, new Timestamp(System.currentTimeMillis()));
 
-//        BackupManager backupManager = new BackupManager(
-//                "ec2-54-246-1-94.eu-west-1.compute.amazonaws.com",
-//                "d6rkhhv2aujh36",
-//                "mixbutdugvnycu",
-//                "03f7fa8bfe5bfc30d6776369a8163f90164d68fcebaeecc32f073d7c4a334b94");
-//
-//        String backupFilePath = "C:\\SS_Backup\\heroku_backup2.backup";
-//
-//        // Create the backup
-//        backupManager.createBackup(backupFilePath);
 
     /*    String testPass = "123456";
         String testPass2 = "test5%%";
