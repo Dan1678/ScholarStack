@@ -41,7 +41,7 @@ public class TagsDisplay extends JPanel {
 
             tag.addSubTag(new Tag(paperTitle));
 
-            for (Tag t : tag.getSubTags()) {
+            /*for (Tag t : tag.getSubTags()) {
                 ///get the paper id
                 int PaperId = DatabaseManager.getPaperId("papers4", paperTitle);
 
@@ -55,7 +55,7 @@ public class TagsDisplay extends JPanel {
                 //add subtag to paper for each
                 //t.addSubTag(new Tag("subsub 1"));
                 //t.addSubTag(new Tag("subsub 2"));
-            } 
+            } */
 
         }
 
